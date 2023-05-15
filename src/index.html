@@ -4,9 +4,215 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fabrikant-ui.min.css" />
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons-theme.min.js"></script>
+
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="uk-container">
+      <ul class="uk-subnav uk-margin-top">
+        <li><a href="page/home.html">home</a></li>
+      </ul>
+    </div>
+
+    <div class="uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-hero">Heading Hero</h1>
+        <h1>h1 Heading 1</h1>
+        <h2>h2 Heading 2</h2>
+        <h3>h3 Heading 3</h3>
+        <h4>h4 Heading 4</h4>
+        <h5>h5 Heading 5</h5>
+        <h6>h6 Heading 6</h6>
+
+        <span uk-icon="icon: close"></span>
+        <button type="button" uk-close></button>
+        <span uk-icon="icon: ruble"></span>
+        <button class="uk-close-large" type="button" uk-close></button>
+
+        <div class="uk-margin-top">
+          <span class="uk-label">Default</span>
+          <span class="uk-label uk-label-success">Success</span>
+          <span class="uk-label uk-label-warning">Warning</span>
+          <span class="uk-label uk-label-danger">Danger</span>
+        </div>
+
+        <div class="uk-margin-top">
+          <span class="uk-badge">25</span>
+          <span class="uk-badge uk-badge-success">25</span>
+          <span class="uk-badge uk-badge-warning">25</span>
+          <span class="uk-badge uk-badge-danger">25</span>
+        </div>
+
+        <ul class="uk-subnav uk-subnav-small uk-subnav-dot" uk-margin>
+          <li class="uk-active"><a href="#">Active</a></li>
+          <li><a href="#">Item</a></li>
+          <li>Item</li>
+        </ul>
+
+        <nav class="uk-margin" aria-label="Breadcrumb">
+          <ul class="uk-breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Linked Category</a></li>
+            <li class="uk-disabled"><a>Disabled Category</a></li>
+            <li>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</span
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="uk-button uk-button-default uk-margin-small-right"
+          type="button"
+          uk-toggle="target: #modal-close-default"
+        >
+          Default modal
+        </button>
+        <div id="modal-close-default" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Default</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-margin-top" uk-grid>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title">Default</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+              <h3 class="uk-card-title">Default hover</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover-box-shadow uk-card-body">
+              <h3 class="uk-card-title">Default hover box-shadow</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+              <h3 class="uk-card-title">Primary</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+              <h3 class="uk-card-title">Secondary</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <p uk-margin>
+          <button class="uk-button uk-button-default">Default</button>
+          <button class="uk-button uk-button-primary">Primary</button>
+          <button class="uk-button uk-button-secondary">Secondary</button>
+          <button class="uk-button uk-button-danger">Danger</button>
+          <button class="uk-button uk-button-text">Text</button>
+          <button class="uk-button uk-button-link">Link</button>
+        </p>
+
+        <p uk-margin>
+          <button class="uk-button uk-button-default" disabled>Default (disabled)</button>
+          <button class="uk-button uk-button-primary" disabled>Primary (disabled)</button>
+        </p>
+
+        <p uk-margin>
+          <button class="uk-button uk-button-default uk-button-small">Small button</button>
+          <button class="uk-button uk-button-primary uk-button-small">Small button</button>
+          <button class="uk-button uk-button-secondary uk-button-small">Small button</button>
+        </p>
+
+        <p uk-margin>
+          <button class="uk-button uk-button-default uk-button-large">Large button</button>
+          <button class="uk-button uk-button-primary uk-button-large">Large button</button>
+          <button class="uk-button uk-button-secondary uk-button-large">Large button</button>
+        </p>
+
+        <div uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt. Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing
+            elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+            <a href="#">consectetur</a> adipiscing elit, sed do eiusmod tempor incididunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+
+        <div class="uk-alert-primary" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+
+        <div class="uk-alert-success" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+
+        <div class="uk-alert-warning" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+
+        <div class="uk-alert-danger" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+        <div class="uk-alert-nightmare" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod
+            tempor incididunt.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
