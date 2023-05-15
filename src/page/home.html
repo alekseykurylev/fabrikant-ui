@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../components/header/header.css" />
   <link rel="stylesheet" href="../components/footer/footer.css" />
   <link rel="stylesheet" href="../components/list-news/list-news.css" />
+  <link rel="stylesheet" href="../components/search-lite/search-lite.css" />
 
   <script src="../js/uikit.min.js"></script>
   <script src="../js/uikit-icons-theme.min.js"></script>
@@ -395,18 +396,47 @@
   <main>
     <section class="uk-section uk-padding-remove-bottom">
       <div class="uk-container uk-container-expand">
-        <div class="uk-flex uk-flex-bottom uk-margin-small-bottom">
-          <h1 class="uk-margin-remove">Поиск по закупкам</h1>
-          <div class="uk-margin-auto-left">123</div>
-        </div>
-        <div class="uk-box uk-box-small">
-          <div class="uk-child-width-auto" uk-grid>
-            <div class="uk-width-expand">123</div>
-            <div>123</div>
-            <div>13</div>
-            <div>123</div>
+        <div class="uk-flex-bottom uk-margin-8-bottom" uk-grid>
+          <div class="uk-width-expand@s">
+            <h1 class="uk-margin-remove">Поиск по закупкам</h1>
+          </div>
+          <div class="uk-width-auto@s">
+            <div class="uk-flex-middle uk-flex-between uk-grid-xsmall" uk-grid>
+              <a class="uk-flex uk-flex-middle uk-text-small" href="#">
+                <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span> 
+                Расширенный поиск
+              </a>
+              <a class="uk-flex uk-flex-middle uk-text-small uk-link-muted-bh500" href="#">
+                <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="close-circle"></span> 
+                Очистить
+              </a>
+            </div>
           </div>
         </div>
+        <form>
+          <div class="search-lite uk-box uk-box-small">
+            <div class="uk-child-width-auto uk-flex-middle uk-grid-small" uk-grid>
+              <div class="uk-width-expand">
+                <input class="uk-input" type="text" placeholder="Параметры поиска: Наименование комиссии полностью или частично (не менее трёх символов)">
+              </div>
+              <div class="uk-visible@m">
+                <div class="uk-input-group">
+                  <input class="uk-input" type="text" placeholder="Дата">
+                  <input class="uk-input" type="text" placeholder="Дата">
+                </div>
+              </div>
+              <div class="uk-visible@s">
+                <div class="uk-input-group">
+                  <input class="uk-input" type="text" placeholder="НМЦ">
+                  <input class="uk-input" type="text" placeholder="НМЦ">
+                </div>
+              </div>
+              <div>
+                <button type="button" class="uk-button uk-button-primary uk-flex uk-flex-middle"><span uk-icon="search"></span></button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     <section class="uk-section">
@@ -638,7 +668,7 @@
         <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large uk-flex-right@l" uk-grid>
           <div>
             <h4 class="uk-heading-text uk-margin-small uk-text-muted-bh200">Безопасность платежей</h4>
-            <ul class="uk-grid-medium" uk-grid>
+            <ul class="uk-grid-medium uk-flex-middle" uk-grid>
               <li><img src="../img/mastercard.svg" width="37" height="23" alt="Mastercard"></li>
               <li><img src="../img/visa.svg" width="60" height="20" alt="Visa"></li>
               <li><img src="../img/mir.svg" width="61" height="18" alt="МИР"></li>

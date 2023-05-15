@@ -70,6 +70,7 @@
 @import "theme/link.scss";
 @import "theme/section.scss";
 @import "theme/box.scss";
+@import "theme/form.scss";
 
 // 2. Import default variables and available mixins.
 @import "../../../node_modules/uikit/src/scss/variables.scss";
@@ -93,6 +94,7 @@
 @import "theme/offcanvas-mixins.scss";
 @import "theme/section-mixins.scss";
 @import "theme/link-mixins.scss";
+@import "theme/form-mixins.scss";
 
 // 4. Import UIkit
 @import "../../../node_modules/uikit/src/scss/uikit.scss";
