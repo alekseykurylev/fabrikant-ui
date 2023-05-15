@@ -1,8 +1,8 @@
 import gulp from "gulp";
 import plumber from "gulp-plumber";
 import sass from "gulp-dart-sass";
-import csso from "gulp-csso";
 import rename from "gulp-rename";
+import cssMinify from "gulp-css-minify";
 import browser from "browser-sync";
 
 // Styles
@@ -12,7 +12,7 @@ export const styles = () => {
     .src("src/styles/sass/style.scss")
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
-    .pipe(csso())
+    .pipe(cssMinify())
     .pipe(rename("fabrikant-ui.min.css"))
     .pipe(gulp.dest("src/styles"))
     .pipe(browser.stream());
