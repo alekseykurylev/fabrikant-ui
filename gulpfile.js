@@ -44,6 +44,8 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("src/styles/**/*.scss", gulp.series(styles));
+  gulp.watch("src/components/**/*.css").on("change", browser.reload);
+  gulp.watch("src/page/**/*.css").on("change", browser.reload);
   gulp.watch("src/**/**.html").on("change", browser.reload);
 };
 
