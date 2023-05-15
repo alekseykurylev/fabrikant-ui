@@ -1,0 +1,14 @@
+@mixin hook-grid-misc() {
+  /* Horizontal */
+  .uk-grid-xsmall,
+  .uk-grid-column-xsmall { margin-left: -8px; }
+  .uk-grid-xsmall > *,
+  .uk-grid-column-xsmall > *  { padding-left: 8px; }
+
+  /* Vertical */
+  .uk-grid + .uk-grid-xsmall,
+  .uk-grid + .uk-grid-row-xsmall,
+  .uk-grid-xsmall > .uk-grid-margin,
+  .uk-grid-row-xsmall > .uk-grid-margin,
+  * + .uk-grid-margin-xsmall { margin-top: 8px; }
+  }

@@ -1,0 +1,9 @@
+@mixin hook-section-misc() {
+
+  @media (min-width: $breakpoint-small) {
+    .uk-section {
+        padding-top: $global-medium-margin;
+        padding-bottom: $global-medium-margin;
+    }
+  }
+}

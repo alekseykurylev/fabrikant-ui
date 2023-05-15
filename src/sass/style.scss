@@ -1,6 +1,45 @@
-h1 {
-  font-size: 12px;
-  .text {
-    color: green;
-  }
-}
+// 1. Your custom variables and variable overwrites.
+@import "theme/variables.scss";
+@import "theme/base.scss";
+@import "theme/alert.scss";
+@import "theme/icon.scss";
+@import "theme/section.scss";
+@import "theme/button.scss";
+@import "theme/text.scss";
+@import "theme/breadcrumb.scss";
+@import "theme/card.scss";
+@import "theme/close.scss";
+@import "theme/label.scss";
+@import "theme/badge.scss";
+@import "theme/subnav.scss";
+@import "theme/container.scss";
+@import "theme/navbar.scss";
+@import "theme/nav.scss";
+@import "theme/drop.scss";
+@import "theme/offcanvas.scss";
+@import "theme/link.scss";
+
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables.scss";
+@import "../../node_modules/uikit/src/scss/mixins.scss";
+
+// // 3. Your custom mixin overwrites.
+@import "theme/alert-mixins.scss";
+@import "theme/icon-mixins.scss";
+@import "theme/button-mixins.scss";
+@import "theme/text-mixins.scss";
+@import "theme/heading-mixins.scss";
+@import "theme/breadcrumb-mixins.scss";
+@import "theme/card-mixins.scss";
+@import "theme/margin-mixins.scss";
+@import "theme/label-mixins.scss";
+@import "theme/badge-mixins.scss";
+@import "theme/subnav-mixins.scss";
+@import "theme/navbar-mixins.scss";
+@import "theme/nav-mixins.scss";
+@import "theme/grid-mixins.scss";
+@import "theme/offcanvas-mixins.scss";
+@import "theme/section-mixins.scss";
+
+// 4. Import UIkit
+@import "../../node_modules/uikit/src/scss/uikit.scss";

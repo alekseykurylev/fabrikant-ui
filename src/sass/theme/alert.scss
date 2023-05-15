@@ -1,0 +1,20 @@
+$alert-padding: 16px;
+$alert-padding-right: $alert-padding + 22px;
+
+$alert-close-top: $alert-padding;
+
+$alert-background: var(--color-mystic-300-a-30);
+$alert-color: var(--color-mine-shaft-900);
+
+$alert-primary-background: var(--color-cerulean-50);
+$alert-primary-color: var(--color-mine-shaft-900);
+
+$alert-success-background: var(--color-success-150);
+$alert-success-color: var(--color-mine-shaft-900);
+
+$alert-warning-background: var(--color-warning-150);
+$alert-warning-color: var(--color-mine-shaft-900);
+
+$alert-danger-background: var(--color-alarm-150);
+$alert-danger-color: var(--color-mine-shaft-900);
+
