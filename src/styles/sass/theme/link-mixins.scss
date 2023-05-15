@@ -1,0 +1,17 @@
+@mixin hook-link-misc() {
+  .uk-link-muted-ms500 {
+    color: var(--color-mine-shaft-500);
+  }
+
+  .uk-link-muted-ms500:hover {
+    color: var(--color-cerulean-link-hover);
+  }
+
+  .uk-link-muted-bh200 {
+    color: var(--color-bali-hai-200);
+  }
+
+  .uk-link-muted-bh200:hover {
+    color: var(--color-cerulean-link-hover);
+  }
+}
