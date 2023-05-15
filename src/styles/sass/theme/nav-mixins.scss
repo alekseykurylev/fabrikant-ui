@@ -71,4 +71,12 @@
     padding: 10px 16px;
     text-transform: none;
   }
+
+  .uk-nav-muted > li > a {
+    color: var(--color-bali-hai-200);
+  }
+
+  .uk-nav-muted > li > a:hover {
+    color: var(--color-bali-hai-300);
+  }
 }
