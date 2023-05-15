@@ -1,8 +1,6 @@
 import gulp from "gulp";
 import plumber from "gulp-plumber";
 import sass from "gulp-dart-sass";
-import postcss from "gulp-postcss";
-import autoprefixer from "autoprefixer";
 import csso from "gulp-csso";
 import rename from "gulp-rename";
 import browser from "browser-sync";
@@ -10,17 +8,21 @@ import browser from "browser-sync";
 // Styles
 
 export const styles = () => {
-  return (
-    gulp
-      .src("src/sass/style.scss", { sourcemaps: false })
-      .pipe(plumber())
-      .pipe(sass().on("error", sass.logError))
-      .pipe(csso())
-      .pipe(rename("style.min.css"))
-      // .pipe(postcss([autoprefixer()]))
-      .pipe(gulp.dest("src/css", { sourcemaps: "." }))
-      .pipe(browser.stream())
-  );
+  return gulp
+    .src("src/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(csso())
+    .pipe(rename("fabrikant-ui.min.css"))
+    .pipe(gulp.dest("src/css"))
+    .pipe(browser.stream());
+};
+
+// Copy script
+
+const copy = (done) => {
+  gulp.src("node_modules/uikit/dist/js/uikit.min.js").pipe(gulp.dest("src/js"));
+  done();
 };
 
 // Server
@@ -44,4 +46,4 @@ const watcher = () => {
   gulp.watch("src/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(styles, server, watcher);
+export default gulp.series(styles, copy, server, watcher);
