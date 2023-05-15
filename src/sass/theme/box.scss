@@ -1,0 +1,19 @@
+.uk-box {
+  display: flow-root;
+  position: relative;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-mystic-300);
+  padding: $global-small-margin;
+  border-radius: var(--border-radius);
+}
+
+@media (min-width: $breakpoint-small) {
+  .uk-box {
+    padding: $global-margin;
+  }
+
+  .uk-box-small {
+    padding: $global-small-margin;
+  }
+}
