@@ -1,0 +1,86 @@
+@mixin hook-button(){
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+@mixin hook-button-small(){
+  font-family: 'Inter';
+}
+
+@mixin hook-button-default(){
+  border: 1px solid var(--color-mystic-300);
+}
+
+@mixin hook-button-default-hover(){
+  border-color: var(--color-cerulean-500);
+}
+
+@mixin hook-button-default-active(){
+  border-color: var(--color-cerulean-500);
+  box-shadow: inset 0 0 0 1px var(--color-cerulean-500);
+}
+
+@mixin hook-button-primary(){
+  border: 1px solid var(--color-cerulean-500);
+}
+
+@mixin hook-button-primary-hover(){
+  border-color: var(--color-cerulean-400);
+}
+
+@mixin hook-button-primary-active(){
+  border-color: var(--color-cerulean-300);
+}
+
+@mixin hook-button-secondary(){
+  border: 1px solid var(--color-mine-shaft-900);
+}
+
+@mixin hook-button-secondary-hover(){
+  border-color: $button-secondary-hover-background;
+}
+
+@mixin hook-button-secondary-active(){
+  border-color: $button-secondary-active-background;
+}
+
+@mixin hook-button-danger(){
+  border: 1px solid var(--color-alarm-500);
+}
+
+@mixin hook-button-danger-hover(){
+  border-color: $button-danger-hover-background;
+}
+
+@mixin hook-button-danger-active(){
+  border-color: $button-danger-active-background;
+}
+
+@mixin hook-button-misc(){
+  .uk-button-default.uk-button-small {
+    font-weight: 400;
+    color: var(--color-mine-shaft-900);
+  }
+  .uk-button-default:disabled {
+    background-color: var(--color-white);
+    border-color: var(--color-mystic-300);
+    color: var(--color-bali-hai-300);
+    box-shadow: none;
+  }
+  .uk-button-primary:disabled {
+    border-color: var(--color-bali-hai-200);
+    background-color: var(--color-bali-hai-200);
+    color: var(--color-mystic-200);
+  }
+
+  .uk-button-icon {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+  }
+
+  .uk-button-icon.uk-button-small {
+    height: 32px;
+  }
+}

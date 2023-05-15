@@ -1,0 +1,28 @@
+@mixin hook-offcanvas-misc() {
+  .uk-offcanvas-header {
+    padding: 32px;
+    border-bottom: 1px solid var(--color-mystic-300);
+  }
+
+  .uk-offcanvas-body {
+    padding: 16px 32px;
+  }
+
+  .uk-offcanvas-footer {
+    padding: 16px 32px;
+    border-top: 1px solid var(--color-mystic-300);
+  }
+
+  .uk-offcanvas-bar.uk-offcanvas-width-full {
+    left: -100%;
+    width: 100%;
+  }
+
+  .uk-offcanvas-flip .uk-offcanvas-bar.uk-offcanvas-width-full {
+    right: -100%;
+  }
+
+  .uk-open > .uk-offcanvas-bar.uk-offcanvas-width-full { 
+    left: 0; 
+  }
+}
