@@ -2,11 +2,11 @@
 
 Fabrikant UI Kit build on [UIkit][uikit].
 
-## Страницы:
+### Страницы:
 
 - [Главная][home]
 
-## Компоненты:
+### Компоненты:
 
 [uikit]: https://getuikit.com/
 [home]: /src/page/home.html
