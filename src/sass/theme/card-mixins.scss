@@ -1,5 +1,5 @@
 @mixin hook-card() {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 @mixin hook-card-default() {
@@ -28,6 +28,6 @@
     background-color: var(--color-white);
     box-shadow: var(--card-shadow);
     border: 1px solid var(--color-mystic-300);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
   }
 }

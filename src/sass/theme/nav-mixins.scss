@@ -1,13 +1,13 @@
 @mixin hook-nav-misc() {
   .uk-nav.uk-drop {
     background-color: var(--color-white);
-    border: 1px solid #DCE3EB;
-    border-radius: 8px;
+    border: 1px solid #dce3eb;
+    border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
     padding: 8px 0;
     width: 280px;
   }
-  
+
   .uk-nav.uk-drop li > a {
     font-size: 12px;
     line-height: 16px;
@@ -37,7 +37,7 @@
   }
 
   .uk-nav.uk-drop li > a[aria-haspopup]::after {
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     margin-left: auto;
