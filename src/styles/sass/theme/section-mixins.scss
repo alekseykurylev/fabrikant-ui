@@ -5,4 +5,18 @@
       padding-bottom: $global-medium-margin;
     }
   }
+
+  @media (min-width: $breakpoint-small) {
+    .uk-section-large {
+      padding-top: $global-large-margin;
+      padding-bottom: $global-large-margin;
+    }
+  }
+
+  @media (min-width: $breakpoint-small) {
+    .uk-section-xlarge {
+      padding-top: $global-large-margin;
+      padding-bottom: $global-large-margin;
+    }
+  }
 }
