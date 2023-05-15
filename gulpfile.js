@@ -20,10 +20,11 @@ export const styles = () => {
 
 // Copy script
 
-const copy = (done) => {
-  gulp.src("node_modules/uikit/dist/js/uikit.min.js").pipe(gulp.dest("src/js"));
-  done();
-};
+// const copy = (done) => {
+//   gulp.src("node_modules/uikit/dist/js/uikit.min.js").pipe(gulp.dest("src/js"));
+//   gulp.src("node_modules/uikit/dist/js/uikit-icons-theme.min.js").pipe(gulp.dest("src/js"));
+//   done();
+// };
 
 // Server
 
@@ -43,7 +44,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("src/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("src/*.html").on("change", browser.reload);
+  gulp.watch("src/**/**.html").on("change", browser.reload);
 };
 
 export default gulp.series(styles, copy, server, watcher);
