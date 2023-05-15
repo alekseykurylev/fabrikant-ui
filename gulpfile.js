@@ -9,12 +9,12 @@ import browser from "browser-sync";
 
 export const styles = () => {
   return gulp
-    .src("src/sass/style.scss")
+    .src("src/styles/sass/style.scss")
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
     .pipe(csso())
     .pipe(rename("fabrikant-ui.min.css"))
-    .pipe(gulp.dest("src/css"))
+    .pipe(gulp.dest("src/styles"))
     .pipe(browser.stream());
 };
 
@@ -43,8 +43,8 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("src/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("src/styles/**/*.scss", gulp.series(styles));
   gulp.watch("src/**/**.html").on("change", browser.reload);
 };
 
-export default gulp.series(styles, copy, server, watcher);
+export default gulp.series(styles, server, watcher);
