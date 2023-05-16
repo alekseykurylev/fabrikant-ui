@@ -27,33 +27,28 @@
 <body>
   <header class="header">
     <div class="header-mobile uk-grid-collapse uk-child-width-auto uk-hidden@s" uk-grid>
-      <div class="header-mobile__drawer">
-        <a href="#offcanvas-usage" uk-toggle><span uk-icon="menu"></span></a>
-        <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+      <div>
+        <a href="#mobile-menu-1" uk-toggle><span uk-icon="menu"></span></a>
+        <div id="mobile-menu-1" uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
               <div class="uk-offcanvas-header">
-                <a href="/"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
+                <a href="/"><img src="../../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
               </div>
               <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
                 <ul uk-nav>
-                  <li><a href="#">Закупки</a></li>
+                  <li class="uk-active"><a href="#">Закупки</a></li>
                   <li><a href="#">Запросы</a></li>
                   <li><a href="#">Контракты</a></li>
+                  <li><a href="#">Протоколы</a></li>
                   <li><a href="#">Не забыть</a></li>
                   <li class="uk-parent">
                     <a href="#">Дополнительные сервисы <span uk-nav-parent-icon></span></a>
                     <ul class="uk-nav-sub">
-                      <li><a href="#">Поиск по решениям ФАС</a></li>
-                      <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
-                      <li class="uk-active"><a href="#">Текущий раздел</a></li>
-                      <li><a href="#">Поиск документации</a></li>
+                      <li><a href="#">Подраздел раздела</a></li>
+                      <li class="uk-active"><a href="#">Подраздел раздела</a></li>
                     </ul>
                   </li>
-                  </li>
-                  <li><a href="#">Секции</a></li>
-                  <li class="uk-active"><a href="#">Текущий раздел</a></li>
-                  <li><a href="#">Реестр комиссий</a></li>
                 </ul>
               </div>
               <div class="uk-offcanvas-footer uk-text-right">
@@ -122,7 +117,6 @@
               <li><a href="#">Параметр первый</a></li>
               <li><a href="#">Параметр второй</a></li>
             </ul>
-          </li>
           </li>
           <li><a href="#">Пользователи</a></li>
           <li><a href="#">Шаблоны протоколов</a></li>
@@ -291,7 +285,7 @@
       <div class="uk-container uk-container-expand">
         <div class="uk-flex-middle" uk-grid>
           <div class="uk-width-auto">
-            <a href="/"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
+            <a href="/"><img src="../../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
           </div>
           <div class="uk-width-expand">
             <ul class="header-nav uk-flex-middle" uk-grid>
@@ -325,7 +319,7 @@
               </li>
             </ul>
           </div>
-          <div class="uk-width-auto">
+          <div class="uk-width-auto uk-margin-auto-left">
             <div class="header-hero__tel">
               <span class="uk-hidden@xl uk-text-muted uk-icon-size-16" uk-icon="phone"></span>
               <div class="uk-child-width-auto uk-grid-row-collapse" uk-grid>
@@ -697,71 +691,6 @@
   </footer>
 
 
-  <script>
-    const navbars = document.querySelectorAll('[uk-navbar]');
-
-    navbars.forEach((navbar) => {
-      const list = navbar.querySelector('ul');
-      const items = list.querySelectorAll(':scope > li:not(.more)');
-      const itemLast = list.querySelector(':scope > li:last-child');
-      let listMore = [];
-      
-      if(itemLast.classList.contains('more')) {
-        listMore = [...itemLast.querySelector('.uk-nav').children];
-      } else {
-        list.insertAdjacentHTML('beforeend', `
-        <li class="more">
-          <a href="#">Ещё...</a>
-          <div uk-drop>
-            <ul class="uk-nav"></ul>
-          </div>
-        </li>`)
-      }
-      
-      const handleOverflowNavbar = () => {
-        const itemMore = list.querySelector(':scope > li.more');
-        const itemMoreList = itemMore.querySelector(':scope > .uk-nav');
-
-        itemMoreList.replaceChildren(...listMore)
-        items.forEach((item) => {
-          item.hidden = false
-        })
-
-        const navbarWidth = navbar.offsetWidth;
-        let stopWidth = itemMore.offsetWidth;
-        let hiddenItems = [];
-
-        items.forEach((item) => {
-          if(navbarWidth >= stopWidth + item.offsetWidth) {
-            stopWidth += item.offsetWidth
-          } else {
-            itemMoreList.insertAdjacentHTML('afterbegin', item.outerHTML)
-            item.hidden = true
-          }
-        })
-
-        if(itemMoreList.childNodes.length > 0) {
-          itemMore.hidden = false
-        } else {
-          itemMore.hidden = true
-        }
-
-        const itemMoreDrop = itemMoreList.querySelectorAll('[uk-drop]');
-        if(itemMoreDrop) {
-          itemMoreDrop.forEach((item) => {
-            UIkit.drop(item, {
-              pos: 'right-top'
-            })
-          })
-        }
-
-      }
-
-      handleOverflowNavbar()
-      window.addEventListener('resize', handleOverflowNavbar);
-    })
-
-
-  </script>
+  <script src="../components/header/header.js"></script>
 </body>
 </html>
