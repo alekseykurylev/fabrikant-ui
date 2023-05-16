@@ -2,7 +2,7 @@
 
 Fabrikant UI Kit build on [UIkit][uikit].
 
-### Page:
+### Pages:
 
 - [Главная][home]
 
