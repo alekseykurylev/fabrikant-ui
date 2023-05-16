@@ -51,6 +51,10 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
   }
 
+  .uk-nav.uk-drop li.uk-active > a[aria-haspopup]:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23009DDB' stroke-width='2' d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
+  }
+
   .uk-nav.uk-drop .uk-nav-sub {
     padding: 0;
   }
