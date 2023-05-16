@@ -50,20 +50,20 @@
   padding: 24px 0;
 }
 
-.header-nav > li > a {
+.header-subnav > li > a {
   display: flex;
   align-items: center;
 }
 
-.header-nav > li > a > div {
+.header-subnav > li > a > div {
   color: var(--color-bali-hai-300);
 }
 
-.header-nav > li > a:hover > div {
+.header-subnav > li > a:hover > div {
   color: var(--color-cerulean-link-hover);
 }
 
-.header-nav > li > a .uk-badge {
+.header-subnav > li > a .uk-badge {
   padding: 0 4px;
 }
 
