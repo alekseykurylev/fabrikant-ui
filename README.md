@@ -8,7 +8,7 @@ Fabrikant UI Kit build on [UIkit][uikit].
 
 ### Components:
 
-- [Шапка][header]
+- [Header][header]
 
 [uikit]: https://getuikit.com/
 [home]: /src/page/home.html
