@@ -16,6 +16,13 @@
   color: var(--color-mine-shaft-900);
 }
 
+@mixin hook-form-radio() {
+  border: 1px solid var(--color-mystic-500);
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, border;
+}
+
 @mixin hook-form-misc() {
   .uk-input-group {
     display: flex;
@@ -43,5 +50,37 @@
 
   .uk-input-group .uk-input {
     border: none;
+  }
+
+  .uk-radio:checked,
+  .uk-radio:checked:focus {
+    background-color: #fff;
+  }
+
+  .uk-radio:disabled {
+    background-color: var(--color-mystic-200);
+  }
+
+  .uk-radio:disabled:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='6' fill='%2395ACBC'/%3E%3C/svg%3E");
+  }
+
+  .uk-checkbox:checked,
+  .uk-checkbox:indeterminate,
+  .uk-checkbox:checked:focus,
+  .uk-checkbox:indeterminate:focus {
+    background-color: var(--color-cerulean-500);
+    border-color: var(--color-cerulean-500);
+  }
+
+  .uk-checkbox:disabled {
+    background-color: var(--color-mystic-200);
+  }
+
+  .uk-checkbox:disabled:checked,
+  .uk-checkbox:disabled:indeterminate {
+    border-color: var(--color-bali-hai-200);
+    background-color: var(--color-bali-hai-200);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' fill='none' viewBox='0 0 15 11'%3E%3Cpath stroke='%23E3E9EF' stroke-linejoin='round' stroke-width='2' d='m1 6 4 4 9-9'/%3E%3C/svg%3E");
   }
 }

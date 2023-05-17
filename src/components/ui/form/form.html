@@ -22,9 +22,66 @@
     <section class="uk-section">
       <div class="uk-container">
         <h1>Form</h1>
-        <div class="uk-margin">?????</div>
+        <div class="uk-margin" uk-margin>
+          <input class="uk-input" type="text" placeholder="Input" aria-label="Input" />
+          <textarea
+            class="uk-textarea"
+            rows="5"
+            placeholder="Textarea"
+            aria-label="Textarea"
+          ></textarea>
+          <div uk-grid>
+            <label>
+              <input class="uk-checkbox uk-margin-12-right" type="checkbox" checked /> A
+            </label>
+            <label><input class="uk-checkbox uk-margin-12-right" type="checkbox" /> B </label>
+            <label>
+              <input class="uk-checkbox uk-margin-12-right" type="checkbox" checked disabled /> A
+            </label>
+            <label
+              ><input class="uk-checkbox uk-margin-12-right" type="checkbox" disabled /> B
+            </label>
+          </div>
+          <div uk-grid>
+            <label>
+              <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" checked /> A
+            </label>
+            <label>
+              <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" /> B
+            </label>
+            <label>
+              <input
+                class="uk-radio uk-margin-12-right"
+                type="radio"
+                name="radio2"
+                checked
+                disabled
+              />
+              A
+            </label>
+            <label>
+              <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" disabled /> B
+            </label>
+          </div>
+        </div>
+        <h2>Sizes</h2>
+        <div class="uk-margin" uk-margin>
+          <input
+            class="uk-input uk-input-small"
+            type="text"
+            placeholder="Input"
+            aria-label="Input"
+          />
+          <textarea
+            class="uk-textarea"
+            rows="5"
+            placeholder="Textarea"
+            aria-label="Textarea"
+          ></textarea>
+        </div>
         <h2>Group</h2>
-        <div class="uk-child-width-1-3" uk-grid>
+        <p>Добавляем обертку с классом <code>.uk-input-group</code></p>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
           <div>
             <div class="uk-input-group">
               <input class="uk-input" type="text" placeholder="НМЦ от ₽" aria-label="НМЦ от ₽" />
