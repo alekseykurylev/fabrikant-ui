@@ -1,14 +1,12 @@
-# Fabrikant UI Kit
-
-### Pages:
+## Pages:
 
 - [Главная][home]
 
-### Components:
+## Components:
 
 - [Header][header]
 
-#### Components (UI):
+### Components (UI):
 
 - [Button][button]
 
