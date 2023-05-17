@@ -8,33 +8,33 @@ $button-large-font-size: 18px;
 
 $button-small-padding-horizontal: 8px;
 
-$button-default-background: var(--color-white);
+$button-default-background: #fff;
 $button-default-color: var(--color-cerulean-500);
-$button-default-hover-background: var(--color-white);
+$button-default-hover-background: #fff;
 $button-default-hover-color: var(--color-cerulean-500);
-$button-default-active-background: var(--color-white);
+$button-default-active-background: #fff;
 $button-default-active-color: var(--color-cerulean-500);
 
 $button-primary-background: var(--color-cerulean-500);
-$button-primary-color: var(--color-white);
+$button-primary-color: #fff;
 $button-primary-hover-background: var(--color-cerulean-400);
-$button-primary-hover-color: var(--color-white);
+$button-primary-hover-color: #fff;
 $button-primary-active-background: var(--color-cerulean-300);
-$button-primary-active-color: var(--color-white);
+$button-primary-active-color: #fff;
 
-$button-secondary-background: var(--color-mine-shaft-900);
-$button-secondary-color: var(--color-white);
-$button-secondary-hover-background: darken(#212121, 5%);
-$button-secondary-hover-color: var(--color-white);
-$button-secondary-active-background: darken(#212121, 10%);
-$button-secondary-active-color: var(--color-white);
+$button-secondary-background: #fff;
+$button-secondary-color: var(--color-mine-shaft-900);
+$button-secondary-hover-background: #fff;
+$button-secondary-hover-color: var(--color-mine-shaft-900);
+$button-secondary-active-background: var(--color-mystic-200);
+$button-secondary-active-color: var(--color-mine-shaft-900);
 
 $button-danger-background: var(--color-alarm-500);
-$button-danger-color: var(--color-white);
+$button-danger-color: #fff;
 $button-danger-hover-background: darken(#fe3b1f, 5%) !default;
-$button-danger-hover-color: var(--color-white);
+$button-danger-hover-color: #fff;
 $button-danger-active-background: darken(#fe3b1f, 10%) !default;
-$button-danger-active-color: var(--color-white);
+$button-danger-active-color: #fff;
 
 $button-link-color: var(--color-cerulean-link);
 $button-link-hover-color: var(--color-cerulean-link-hover);
