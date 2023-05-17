@@ -22,6 +22,15 @@
     <section class="uk-section">
       <div class="uk-container">
         <h1>Button</h1>
+        <p>
+          Основной класс <code>.uk-button</code> к нему добавляем один из классов модификаторов 
+          <code>.uk-button-default</code>
+          <code>.uk-button-primary</code>
+          <code>.uk-button-secondary</code>
+          <code>.uk-button-danger</code>
+          <code>.uk-button-text</code>
+          <code>.uk-button-link</code>
+        </p>
         <p uk-margin>
           <button class="uk-button uk-button-default">Default</button>
           <button class="uk-button uk-button-default uk-button-default-gray">Default gray</button>
@@ -38,7 +47,9 @@
           <button class="uk-button uk-button-primary" disabled>Primary disabled</button>
           <button class="uk-button uk-button-secondary uk-button-secondary-gray" disabled>Secondary gray disabled</button>
         </p>
-        <h2>Size modifiers</h2>
+        <hr class="uk-margin-large" />
+        <h2>Sizes</h2>
+        <p>К элементу добавляем класс <code>.uk-button-small</code> или <code>.uk-button-large</code></p>
         <p uk-margin>
           <button class="uk-button uk-button-default uk-button-small">Small default</button>
           <button class="uk-button uk-button-default uk-button-small uk-button-default-gray">Small default gray</button>
@@ -51,7 +62,9 @@
           <button class="uk-button uk-button-primary uk-button-large">Large primary</button>
           <button class="uk-button uk-button-secondary uk-button-large">Large secondary</button>
         </p>
+        <hr class="uk-margin-large" />
         <h2>Group</h2>
+        <p>Добавляем обертку с классом <code>.uk-button-group</code></p>
         <p uk-margin>
           <div class="uk-button-group">
             <button class="uk-button uk-button-default">button</button>
@@ -71,6 +84,7 @@
             <button class="uk-button uk-button-secondary uk-button-secondary-gray uk-button-small uk-active">button</button>
           </div>
         </p>
+        <hr class="uk-margin-large" />
         <h2>Button with icon</h2>
         <p uk-margin>
           <button class="uk-button uk-button-default">
