@@ -63,7 +63,6 @@
   .uk-alert[class^="uk-informer-"] {
     font-size: 14px;
     line-height: 20px;
-    color: var(--color-mine-shaft-900);
     border: none;
   }
 
@@ -95,5 +94,9 @@
     span.uk-icon {
       color: var(--color-cerulean-500);
     }
+  }
+
+  .uk-alert-close {
+    position: static;
   }
 }
