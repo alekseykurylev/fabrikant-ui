@@ -10,6 +10,7 @@
 ### Components (UI):
 
 - [Alert][alert]
+- [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Form][form]
 - [Typography][typography]
@@ -22,5 +23,6 @@
 [form]: /src/components/ui/form/form.html
 [alert]: /src/components/ui/alert/alert.html
 [typography]: /src/components/ui/typography/typography.html
+[breadcrumb]: /src/components/ui/breadcrumb/breadcrumb.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
