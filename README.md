@@ -12,6 +12,7 @@
 - [Alert][alert]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
+- [Card][card]
 - [Form][form]
 - [Label][label]
 - [Typography][typography]
@@ -26,5 +27,6 @@
 [typography]: /src/components/ui/typography/typography.html
 [breadcrumb]: /src/components/ui/breadcrumb/breadcrumb.html
 [label]: /src/components/ui/label/label.html
+[card]: /src/components/ui/card/card.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
