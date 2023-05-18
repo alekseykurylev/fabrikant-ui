@@ -22,18 +22,15 @@
     <section class="uk-section">
       <div class="uk-container">
         <h1>Alert</h1>
-        <div uk-alert>
-          <a class="uk-alert-close" uk-close></a>
-          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
-            <div class="uk-width-auto">
-              <span uk-icon="alert"></span>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
-            </div>
-          </div>
-        </div>
-
+        <p>Атрибут <code>uk-alert</code> обязателен для всех</p>
+        <p><code>.uk-alert-*</code> - используем только на сером фоне</p>
+        <p uk-margin>
+          <code>.uk-alert-primary</code>
+          <code>.uk-alert-success</code>
+          <code>.uk-alert-warning</code>
+          <code>.uk-alert-danger</code>
+          <code>.uk-alert-nightmare</code>
+        </p>
         <div class="uk-alert-primary" uk-alert>
           <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
@@ -41,11 +38,20 @@
               <span uk-icon="alert"></span>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
+              <p class="uk-margin-8">
+                В связи с проведением регламентных работ на ЭТП Фабрикант возможны перерывы в работе
+                в период с 01:00 (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022. В связи с проведением
+                регламентных работ на ЭТП Фабрикант возможны перерывы в работе в период с 01:00
+                (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022. <a href="#">primary</a>
+              </p>
+              <p class="uk-margin-8">
+                В связи с проведением регламентных работ на ЭТП Фабрикант возможны перерывы в работе
+                в период с 01:00 (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022.
+                <a href="#">Ссылка для перехода</a>
+              </p>
             </div>
           </div>
         </div>
-
         <div class="uk-alert-success" uk-alert>
           <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
@@ -53,11 +59,13 @@
               <span uk-icon="info"></span>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt <a href="#">success</a>
+              </p>
             </div>
           </div>
         </div>
-
         <div class="uk-alert-warning" uk-alert>
           <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
@@ -65,11 +73,13 @@
               <span uk-icon="alert"></span>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt <a href="#">warning</a>
+              </p>
             </div>
           </div>
         </div>
-
         <div class="uk-alert-danger" uk-alert>
           <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
@@ -77,11 +87,13 @@
               <span uk-icon="alert"></span>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt <a href="#">danger</a>
+              </p>
             </div>
           </div>
         </div>
-
         <div class="uk-alert-nightmare" uk-alert>
           <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
@@ -89,7 +101,68 @@
               <span uk-icon="alert"></span>
             </div>
             <div>
-              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt <a href="#">nightmare</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-box uk-box-large">
+          <p><code>.uk-informer-*</code> - используем только на белом фоне</p>
+          <p uk-margin>
+            <code>.uk-informer-primary</code>
+            <code>.uk-informer-success</code>
+            <code>.uk-informer-danger</code>
+            <code>.uk-informer-nightmare</code>
+          </p>
+          <div class="uk-informer-danger" uk-alert>
+            <p>
+              Цена исполненного контракта (стоимость исполненных обязательств) составляет менее 20%
+              от НМЦК данной закупки. <br />
+              <span class="uk-text-weight-700"
+                >Недостающая сумма: 500 р. Заявка может быть отклонена заказчиком!</span
+              >
+              <a href="#">danger</a>
+            </p>
+          </div>
+          <div class="uk-informer-success" uk-alert>
+            <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+              <div class="uk-width-auto">
+                <span uk-icon="alert"></span>
+              </div>
+              <div>
+                <p class="uk-text-weight-600 uk-margin-4">Наличие средств на специально счете</p>
+                <p class="uk-margin-4">
+                  Средства для обеспечения на 10.03.2023 15:30 на счете имеются
+                  <a href="#">success</a>
+                </p>
+              </div>
+              <div class="uk-width-auto">
+                <button class="uk-button uk-button-secondary uk-button-small">
+                  <span class="uk-icon-size-16 uk-text-primary" uk-icon="refresh"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="uk-informer-nightmare" uk-alert>
+            <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+              <div class="uk-width-auto">
+                <span uk-icon="alert"></span>
+              </div>
+              <div>
+                <p class="uk-text-weight-600 uk-margin-4">Недостаточно средств</p>
+                <p class="uk-margin-4">
+                  Средств для обеспечения на 10.03.2023 15:30 на счете недостаточно
+                  <a href="#">nightmare</a>
+                </p>
+              </div>
+              <div class="uk-width-auto">
+                <button class="uk-button uk-button-secondary uk-button-small">
+                  <span class="uk-icon-size-16 uk-text-primary" uk-icon="refresh"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
