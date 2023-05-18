@@ -30,30 +30,27 @@
           <code>.uk-radio</code>
         </p>
         <div class="uk-margin" uk-margin>
-          <div class="uk-child-width-1-2" uk-grid>
+          <div class="uk-child-width-1-2@s" uk-grid>
             <div>
-              <div class="uk-margin">
-                <label class="uk-form-label uk-margin-8-bottom" for="input-1">Text</label>
-                <input
-                  class="uk-input"
-                  id="input-1"
-                  type="text"
-                  placeholder="placeholder"
-                  aria-label="Input"
-                />
-              </div>
+              <label class="uk-form-label uk-margin-8-bottom" for="input-1">Text</label>
+              <input
+                class="uk-input"
+                id="input-1"
+                type="text"
+                placeholder="placeholder"
+                aria-label="Input"
+              />
             </div>
             <div>
-              <div class="uk-margin">
-                <label class="uk-form-label uk-margin-8-bottom" for="input-1">Text</label>
-                <input
-                  class="uk-input"
-                  type="text"
-                  placeholder="placeholder"
-                  aria-label="Input"
-                  disabled
-                />
-              </div>
+              <label class="uk-form-label uk-margin-8-bottom" for="input-2">Text</label>
+              <input
+                class="uk-input"
+                id="input-2"
+                type="text"
+                placeholder="placeholder"
+                aria-label="Input"
+                disabled
+              />
             </div>
             <div>
               <label class="uk-form-label uk-margin-8-bottom" for="textarea-1">Text</label>
@@ -66,10 +63,10 @@
               ></textarea>
             </div>
             <div>
-              <label class="uk-form-label uk-margin-8-bottom" for="textarea-1">Text</label>
+              <label class="uk-form-label uk-margin-8-bottom" for="textarea-2">Text</label>
               <textarea
                 class="uk-textarea"
-                id="textarea-1"
+                id="textarea-2"
                 rows="5"
                 placeholder="placeholder"
                 aria-label="Textarea"
@@ -90,27 +87,47 @@
                   ><input class="uk-checkbox uk-margin-12-right" type="checkbox" disabled /> B
                 </label>
               </div>
-
               <div uk-grid>
-                <label>
-                  <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" checked /> A
-                </label>
-                <label>
-                  <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" /> B
-                </label>
-                <label>
-                  <input
-                    class="uk-radio uk-margin-12-right"
-                    type="radio"
-                    name="radio3"
-                    checked
-                    disabled
-                  />
-                  A
-                </label>
-                <label>
-                  <input class="uk-radio uk-margin-12-right" type="radio" name="radio3" disabled />
-                  B
+                <div>
+                  <label>
+                    <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" checked />
+                    A
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="uk-radio uk-margin-12-right" type="radio" name="radio2" /> B
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input
+                      class="uk-radio uk-margin-12-right"
+                      type="radio"
+                      name="radio3"
+                      checked
+                      disabled
+                    />
+                    A
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input
+                      class="uk-radio uk-margin-12-right"
+                      type="radio"
+                      name="radio3"
+                      disabled
+                    />
+                    B
+                  </label>
+                </div>
+              </div>
+              <div uk-grid>
+                <label for="tumbler" class="uk-tumbler">
+                  <input id="tumbler" class="uk-tumbler-input" type="checkbox" hidden />
+                  <div for="tumbler" class="uk-tumbler-button uk-margin-12-right"></div>
+                  tumbler
                 </label>
               </div>
             </div>
@@ -119,20 +136,24 @@
         <hr class="uk-margin-large" />
         <h2>Sizes</h2>
         <p>К элементу добавляем класс <code>.uk-*-small</code> или <code>.uk-*-large</code></p>
-        <div class="uk-margin" uk-margin>
+        <div class="uk-margin">
           <input
             class="uk-input uk-input-small"
             type="text"
             placeholder="Small"
             aria-label="Small"
           />
+        </div>
+        <div class="uk-margin">
           <input
             class="uk-input uk-input-large"
             type="text"
             placeholder="Large"
             aria-label="Large"
           />
-          <div uk-grid>
+        </div>
+        <div class="uk-margin" uk-grid>
+          <div>
             <label>
               <input
                 class="uk-checkbox uk-checkbox-small uk-margin-12-right"
@@ -141,60 +162,55 @@
               />
               A
             </label>
-            <label>
-              <input class="uk-checkbox uk-checkbox-small uk-margin-12-right" type="checkbox" /> B
-            </label>
           </div>
-          <div uk-grid>
+          <div>
             <label>
               <input
                 class="uk-radio uk-radio-small uk-margin-12-right"
                 type="radio"
-                name="radio4"
-                checked
+                name="sizes-radio"
               />
               A
             </label>
-            <label>
-              <input
-                class="uk-radio uk-radio-small uk-margin-12-right"
-                type="radio"
-                name="radio4"
-              />
-              B
-            </label>
           </div>
+        </div>
+        <div class="uk-margin">
+          <label for="tumbler2" class="uk-tumbler uk-tumbler-large">
+            <input id="tumbler2" class="uk-tumbler-input" type="checkbox" hidden />
+            <div class="uk-tumbler-button uk-margin-12-right"></div>
+            large
+          </label>
         </div>
         <hr class="uk-margin-large" />
         <h2>Input Box</h2>
-        <p>Добавляем обертку элементом <code>label</code> с классом <code>.uk-input-box</code></p>
-        <div uk-margin>
-          <div>
-            <label class="uk-input-box" for="input-box-1">
-              <span>Text</span>
-              <input
-                class="uk-input"
-                id="input-box-1"
-                type="text"
-                placeholder="placeholder"
-                aria-label="Input"
-              />
-            </label>
-          </div>
-
-          <div>
-            <p>Для disabled добавляем обертке класс <code>.uk-input-box-disabled</code></p>
-            <label class="uk-input-box uk-input-box-disabled" for="input-box-2">
-              <span>Text</span>
-              <input
-                class="uk-input"
-                id="input-box-2"
-                type="text"
-                placeholder="placeholder"
-                aria-label="Input"
-              />
-            </label>
-          </div>
+        <p>
+          Добавляем обертку элементом <code>&#60;label&#62;</code> с классом
+          <code>.uk-input-box</code>
+        </p>
+        <div class="uk-margin">
+          <label class="uk-input-box" for="box-1">
+            <span>Text</span>
+            <input
+              class="uk-input"
+              id="box-1"
+              type="text"
+              placeholder="placeholder"
+              aria-label="Input"
+            />
+          </label>
+        </div>
+        <p>Для disabled добавляем обертке класс <code>.uk-form-disabled</code></p>
+        <div class="uk-margin">
+          <label class="uk-input-box uk-form-disabled" for="box-2">
+            <span>Text</span>
+            <input
+              class="uk-input"
+              id="box-2"
+              type="text"
+              placeholder="placeholder"
+              aria-label="Input"
+            />
+          </label>
         </div>
         <hr class="uk-margin-large" />
         <h2>Group</h2>
@@ -208,21 +224,54 @@
           </div>
           <div>
             <div class="uk-input-group">
-              <label class="uk-input-box" for="input-box-3">
+              <label class="uk-input-box" for="group-1">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-3"
+                  id="group-1"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
                 />
               </label>
-              <label class="uk-input-box" for="input-box-4">
+              <label class="uk-input-box" for="group-2">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-4"
+                  id="group-2"
+                  type="text"
+                  placeholder="placeholder"
+                  aria-label="Input"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <p>Для disabled добавляем обертке класс <code>.uk-form-disabled</code></p>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+          <div>
+            <div class="uk-input-group uk-form-disabled">
+              <input class="uk-input" type="text" placeholder="НМЦ от ₽" aria-label="НМЦ от ₽" />
+              <input class="uk-input" type="text" placeholder="до ₽" aria-label="до ₽" />
+            </div>
+          </div>
+          <div>
+            <div class="uk-input-group uk-form-disabled">
+              <label class="uk-input-box" for="group-1">
+                <span>Заголовок поля</span>
+                <input
+                  class="uk-input"
+                  id="group-1"
+                  type="text"
+                  placeholder="placeholder"
+                  aria-label="Input"
+                />
+              </label>
+              <label class="uk-input-box" for="group-2">
+                <span>Заголовок поля</span>
+                <input
+                  class="uk-input"
+                  id="group-2"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
@@ -249,13 +298,14 @@
               <input class="uk-input" type="text" placeholder="до ₽" aria-label="до ₽" />
             </div>
           </div>
-          <div></div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
           <div>
-            <label class="uk-input-box uk-form-danger" for="input-box-1">
+            <label class="uk-input-box uk-form-danger" for="states-1">
               <span>Text</span>
               <input
                 class="uk-input"
-                id="input-box-1"
+                id="states-1"
                 type="text"
                 placeholder="placeholder"
                 aria-label="Input"
@@ -264,21 +314,21 @@
           </div>
           <div>
             <div class="uk-input-group uk-form-danger">
-              <label class="uk-input-box" for="input-box-3">
+              <label class="uk-input-box" for="states-2">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-3"
+                  id="states-2"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
                 />
               </label>
-              <label class="uk-input-box" for="input-box-4">
+              <label class="uk-input-box" for="states-3">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-4"
+                  id="states-3"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
@@ -302,13 +352,14 @@
               <input class="uk-input" type="text" placeholder="до ₽" aria-label="до ₽" />
             </div>
           </div>
-          <div></div>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
           <div>
-            <label class="uk-input-box uk-form-success" for="input-box-1">
+            <label class="uk-input-box uk-form-success" for="states-4">
               <span>Text</span>
               <input
                 class="uk-input"
-                id="input-box-1"
+                id="states-4"
                 type="text"
                 placeholder="placeholder"
                 aria-label="Input"
@@ -317,21 +368,21 @@
           </div>
           <div>
             <div class="uk-input-group uk-form-success">
-              <label class="uk-input-box" for="input-box-3">
+              <label class="uk-input-box" for="states-5">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-3"
+                  id="states-5"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
                 />
               </label>
-              <label class="uk-input-box" for="input-box-4">
+              <label class="uk-input-box" for="states-6">
                 <span>Заголовок поля</span>
                 <input
                   class="uk-input"
-                  id="input-box-4"
+                  id="states-6"
                   type="text"
                   placeholder="placeholder"
                   aria-label="Input"
