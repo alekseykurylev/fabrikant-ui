@@ -15,6 +15,7 @@
 - [Button][button]
 - [Card][card]
 - [Form][form]
+- [Icon][icon]
 - [Label][label]
 - [Subnav][subnav]
 - [Typography][typography]
@@ -32,5 +33,6 @@
 [card]: /src/components/ui/card/card.html
 [badge]: /src/components/ui/badge/badge.html
 [subnav]: /src/components/ui/subnav/subnav.html
+[icon]: /src/components/ui/icon/icon.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
