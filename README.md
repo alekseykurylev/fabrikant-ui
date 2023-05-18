@@ -10,11 +10,13 @@
 ### Components (UI):
 
 - [Alert][alert]
+- [Badge][badge]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Card][card]
 - [Form][form]
 - [Label][label]
+- [Subnav][subnav]
 - [Typography][typography]
 
 [uikit]: https://getuikit.com/
@@ -28,5 +30,7 @@
 [breadcrumb]: /src/components/ui/breadcrumb/breadcrumb.html
 [label]: /src/components/ui/label/label.html
 [card]: /src/components/ui/card/card.html
+[badge]: /src/components/ui/badge/badge.html
+[subnav]: /src/components/ui/subnav/subnav.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
