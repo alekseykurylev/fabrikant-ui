@@ -9,25 +9,29 @@
 
 @mixin hook-alert-primary() {
   border-color: var(--color-cerulean-500);
-  a {
+  a,
+  .uk-icon {
     color: var(--color-cerulean-link);
   }
 }
 @mixin hook-alert-success() {
   border-color: var(--color-success-500);
-  a {
+  a,
+  .uk-icon {
     color: var(--color-success-link);
   }
 }
 @mixin hook-alert-warning() {
   border-color: var(--color-warning-500);
-  a {
+  a,
+  .uk-icon {
     color: var(--color-warning-link);
   }
 }
 @mixin hook-alert-danger() {
   border-color: var(--color-alarm-500);
-  a {
+  a,
+  .uk-icon {
     color: var(--color-alarm-500);
   }
 }
