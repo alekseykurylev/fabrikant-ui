@@ -58,6 +58,9 @@
         text-decoration: none;
       }
     }
+    .uk-alert-close:hover {
+      color: var(--color-cerulean-link-hover);
+    }
   }
 
   .uk-alert[class^="uk-informer-"] {
