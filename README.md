@@ -12,6 +12,7 @@
 - [Alert][alert]
 - [Button][button]
 - [Form][form]
+- [Typography][typography]
 
 [uikit]: https://getuikit.com/
 [home]: /src/page/home.html
@@ -20,5 +21,6 @@
 [button]: /src/components/ui/button/button.html
 [form]: /src/components/ui/form/form.html
 [alert]: /src/components/ui/alert/alert.html
+[alert]: /src/components/ui/typography/typography.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
