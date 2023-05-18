@@ -13,6 +13,7 @@
 - [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Form][form]
+- [Label][label]
 - [Typography][typography]
 
 [uikit]: https://getuikit.com/
@@ -24,5 +25,6 @@
 [alert]: /src/components/ui/alert/alert.html
 [typography]: /src/components/ui/typography/typography.html
 [breadcrumb]: /src/components/ui/breadcrumb/breadcrumb.html
+[label]: /src/components/ui/label/label.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
