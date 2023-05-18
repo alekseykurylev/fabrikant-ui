@@ -2,6 +2,7 @@
   font-size: 12px;
   line-height: 16px;
   border: 1px solid;
+  padding-right: 16px;
   border-color: var(--color-mystic-300);
   border-radius: var(--border-radius);
 
@@ -62,7 +63,6 @@
   .uk-alert[class^="uk-informer-"] {
     font-size: 14px;
     line-height: 20px;
-    padding-right: 16px;
     color: var(--color-mine-shaft-900);
     border: none;
   }

@@ -23,6 +23,9 @@
       <div class="uk-container">
         <h1>Alert</h1>
         <p>Атрибут <code>uk-alert</code> обязателен для всех</p>
+        <p>
+          Для закрытия используем тег <code>&#60;a&#62;</code> с атрибутом <code>uk-close</code>
+        </p>
         <p><code>.uk-alert-*</code> - используем только на сером фоне</p>
         <p uk-margin>
           <code>.uk-alert-primary</code>
@@ -32,7 +35,6 @@
           <code>.uk-alert-nightmare</code>
         </p>
         <div class="uk-alert-primary" uk-alert>
-          <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
             <div class="uk-width-auto">
               <span uk-icon="alert"></span>
@@ -50,10 +52,12 @@
                 <a href="#">Ссылка для перехода</a>
               </p>
             </div>
+            <div class="uk-width-auto">
+              <a uk-close></a>
+            </div>
           </div>
         </div>
         <div class="uk-alert-success" uk-alert>
-          <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
             <div class="uk-width-auto">
               <span uk-icon="info"></span>
@@ -64,10 +68,12 @@
                 incididunt <a href="#">success</a>
               </p>
             </div>
+            <div class="uk-width-auto">
+              <a uk-close></a>
+            </div>
           </div>
         </div>
         <div class="uk-alert-warning" uk-alert>
-          <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
             <div class="uk-width-auto">
               <span uk-icon="alert"></span>
@@ -78,10 +84,12 @@
                 incididunt <a href="#">warning</a>
               </p>
             </div>
+            <div class="uk-width-auto">
+              <a uk-close></a>
+            </div>
           </div>
         </div>
         <div class="uk-alert-danger" uk-alert>
-          <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
             <div class="uk-width-auto">
               <span uk-icon="alert"></span>
@@ -92,10 +100,12 @@
                 incididunt <a href="#">danger</a>
               </p>
             </div>
+            <div class="uk-width-auto">
+              <a uk-close></a>
+            </div>
           </div>
         </div>
         <div class="uk-alert-nightmare" uk-alert>
-          <a class="uk-alert-close" uk-close></a>
           <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
             <div class="uk-width-auto">
               <span uk-icon="alert"></span>
@@ -105,6 +115,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt <a href="#">nightmare</a>
               </p>
+            </div>
+            <div class="uk-width-auto">
+              <a uk-close></a>
             </div>
           </div>
         </div>
@@ -179,7 +192,7 @@
                 </p>
                 <p class="uk-margin-8">
                   В закупках, опубликованных <span class="uk-text-weight-700">до 1 июля 2023</span>,
-                  участие <span class="uk-text-weight-700">БЕСПЛАТНОЕ</span>
+                  участие <span class="uk-text-weight-700">БЕСПЛАТНОЕ</span> <a href="#">primary</a>
                 </p>
               </div>
             </div>
