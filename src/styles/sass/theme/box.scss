@@ -20,4 +20,8 @@
   .uk-box-large {
     padding: $global-medium-margin;
   }
+
+  .uk-box > :last-child {
+    margin-bottom: 0;
+  }
 }

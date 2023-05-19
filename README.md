@@ -13,6 +13,7 @@
 
 - [Alert][alert]
 - [Badge][badge]
+- [Box][box]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Card][card]
@@ -22,11 +23,11 @@
 - [Subnav][subnav]
 - [Typography][typography]
 
-[uikit]: https://getuikit.com/
 [home]: /src/page/home.html
 [news]: /src/page/news.html
 [header]: /src/components/header/header.html
 [footer]: /src/components/footer/footer.html
+[list-news]: /src/components/list-news/list-news.html
 [button]: /src/components/ui/button/button.html
 [form]: /src/components/ui/form/form.html
 [alert]: /src/components/ui/alert/alert.html
@@ -37,6 +38,8 @@
 [badge]: /src/components/ui/badge/badge.html
 [subnav]: /src/components/ui/subnav/subnav.html
 [icon]: /src/components/ui/icon/icon.html
-[list-news]: /src/components/list-news/list-news.html
+[box]: /src/components/ui/box/box.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
+
+[uikit]: https://getuikit.com/
