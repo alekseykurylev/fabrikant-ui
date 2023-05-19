@@ -21,6 +21,7 @@
 }
 
 .list-news li > a > span {
+  display: inline-block;
   font-size: 12px;
   color: var(--color-bali-hai-200);
   margin-bottom: 8px;
