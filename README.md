@@ -1,6 +1,7 @@
 ## Pages:
 
 - [Главная][home]
+- [Новости][news]
 
 ## Components:
 
@@ -23,6 +24,7 @@
 
 [uikit]: https://getuikit.com/
 [home]: /src/page/home.html
+[news]: /src/page/news.html
 [header]: /src/components/header/header.html
 [footer]: /src/components/footer/footer.html
 [button]: /src/components/ui/button/button.html
