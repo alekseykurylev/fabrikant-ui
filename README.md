@@ -1,3 +1,3 @@
 # Дизайн-система площадки fabrikant.ru
 
-[Документация](https://alekseykurylev.github.io/fabrikant-ui/src/)
+[Документация](https://alekseykurylev.github.io/fabrikant-ui/)

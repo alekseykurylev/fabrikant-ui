@@ -32,7 +32,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: "src",
+      baseDir: "./",
     },
     cors: true,
     notify: false,
