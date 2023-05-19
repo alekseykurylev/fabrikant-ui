@@ -7,7 +7,7 @@
 - [Header][header]
 - [Footer][footer]
 
-### Components (UI):
+### UI:
 
 - [Alert][alert]
 - [Badge][badge]
