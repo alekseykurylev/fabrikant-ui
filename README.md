@@ -4,8 +4,9 @@
 
 ## Components:
 
-- [Header][header]
 - [Footer][footer]
+- [Header][header]
+- [List News][list-news]
 
 ### UI:
 
@@ -34,5 +35,6 @@
 [badge]: /src/components/ui/badge/badge.html
 [subnav]: /src/components/ui/subnav/subnav.html
 [icon]: /src/components/ui/icon/icon.html
+[list-news]: /src/components/list-news/list-news.html
 
 <!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
