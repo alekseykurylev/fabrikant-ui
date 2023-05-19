@@ -1,7 +1,7 @@
 ## Pages:
 
 - [Главная][home]
-- [Новости][news]
+- [Новость][news]
 
 ## Components:
 
