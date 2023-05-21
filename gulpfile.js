@@ -10,12 +10,12 @@ import browser from "browser-sync";
 
 export const styles = () => {
   return gulp
-    .src("app/src/styles/sass/style.scss")
+    .src("src/styles/sass/style.scss")
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([csso]))
     .pipe(rename("fabrikant-ui.min.css"))
-    .pipe(gulp.dest("app/src/styles"))
+    .pipe(gulp.dest("src/styles"))
     .pipe(browser.stream());
 };
 
@@ -32,7 +32,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: "./app",
+      baseDir: "./src",
     },
     cors: true,
     notify: false,
@@ -44,10 +44,10 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("app/src/styles/**/*.scss", gulp.series(styles));
-  gulp.watch("app/src/components/**/*.css").on("change", browser.reload);
-  gulp.watch("app/src/page/**/*.css").on("change", browser.reload);
-  gulp.watch("app/src/**/**.html").on("change", browser.reload);
+  gulp.watch("src/styles/**/*.scss", gulp.series(styles));
+  gulp.watch("src/components/**/*.css").on("change", browser.reload);
+  gulp.watch("src/page/**/*.css").on("change", browser.reload);
+  gulp.watch("src/**/**.html").on("change", browser.reload);
 };
 
 export default gulp.series(styles, server, watcher);
