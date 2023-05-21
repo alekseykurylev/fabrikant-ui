@@ -1,3 +1,5 @@
+![fabrikant banner](https://github.com/alekseykurylev/fabrikant-ui/assets/8526127/22273cb8-0cb1-4ef4-a945-d4023be6763b)
+
 # Дизайн система fabrikant-ui
 
 Библиотека готовых интерфейсных элементов и правил их взаимодействия. Основа, из которой легко построить интерфейс – для любой задачи.
@@ -36,8 +38,6 @@
 - [Label][label]
 - [Subnav][subnav]
 - [Typography][typography]
-
-##
 
 [figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
 [getuikit]: https://github.com/uikit/uikit
