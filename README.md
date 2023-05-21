@@ -1,6 +1,10 @@
-# Дизайн-система площадки fabrikant.ru
+# Дизайн система fabrikant-ui
 
-Библиотека готовых элементов интерфейса и правил их взаимодействия. Основа, из которой легко построить интерфейс – для любой задачи.
+Библиотека готовых интерфейсных элементов и правил их взаимодействия. Основа, из которой легко построить интерфейс – для любой задачи.
+
+Данная библиотека построена на базе модульного front-end фреймворка [UIkit] [getuikit]. Все базовые элементы фреймворка адаптированы под дизайн систему площадки fabrikant.ru.
+
+Дизайн система в [Figma] [figmacom]
 
 ## Pages:
 
@@ -33,6 +37,10 @@
 - [Subnav][subnav]
 - [Typography][typography]
 
+##
+
+[figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
+[getuikit]: https://github.com/uikit/uikit
 [home]: https://alekseykurylev.github.io/fabrikant-ui/src/page/home.html
 [news]: https://alekseykurylev.github.io/fabrikant-ui/src/page/news.html
 [header]: https://alekseykurylev.github.io/fabrikant-ui/src/components/header/header.html
@@ -49,5 +57,3 @@
 [subnav]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/subnav/subnav.html
 [icon]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/icon/icon.html
 [box]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/box/box.html
-
-<!-- Fabrikant UI Kit build on [UIkit][uikit]. -->
