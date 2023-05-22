@@ -22,6 +22,7 @@
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
+- [Search Bar][search-bar]
 
 ## UI:
 
@@ -46,6 +47,7 @@
 [header]: https://alekseykurylev.github.io/fabrikant-ui/src/components/header/header.html
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
+[search-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/search-bar/search-bar.html
 [button]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/button/button.html
 [form]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/form/form.html
 [alert]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/alert/alert.html

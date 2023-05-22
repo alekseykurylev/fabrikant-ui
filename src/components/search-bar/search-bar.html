@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../styles/fabrikant-ui.min.css" />
+    <link rel="stylesheet" href="./search-bar.css" />
+
+    <script src="../../js/uikit.min.js"></script>
+    <script src="../../js/uikit-icons-theme.min.js"></script>
+
+    <title>Search Bar</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Search Bar</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://github.com/alekseykurylev/fabrikant-ui/tree/main/src/components/search-bar"
+            target="_blank">
+            <span class="uk-text-secondary" uk-icon="github"></span>
+          </a>
+          <a class="uk-button uk-button-secondary uk-button-small" href="#" target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="uk-margin">
+      <section class="uk-section uk-padding-remove-bottom">
+        <div class="uk-container uk-container-expand">
+          <div class="uk-flex-bottom uk-margin-8-bottom" uk-grid>
+            <div class="uk-width-expand@s">
+              <h1 class="uk-margin-remove">Поиск по закупкам</h1>
+            </div>
+            <div class="uk-width-auto@s">
+              <div class="uk-flex-middle uk-flex-between uk-grid-xsmall" uk-grid>
+                <a class="uk-flex uk-flex-middle uk-text-small" href="#">
+                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
+                  Расширенный поиск
+                </a>
+                <a class="uk-flex uk-flex-middle uk-text-small uk-link-muted-bh500" href="#">
+                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="close-circle"></span>
+                  Очистить
+                </a>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="search-bar uk-box uk-box-small">
+              <div class="uk-child-width-auto uk-flex-middle uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <input
+                    class="uk-input"
+                    type="text"
+                    placeholder="Параметры поиска: Наименование комиссии полностью или частично (не менее трёх символов)" />
+                </div>
+                <div class="uk-visible@m">
+                  <div class="uk-input-group">
+                    <input class="uk-input" type="text" placeholder="Дата от" />
+                    <input class="uk-input" type="text" placeholder="до" />
+                  </div>
+                </div>
+                <div class="uk-visible@s">
+                  <div class="uk-input-group">
+                    <input class="uk-input" type="text" placeholder="НМЦ от" />
+                    <input class="uk-input" type="text" placeholder="до" />
+                  </div>
+                </div>
+                <div>
+                  <button type="button" class="uk-button uk-button-primary uk-flex uk-flex-middle">
+                    <span uk-icon="search"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="uk-margin">
+      <section class="uk-section uk-padding-remove-bottom">
+        <div class="uk-container uk-container-expand">
+          <div class="uk-flex-bottom uk-margin-8-bottom" uk-grid>
+            <div class="uk-width-expand@s">
+              <h1 class="uk-margin-remove">Реестр опубликованных закупок по 44-ФЗ</h1>
+            </div>
+            <div class="uk-width-auto@s">
+              <div class="uk-flex-middle uk-flex-between uk-grid-xsmall" uk-grid>
+                <a class="uk-flex uk-flex-middle uk-text-small" href="#">
+                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
+                  Расширенный поиск
+                </a>
+                <a class="uk-flex uk-flex-middle uk-text-small uk-link-muted-bh500" href="#">
+                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="close-circle"></span>
+                  Очистить
+                </a>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="search-bar uk-box uk-box-small">
+              <div class="uk-child-width-auto uk-flex-middle uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <input class="uk-input" type="text" placeholder="Поиск по номеру или ключевому слову" />
+                </div>
+                <div class="uk-visible@m">
+                  <div class="uk-input-group">
+                    <input class="uk-input" type="text" placeholder="Дата от" />
+                    <input class="uk-input" type="text" placeholder="до" />
+                  </div>
+                </div>
+                <div class="uk-visible@s">
+                  <div class="uk-input-group">
+                    <input class="uk-input" type="text" placeholder="НМЦ от" />
+                    <input class="uk-input" type="text" placeholder="до" />
+                  </div>
+                </div>
+                <div>
+                  <button type="button" class="uk-button uk-button-primary uk-flex uk-flex-middle">
+                    <span uk-icon="search"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
