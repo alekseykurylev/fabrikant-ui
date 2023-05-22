@@ -1,25 +1,27 @@
 @mixin hook-subnav-misc() {
-  .uk-subnav-dot { 
-    margin-left: -(($subnav-dot-margin-horizontal * 2) + $subnav-dot-width); 
+  .uk-subnav-dot {
+    margin-left: -(($subnav-dot-margin-horizontal * 2) + $subnav-dot-width);
   }
 
   .uk-subnav-dot > * {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   .uk-subnav-dot > ::before {
-      content: "";
-      width: $subnav-dot-width;
-      height: $subnav-dot-height;
-      background-color: transparent;
-      border-radius: 500px;
-      margin-left: ($subnav-dot-margin-horizontal - $subnav-margin-horizontal);
-      margin-right: $subnav-dot-margin-horizontal;
+    content: '';
+
+    width: $subnav-dot-width;
+    height: $subnav-dot-height;
+    margin-right: $subnav-dot-margin-horizontal;
+    margin-left: ($subnav-dot-margin-horizontal - $subnav-margin-horizontal);
+
+    background-color: transparent;
+    border-radius: 500px;
   }
 
-  .uk-subnav-dot > :nth-child(n+2):not(.uk-first-column)::before {
-      background-color: var(--color-cerulean-500);
+  .uk-subnav-dot > :nth-child(n + 2):not(.uk-first-column)::before {
+    background-color: var(--color-cerulean-500);
   }
 
   .uk-subnav-small.uk-subnav-small > * {
@@ -27,11 +29,56 @@
   }
 
   .uk-subnav-small.uk-subnav-dot {
-      margin-left: -(($subnav-dot-margin-small-horizontal * 2) + $subnav-dot-width); 
+    margin-left: -(($subnav-dot-margin-small-horizontal * 2) + $subnav-dot-width);
   }
 
   .uk-subnav-small.uk-subnav-dot > ::before {
-      margin-left: ($subnav-dot-margin-small-horizontal - $subnav-margin-small-horizontal);
-      margin-right: $subnav-dot-margin-small-horizontal;
+    margin-right: $subnav-dot-margin-small-horizontal;
+    margin-left: ($subnav-dot-margin-small-horizontal - $subnav-margin-small-horizontal);
+  }
+
+  .uk-subnav-tab {
+    margin-bottom: 0;
+    margin-bottom: -1px;
+    margin-left: -4px;
+  }
+
+  .uk-subnav-tab > * {
+    padding-left: 4px;
+  }
+
+  .uk-subnav-tab > * > :first-child {
+    padding: 12px 24px;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-mine-shaft-900);
+
+    background-color: var(--color-mystic-300-a-30);
+    border: 1px solid var(--color-mystic-300-a-30);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .uk-subnav-tab > * > :first-child:hover {
+    background-color: tomato;
+  }
+
+  .uk-subnav-tab > * > :first-child:active {
+    background-color: rgb(254 75 44);
+  }
+
+  .uk-subnav-tab > .uk-active > a {
+    position: relative;
+    z-index: 1;
+
+    color: var(--color-mine-shaft-900);
+
+    background-color: #fff;
+    border-color: var(--color-mystic-300);
+  }
+
+  .uk-subnav-tab + * {
+    border-top-left-radius: 0;
   }
 }
