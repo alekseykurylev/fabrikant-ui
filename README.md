@@ -21,7 +21,7 @@
 
 - [Footer][footer]
 - [Header][header]
-- [List news][list-news]
+- [List News][list-news]
 
 ## UI:
 
@@ -41,8 +41,8 @@
 
 [figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
 [getuikit]: https://github.com/uikit/uikit
-[home]: https://alekseykurylev.github.io/fabrikant-ui/src/page/home.html
-[news]: https://alekseykurylev.github.io/fabrikant-ui/src/page/news.html
+[home]: https://alekseykurylev.github.io/fabrikant-ui/src/page/home/home.html
+[news]: https://alekseykurylev.github.io/fabrikant-ui/src/page/news/news.html
 [header]: https://alekseykurylev.github.io/fabrikant-ui/src/components/header/header.html
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
