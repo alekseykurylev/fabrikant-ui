@@ -1,6 +1,13 @@
 @mixin hook-label() {
   font-size: 10px;
+  font-weight: 700;
   line-height: 1.6;
   border-radius: 2px;
-  font-weight: 700;
+}
+
+@mixin hook-label-misc() {
+  .uk-label-muted {
+    color: var(--color-bali-hai-500);
+    background-color: var(--color-mystic-300);
+  }
 }
