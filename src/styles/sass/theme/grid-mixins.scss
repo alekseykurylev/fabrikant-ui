@@ -1,14 +1,37 @@
 @mixin hook-grid-misc() {
-  /* Horizontal */
   .uk-grid-xsmall,
-  .uk-grid-column-xsmall { margin-left: -8px; }
-  .uk-grid-xsmall > *,
-  .uk-grid-column-xsmall > *  { padding-left: 8px; }
+  .uk-grid-column-xsmall {
+    margin-left: -12px;
+  }
 
-  /* Vertical */
+  .uk-grid-xsmall > *,
+  .uk-grid-column-xsmall > * {
+    padding-left: 12px;
+  }
+
   .uk-grid + .uk-grid-xsmall,
   .uk-grid + .uk-grid-row-xsmall,
   .uk-grid-xsmall > .uk-grid-margin,
   .uk-grid-row-xsmall > .uk-grid-margin,
-  * + .uk-grid-margin-xsmall { margin-top: 8px; }
+  * + .uk-grid-margin-xsmall {
+    margin-top: 12px;
   }
+
+  .uk-grid-8,
+  .uk-grid-column-8 {
+    margin-left: -8px;
+  }
+
+  .uk-grid-8 > *,
+  .uk-grid-column-8 > * {
+    padding-left: 8px;
+  }
+
+  .uk-grid + .uk-grid-8,
+  .uk-grid + .uk-grid-row-8,
+  .uk-grid-8 > .uk-grid-margin,
+  .uk-grid-row-8 > .uk-grid-margin,
+  * + .uk-grid-margin-8 {
+    margin-top: 8px;
+  }
+}
