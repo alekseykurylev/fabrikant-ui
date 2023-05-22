@@ -1,10 +1,13 @@
 .uk-box {
-  display: flow-root;
   position: relative;
+
+  display: flow-root;
+
   box-sizing: border-box;
+  padding: $global-small-margin;
+
   background-color: var(--color-white);
   border: 1px solid var(--color-mystic-300);
-  padding: $global-small-margin;
   border-radius: var(--border-radius);
 }
 
@@ -23,5 +26,10 @@
 
   .uk-box > :last-child {
     margin-bottom: 0;
+  }
+
+  .uk-box-96 {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
