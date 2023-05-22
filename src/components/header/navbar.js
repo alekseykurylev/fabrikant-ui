@@ -1,17 +1,17 @@
 (() => {
-  const navbars = document.querySelectorAll("[uk-navbar]");
+  const navbars = document.querySelectorAll('[uk-navbar]');
 
   navbars.forEach((navbar) => {
-    const list = navbar.querySelector("ul");
-    const items = list.querySelectorAll(":scope > li:not(.more)");
-    const itemLast = list.querySelector(":scope > li:last-child");
+    const list = navbar.querySelector('ul');
+    const items = list.querySelectorAll(':scope > li:not(.more)');
+    const itemLast = list.querySelector(':scope > li:last-child');
     let listMore = [];
 
-    if (itemLast.classList.contains("more")) {
-      listMore = [...itemLast.querySelector(".uk-nav").children];
+    if (itemLast.classList.contains('more')) {
+      listMore = [...itemLast.querySelector('.uk-nav').children];
     } else {
       list.insertAdjacentHTML(
-        "beforeend",
+        'beforeend',
         `
         <li class="more">
           <a href="#">Ещё...</a>
@@ -21,8 +21,8 @@
     }
 
     const handleOverflowNavbar = () => {
-      const itemMore = list.querySelector(":scope > li.more");
-      const itemMoreList = itemMore.querySelector(":scope > .uk-nav");
+      const itemMore = list.querySelector(':scope > li.more');
+      const itemMoreList = itemMore.querySelector(':scope > .uk-nav');
 
       itemMoreList.replaceChildren(...listMore);
       items.forEach((item) => {
@@ -37,7 +37,7 @@
         if (navbarWidth >= stopWidth + item.offsetWidth) {
           stopWidth += item.offsetWidth;
         } else {
-          itemMoreList.insertAdjacentHTML("afterbegin", item.outerHTML);
+          itemMoreList.insertAdjacentHTML('afterbegin', item.outerHTML);
           item.hidden = true;
         }
       });
@@ -48,17 +48,17 @@
         itemMore.hidden = true;
       }
 
-      const itemMoreDrop = itemMoreList.querySelectorAll("[uk-drop]");
+      const itemMoreDrop = itemMoreList.querySelectorAll('[uk-drop]');
       if (itemMoreDrop) {
         itemMoreDrop.forEach((item) => {
           UIkit.drop(item, {
-            pos: "right-top",
+            pos: 'right-top'
           });
         });
       }
     };
 
     handleOverflowNavbar();
-    window.addEventListener("resize", handleOverflowNavbar);
+    window.addEventListener('resize', handleOverflowNavbar);
   });
 })();
