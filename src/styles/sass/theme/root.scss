@@ -26,8 +26,10 @@
   --color-mystic-100: #edf4fa;
   --color-mystic-50: #f5f7f9;
   --color-mystic-40: #f7f9fc;
-  --color-mystic-300-a-20: rgb(220 227 235 / 20%);
+  --color-mystic-300-a-70: #dce3ebb3;
+  --color-mystic-300-a-50: #dce3eb80;
   --color-mystic-300-a-30: rgb(220 227 235 / 30%);
+  --color-mystic-300-a-20: rgb(220 227 235 / 20%);
   --color-mystic-20: #fbfcfd;
   --color-astronaut-blue-500: #004065;
   --color-blaze-orange-500: #ff7000;
@@ -42,6 +44,12 @@
   --color-warning-100: #fff6e5;
   --color-warning-link: #d26500;
   --color-purple-500: #9241fa;
+  --color-comp-table-cell-lock-hover: rgb(220 227 235 / 40%);
+  --color-comp-table-cell-accent-hover: #edfaff;
+  --color-comp-table-cell-selected-hover: #e6eff7;
+  --color-comp-table-cell-alert-hover: #fae8e6;
+  --color-comp-table-cell-warn-hover: #fcefd4;
+  --color-comp-table-cell-hover: #f5f8fa;
   --card-shadow: 0px 3px 2px rgb(0 0 0 / 2%), 0px 7px 5px rgb(0 0 0 / 3%), 0px 13px 10px rgb(0 0 0 / 4%),
     0px 22px 18px rgb(0 0 0 / 4%);
   --border-radius: 8px;
