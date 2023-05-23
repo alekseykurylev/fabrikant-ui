@@ -197,7 +197,7 @@
     cursor: pointer;
     user-select: none;
 
-    display: inline-flex;
+    display: flex;
     align-items: center;
   }
 
@@ -215,6 +215,10 @@
     transition: background-color 100ms linear;
 
     -moz-user-focus: ignore;
+  }
+
+  .uk-tumbler-text {
+    line-height: 16px;
   }
 
   .uk-tumbler-button::-moz-focus-inner {
