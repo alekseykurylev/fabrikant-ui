@@ -31,7 +31,6 @@
 Базовые интерфейсные компоненты, из которых создаются более сложные компоненты и страницы.
 
 - [Alert][alert]
-- [Badge][badge]
 - [Box][box]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
