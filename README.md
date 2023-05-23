@@ -24,7 +24,7 @@
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
-- [Search Bar][search-bar]
+- [Search Bar][search-bar] [in progress]
 
 ## UI:
 
