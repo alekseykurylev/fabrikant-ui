@@ -1,42 +1,4 @@
 @mixin hook-subnav-misc() {
-  .uk-subnav-dot {
-    margin-left: -(($subnav-dot-margin-horizontal * 2) + $subnav-dot-width);
-  }
-
-  .uk-subnav-dot > * {
-    display: flex;
-    align-items: center;
-  }
-
-  .uk-subnav-dot > ::before {
-    content: '';
-
-    width: $subnav-dot-width;
-    height: $subnav-dot-height;
-    margin-right: $subnav-dot-margin-horizontal;
-    margin-left: ($subnav-dot-margin-horizontal - $subnav-margin-horizontal);
-
-    background-color: transparent;
-    border-radius: 500px;
-  }
-
-  .uk-subnav-dot > :nth-child(n + 2):not(.uk-first-column)::before {
-    background-color: var(--color-cerulean-500);
-  }
-
-  .uk-subnav-small.uk-subnav-small > * {
-    padding-left: $subnav-margin-small-horizontal;
-  }
-
-  .uk-subnav-small.uk-subnav-dot {
-    margin-left: -(($subnav-dot-margin-small-horizontal * 2) + $subnav-dot-width);
-  }
-
-  .uk-subnav-small.uk-subnav-dot > ::before {
-    margin-right: $subnav-dot-margin-small-horizontal;
-    margin-left: ($subnav-dot-margin-small-horizontal - $subnav-margin-small-horizontal);
-  }
-
   .uk-subnav-tab {
     margin-bottom: 0;
     margin-bottom: -1px;
