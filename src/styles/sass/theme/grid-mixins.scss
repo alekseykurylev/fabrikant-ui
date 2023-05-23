@@ -34,4 +34,31 @@
   * + .uk-grid-margin-8 {
     margin-top: 8px;
   }
+
+  // Point
+
+  .uk-grid-point > * {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .uk-grid-point > :not(.uk-first-column)::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 8px;
+    transform: translateY(-50%);
+
+    width: 4px;
+    height: 4px;
+
+    background-color: var(--color-cerulean-500);
+    border-radius: 500px;
+  }
+
+  .uk-grid-point {
+    margin-left: -20px;
+  }
 }
