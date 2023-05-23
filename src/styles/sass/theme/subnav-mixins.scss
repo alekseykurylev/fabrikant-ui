@@ -61,11 +61,11 @@
   }
 
   .uk-subnav-tab > * > :first-child:hover {
-    background-color: tomato;
+    background-color: var(--color-mystic-300-a-50);
   }
 
   .uk-subnav-tab > * > :first-child:active {
-    background-color: rgb(254 75 44);
+    background-color: var(--color-mystic-300-a-70);
   }
 
   .uk-subnav-tab > .uk-active > a {
