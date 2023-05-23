@@ -11,6 +11,10 @@
   border-radius: var(--border-radius);
 }
 
+.uk-box + .uk-box {
+  margin-top: 32px;
+}
+
 @media (min-width: $breakpoint-small) {
   .uk-box {
     padding: $global-margin;
