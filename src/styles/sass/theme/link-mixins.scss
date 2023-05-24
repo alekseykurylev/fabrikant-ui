@@ -22,4 +22,13 @@
   .uk-link-muted-bh500:hover {
     color: var(--color-cerulean-link-hover);
   }
+
+  .uk-link-heading {
+    cursor: pointer;
+    color: var(--color-cerulean-500);
+  }
+
+  .uk-link-heading:hover {
+    color: var(--color-cerulean-link-hover);
+  }
 }
