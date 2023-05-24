@@ -23,6 +23,8 @@
 @import 'theme/box';
 @import 'theme/form';
 @import 'theme/grid';
+@import 'theme/table';
+@import 'theme/width';
 
 // 2. Import default variables and available mixins.
 @import '../../../node_modules/uikit/src/scss/variables';
@@ -48,6 +50,7 @@
 @import 'theme/link-mixins';
 @import 'theme/form-mixins';
 @import 'theme/accordion-mixins';
+@import 'theme/table-mixins';
 
 // 4. Import UIkit
 @import '../../../node_modules/uikit/src/scss/uikit';

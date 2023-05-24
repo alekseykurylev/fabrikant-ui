@@ -1,0 +1,32 @@
+@mixin hook-table() {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin hook-table-header-cell() {
+  line-height: 16px;
+  vertical-align: top;
+}
+
+@mixin hook-table-misc() {
+  .uk-table-wrap {
+    border: 1px solid var(--color-mystic-300);
+    border-radius: 8px;
+  }
+
+  .uk-table-wrap > .uk-table {
+    margin: 0;
+  }
+
+  .uk-table-wrap > .uk-table > * > * > *:not(:first-child) {
+    border-left: 1px solid var(--color-mystic-300);
+  }
+
+  .uk-table-wrap > .uk-table > * > * > * {
+    border-top: 1px solid var(--color-mystic-300);
+  }
+
+  .uk-table-wrap > .uk-table > *:first-child > *:first-child > * {
+    border-top: none;
+  }
+}
