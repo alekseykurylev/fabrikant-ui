@@ -9,7 +9,7 @@
     padding-left: 4px;
   }
 
-  .uk-subnav-tab > * > :first-child {
+  .uk-subnav-tab > * > a {
     padding: 12px 24px;
 
     font-size: 12px;
@@ -22,11 +22,11 @@
     border-radius: 8px 8px 0 0;
   }
 
-  .uk-subnav-tab > * > :first-child:hover {
+  .uk-subnav-tab > * > a:hover {
     background-color: var(--color-mystic-300-a-50);
   }
 
-  .uk-subnav-tab > * > :first-child:active {
+  .uk-subnav-tab > * > a:active {
     background-color: var(--color-mystic-300-a-70);
   }
 
@@ -38,6 +38,10 @@
 
     background-color: #fff;
     border-color: var(--color-mystic-300);
+  }
+
+  .uk-subnav-tab > .uk-active > a:hover {
+    background-color: #fff;
   }
 
   .uk-subnav-tab + * {
