@@ -16,6 +16,7 @@
 - [Новость][news]
 - [Извещение (электронный аукцион)][notice-auction] [in progress]
 - [404][404]
+- [500][500]
 
 ## Components:
 
@@ -47,6 +48,7 @@
 [news]: https://alekseykurylev.github.io/fabrikant-ui/src/page/news/news.html
 [notice-auction]: https://alekseykurylev.github.io/fabrikant-ui/src/page/notice/notice-auction.html
 [404]: https://alekseykurylev.github.io/fabrikant-ui/src/page/404/404.html
+[500]: https://alekseykurylev.github.io/fabrikant-ui/src/page/500/500.html
 [header]: https://alekseykurylev.github.io/fabrikant-ui/src/components/header/header.html
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
