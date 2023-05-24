@@ -1,19 +1,21 @@
 @mixin hook-nav-misc() {
   .uk-nav.uk-drop {
+    width: 280px;
+    padding: 8px 0;
+
     background-color: var(--color-white);
     border: 1px solid #dce3eb;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    padding: 8px 0;
-    width: 280px;
   }
 
   .uk-nav.uk-drop li > a {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    color: var(--color-mine-shaft-900);
     padding: 10px 16px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--color-mine-shaft-900);
   }
 
   .uk-nav.uk-drop li > a:hover {
@@ -37,14 +39,16 @@
   }
 
   .uk-nav.uk-drop li > a[aria-haspopup]::after {
-    content: "";
+    content: '';
+
     width: 24px;
     height: 24px;
     margin-left: auto;
     padding-left: 16px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23009DDB' stroke-width='2' d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center right;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23009DDB' stroke-width='2' d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
   }
 
   .uk-nav.uk-drop li > a[aria-haspopup]:hover::after {
@@ -82,5 +86,49 @@
 
   .uk-nav-muted > li > a:hover {
     color: var(--color-bali-hai-300);
+  }
+
+  .uk-nav-aside {
+    padding: 12px 0;
+    background-color: #fff;
+    border: 1px solid var(--color-mystic-300);
+    border-radius: 8px;
+  }
+
+  .uk-nav-aside > li > a {
+    padding: 14px 24px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-cerulean-link);
+  }
+
+  .uk-nav-aside > li > a:hover {
+    color: var(--color-cerulean-link-hover);
+  }
+
+  .uk-nav-aside > .uk-active > a {
+    position: relative;
+    color: var(--color-mine-shaft-900);
+
+    // box-shadow: inset 4px 0 0 0 red;
+  }
+
+  .uk-nav-aside > .uk-active > a::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    width: 4px;
+    height: 100%;
+
+    background-color: var(--color-cerulean-500);
+  }
+
+  .uk-nav-aside > .uk-active > a:hover {
+    color: var(--color-mine-shaft-900);
   }
 }
