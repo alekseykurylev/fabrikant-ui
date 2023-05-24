@@ -211,7 +211,7 @@
                   <div class="uk-flex">
                     <span uk-icon="clock" class="uk-icon-size-16 uk-margin-8-right"></span>
                     <div>
-                      <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                      <ul class="uk-grid-point uk-child-width-auto" uk-grid>
                         <li>15.01.2022</li>
                         <li>12:42:45 (MSK +4)</li>
                       </ul>
@@ -240,7 +240,7 @@
                 <div class="uk-margin-12-left">
                   <div class="uk-text-xsmall uk-text-muted-bh200">Местное время</div>
                   <div class="uk-text-small">
-                    <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                    <ul class="uk-grid-point uk-child-width-auto" uk-grid>
                       <li>15.01.2022</li>
                       <li>12:42:45 (MSK +4)</li>
                     </ul>
@@ -569,7 +569,7 @@
                 </div>
 
                 <hr />
-                <h2>Общие сведения о закупке</h2>
+                <h2 id="anchor-1">Общие сведения о закупке</h2>
                 <div class="uk-child-width-1-2@xl" uk-grid>
                   <div>
                     <div class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
@@ -661,7 +661,7 @@
 
                 <hr />
 
-                <h2>Сведения об организаторе закупки</h2>
+                <h2 id="anchor-2">Сведения об организаторе закупки</h2>
                 <div class="uk-child-width-1-2@s" uk-grid>
                   <div>
                     <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
@@ -720,7 +720,7 @@
 
                 <hr />
 
-                <h2>Контактная информация</h2>
+                <h2 id="anchor-3">Контактная информация</h2>
                 <div>
                   <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
                     Роль организации, осуществляющей закупку
@@ -766,7 +766,7 @@
 
                 <hr />
 
-                <h2>Сроки проведения закупки и подачи заявок</h2>
+                <h2 id="anchor-4">Сроки проведения закупки и подачи заявок</h2>
                 <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
                   <div>
                     <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
@@ -805,8 +805,9 @@
                   художественных стилей прошлого с авангардистскими стратегиями
                 </p>
               </div>
+
               <div class="uk-box">
-                <h2>Преимущества</h2>
+                <h2 id="anchor-5">Преимущества</h2>
                 <ul class="uk-list uk-list-large">
                   <li>
                     <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
@@ -996,13 +997,48 @@
                   </div>
                 </div>
               </div>
+
+              <div class="uk-box">123</div>
             </div>
 
-            <div class="uk-width-medium uk-visible@l">
-              <div class="uk-margin-40-top">
-                <div class="uk-box">aside</div>
+            <aside class="uk-width-auto uk-visible@l">
+              <div class="uk-width-medium uk-margin-40-top">
+                <div uk-sticky="offset: 32; end: aside;">
+                  <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset: 24">
+                    <li>
+                      <a href="#anchor-1">Основные сведения о закупке</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-2">Сведения об организаторе</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-3">Контактная информация</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-4">Регламентированные сроки по закупке</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-5">Преимущества, требования, ограничения</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-6">Сведения о заказчиках</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-7">Информация о предмете контракта</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-8">Документы по закупке</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-9">Запросы разъяснений</a>
+                    </li>
+                    <li>
+                      <a href="#anchor-10">Информация о контрактах по закупке</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
