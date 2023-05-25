@@ -18,6 +18,12 @@
   }
 
   @media (max-width: $breakpoint-xsmall-max) {
+    .uk-offcanvas-header,
+    .uk-offcanvas-body,
+    .uk-offcanvas-footer {
+      padding: 24px;
+    }
+
     .uk-offcanvas-flip .uk-offcanvas {
       left: 0;
     }
