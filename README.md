@@ -22,7 +22,7 @@
 
 Компоненты, которые могут включать в себя бизнес логику.
 
-- [Extended Search][extended-search]
+- [Extended Search][extended-search] [in progress]
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
