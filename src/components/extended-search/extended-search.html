@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../styles/fabrikant-ui.min.css" />
+
+    <script src="../../js/uikit.min.js"></script>
+    <script src="../../js/uikit-icons-theme.min.js"></script>
+
+    <title>Extended Search</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Extended Search</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://github.com/alekseykurylev/fabrikant-ui/tree/main/src/components/extended-search"
+            target="_blank">
+            <span class="uk-text-secondary" uk-icon="github"></span>
+          </a>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=2339-71297&t=NY36BD8OUBRUZWX8-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="uk-margin">
+      <section class="uk-section uk-padding-remove-bottom">
+        <div class="uk-container uk-container-xsmall">
+          <a class="uk-flex uk-flex-middle uk-text-small" href="#extended-search" uk-toggle>
+            <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
+            Расширенный поиск
+          </a>
+
+          <!-- This is the Extended Search off-canvas -->
+          <div id="extended-search" uk-offcanvas="flip: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+              <div class="uk-offcanvas-header">
+                <div class="uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-h1">Расширенный поиск</h4>
+                  </div>
+                  <div class="uk-width-auto">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>inputs</div>
+              <div class="uk-offcanvas-footer">
+                <div class="uk-child-width-expand@s uk-grid-small" uk-grid>
+                  <div>
+                    <button class="uk-button uk-button-default" type="button">
+                      <span uk-icon="filters-faw"></span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </button>
+                  </div>
+                  <div class="uk-width-auto@s">
+                    <div class="uk-flex">
+                      <button class="uk-button uk-button-default" type="button">Очистить</button>
+                      <button class="uk-button uk-button-primary uk-margin-12-left" type="button">Применить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

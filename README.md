@@ -22,6 +22,7 @@
 
 Компоненты, которые могут включать в себя бизнес логику.
 
+- [Extended Search][extended-search]
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
@@ -50,6 +51,7 @@
 [404]: https://alekseykurylev.github.io/fabrikant-ui/src/page/404/404.html
 [500]: https://alekseykurylev.github.io/fabrikant-ui/src/page/500/500.html
 [header]: https://alekseykurylev.github.io/fabrikant-ui/src/components/header/header.html
+[extended-search]: https://alekseykurylev.github.io/fabrikant-ui/src/components/extended-search/extended-search.html
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
 [search-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/search-bar/search-bar.html
