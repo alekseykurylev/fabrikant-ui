@@ -1,40 +1,34 @@
 $button-line-height: 46px;
 $button-small-line-height: 30px;
 $button-large-line-height: 62px;
-
 $button-font-size: 16px;
 $button-small-font-size: 14px;
 $button-large-font-size: 18px;
-
+$button-padding-horizontal: 16px;
 $button-small-padding-horizontal: 8px;
-
 $button-default-background: #fff;
 $button-default-color: var(--color-cerulean-500);
 $button-default-hover-background: #fff;
 $button-default-hover-color: var(--color-cerulean-500);
 $button-default-active-background: #fff;
 $button-default-active-color: var(--color-cerulean-500);
-
 $button-primary-background: var(--color-cerulean-500);
 $button-primary-color: #fff;
 $button-primary-hover-background: var(--color-cerulean-400);
 $button-primary-hover-color: #fff;
 $button-primary-active-background: var(--color-cerulean-300);
 $button-primary-active-color: #fff;
-
 $button-secondary-background: #fff;
 $button-secondary-color: var(--color-mine-shaft-900);
 $button-secondary-hover-background: #fff;
 $button-secondary-hover-color: var(--color-mine-shaft-900);
 $button-secondary-active-background: var(--color-mystic-200);
 $button-secondary-active-color: var(--color-mine-shaft-900);
-
 $button-danger-background: var(--color-alarm-500);
 $button-danger-color: #fff;
 $button-danger-hover-background: darken(#fe3b1f, 5%) !default;
 $button-danger-hover-color: #fff;
 $button-danger-active-background: darken(#fe3b1f, 10%) !default;
 $button-danger-active-color: #fff;
-
 $button-link-color: var(--color-cerulean-link);
 $button-link-hover-color: var(--color-cerulean-link-hover);
