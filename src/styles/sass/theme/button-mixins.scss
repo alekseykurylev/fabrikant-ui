@@ -84,6 +84,10 @@
     box-shadow: none;
   }
 
+  .uk-button-default[aria-expanded='true'] {
+    border-color: var(--color-cerulean-500);
+  }
+
   .uk-button-secondary.uk-button-small {
     font-weight: 400;
   }
@@ -189,5 +193,17 @@
   .uk-button-secondary-gray.uk-active {
     background-color: #fff;
     border-color: var(--color-cerulean-500);
+  }
+
+  .uk-button.uk-flex:not(.uk-button-small, .uk-button-large) {
+    min-height: 48px;
+  }
+
+  .uk-button-small.uk-flex {
+    min-height: 32px;
+  }
+
+  .uk-button-large.uk-flex {
+    min-height: 64px;
   }
 }
