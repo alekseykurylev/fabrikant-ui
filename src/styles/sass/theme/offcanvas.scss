@@ -1,8 +1,12 @@
+$offcanvas-bar-width: 100%;
+$offcanvas-bar-width-s: 450px;
 $offcanvas-bar-padding-vertical: 0;
 $offcanvas-bar-padding-horizontal: 0;
+$offcanvas-bar-padding-vertical-s: 0;
+$offcanvas-bar-padding-horizontal-s: 0;
 $offcanvas-bar-background: var(--color-white);
 $offcanvas-bar-color-mode: dark;
-
 $offcanvas-close-position: 32px;
+$offcanvas-close-position-s: 32px;
 $offcanvas-close-padding: 0;
-$offcanvas-overlay-background: rgba(0,0,0,0.1) !default;
+$offcanvas-overlay-background: rgb(0 0 0 / 10%) !default;
