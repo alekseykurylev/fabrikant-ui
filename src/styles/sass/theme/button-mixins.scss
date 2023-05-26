@@ -1,5 +1,6 @@
 @mixin hook-button() {
   font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
   border-radius: 4px;
 }
 
@@ -8,7 +9,6 @@
 }
 
 @mixin hook-button-default() {
-  font-weight: 700;
   border: 1px solid var(--color-mystic-300);
 }
 
@@ -22,7 +22,6 @@
 }
 
 @mixin hook-button-primary() {
-  font-weight: 700;
   border: 1px solid var(--color-cerulean-500);
 }
 
@@ -48,7 +47,6 @@
 }
 
 @mixin hook-button-danger() {
-  font-weight: 700;
   border: 1px solid var(--color-alarm-500);
 }
 
