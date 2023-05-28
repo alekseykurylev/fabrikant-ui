@@ -1,0 +1,10 @@
+{
+  "name": "etp/ui-fabrikant",
+  "license": "proprietary",
+  "description": "Design system fabrikant-ui",
+  "homepage": "https://git.fabrikant.ru/etp/ui-fabrikant",
+  "require": {
+    "php": ">=5.3",
+    "zendframework/zendframework": ">=2.1.3"
+  }
+}
