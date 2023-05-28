@@ -1,0 +1,22 @@
+@mixin hook-section-misc() {
+  @media (min-width: $breakpoint-small) {
+    .uk-section {
+      padding-top: $global-medium-margin;
+      padding-bottom: $global-medium-margin;
+    }
+  }
+
+  @media (min-width: $breakpoint-small) {
+    .uk-section-large {
+      padding-top: $global-large-margin;
+      padding-bottom: $global-large-margin;
+    }
+  }
+
+  @media (min-width: $breakpoint-small) {
+    .uk-section-xlarge {
+      padding-top: $global-large-margin;
+      padding-bottom: $global-large-margin;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.uk-tumbler {
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.uk-tumbler-button {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 28px;
+  height: 16px;
+
+  background-color: var(--color-mystic-500);
+  border-radius: 36px;
+
+  transition: background-color 100ms linear;
+
+  -moz-user-focus: ignore;
+}
+
+.uk-tumbler-label {
+  margin-left: 12px;
+  line-height: 16px;
+}
+
+.uk-tumbler-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.uk-tumbler-button::after {
+  cursor: pointer;
+  content: '';
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #fff;
+  border-radius: 50px;
+
+  transition: 100ms ease-out;
+  transition-property: left, transform, margin, width;
+}
+
+.uk-tumbler input:checked ~ .uk-tumbler-button {
+  background-color: var(--color-cerulean-500);
+}
+
+.uk-tumbler input:checked ~ .uk-tumbler-button::after {
+  left: 100%;
+  transform: translateX(-100%);
+  margin-left: -2px;
+}
+
+.uk-tumbler-large .uk-tumbler-button {
+  width: 56px;
+  height: 32px;
+  border-radius: 36px;
+}
+
+.uk-tumbler-large .uk-tumbler-button::after {
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.uk-tumbler-large input:checked ~ .uk-tumbler-button::after {
+  margin-left: -4px;
+}
+
+.uk-tumbler input:checked:disabled ~ .uk-tumbler-button {
+  background-color: var(--color-bali-hai-200);
+}
+
+.uk-tumbler input:checked:disabled ~ .uk-tumbler-button::after {
+  background-color: var(--color-mystic-200);
+}
+
+.uk-tumbler input:disabled ~ .uk-tumbler-button {
+  background-color: var(--color-mystic-200);
+}
+
+.uk-tumbler input:disabled ~ .uk-tumbler-button::after {
+  background-color: var(--color-mystic-50);
+}
+
+.uk-tumbler input:disabled ~ .uk-tumbler-button,
+.uk-tumbler input:disabled ~ .uk-tumbler-button::after,
+.uk-tumbler input:disabled ~ .uk-tumbler-label {
+  cursor: default;
+}

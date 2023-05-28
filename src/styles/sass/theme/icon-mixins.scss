@@ -1,0 +1,6 @@
+@mixin hook-icon-misc() {
+  .uk-icon-size-16 > svg {
+    width: 16px;
+    height: 16px;
+  }
+}

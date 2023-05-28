@@ -1,0 +1,50 @@
+@mixin hook-subnav-misc() {
+  .uk-subnav-tab {
+    margin-bottom: 0;
+    margin-bottom: -1px;
+    margin-left: -4px;
+  }
+
+  .uk-subnav-tab > * {
+    padding-left: 4px;
+  }
+
+  .uk-subnav-tab > * > a {
+    padding: 12px 24px;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-mine-shaft-900);
+
+    background-color: var(--color-mystic-300-a-30);
+    border: 1px solid var(--color-mystic-300-a-30);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .uk-subnav-tab > * > a:hover {
+    background-color: var(--color-mystic-300-a-50);
+  }
+
+  .uk-subnav-tab > * > a:active {
+    background-color: var(--color-mystic-300-a-70);
+  }
+
+  .uk-subnav-tab > .uk-active > a {
+    position: relative;
+    z-index: 1;
+
+    color: var(--color-mine-shaft-900);
+
+    background-color: #fff;
+    border-color: var(--color-mystic-300);
+  }
+
+  .uk-subnav-tab > .uk-active > a:hover {
+    background-color: #fff;
+  }
+
+  .uk-subnav-tab + * {
+    border-top-left-radius: 0;
+  }
+}

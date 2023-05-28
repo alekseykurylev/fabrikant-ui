@@ -1,0 +1,9 @@
+@mixin hook-accordion-misc() {
+  .uk-accordion > * > * > [uk-icon='dropdown-down'] {
+    transition: transform 0.3s ease-out;
+  }
+
+  .uk-accordion > .uk-open > * > [uk-icon='dropdown-down'] {
+    transform: rotateX(180deg);
+  }
+}

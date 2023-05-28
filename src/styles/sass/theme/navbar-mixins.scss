@@ -1,0 +1,42 @@
+@mixin hook-navbar-nav-item() {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+
+@mixin hook-navbar-misc() {
+  .uk-navbar-nav > li {
+    padding-right: 32px;
+  }
+
+  .uk-navbar-nav > li > a {
+    position: relative;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color,border-color,box-shadow;
+  }
+
+  .uk-navbar-nav > li > a:hover::before, 
+  .uk-navbar-nav > li > a[aria-expanded=true]::before {
+    left: 0;
+    right: 0;
+    background-color: var(--color-cerulean-500);
+  }
+
+  .uk-navbar-nav > li > a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    height: 4px;
+    transition: .3s ease-in-out;
+    transition-property: background-color,border-color,box-shadow,height,left,right,opacity;
+    left: 50%;
+    right: 50%;
+  }
+
+  .uk-navbar-nav > li.uk-active > a::before {
+    background-color: var(--color-cerulean-500);
+    left: 0;
+    right: 0;
+  }
+}

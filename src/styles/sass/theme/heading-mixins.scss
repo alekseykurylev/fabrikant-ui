@@ -1,0 +1,11 @@
+@mixin hook-heading-misc() {
+  .uk-heading-hero {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.33;
+  }
+
+  .uk-heading-text {
+    font-family: Inter, sans-serif;
+  }
+}

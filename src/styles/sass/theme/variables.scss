@@ -1,0 +1,35 @@
+$breakpoint-small: 768px;
+$breakpoint-medium: 996px;
+$breakpoint-xlarge: 1400px;
+
+$global-font-family: "Inter", sans-serif;
+$global-font-size: 14px;
+$global-line-height: 1.428;
+
+$global-small-font-size: 12px;
+$global-medium-font-size: 15px;
+$global-large-font-size: 16px;
+
+$global-color: var(--color-mine-shaft-900);
+$global-emphasis-color: var(--color-black);
+$global-muted-color: var(--color-bali-hai-300);
+
+$global-link-color: var(--color-cerulean-link);
+$global-link-hover-color: var(--color-cerulean-link-hover);
+
+$global-border: var(--color-mystic-300);
+
+$global-small-margin: 16px;
+$global-margin: 24px;
+$global-medium-margin: 32px;
+$global-large-margin: 48px;
+$global-xlarge-margin: 64px;
+
+$global-small-gutter: 16px;
+$global-gutter: 24px;
+$global-medium-gutter: 32px;
+$global-large-gutter: 48px;
+
+$global-control-small-height: 32px;
+$global-control-height: 48px;
+$global-control-large-height: 64px;
