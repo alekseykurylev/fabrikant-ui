@@ -512,17 +512,6 @@
             </li>
           </ul>
 
-          <div>
-            <button
-              class="uk-button uk-button-default"
-              type="button"
-              uk-toggle="target: #toggle-usage"
-              aria-expanded="false">
-              Toggle
-            </button>
-            <p id="toggle-usage" hidden>What's up?</p>
-          </div>
-
           <div class="uk-child-width-expand@s uk-grid-row-small uk-flex-middle uk-margin-medium-bottom" uk-grid>
             <div>
               <div class="uk-child-width-auto uk-grid-xsmall uk-flex-middle" uk-grid>
@@ -1038,7 +1027,7 @@
                   </h2>
                   <div class="uk-box-body">
                     <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-h2;">
-                      <li>
+                      <li class="uk-open">
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Мир Музыки»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
@@ -1084,48 +1073,103 @@
                             </div>
                           </div>
                           <hr />
-                          <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-text-large;">
-                            <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                          <ul class="uk-margin-remove-bottom uk-accordion-divider" uk-accordion="toggle: > h4;">
+                            <li class="uk-open">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Сведения для формирования ИКЗ закупки
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <p>🤪</p>
+                                <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
+                                  <div class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Идентификационный код закупки
+                                    </h5>
+                                    223201600024020160100100040673250244
+                                  </div>
+                                  <div>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Планируемый год размещения извещения
+                                    </h5>
+                                    2022
+                                  </div>
+                                  <div>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Идентификационный код заказчика
+                                    </h5>
+                                    14444460004444460004
+                                  </div>
+                                  <div>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Номер закупки, включенной в план-график закупок
+                                    </h5>
+                                    5454
+                                  </div>
+                                  <div>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Порядковый номер закупки
+                                    </h5>
+                                    999
+                                  </div>
+                                  <div class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Код по ОКПД2
+                                    </h5>
+                                    18.20 Услуги по копированию звуко- и видеозаписей, а также программных средств
+                                    <div class="uk-flex uk-flex-middle uk-margin-12-top">
+                                      <span
+                                        class="uk-icon-size-16 uk-margin-8-right uk-text-primary"
+                                        uk-icon="checked"></span>
+                                      Закупка за счет нескольких ОКПД2
+                                    </div>
+                                  </div>
+                                  <div class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                                      Код вида расходов
+                                    </h5>
+                                    244 Прочая закупка товаров, работ и услуг
+                                    <div class="uk-flex uk-flex-middle uk-margin-12-top">
+                                      <span
+                                        class="uk-icon-size-16 uk-margin-8-right uk-text-primary"
+                                        uk-icon="checked"></span>
+                                      Закупка за счет нескольких КВР либо КВР отсутствует
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </li>
-                            <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                            <li class="uk-open">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 План оплаты исполнения контракта
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
                                 <p>🤪</p>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Сведения о связи с позицией плана-графика закупок с 01.01.2020
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
                                 <p>🤪</p>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Место(-а) поставки товара, выполнения работы или указания услуги
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
                                 <p>🤪</p>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Дополнительная информация
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
                                 <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
                                   Дополнительная информация
