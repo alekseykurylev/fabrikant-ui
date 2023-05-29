@@ -10,13 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
 
-    <link rel="stylesheet" href="../../styles/fabrikant-ui.min.css" />
+    <link rel="stylesheet" href="../../styles/uikit.min.css" />
 
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../components/footer/footer.css" />
 
     <script src="../../js/uikit.min.js"></script>
-    <script src="../../js/uikit-icons-theme.min.js"></script>
+    <script src="../../js/uikit-icons.min.js"></script>
 
     <title>Извещение - электронный аукцион</title>
   </head>
@@ -511,6 +511,17 @@
               <span>Сведения о закупке №0198400003222000154</span>
             </li>
           </ul>
+
+          <div>
+            <button
+              class="uk-button uk-button-default"
+              type="button"
+              uk-toggle="target: #toggle-usage"
+              aria-expanded="false">
+              Toggle
+            </button>
+            <p id="toggle-usage" hidden>What's up?</p>
+          </div>
 
           <div class="uk-child-width-expand@s uk-grid-row-small uk-flex-middle uk-margin-medium-bottom" uk-grid>
             <div>
