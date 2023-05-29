@@ -1,53 +1,60 @@
 .uk-box {
   position: relative;
 
-  display: flow-root;
+  display: block;
 
   box-sizing: border-box;
-  padding: $global-small-margin;
 
   background-color: var(--color-white);
   border: 1px solid var(--color-mystic-300);
   border-radius: var(--border-radius);
 }
 
-.uk-box.uk-box-accordion {
-  padding: 0;
+.uk-box-header {
+  padding: $global-small-margin;
 }
 
-.uk-box-accordion .uk-box-accordion-header {
-  cursor: pointer;
-
-  display: block;
-  display: flex;
-  align-items: center;
-
-  padding: 28px 24px;
-
-  color: var(--color-cerulean-500);
-}
-
-.uk-box-accordion .uk-box-accordion-header .uk-box-accordion-title {
-  margin: 0;
-  color: var(--color-cerulean-500);
-}
-
-.uk-box-accordion .uk-box-accordion-header:hover,
-.uk-box-accordion .uk-box-accordion-header:hover .uk-box-accordion-title {
-  color: var(--color-cerulean-link-hover);
-}
-
-.uk-box-accordion .uk-box-accordion-content {
-  padding: 28px 24px;
+.uk-box-header + .uk-box-body {
   border-top: 1px solid var(--color-mystic-300);
 }
 
-.uk-box-accordion > * .uk-box-accordion-title [uk-icon='dropdown-down'] {
+.uk-box.uk-accordion .uk-box-header {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0;
+  color: var(--color-cerulean-500);
+}
+
+.uk-box.uk-accordion .uk-box-header [class^='uk-h'] {
+  color: var(--color-cerulean-500);
+}
+
+.uk-box.uk-accordion .uk-box-header:hover,
+.uk-box.uk-accordion .uk-box-header:hover [class^='uk-h'] {
+  color: var(--color-cerulean-link-hover);
+}
+
+.uk-box.uk-accordion .uk-box-header [uk-icon='dropdown-down'] {
   transition: transform 0.3s ease-out;
 }
 
-.uk-box-accordion > .uk-open .uk-box-accordion-title [uk-icon='dropdown-down'] {
+.uk-box.uk-accordion > .uk-open .uk-box-header [uk-icon='dropdown-down'] {
   transform: rotateX(180deg);
+}
+
+.uk-box-body {
+  padding: $global-small-margin;
+}
+
+.uk-box-footer {
+  padding: $global-small-margin;
+  border-top: 1px solid var(--color-mystic-300);
+}
+
+.uk-box-header > :last-child,
+.uk-box-body > :last-child,
+.uk-box-footer > :last-child {
+  margin-bottom: 0;
 }
 
 .uk-box + * {
@@ -55,24 +62,40 @@
 }
 
 @media (min-width: $breakpoint-small) {
-  .uk-box {
+  .uk-box-header {
     padding: $global-margin;
   }
 
-  .uk-box-small {
-    padding: $global-small-margin;
+  .uk-box-body {
+    padding: $global-margin;
   }
 
-  .uk-box-large {
-    padding: $global-medium-margin;
+  .uk-box-header + .uk-box-body {
+    padding: $global-margin;
+  }
+
+  .uk-box-footer {
+    padding: $global-margin;
+  }
+
+  .uk-box-body + .uk-box-footer {
+    padding: $global-margin;
+  }
+
+  .uk-box-16 .uk-box-body {
+    padding: 16px;
+  }
+
+  .uk-box-32 .uk-box-body {
+    padding: 32px;
+  }
+
+  .uk-box-96 .uk-box-body {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .uk-box > :last-child {
     margin-bottom: 0;
-  }
-
-  .uk-box-96 {
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
 }
