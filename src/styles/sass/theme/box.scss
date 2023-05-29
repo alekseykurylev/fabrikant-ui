@@ -12,10 +12,11 @@
 
 .uk-box-header {
   padding: $global-small-margin;
+  border-bottom: 1px solid var(--color-mystic-300);
 }
 
-.uk-box-header + .uk-box-body {
-  border-top: 1px solid var(--color-mystic-300);
+.uk-box.uk-accordion > :not(.uk-open) > .uk-box-header {
+  border-bottom: 0;
 }
 
 .uk-box.uk-accordion .uk-box-header {
