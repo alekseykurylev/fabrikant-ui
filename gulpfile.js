@@ -1,42 +1,71 @@
-import gulp from "gulp";
-import plumber from "gulp-plumber";
-import sass from "gulp-dart-sass";
-import rename from "gulp-rename";
-import postcss from "gulp-postcss";
-import csso from "postcss-csso";
-import browser from "browser-sync";
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-dart-sass';
+import rename from 'gulp-rename';
+import postcss from 'gulp-postcss';
+import terser from 'gulp-terser';
+import minmax from 'postcss-media-minmax';
+import csso from 'postcss-csso';
+import browser from 'browser-sync';
 
-// Styles
+// UIkit Style
 
-export const styles = () => {
+const uikitStyle = () => {
   return gulp
-    .src("src/styles/sass/style.scss")
+    .src('src/styles/sass/style.scss')
     .pipe(plumber())
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([csso]))
-    .pipe(rename("fabrikant-ui.min.css"))
-    .pipe(gulp.dest("src/styles"))
+    .pipe(rename('uikit.min.css'))
+    .pipe(gulp.dest('src/styles'))
+    .pipe(gulp.dest('dist/uikit'))
     .pipe(browser.stream());
 };
 
-// Copy script
+// UIkit Script
 
-// const copy = (done) => {
-//   gulp.src("node_modules/uikit/dist/js/uikit.min.js").pipe(gulp.dest("src/js"));
-//   gulp.src("node_modules/uikit/dist/js/uikit-icons-theme.min.js").pipe(gulp.dest("src/js"));
-//   done();
-// };
+const uikitScript = (done) => {
+  gulp.src('node_modules/uikit/dist/js/uikit.min.js').pipe(gulp.dest('src/js')).pipe(gulp.dest('dist/uikit'));
+  gulp.src('src/js/uikit-icons.min.js').pipe(gulp.dest('dist/uikit'));
+  done();
+};
+
+// Copy Style
+
+const copyStyle = () => {
+  return gulp
+    .src(['src/components/**/*.css', 'src/ui/**/*.css'])
+    .pipe(postcss([minmax, csso]))
+    .pipe(gulp.dest('dist/components'))
+    .pipe(browser.stream());
+};
+
+// Copy Script
+
+const copyScript = () => {
+  return gulp
+    .src(['src/components/**/*.js', 'src/ui/**/*.js'])
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env']
+      })
+    )
+    .pipe(terser())
+    .pipe(gulp.dest('dist/components'))
+    .pipe(browser.stream());
+};
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: "./src",
+      baseDir: './src'
     },
     cors: true,
     notify: false,
-    ui: false,
+    ui: false
   });
   done();
 };
@@ -44,9 +73,10 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("src/styles/**/*.scss", gulp.series(styles));
-  gulp.watch("src/**/*.css").on("change", browser.reload);
-  gulp.watch("src/**/**.html").on("change", browser.reload);
+  gulp.watch('src/styles/**/*.scss', gulp.series(uikitStyle));
+  gulp.watch('src/**/*.css').on('change', browser.reload);
+  gulp.watch('src/**/*.js').on('change', browser.reload);
+  gulp.watch('src/**/*.html').on('change', browser.reload);
 };
 
-export default gulp.series(styles, server, watcher);
+export default gulp.series(uikitStyle, uikitScript, copyStyle, copyScript, server, watcher);
