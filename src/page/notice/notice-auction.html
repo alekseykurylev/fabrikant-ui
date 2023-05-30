@@ -1023,11 +1023,13 @@
                 class="uk-box"
                 uk-accordion="toggle: > .uk-box-header; content: > .uk-box-body; multiple: true">
                 <div class="uk-open">
-                  <h2 class="uk-box-header">
-                    <span class="uk-h2">Сведения о заказчиках</span>
-                    <span class="uk-label uk-label-muted uk-label-large uk-margin-8-left">4</span>
-                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                  </h2>
+                  <div class="uk-box-header">
+                    <h2>
+                      <span class="uk-h2">Сведения о заказчиках</span>
+                      <span class="uk-label uk-label-muted uk-label-large uk-margin-8-left">4</span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
                   <div class="uk-box-body">
                     <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-h2; multiple: true">
                       <li>
@@ -1719,6 +1721,246 @@
                   </div>
                 </div>
               </section>
+
+              <section
+                id="anchor-7"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header h2; content: > .uk-box-body; multiple: true">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <div class="uk-flex-middle uk-child-width-expand" uk-grid>
+                      <div>
+                        <h2>
+                          <span class="uk-h2">Документы по закупке</span>
+                          <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                        </h2>
+                      </div>
+                      <div class="uk-width-auto">
+                        <a class="" href="#">Скачать все файлы</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-box-body">123</div>
+                </div>
+              </section>
+
+              <section
+                id="anchor-8"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header h2; content: > .uk-box-body; multiple: true">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <h2>
+                      <span class="uk-h2">Запросы разъяснений</span>
+                      <span class="uk-label uk-label-muted uk-label-large uk-margin-8-left">3</span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
+                  <div class="uk-box-body">
+                    <ul class="uk-list uk-list-divider uk-list-large">
+                      <li>
+                        <span class="uk-text-muted-ms800a60">12 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                      <li>
+                        <span class="uk-text-muted-ms800a60">6 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                      <li>
+                        <span class="uk-text-muted-ms800a60">1 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                id="anchor-9"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header h2; content: > .uk-box-body; multiple: true">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <h2>
+                      <span class="uk-h2">Информация о контрактах по закупке</span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
+                  <div class="uk-box-body">
+                    <div class="uk-table-wrap uk-overflow-auto">
+                      <table class="uk-table">
+                        <thead>
+                          <tr>
+                            <th>Заказчик</th>
+                            <th>Поставщик/подрядчик/исполнитель</th>
+                            <th>Статус</th>
+                            <th>Цена контракта (₽)</th>
+                            <th>Комментарий</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><button uk-toggle="target: #toggle-1" type="button">Подробнее</button></td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                          </tr>
+                          <tr id="toggle-1" hidden>
+                            <td class="uk-td-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><button uk-toggle="target: #toggle-2" type="button">Подробнее</button></td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                          </tr>
+                          <tr id="toggle-2" hidden>
+                            <td class="uk-td-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><button uk-toggle="target: #toggle-3" type="button">Подробнее</button></td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                            <td>123</td>
+                          </tr>
+                          <tr id="toggle-3" hidden>
+                            <td class="uk-td-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a href="#">Контракт охрана.docx</a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
 
             <aside class="uk-width-auto uk-visible@l">
@@ -1744,16 +1986,13 @@
                       <a href="#anchor-6">Сведения о заказчиках</a>
                     </li>
                     <li>
-                      <a href="#anchor-7">Информация о предмете контракта</a>
+                      <a href="#anchor-7">Документы по закупке</a>
                     </li>
                     <li>
-                      <a href="#anchor-8">Документы по закупке</a>
+                      <a href="#anchor-8">Запросы разъяснений</a>
                     </li>
                     <li>
-                      <a href="#anchor-9">Запросы разъяснений</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-10">Информация о контрактах по закупке</a>
+                      <a href="#anchor-9">Информация о контрактах по закупке</a>
                     </li>
                   </ul>
                 </div>
@@ -1761,6 +2000,15 @@
             </aside>
           </div>
         </div>
+
+        <!-- <div class="uk-height-large" style="background-color: aquamarine">
+          <div
+            class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index"
+            uk-sticky="position: bottom; end: true; ">
+            Stick to the bottom
+          </div>
+          <div style="height: 200px; background-color: tomato">1231231</div>
+        </div> -->
       </section>
     </main>
 
