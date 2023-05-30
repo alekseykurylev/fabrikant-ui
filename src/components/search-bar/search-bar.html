@@ -48,7 +48,7 @@
             </div>
             <div class="uk-width-auto@s">
               <div class="uk-flex-middle uk-flex-between uk-grid-8" uk-grid>
-                <a class="uk-flex uk-flex-middle uk-text-small" href="#">
+                <a class="uk-flex uk-flex-middle uk-text-small" href="#extended-search" uk-toggle>
                   <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
                   Расширенный поиск
                 </a>
@@ -102,7 +102,7 @@
             </div>
             <div class="uk-width-auto@s">
               <div class="uk-flex-middle uk-flex-between uk-grid-8" uk-grid>
-                <a class="uk-flex uk-flex-middle uk-text-small" href="#">
+                <a class="uk-flex uk-flex-middle uk-text-small" href="#extended-search" uk-toggle>
                   <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
                   Расширенный поиск
                 </a>
@@ -134,13 +134,13 @@
                   </div>
                   <div class="uk-visible@l">
                     <div class="uk-flex uk-flex-column">
-                      <label class="uk-margin-4-bottom">
-                        <input class="uk-checkbox uk-margin-12-right" type="checkbox" />
-                        Цветовая индикация
+                      <label class="uk-checkbox-wrap uk-margin-8-bottom">
+                        <input class="uk-checkbox" type="checkbox" />
+                        <span class="uk-checkbox-label uk-margin-12-left">Цветовая индикация</span>
                       </label>
-                      <label>
-                        <input class="uk-checkbox uk-margin-12-right" type="checkbox" />
-                        Скрыть завершённые
+                      <label class="uk-checkbox-wrap uk-margin-4-bottom">
+                        <input class="uk-checkbox" type="checkbox" />
+                        <span class="uk-checkbox-label uk-margin-12-left">Скрыть завершённые</span>
                       </label>
                     </div>
                   </div>
@@ -155,6 +155,189 @@
           </form>
         </div>
       </section>
+    </div>
+
+    <!-- This is the Extended Search off-canvas -->
+    <div id="extended-search" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <div class="uk-offcanvas-header">
+          <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+              <h4 class="uk-h1">Расширенный поиск</h4>
+            </div>
+            <div class="uk-width-auto">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+            </div>
+          </div>
+        </div>
+        <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
+          <div>
+            <label class="uk-form-label uk-margin-8-bottom" for="input-1">
+              По номеру извещения или ключевому слову
+            </label>
+            <input class="uk-input" id="input-1" type="text" placeholder="Введите значение..." aria-label="Input" />
+          </div>
+          <div class="uk-margin-small">
+            <label class="uk-form-label uk-margin-8-bottom" for="input-2">НМЦ, руб.</label>
+            <div class="uk-input-group">
+              <input id="input-2" class="uk-input" type="text" placeholder="от" aria-label="от" />
+              <input id="input-2-2" class="uk-input" type="text" placeholder="до" aria-label="до" />
+            </div>
+          </div>
+          <div class="uk-margin-small">
+            <label class="uk-form-label uk-margin-8-bottom" for="input-3">Дата публикации</label>
+            <div class="uk-input-group">
+              <input id="input-3" class="uk-input" type="text" placeholder="от" aria-label="от" />
+              <input id="input-3-2" class="uk-input" type="text" placeholder="до" aria-label="до" />
+            </div>
+          </div>
+          <div class="uk-margin-small">
+            <label class="uk-form-label uk-margin-8-bottom" for="input-3">Сотрудник</label>
+            <div>🤪</div>
+          </div>
+          <hr />
+          <div uk-accordion="toggle: > a; content: > div">
+            <div class="uk-open">
+              <a class="uk-h2 uk-margin-remove uk-flex uk-flex-middle" href="#">
+                <span class="uk-flex-1 uk-margin-8-right">Способ закупки</span>
+                <span uk-icon="dropdown-down"></span>
+              </a>
+              <div class="uk-margin-top">
+                <ul class="uk-list uk-list-small uk-margin-remove">
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-text-bold uk-margin-12-left">Все способы</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Электронный аукцион</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Электронный конкурс</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">
+                        Электронный конкурс в соответствии с ч.19 ст.48 44-ФЗ
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Электронный запрос котировок</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Закупка товара у единственного поставщика</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div uk-accordion="toggle: > a; content: > div">
+            <div class="uk-open">
+              <a class="uk-h2 uk-margin-remove uk-flex uk-flex-middle" href="#">
+                <span class="uk-flex-1 uk-margin-8-right">Статус закупки</span>
+                <span uk-icon="dropdown-down"></span>
+              </a>
+              <div class="uk-margin-top">
+                <ul class="uk-list uk-list-small uk-margin-remove">
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-text-bold uk-margin-12-left">Все статусы</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Приём заявок</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Приём предложений</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Рассмотрение первых частей заявок</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Ожидание подачи ценовых предложений</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="uk-checkbox-wrap">
+                      <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+                      <span class="uk-checkbox-label uk-margin-12-left">Приём ценовых предложений</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div>🤪</div>
+        </div>
+        <div class="uk-offcanvas-footer">
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-expand">
+              <button class="uk-button uk-button-default uk-flex uk-flex-middle uk-height-1-1" type="button">
+                <span uk-icon="filters-faw"></span>
+                <span class="uk-margin-8-left uk-visible@s" uk-icon="dropdown-down"></span>
+              </button>
+              <ul class="uk-nav" uk-drop="pos: top-left" uk-nav>
+                <li class="uk-nav-header">
+                  <span class="uk-text-uppercase uk-text-muted">Шаблон поиска</span>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      Только электронный аукцион
+                      <div class="uk-nav-subtitle">используется по умолчанию</div>
+                    </div>
+                  </a>
+                </li>
+                <li><a href="#">ЭА и ЭК</a></li>
+                <li><a href="#">Приём ценовых предложений</a></li>
+                <li><a href="#">НМЦ от 100000</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Сохранить шаблон поиска</a></li>
+                <li><a href="#">Изменить</a></li>
+              </ul>
+            </div>
+            <div class="uk-width-auto">
+              <div class="uk-flex">
+                <button class="uk-button uk-button-default" type="button">
+                  <span class="uk-visible@s">Очистить</span>
+                  <span class="uk-hidden@s">🤪</span>
+                </button>
+                <button class="uk-button uk-button-primary uk-margin-small-left" type="button">Применить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
