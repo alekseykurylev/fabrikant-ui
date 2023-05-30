@@ -1,0 +1,11 @@
+[uk-toggle] > [uk-icon='dropdown-down'] {
+  transition: transform 0.3s ease-out;
+}
+
+[uk-toggle][aria-expanded='true'] > [uk-icon='dropdown-down'] {
+  transform: rotateX(180deg);
+}
+
+[uk-toggle][aria-expanded='false'] > [uk-icon='dropdown-down'] {
+  transform: none;
+}
