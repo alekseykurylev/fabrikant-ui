@@ -29,4 +29,13 @@
   .uk-table-wrap > .uk-table > *:first-child > *:first-child > * {
     border-top: none;
   }
+
+  .uk-table .uk-td-bullet {
+    padding: 24px 24px 24px 48px;
+    box-shadow: inset 24px 0 0 0 var(--color-mystic-200);
+  }
+
+  .uk-table .uk-td-bullet .uk-table-wrap {
+    border-radius: 0;
+  }
 }
