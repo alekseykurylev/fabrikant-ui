@@ -21,9 +21,9 @@ $internal-form-checkbox-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
   flex-shrink: 0;
 }
 
-.uk-checkbox-wrap .uk-checkbox-label,
-.uk-checkbox-wrap .uk-radio-label {
-  margin-left: 12px;
+.uk-checkbox:not(.uk-checkbox-large) + .uk-checkbox-label,
+.uk-radio:not(.uk-radio-large) + .uk-radio-label {
+  line-height: 16px;
 }
 
 // input-box - DEPRECATED
