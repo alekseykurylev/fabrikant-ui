@@ -860,7 +860,7 @@
                     </div>
                     <div>
                       <label class="uk-tumbler">
-                        <input uk-toggle="target: .toggle-1; animation: uk-animation-fade" type="checkbox" hidden />
+                        <input uk-toggle="target: .toggle-1" type="checkbox" hidden />
                         <div class="uk-tumbler-button"></div>
                         <span class="uk-tumbler-label uk-text-primary uk-margin-8-left">
                           Отображать дополнительные сведения
@@ -945,7 +945,7 @@
                     </div>
                     <div>
                       <label class="uk-tumbler">
-                        <input uk-toggle="target: .toggle-2; animation: uk-animation-fade" type="checkbox" hidden />
+                        <input uk-toggle="target: .toggle-2" type="checkbox" hidden />
                         <div class="uk-tumbler-button"></div>
                         <span class="uk-tumbler-label uk-text-primary uk-margin-8-left">
                           Отображать дополнительные сведения
@@ -1818,15 +1818,32 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td><button uk-toggle="target: #toggle-1" type="button">Подробнее</button></td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-1"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">
+                                Общество с ограниченной ответственностью «Династия предпринимателей»
+                              </span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">29 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
                           </tr>
                           <tr id="toggle-1" hidden>
-                            <td class="uk-td-bullet" colspan="999">
+                            <td class="uk-table-bullet" colspan="999">
                               <div class="uk-table-wrap uk-overflow-auto">
                                 <table class="uk-table">
                                   <thead>
@@ -1864,15 +1881,32 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><button uk-toggle="target: #toggle-2" type="button">Подробнее</button></td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-2"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">
+                                Централизованная бухгалтерия Министерства Здравоохранения Удмуртской Республики»
+                              </span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">19 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
                           </tr>
                           <tr id="toggle-2" hidden>
-                            <td class="uk-td-bullet" colspan="999">
+                            <td class="uk-table-bullet" colspan="999">
                               <div class="uk-table-wrap uk-overflow-auto">
                                 <table class="uk-table">
                                   <thead>
@@ -1910,15 +1944,30 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><button uk-toggle="target: #toggle-3" type="button">Подробнее</button></td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
-                            <td>123</td>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-3"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">ГУССТ № 8 при Спецстрое России</span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">55 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
                           </tr>
                           <tr id="toggle-3" hidden>
-                            <td class="uk-td-bullet" colspan="999">
+                            <td class="uk-table-bullet" colspan="999">
                               <div class="uk-table-wrap uk-overflow-auto">
                                 <table class="uk-table">
                                   <thead>
