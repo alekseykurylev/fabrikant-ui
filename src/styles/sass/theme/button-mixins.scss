@@ -8,6 +8,10 @@
   font-family: Inter, sans-serif;
 }
 
+@mixin hook-button-large() {
+  font-family: Inter, sans-serif;
+}
+
 @mixin hook-button-default() {
   border: 1px solid var(--color-mystic-300);
 }
