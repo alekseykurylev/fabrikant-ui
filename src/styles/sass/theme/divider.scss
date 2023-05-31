@@ -1,9 +1,0 @@
-@mixin hook-divider-misc() {
-  .uk-divider-16 {
-    margin: 0 0 16px;
-  }
-
-  * + .uk-divider-16 {
-    margin-top: 16px;
-  }
-}
