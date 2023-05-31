@@ -166,12 +166,41 @@
           <code>uk-accordion</code>
           и добавляем дополнительную внутреннюю обертку.
         </p>
-        <div class="uk-box" uk-accordion="toggle: > .uk-box-header; content: > .uk-box-body">
+        <div class="uk-box" uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
           <div class="uk-open">
-            <h2 class="uk-box-header">
-              <span class="uk-h2">Сведения о заказчиках</span>
-              <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-            </h2>
+            <div class="uk-box-header">
+              <h2 class="uk-link-heading">
+                Сведения о заказчиках
+                <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+              </h2>
+            </div>
+
+            <div class="uk-box-body">
+              Запрет на допуск товаров, работ, услуг при осуществлении закупок, а также ограничения и условия допуска в
+              соответствии с требованиями, установленными ст. 14 Закона № 44-ФЗ
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-box" uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
+          <div class="uk-open">
+            <div class="uk-box-header">
+              <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                  <h2 class="uk-link-heading">
+                    Сведения о заказчиках
+                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                  </h2>
+                </div>
+                <div class="uk-width-auto uk-visible@s">
+                  <a href="#">
+                    <span class="uk-icon-size-16 uk-margin-6-right" uk-icon="download"></span>
+                    Скачать все файлы
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div class="uk-box-body">
               Запрет на допуск товаров, работ, услуг при осуществлении закупок, а также ограничения и условия допуска в
               соответствии с требованиями, установленными ст. 14 Закона № 44-ФЗ

@@ -19,22 +19,6 @@
   border-bottom: 0;
 }
 
-.uk-box.uk-accordion .uk-box-header {
-  cursor: pointer;
-  display: block;
-  margin-bottom: 0;
-  color: var(--color-cerulean-500);
-}
-
-.uk-box.uk-accordion .uk-box-header [class^='uk-h'] {
-  color: var(--color-cerulean-500);
-}
-
-.uk-box.uk-accordion .uk-box-header:hover,
-.uk-box.uk-accordion .uk-box-header:hover [class^='uk-h'] {
-  color: var(--color-cerulean-link-hover);
-}
-
 .uk-box.uk-accordion .uk-box-header [uk-icon='dropdown-down'] {
   transition: transform 0.3s ease-out;
 }
