@@ -72,7 +72,16 @@
                         Дополнительные сервисы
                         <span uk-nav-parent-icon></span>
                       </a>
-                      <ul class="uk-nav-sub">
+                      <ul class="uk-nav-sub" uk-nav>
+                        <li class="uk-parent">
+                          <a href="#">
+                            123213
+                            <span uk-nav-parent-icon></span>
+                          </a>
+                          <ul class="uk-nav-sub">
+                            <li><a href="#">12321312</a></li>
+                          </ul>
+                        </li>
                         <li><a href="#">Калькулятор пени и штрафов ПП 1042</a></li>
                         <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
                         <li><a href="#">Поиск по решениям ФАС</a></li>
@@ -122,8 +131,7 @@
                 </div>
                 <div class="uk-offcanvas-footer uk-text-right">
                   <div class="uk-text-small uk-margin-small-bottom">
-                    <a class="uk-link-muted" href="tel:84994606602">8 (499) 460-66-02</a>
-                    <a class="uk-link-muted uk-margin-12-left" href="tel:84951389678">8 (495) 138-96-78</a>
+                    <a class="uk-link-muted" href="tel:+74951097575">+7 (495) 109-75-75</a>
                   </div>
                   <div>
                     <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
@@ -166,56 +174,23 @@
             </div>
           </div>
           <div>
-            <a class="uk-flex uk-flex-middle" href="#"><span uk-icon="down-arrow-circle"></span></a>
-            <ul uk-drop="pos: bottom-right; mode: click" uk-nav>
-              <li class="uk-nav-header">
-                <div class="uk-flex uk-flex-middle uk-text-muted">
-                  <span uk-icon="user" class="uk-icon"></span>
-                  <div class="uk-margin-12-left uk-width-expand">
-                    <div class="uk-text-xsmall uk-text-muted-bh200">
-                      <div class="uk-text-truncate-clamp-2">
-                        Заказчик:
-                        <a class="uk-text-bold" href="#">
-                          ООО «Тестовая организация очень очень длинное предлинное название»
-                        </a>
-                      </div>
+            <a class="uk-flex uk-flex-middle" href="#mobile-menu-user" uk-toggle>
+              <span uk-icon="down-arrow-circle"></span>
+            </a>
+            <div id="mobile-menu-user" uk-offcanvas="overlay: true; flip: true">
+              <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
+                <div class="uk-offcanvas-header">
+                  <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">Heading</div>
+                    <div class="uk-width-auto">
+                      <button class="uk-offcanvas-close" type="button" uk-close></button>
                     </div>
-                    <div class="uk-text-small uk-text-truncate">Сазанов Антон Михайлович</div>
                   </div>
                 </div>
-              </li>
-              <li class="uk-nav-divider"></li>
-              <li>
-                <a href="#">
-                  <span class="uk-margin-small-right uk-text-primary" uk-icon="telegram"></span>
-                  Telegram-бот
-                </a>
-              </li>
-              <li class="uk-nav-divider"></li>
-              <li>
-                <a href="#">
-                  <span class="uk-margin-small-right uk-text-primary" uk-icon="bell"></span>
-                  Уведомления
-                  <span class="uk-badge uk-badge-danger uk-margin-auto-left">25</span>
-                </a>
-              </li>
-              <li class="uk-nav-divider"></li>
-              <li class="uk-parent">
-                <a href="#">
-                  Настройка параметров
-                  <span uk-nav-parent-icon></span>
-                </a>
-                <ul class="uk-nav-sub">
-                  <li><a href="#">Параметр первый</a></li>
-                  <li><a href="#">Параметр второй</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Пользователи</a></li>
-              <li><a href="#">Шаблоны протоколов</a></li>
-              <li><a href="#">Реестр комиссий</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Выйти</a></li>
-            </ul>
+                <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>body</div>
+                <div class="uk-offcanvas-footer">footer</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -422,23 +397,10 @@
                 </ul>
               </div>
               <div class="uk-width-auto uk-margin-auto-left">
-                <div class="header-hero__tel">
-                  <span class="uk-hidden@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                  <div class="uk-child-width-auto uk-grid-row-collapse" uk-grid>
-                    <div>
-                      <a href="tel:84994606602">
-                        <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                        8 (499) 460-66-02
-                      </a>
-                    </div>
-                    <div>
-                      <a href="tel:84951389678">
-                        <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                        8 (495) 138-96-78
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a class="uk-flex uk-flex-middle uk-link-muted" href="tel:+74951097575">
+                  <span class="uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
+                  +7 (495) 109-75-75
+                </a>
               </div>
             </div>
           </div>
@@ -636,8 +598,7 @@
                 </div>
                 <div class="uk-offcanvas-footer uk-text-right">
                   <div class="uk-text-small uk-margin-small-bottom">
-                    <a class="uk-link-muted" href="tel:84994606602">8 (499) 460-66-02</a>
-                    <a class="uk-link-muted uk-margin-12-left" href="tel:84951389678">8 (495) 138-96-78</a>
+                    <a class="uk-link-muted" href="tel:+74951097575">+7 (495) 109-75-75</a>
                   </div>
                   <div>
                     <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
@@ -654,9 +615,6 @@
           </div>
           <div>
             <a class="uk-flex uk-flex-middle" href="#">😎</a>
-            <ul uk-drop="pos: bottom-right; mode: click" uk-nav>
-              <li><a href="#">?????</a></li>
-            </ul>
           </div>
         </div>
 
@@ -703,23 +661,10 @@
               </div>
 
               <div class="uk-width-auto uk-margin-auto-left">
-                <div class="header-hero__tel">
-                  <span class="uk-hidden@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                  <div class="uk-child-width-auto uk-grid-row-collapse" uk-grid>
-                    <div>
-                      <a href="tel:84994606602">
-                        <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                        8 (499) 460-66-02
-                      </a>
-                    </div>
-                    <div>
-                      <a href="tel:84951389678">
-                        <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                        8 (495) 138-96-78
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a class="uk-flex uk-flex-middle uk-link-muted" href="tel:+74951097575">
+                  <span class="uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
+                  +7 (495) 109-75-75
+                </a>
               </div>
             </div>
           </div>
@@ -938,8 +883,7 @@
                 </div>
                 <div class="uk-offcanvas-footer uk-text-right">
                   <div class="uk-text-small uk-margin-small-bottom">
-                    <a class="uk-link-muted" href="tel:84994606602">8 (499) 460-66-02</a>
-                    <a class="uk-link-muted uk-margin-12-left" href="tel:84951389678">8 (495) 138-96-78</a>
+                    <a class="uk-link-muted" href="tel:+74951097575">+7 (495) 109-75-75</a>
                   </div>
                   <div>
                     <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
