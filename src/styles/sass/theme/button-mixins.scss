@@ -118,13 +118,18 @@
   }
 
   .uk-button-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 48px;
   }
 
   .uk-button-icon.uk-button-small {
     height: 32px;
+  }
+
+  .uk-button-icon.uk-button-medium {
+    height: 38px;
+    padding: 0 8px;
   }
 
   .uk-button-group > .uk-button:nth-child(n + 2),
@@ -202,5 +207,10 @@
 
   .uk-button-link {
     text-align: left;
+  }
+
+  .uk-button-medium {
+    padding: 0 22px;
+    line-height: 38px;
   }
 }
