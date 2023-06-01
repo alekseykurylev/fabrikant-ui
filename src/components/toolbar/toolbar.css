@@ -1,8 +1,8 @@
-.uk-sticky-bar {
+.uk-toolbar {
   padding: 16px 0;
 }
 
-.uk-sticky-bar.uk-position-fixed {
+.uk-toolbar.uk-position-fixed {
   z-index: 980;
   bottom: 0;
 

@@ -1,0 +1,1 @@
+"use strict";(()=>{let t=document.querySelector(".uk-toolbar-container"),i=t.querySelector(".uk-toolbar"),e=UIkit.util.height(t);UIkit.util.height(t,e);let o=()=>{UIkit.util.isInView(t,-1*e)?i.classList.remove("uk-position-fixed"):i.classList.add("uk-position-fixed","uk-animation-slide-bottom")};o(),window.addEventListener("scroll",o)})();

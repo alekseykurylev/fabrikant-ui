@@ -27,7 +27,7 @@
 - [Header][header]
 - [List News][list-news]
 - [Search Bar][search-bar] [in progress]
-- [Sticky Toolbar][sticky-bar] [in progress]
+- [Toolbar][toolbar] [in progress]
 
 ## UI:
 
@@ -56,7 +56,7 @@
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
 [search-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/search-bar/search-bar.html
-[sticky-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/sticky-bar/sticky-bar.html
+[toolbar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/toolbar/toolbar.html
 [button]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/button/button.html
 [form]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/form/form.html
 [alert]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/alert/alert.html
