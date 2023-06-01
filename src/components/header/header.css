@@ -138,6 +138,7 @@
 .dateTime-container {
   display: inline-flex;
   align-items: center;
+  min-width: 138px;
 }
 
 .serverDateTime-delimiter,
