@@ -140,7 +140,8 @@
   align-items: center;
 }
 
-.serverDateTime-delimiter {
+.serverDateTime-delimiter,
+.userDateTime-delimiter {
   display: inline-block;
 
   width: 4px;
