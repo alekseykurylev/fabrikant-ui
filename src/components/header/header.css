@@ -82,7 +82,7 @@
   color: var(--color-cerulean-link-hover);
 }
 
-.header-topbar__bell .uk-card.uk-drop .uk-list > li:not(:last-child)::before {
+.header-topbar__bell .uk-card.uk-drop .uk-list > li::before {
   content: '';
 
   position: relative;
