@@ -12,15 +12,14 @@
     } else {
       list.insertAdjacentHTML(
         'beforeend',
-        `
-        <li class="more">
+        `<li class="more">
           <a href="#">Ещё...</a>
           <ul class="uk-nav" uk-drop></ul>
         </li>`
       );
     }
 
-    const handleOverflowNavbar = () => {
+    const onResize = () => {
       const itemMore = list.querySelector(':scope > li.more');
       const itemMoreList = itemMore.querySelector(':scope > .uk-nav');
 
@@ -31,7 +30,6 @@
 
       const navbarWidth = navbar.offsetWidth;
       let stopWidth = itemMore.offsetWidth;
-      let hiddenItems = [];
 
       items.forEach((item) => {
         if (navbarWidth >= stopWidth + item.offsetWidth) {
@@ -58,7 +56,7 @@
       }
     };
 
-    handleOverflowNavbar();
-    window.addEventListener('resize', handleOverflowNavbar);
+    onResize();
+    window.addEventListener('resize', onResize);
   });
 })();
