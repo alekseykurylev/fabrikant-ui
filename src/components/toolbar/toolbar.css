@@ -12,3 +12,7 @@
   border-top: 1px solid var(--color-mystic-200);
   box-shadow: 0 -13px 16px rgb(160 182 182 / 10%);
 }
+
+.uk-toolbar .uk-button {
+  white-space: nowrap;
+}
