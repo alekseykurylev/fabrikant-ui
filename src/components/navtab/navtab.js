@@ -1,67 +1,54 @@
 (() => {
-  const container = document.querySelector('.uk-toolbar-container');
-  const toolbar = container.querySelector('.uk-toolbar');
-  const nav = toolbar.querySelector('.uk-toolbar-nav');
-  const navItems = toolbar.querySelectorAll('.uk-toolbar-nav > li');
+  const navtabs = document.querySelectorAll('.uk-navtab');
 
-  nav.insertAdjacentHTML(
-    'afterbegin',
-    `<li class="uk-more uk-flex-none" hidden>
-      <button class="uk-button uk-button-medium uk-button-icon uk-button-default uk-visible@s" type="button">
-        <span uk-icon="more"></span>
-      </button>
-      <ul uk-drop="pos: top-left; mode: click" uk-nav></ul>
-    </li>`
-  );
+  navtabs.forEach((navtab) => {
+    const navLeft = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav');
+    const itemsLeft = navtab.querySelectorAll('.uk-navtab-left > .uk-navtab-nav > li');
+    const navRight = navtab.querySelector('.uk-navtab-right > .uk-navtab-nav');
 
-  const onSticky = () => {
-    const toolbarHeight = toolbar.clientHeight;
-    container.style.height = `${toolbarHeight}px`;
+    navLeft.insertAdjacentHTML(
+      'beforeend',
+      `<li class="uk-more" hidden>
+        <a href="#">Ещё</a>
+        <ul uk-drop="pos: bottom-right" uk-nav></ul>
+      </li>`
+    );
 
-    let isInView = UIkit.util.isInView(container, toolbarHeight * -1);
+    const onResize = () => {
+      const itemRight = navtab.querySelector('.uk-navtab-right > .uk-navtab-nav');
+      const itemMore = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav > li.uk-more');
+      const navDrop = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav > li.uk-more > ul');
 
-    if (isInView) {
-      toolbar.classList.remove('uk-position-fixed');
-    } else {
-      toolbar.classList.add('uk-position-fixed', 'uk-animation-slide-bottom');
-    }
-  };
+      const navtabWidth = navtab.offsetWidth;
+      const itemRightWidth = itemRight ? itemRight.offsetWidth : 0;
+      const itemMoreWidth = itemMore.offsetWidth;
 
-  const onResize = () => {
-    const itemMore = toolbar.querySelector('.uk-toolbar-nav > li.uk-more');
-    const navDrop = toolbar.querySelector('.uk-toolbar-nav > li.uk-more > ul');
+      itemsLeft.forEach((item) => {
+        item.hidden = false;
+      });
 
-    navItems.forEach((item) => {
-      item.hidden = false;
-    });
+      navDrop.innerHTML = '';
 
-    navDrop.innerHTML = '';
+      let stopWidth = itemMoreWidth + itemRightWidth + 24;
 
-    let stopWidth = itemMore.offsetWidth;
+      itemsLeft.forEach((item) => {
+        if (navtabWidth >= stopWidth + item.offsetWidth) {
+          stopWidth += item.offsetWidth;
+        } else {
+          navDrop.insertAdjacentHTML('afterbegin', item.outerHTML);
+          item.hidden = true;
+        }
+      });
 
-    for (let i = navItems.length - 1; i >= 0; i--) {
-      if (nav.offsetWidth >= stopWidth + navItems[i].offsetWidth) {
-        stopWidth += navItems[i].offsetWidth;
+      if (navDrop.childNodes.length > 0) {
+        itemMore.hidden = false;
       } else {
-        const navItem = navItems[i].firstElementChild.cloneNode(true);
-        const bold = navItem.classList.contains('uk-button-primary') ? 'uk-text-bold' : '';
-
-        navItem.classList = bold;
-        navDrop.insertAdjacentHTML('afterbegin', `<li>${navItem.outerHTML}</li>`);
-        navItems[i].hidden = true;
+        itemMore.hidden = true;
       }
-    }
+    };
 
-    if (navDrop.childNodes.length > 0) {
-      itemMore.hidden = false;
-    } else {
-      itemMore.hidden = true;
-    }
-  };
+    onResize();
 
-  onResize();
-  onSticky();
-
-  window.addEventListener('scroll', onSticky);
-  window.addEventListener('resize', onResize);
+    window.addEventListener('resize', onResize);
+  });
 })();
