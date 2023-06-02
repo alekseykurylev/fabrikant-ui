@@ -45,6 +45,12 @@
       } else {
         itemMore.hidden = true;
       }
+
+      if (navtab.querySelector('li.uk-more > ul > li.uk-active')) {
+        itemMore.classList.add('uk-active');
+      } else {
+        itemMore.classList.remove('uk-active');
+      }
     };
 
     onResize();
