@@ -23,7 +23,7 @@
     if (isInView) {
       toolbar.classList.remove('uk-position-fixed');
     } else {
-      toolbar.classList.add('uk-position-fixed', 'uk-animation-slide-bottom');
+      toolbar.classList.add('uk-position-fixed', 'uk-animation-slide-bottom1');
     }
   };
 
@@ -37,7 +37,7 @@
 
     navDrop.innerHTML = '';
 
-    let stopWidth = itemMore.offsetWidth;
+    let stopWidth = 0;
 
     for (let i = navItems.length - 1; i >= 0; i--) {
       if (nav.offsetWidth >= stopWidth + navItems[i].offsetWidth) {
