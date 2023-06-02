@@ -27,7 +27,7 @@
 - [Header][header]
 - [List News][list-news]
 - [Search Bar][search-bar] [in progress]
-- [Toolbar][toolbar] [in progress]
+- [Toolbar][toolbar]
 
 ## UI:
 
