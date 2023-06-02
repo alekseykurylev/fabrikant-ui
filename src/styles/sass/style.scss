@@ -30,6 +30,7 @@
 @import 'theme/accordion';
 @import 'theme/tumbler';
 @import 'theme/toggle';
+@import 'theme/subnav';
 
 // 2. Import default variables and available mixins.
 @import '../../../node_modules/uikit/src/scss/variables';
@@ -55,6 +56,7 @@
 @import 'theme/accordion-mixins';
 @import 'theme/table-mixins';
 @import 'theme/list-mixins';
+@import 'theme/subnav-mixins';
 
 // 4. Import UIkit
 @import '../../../node_modules/uikit/src/scss/uikit';

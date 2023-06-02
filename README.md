@@ -41,6 +41,7 @@
 - [Card][card]
 - [Form][form]
 - [Icon][icon]
+- [Subnav][subnav]
 - [Typography][typography]
 
 [figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
