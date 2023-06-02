@@ -34,14 +34,13 @@
 Базовые интерфейсные компоненты, из которых создаются более сложные компоненты и страницы.
 
 - [Alert][alert]
+- [Badge][badge]
 - [Box][box]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Card][card]
 - [Form][form]
 - [Icon][icon]
-- [Label][label]
-- [Subnav][subnav]
 - [Typography][typography]
 
 [figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
