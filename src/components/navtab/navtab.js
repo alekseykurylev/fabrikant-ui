@@ -8,7 +8,7 @@
 
     navLeft.insertAdjacentHTML(
       'beforeend',
-      `<li class="uk-more" hidden>
+      `<li class="uk-more">
         <a href="#">Ещё</a>
         <ul uk-drop="pos: bottom-right" uk-nav></ul>
       </li>`
