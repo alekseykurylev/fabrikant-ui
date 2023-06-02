@@ -11,9 +11,11 @@
 @import 'theme/breadcrumb';
 @import 'theme/card';
 @import 'theme/close';
-@import 'theme/label';
+
+// @import 'theme/label';
 @import 'theme/badge';
-@import 'theme/subnav';
+
+// @import 'theme/subnav';
 @import 'theme/container';
 @import 'theme/navbar';
 @import 'theme/nav';
@@ -42,9 +44,7 @@
 @import 'theme/breadcrumb-mixins';
 @import 'theme/card-mixins';
 @import 'theme/margin-mixins';
-@import 'theme/label-mixins';
 @import 'theme/badge-mixins';
-@import 'theme/subnav-mixins';
 @import 'theme/navbar-mixins';
 @import 'theme/nav-mixins';
 @import 'theme/grid-mixins';
