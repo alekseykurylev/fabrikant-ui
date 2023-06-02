@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../components/footer/footer.css" />
     <link rel="stylesheet" href="../../components/toolbar/toolbar.css" />
+    <link rel="stylesheet" href="../../components/navtab/navtab.css" />
 
     <script src="../../js/uikit.min.js"></script>
     <script src="../../js/uikit-icons.min.js"></script>
@@ -538,12 +539,42 @@
 
           <div class="uk-child-width-expand uk-grid-small" uk-grid>
             <div>
-              <ul class="uk-subnav uk-subnav-tab">
-                <li class="uk-active"><a href="#">Общая информация</a></li>
-                <li><a href="#">Информация о предмете контракта</a></li>
-                <li><a href="#">Документы</a></li>
-                <li><a href="#">События</a></li>
-              </ul>
+              <div class="uk-navtab">
+                <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+                  <div class="uk-hidden@s">
+                    <ul class="uk-navtab-nav">
+                      <li class="uk-active">
+                        <a href="#">
+                          Все
+                          <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                        </a>
+                        <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                          <li><a href="#">Общая информация</a></li>
+                          <li><a href="#">Информация о предмете контракта</a></li>
+                          <li><a href="#">Документы</a></li>
+                          <li><a href="#">События</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="uk-navtab-left uk-visible@s">
+                    <ul class="uk-navtab-nav">
+                      <li class="uk-active">
+                        <a href="#">Общая информация</a>
+                      </li>
+                      <li>
+                        <a href="#">Информация о предмете контракта</a>
+                      </li>
+                      <li>
+                        <a href="#">Документы</a>
+                      </li>
+                      <li>
+                        <a href="#">События</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
               <section class="uk-box">
                 <div class="uk-box-body">
@@ -2400,6 +2431,7 @@
     </footer>
 
     <script src="../../components/header/navbar.js"></script>
+    <script src="../../components/navtab/navtab.js"></script>
     <script src="../../components/toolbar/toolbar.js"></script>
   </body>
 </html>
