@@ -3,8 +3,6 @@
 
   navtabs.forEach((navtab) => {
     const navLeft = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav');
-    const itemsLeft = navtab.querySelectorAll('.uk-navtab-left > .uk-navtab-nav > li');
-    const navRight = navtab.querySelector('.uk-navtab-right > .uk-navtab-nav');
 
     navLeft.insertAdjacentHTML(
       'beforeend',
@@ -15,21 +13,23 @@
     );
 
     const onResize = () => {
-      const itemRight = navtab.querySelector('.uk-navtab-right > .uk-navtab-nav');
+      const itemsLeft = navtab.querySelectorAll('.uk-navtab-left > .uk-navtab-nav > li:not(.uk-more)');
       const itemMore = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav > li.uk-more');
       const navDrop = navtab.querySelector('.uk-navtab-left > .uk-navtab-nav > li.uk-more > ul');
-
-      const navtabWidth = navtab.offsetWidth;
-      const itemRightWidth = itemRight ? itemRight.offsetWidth : 0;
-      const itemMoreWidth = itemMore.offsetWidth;
+      const navRight = navtab.querySelector('.uk-navtab-right > .uk-navtab-nav');
 
       itemsLeft.forEach((item) => {
         item.hidden = false;
       });
 
+      itemMore.hidden = false;
       navDrop.innerHTML = '';
 
-      let stopWidth = itemMoreWidth + itemRightWidth + 24;
+      const navtabWidth = navtab.offsetWidth;
+      const navRightWidth = navRight ? navRight.offsetWidth : 0;
+      const itemMoreWidth = itemMore.offsetWidth;
+
+      let stopWidth = itemMoreWidth + navRightWidth + 24;
 
       itemsLeft.forEach((item) => {
         if (navtabWidth >= stopWidth + item.offsetWidth) {
@@ -46,7 +46,7 @@
         itemMore.hidden = true;
       }
 
-      if (navtab.querySelector('li.uk-more > ul > li.uk-active')) {
+      if (navDrop.querySelector('li.uk-active')) {
         itemMore.classList.add('uk-active');
       } else {
         itemMore.classList.remove('uk-active');
