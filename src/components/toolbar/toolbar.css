@@ -8,7 +8,8 @@
 
   width: 100%;
 
-  background: var(--color-mystic-40);
+  background: rgb(247 249 252 / 60%);
+  backdrop-filter: blur(40px);
   border-top: 1px solid var(--color-mystic-200);
   box-shadow: 0 -13px 16px rgb(160 182 182 / 10%);
 }
