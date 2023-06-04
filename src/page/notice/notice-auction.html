@@ -2181,41 +2181,42 @@
             <aside class="uk-width-auto uk-visible@l" style="padding-top: 47px">
               <div class="uk-width-medium">
                 <div uk-sticky="end: !aside; offset: 32">
-                  <ul
-                    class="uk-nav uk-nav-aside"
-                    uk-scrollspy-nav="closest: li; scroll: true; offset: 24"
-                    style="max-height: 144px"
-                    uk-overflow-auto>
-                    <li>
-                      <a href="#anchor-1">Основные сведения о закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-2">Сведения об организаторе</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-3">Контактная информация</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-4">Регламентированные сроки по закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-5">Преимущества, требования, ограничения</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-6">Сведения о заказчиках</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-7">Документы по закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-8">Запросы разъяснений</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-9">Информация о контрактах по закупке</a>
-                    </li>
-                  </ul>
+                  <div class="uk-nav-compact">
+                    <ul
+                      class="uk-nav uk-nav-aside"
+                      uk-scrollspy-nav="closest: li; scroll: true; offset: 24"
+                      uk-overflow-auto>
+                      <li>
+                        <a href="#anchor-1">Основные сведения о закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-2">Сведения об организаторе</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-3">Контактная информация</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-4">Регламентированные сроки по закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-5">Преимущества, требования, ограничения</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-6">Сведения о заказчиках</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-7">Документы по закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-8">Запросы разъяснений</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-9">Информация о контрактах по закупке</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top">
+                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top" hidden>
                     <div class="uk-box-body">
                       <h4 class="uk-h3 uk-margin-small">Условия участия</h4>
                       <ul class="uk-list uk-margin-remove">
@@ -2249,7 +2250,7 @@
                     </div>
                   </div>
 
-                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top">
+                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top" hidden>
                     <div class="uk-box-body">
                       <h4 class="uk-h3 uk-margin-small">Вам также понадобится</h4>
                       <ul class="uk-list uk-margin-remove">
@@ -2519,5 +2520,34 @@
     <script src="../../components/header/navbar.js"></script>
     <script src="../../components/navtab/navtab.js"></script>
     <script src="../../components/toolbar/toolbar.js"></script>
+
+    <script>
+      const container = document.querySelector('.uk-nav-compact');
+      const nav = container.querySelector('.uk-nav');
+      const firstItem = nav.querySelector('li:first-child');
+      const lastItem = nav.querySelector('li:last-child');
+
+      UIkit.util.on(nav, 'active', (event) => {
+        event.detail[1].scrollIntoView({ block: 'center', inline: 'center' });
+      });
+
+      const onScroll = () => {
+        if (UIkit.util.isInView(firstItem, -14)) {
+          container.classList.remove('uk-nav-box-shadow-top');
+        } else {
+          container.classList.add('uk-nav-box-shadow-top');
+        }
+
+        if (UIkit.util.isInView(lastItem, -14)) {
+          container.classList.remove('uk-nav-box-shadow-bottom');
+        } else {
+          container.classList.add('uk-nav-box-shadow-bottom');
+        }
+      };
+
+      onScroll();
+
+      nav.addEventListener('scroll', onScroll);
+    </script>
   </body>
 </html>
