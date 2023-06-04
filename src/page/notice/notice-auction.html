@@ -537,8 +537,8 @@
             </div>
           </div>
 
-          <div class="uk-child-width-expand uk-grid-small" uk-grid>
-            <div>
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-expand">
               <div class="uk-navtab">
                 <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
                   <div class="uk-hidden@s">
@@ -2178,10 +2178,14 @@
               </section>
             </div>
 
-            <aside class="uk-width-auto uk-visible@l">
+            <aside class="uk-width-auto uk-visible@l" style="padding-top: 47px">
               <div class="uk-width-medium">
                 <div uk-sticky="end: !aside; offset: 32">
-                  <ul class="uk-nav uk-nav-aside" uk-scrollspy-nav="closest: li; scroll: true; offset: 24">
+                  <ul
+                    class="uk-nav uk-nav-aside"
+                    uk-scrollspy-nav="closest: li; scroll: true; offset: 24"
+                    style="max-height: 144px"
+                    uk-overflow-auto>
                     <li>
                       <a href="#anchor-1">Основные сведения о закупке</a>
                     </li>
