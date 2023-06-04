@@ -2207,10 +2207,7 @@
               <div class="uk-width-medium">
                 <div uk-sticky="end: !aside; offset: 32">
                   <div class="uk-nav-compact">
-                    <ul
-                      class="uk-nav uk-nav-aside"
-                      uk-scrollspy-nav="closest: li; scroll: true; offset: 24"
-                      uk-overflow-auto>
+                    <ul class="uk-nav uk-nav-aside" uk-scrollspy-nav="closest: li; scroll: true; offset: 24">
                       <li>
                         <a href="#anchor-1">Основные сведения о закупке</a>
                       </li>
@@ -2550,30 +2547,30 @@
     <script>
       const container = document.querySelector('.uk-nav-compact');
       const nav = container.querySelector('.uk-nav');
-      const firstItem = nav.querySelector('li:first-child');
-      const lastItem = nav.querySelector('li:last-child');
+      // const firstItem = nav.querySelector('li:first-child');
+      // const lastItem = nav.querySelector('li:last-child');
 
       UIkit.util.on(nav, 'active', (event) => {
         event.detail[1].scrollIntoView({ block: 'center', inline: 'center' });
       });
 
-      const onScroll = () => {
-        if (UIkit.util.isInView(firstItem, -14)) {
-          container.classList.remove('uk-nav-box-shadow-top');
-        } else {
-          container.classList.add('uk-nav-box-shadow-top');
-        }
+      // const onScroll = () => {
+      //   if (UIkit.util.isInView(firstItem, -14)) {
+      //     container.classList.remove('uk-nav-box-shadow-top');
+      //   } else {
+      //     container.classList.add('uk-nav-box-shadow-top');
+      //   }
 
-        if (UIkit.util.isInView(lastItem, -14)) {
-          container.classList.remove('uk-nav-box-shadow-bottom');
-        } else {
-          container.classList.add('uk-nav-box-shadow-bottom');
-        }
-      };
+      //   if (UIkit.util.isInView(lastItem, -14)) {
+      //     container.classList.remove('uk-nav-box-shadow-bottom');
+      //   } else {
+      //     container.classList.add('uk-nav-box-shadow-bottom');
+      //   }
+      // };
 
-      onScroll();
+      // onScroll();
 
-      nav.addEventListener('scroll', onScroll);
+      // nav.addEventListener('scroll', onScroll);
     </script>
   </body>
 </html>
