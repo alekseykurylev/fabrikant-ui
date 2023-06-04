@@ -1,0 +1,1 @@
+"use strict";(()=>{document.querySelector(".uk-timeline"),document.querySelector(".uk-timeline > li:first-child"),document.querySelector(".uk-timeline > li:last-child");const e=()=>{};window.addEventListener("scroll",e),window.addEventListener("resize",e)})();

@@ -28,6 +28,7 @@
 - [List News][list-news]
 - [Navtab][navtab]
 - [Search Bar][search-bar] [in progress]
+- [Timeline][timeline] [in progress]
 - [Toolbar][toolbar]
 
 ## UI:
@@ -58,6 +59,7 @@
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
 [search-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/search-bar/search-bar.html
 [navtab]: https://alekseykurylev.github.io/fabrikant-ui/src/components/navtab/navtab.html
+[timeline]: https://alekseykurylev.github.io/fabrikant-ui/src/components/timeline/timeline.html
 [toolbar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/toolbar/toolbar.html
 [button]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/button/button.html
 [form]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/form/form.html
