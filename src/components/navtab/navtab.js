@@ -21,7 +21,6 @@
       itemsLeft.forEach((item) => {
         item.hidden = false;
       });
-
       itemMore.hidden = false;
       navDrop.innerHTML = '';
 

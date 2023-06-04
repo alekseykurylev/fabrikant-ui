@@ -26,7 +26,7 @@
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
-- [Navtab][navtab] [in progress]
+- [Navtab][navtab]
 - [Search Bar][search-bar] [in progress]
 - [Toolbar][toolbar]
 
