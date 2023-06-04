@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../components/footer/footer.css" />
     <link rel="stylesheet" href="../../components/toolbar/toolbar.css" />
     <link rel="stylesheet" href="../../components/navtab/navtab.css" />
+    <link rel="stylesheet" href="../../components/timeline/timeline.css" />
 
     <script src="../../js/uikit.min.js"></script>
     <script src="../../js/uikit-icons.min.js"></script>
@@ -596,16 +597,38 @@
                     </div>
                   </div>
 
-                  <div
-                    style="
-                      background-color: aliceblue;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      height: 106px;
-                    ">
-                    😎
-                  </div>
+                  <ul class="uk-timeline" uk-overflow-auto>
+                    <li class="uk-timeline-active">
+                      <p>Публикации извещения</p>
+                      <div></div>
+                      <span>14.06.2022</span>
+                    </li>
+                    <li class="uk-timeline-active uk-timeline-today">
+                      <p>Прием заявок</p>
+                      <div></div>
+                      <span>14.06.2022</span>
+                    </li>
+                    <li>
+                      <p>Ожидание подачи ЦП</p>
+                      <div></div>
+                      <span>24.06.2022</span>
+                    </li>
+                    <li>
+                      <p>Прием ЦП</p>
+                      <div></div>
+                      <span>24.06.2022</span>
+                    </li>
+                    <li>
+                      <p>Подведение итогов</p>
+                      <div></div>
+                      <span>14.06.2022</span>
+                    </li>
+                    <li>
+                      <p>Заключение контракта</p>
+                      <div></div>
+                      <span>14.06.2022</span>
+                    </li>
+                  </ul>
 
                   <hr />
 
@@ -2519,6 +2542,7 @@
 
     <script src="../../components/header/navbar.js"></script>
     <script src="../../components/navtab/navtab.js"></script>
+    <script src="../../components/timeline/timeline.js"></script>
     <script src="../../components/toolbar/toolbar.js"></script>
 
     <script>
