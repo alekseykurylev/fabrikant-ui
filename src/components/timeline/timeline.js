@@ -35,9 +35,46 @@
     bar.append(thumb);
   };
 
+  let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+  const downMouse = function (e) {
+    if (timeline.scrollWidth > timeline.clientWidth) {
+      timeline.style.cursor = 'grabbing';
+      timeline.style.userSelect = 'none';
+
+      pos = {
+        left: timeline.scrollLeft,
+        top: timeline.scrollTop,
+
+        x: e.clientX,
+        y: e.clientY
+      };
+
+      document.addEventListener('mousemove', moveMouse);
+      document.addEventListener('mouseup', upMouse);
+    }
+  };
+
+  const moveMouse = function (e) {
+    const dx = e.clientX - pos.x;
+    const dy = e.clientY - pos.y;
+
+    timeline.scrollTop = pos.top - dy;
+    timeline.scrollLeft = pos.left - dx;
+  };
+
+  const upMouse = function () {
+    timeline.style.removeProperty('cursor');
+    timeline.style.removeProperty('user-select');
+
+    document.removeEventListener('mousemove', moveMouse);
+    document.removeEventListener('mouseup', upMouse);
+  };
+
   setOverlap();
   setBar();
 
-  timeline.addEventListener('scroll', setOverlap);
   window.addEventListener('resize', setOverlap);
+  timeline.addEventListener('mousedown', downMouse);
+  timeline.addEventListener('scroll', setOverlap);
 })();
