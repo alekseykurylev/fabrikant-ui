@@ -9,15 +9,15 @@
     const itemLastWidth = itemLast.offsetWidth - 1;
 
     if (UIkit.util.isInView(itemFirst, 0, itemFirstWidth * -1)) {
-      container.classList.remove('uk-timeline-box-shadow-left');
+      container.classList.remove('uk-left-overlap');
     } else {
-      container.classList.add('uk-timeline-box-shadow-left');
+      container.classList.add('uk-left-overlap');
     }
 
     if (UIkit.util.isInView(itemLast, 0, itemLastWidth * -1)) {
-      container.classList.remove('uk-timeline-box-shadow-right');
+      container.classList.remove('uk-right-overlap');
     } else {
-      container.classList.add('uk-timeline-box-shadow-right');
+      container.classList.add('uk-right-overlap');
     }
   };
 
