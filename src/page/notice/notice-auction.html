@@ -1454,21 +1454,6 @@
                                 </ul>
                               </div>
                             </li>
-
-                            <li>
-                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
-                                Дополнительная информация
-                                <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </h4>
-                              <div class="uk-accordion-content">
-                                <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дополнительная информация</h3>
-                                <p class="uk-margin-remove-top">
-                                  Правило альтернанса непрерывно. Комбинаторное приращение, без использования формальных
-                                  признаков поэзии, приводит культурный парафраз, также необходимо сказать о сочетании
-                                  метода апроприации художественных стилей прошлого с авангардистскими стратегиями
-                                </p>
-                              </div>
-                            </li>
                           </ul>
                           <hr />
                           <ul class="uk-list uk-list-divider uk-list-large">
@@ -1798,6 +1783,25 @@
                             </li>
                           </ul>
                           <hr />
+                          <ul
+                            class="uk-margin-remove-bottom uk-accordion-divider"
+                            uk-accordion="toggle: > .uk-h3; multiple: true">
+                            <li>
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
+                                Дополнительная информация
+                                <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                              </h4>
+                              <div class="uk-accordion-content">
+                                <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дополнительная информация</h3>
+                                <p class="uk-margin-remove-top">
+                                  Правило альтернанса непрерывно. Комбинаторное приращение, без использования формальных
+                                  признаков поэзии, приводит культурный парафраз, также необходимо сказать о сочетании
+                                  метода апроприации художественных стилей прошлого с авангардистскими стратегиями
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                          <hr />
                         </div>
                       </li>
                       <li>
@@ -1805,33 +1809,21 @@
                           Сведения о заказчике ООО «Коммунальные системы»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">
-                          <span class="uk-badge uk-badge-width-46">
-                            <span uk-icon="done-16"></span>
-                          </span>
-                        </div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                       <li>
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Лесные жители»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">
-                          <span class="uk-badge uk-badge-width-46">
-                            <span uk-icon="done-16"></span>
-                          </span>
-                        </div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                       <li>
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Крутые горки»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">
-                          <span class="uk-badge uk-badge-width-46">
-                            <span uk-icon="done-16"></span>
-                          </span>
-                        </div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                     </ul>
                   </div>
@@ -2554,7 +2546,7 @@
         const activeItem = nav.querySelector('li.uk-active');
 
         nav.scrollTo({
-          top: activeItem.offsetTop - container.clientHeight / 2 + 24,
+          top: activeItem.offsetTop - container.clientHeight / 2 + activeItem.clientHeight / 2,
           behavior: 'smooth'
         });
       });
