@@ -28,7 +28,7 @@
 - [List News][list-news]
 - [Navtab][navtab]
 - [Search Bar][search-bar] [in progress]
-- [Timeline][timeline] [in progress]
+- [Timeline][timeline]
 - [Toolbar][toolbar]
 
 ## UI:
