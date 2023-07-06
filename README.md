@@ -26,20 +26,23 @@
 - [Footer][footer]
 - [Header][header]
 - [List News][list-news]
+- [Navtab][navtab]
 - [Search Bar][search-bar] [in progress]
+- [Timeline][timeline]
+- [Toolbar][toolbar]
 
 ## UI:
 
 Базовые интерфейсные компоненты, из которых создаются более сложные компоненты и страницы.
 
 - [Alert][alert]
+- [Badge][badge]
 - [Box][box]
 - [Breadcrumb][breadcrumb]
 - [Button][button]
 - [Card][card]
 - [Form][form]
 - [Icon][icon]
-- [Label][label]
 - [Subnav][subnav]
 - [Typography][typography]
 
@@ -55,6 +58,9 @@
 [footer]: https://alekseykurylev.github.io/fabrikant-ui/src/components/footer/footer.html
 [list-news]: https://alekseykurylev.github.io/fabrikant-ui/src/components/list-news/list-news.html
 [search-bar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/search-bar/search-bar.html
+[navtab]: https://alekseykurylev.github.io/fabrikant-ui/src/components/navtab/navtab.html
+[timeline]: https://alekseykurylev.github.io/fabrikant-ui/src/components/timeline/timeline.html
+[toolbar]: https://alekseykurylev.github.io/fabrikant-ui/src/components/toolbar/toolbar.html
 [button]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/button/button.html
 [form]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/form/form.html
 [alert]: https://alekseykurylev.github.io/fabrikant-ui/src/ui/alert/alert.html

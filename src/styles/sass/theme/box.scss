@@ -12,26 +12,11 @@
 
 .uk-box-header {
   padding: $global-small-margin;
+  border-bottom: 1px solid var(--color-mystic-300);
 }
 
-.uk-box-header + .uk-box-body {
-  border-top: 1px solid var(--color-mystic-300);
-}
-
-.uk-box.uk-accordion .uk-box-header {
-  cursor: pointer;
-  display: block;
-  margin-bottom: 0;
-  color: var(--color-cerulean-500);
-}
-
-.uk-box.uk-accordion .uk-box-header [class^='uk-h'] {
-  color: var(--color-cerulean-500);
-}
-
-.uk-box.uk-accordion .uk-box-header:hover,
-.uk-box.uk-accordion .uk-box-header:hover [class^='uk-h'] {
-  color: var(--color-cerulean-link-hover);
+.uk-box.uk-accordion > :not(.uk-open) > .uk-box-header {
+  border-bottom: 0;
 }
 
 .uk-box.uk-accordion .uk-box-header [uk-icon='dropdown-down'] {
@@ -84,6 +69,11 @@
 
   .uk-box-16 .uk-box-body {
     padding: 16px;
+  }
+
+  .uk-box-vertical-16 .uk-box-body {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .uk-box-32 .uk-box-body {

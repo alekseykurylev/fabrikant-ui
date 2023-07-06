@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../styles/uikit.min.css" />
+    <link rel="stylesheet" href="./navtab.css" />
+
+    <script src="../../js/uikit.min.js"></script>
+    <script src="../../js/uikit-icons.min.js"></script>
+
+    <title>Navtab</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <h1>Navtab</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://github.com/alekseykurylev/fabrikant-ui/tree/release/src/components/tab-bar"
+            target="_blank">
+            <span class="uk-text-secondary" uk-icon="github"></span>
+          </a>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=6291-55022&t=7I8wQ2FMV15eFm2Q-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+        <p>description</p>
+      </div>
+    </section>
+
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-navtab">
+          <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+            <div class="uk-hidden@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">
+                    Все
+                    <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                  </a>
+                  <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                    <li><a href="#">Общая информация</a></li>
+                    <li><a href="#">Информация о предмете контракта</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">События</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-left uk-visible@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">Общая информация</a>
+                </li>
+                <li>
+                  <a href="#">Информация о предмете контракта</a>
+                </li>
+                <li>
+                  <a href="#">Документы</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a href="#">Информация о предмете контракта</a>
+                </li>
+                <li>
+                  <a href="#">Документы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="uk-box">
+          <div class="uk-box-body">
+            <h2>Box</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-navtab uk-navtab-16">
+          <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+            <div class="uk-hidden@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">
+                    Все
+                    <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                  </a>
+                  <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                    <li><a href="#">Приём заявок</a></li>
+                    <li><a href="#">Ожидание подачи ЦП</a></li>
+                    <li><a href="#">Приём ЦП</a></li>
+                    <li><a href="#">Работа комиссии</a></li>
+                    <li><a href="#">Заключение контракта</a></li>
+                    <li><a href="#">Завершённые</a></li>
+                    <li><a href="#">Приостановленные</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-left uk-visible@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">Все</a>
+                </li>
+                <li>
+                  <a href="#">Приём заявок</a>
+                </li>
+                <li>
+                  <a href="#">Ожидание подачи ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Приём ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Работа комиссии</a>
+                </li>
+                <li>
+                  <a href="#">Заключение контракта</a>
+                </li>
+                <li>
+                  <a href="#">Завершённые</a>
+                </li>
+                <li>
+                  <a href="#">Приостановленные</a>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-right uk-flex-none">
+              <ul class="uk-navtab-nav">
+                <li>
+                  <a href="#">
+                    <span class="uk-icon-size-16 uk-text-muted-bh500" uk-icon="star"></span>
+                    <span class="uk-margin-8-left uk-visible@xl">Избранное</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="uk-box uk-box-16">
+          <div class="uk-box-body">
+            <h2>Box 16</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-navtab uk-navtab-16 uk-navtab-muted">
+          <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+            <div class="uk-hidden@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">
+                    Все
+                    <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                  </a>
+                  <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                    <li><a href="#">Приём заявок</a></li>
+                    <li><a href="#">Ожидание подачи ЦП</a></li>
+                    <li><a href="#">Приём ЦП</a></li>
+                    <li><a href="#">Работа комиссии</a></li>
+                    <li><a href="#">Заключение контракта</a></li>
+                    <li><a href="#">Завершённые</a></li>
+                    <li><a href="#">Приостановленные</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-left uk-visible@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">Все</a>
+                </li>
+                <li>
+                  <a href="#">Приём заявок</a>
+                </li>
+                <li>
+                  <a href="#">Ожидание подачи ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Приём ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Работа комиссии</a>
+                </li>
+                <li>
+                  <a href="#">Заключение контракта</a>
+                </li>
+                <li>
+                  <a href="#">Завершённые</a>
+                </li>
+                <li>
+                  <a href="#">Приостановленные</a>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-right uk-flex-none">
+              <ul class="uk-navtab-nav">
+                <li>
+                  <a href="#">
+                    <span class="uk-icon-size-16 uk-text-muted-bh500" uk-icon="star"></span>
+                    <span class="uk-margin-8-left uk-visible@xl">Избранное</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="uk-box uk-box-16">
+          <div class="uk-box-body">
+            <h2>Navtab muted</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-navtab uk-navtab-16 uk-navtab-muted">
+          <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+            <div class="uk-hidden@s">
+              <ul class="uk-navtab-nav">
+                <li class="uk-active">
+                  <a href="#">
+                    Все
+                    <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                  </a>
+                  <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                    <li><a href="#">Приём заявок</a></li>
+                    <li><a href="#">Ожидание подачи ЦП</a></li>
+                    <li><a href="#">Приём ЦП</a></li>
+                    <li><a href="#">Работа комиссии</a></li>
+                    <li><a href="#">Заключение контракта</a></li>
+                    <li><a href="#">Завершённые</a></li>
+                    <li><a href="#">Приостановленные</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-left uk-visible@s">
+              <ul class="uk-navtab-nav">
+                <li>
+                  <a href="#">Все</a>
+                </li>
+                <li>
+                  <a href="#">Приём заявок</a>
+                </li>
+                <li>
+                  <a href="#">Ожидание подачи ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Приём ЦП</a>
+                </li>
+                <li>
+                  <a href="#">Работа комиссии</a>
+                </li>
+                <li>
+                  <a href="#">Заключение контракта</a>
+                </li>
+                <li>
+                  <a href="#">Завершённые</a>
+                </li>
+                <li class="uk-active">
+                  <a href="#">Приостановленные</a>
+                </li>
+                <li>
+                  <a href="#">Работа комиссии</a>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navtab-right uk-flex-none">
+              <ul class="uk-navtab-nav">
+                <li>
+                  <a href="#">
+                    <span class="uk-icon-size-16 uk-text-muted-bh500" uk-icon="star"></span>
+                    <span class="uk-margin-8-left uk-visible@xl">Избранное</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="uk-box uk-box-16">
+          <div class="uk-box-body">
+            <h2>Active more</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="./navtab.js"></script>
+  </body>
+</html>

@@ -35,6 +35,24 @@
     margin-top: 8px;
   }
 
+  .uk-grid-4,
+  .uk-grid-column-4 {
+    margin-left: -4px;
+  }
+
+  .uk-grid-4 > *,
+  .uk-grid-column-4 > * {
+    padding-left: 4px;
+  }
+
+  .uk-grid + .uk-grid-4,
+  .uk-grid + .uk-grid-row-4,
+  .uk-grid-4 > .uk-grid-margin,
+  .uk-grid-row-4 > .uk-grid-margin,
+  * + .uk-grid-margin-4 {
+    margin-top: 4px;
+  }
+
   // Point
 
   .uk-grid-point > * {

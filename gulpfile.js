@@ -74,6 +74,9 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('src/styles/**/*.scss', gulp.series(uikitStyle));
+  gulp.watch('src/js/*.js', gulp.series(uikitScript));
+  gulp.watch('src/**/*.css', gulp.series(copyStyle));
+  gulp.watch('src/**/*.js', gulp.series(copyScript));
   gulp.watch('src/**/*.css').on('change', browser.reload);
   gulp.watch('src/**/*.js').on('change', browser.reload);
   gulp.watch('src/**/*.html').on('change', browser.reload);

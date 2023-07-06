@@ -11,9 +11,7 @@
 @import 'theme/breadcrumb';
 @import 'theme/card';
 @import 'theme/close';
-@import 'theme/label';
 @import 'theme/badge';
-@import 'theme/subnav';
 @import 'theme/container';
 @import 'theme/navbar';
 @import 'theme/nav';
@@ -27,6 +25,8 @@
 @import 'theme/width';
 @import 'theme/accordion';
 @import 'theme/tumbler';
+@import 'theme/toggle';
+@import 'theme/subnav';
 
 // 2. Import default variables and available mixins.
 @import '../../../node_modules/uikit/src/scss/variables';
@@ -41,9 +41,7 @@
 @import 'theme/breadcrumb-mixins';
 @import 'theme/card-mixins';
 @import 'theme/margin-mixins';
-@import 'theme/label-mixins';
 @import 'theme/badge-mixins';
-@import 'theme/subnav-mixins';
 @import 'theme/navbar-mixins';
 @import 'theme/nav-mixins';
 @import 'theme/grid-mixins';
@@ -54,6 +52,7 @@
 @import 'theme/accordion-mixins';
 @import 'theme/table-mixins';
 @import 'theme/list-mixins';
+@import 'theme/subnav-mixins';
 
 // 4. Import UIkit
 @import '../../../node_modules/uikit/src/scss/uikit';

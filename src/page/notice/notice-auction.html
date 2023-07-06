@@ -14,6 +14,9 @@
 
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/toolbar/toolbar.css" />
+    <link rel="stylesheet" href="../../components/navtab/navtab.css" />
+    <link rel="stylesheet" href="../../components/timeline/timeline.css" />
 
     <script src="../../js/uikit.min.js"></script>
     <script src="../../js/uikit-icons.min.js"></script>
@@ -53,7 +56,16 @@
                       Дополнительные сервисы
                       <span uk-nav-parent-icon></span>
                     </a>
-                    <ul class="uk-nav-sub">
+                    <ul class="uk-nav-sub" uk-nav>
+                      <li class="uk-parent">
+                        <a href="#">
+                          123213
+                          <span uk-nav-parent-icon></span>
+                        </a>
+                        <ul class="uk-nav-sub">
+                          <li><a href="#">12321312</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#">Калькулятор пени и штрафов ПП 1042</a></li>
                       <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
                       <li><a href="#">Поиск по решениям ФАС</a></li>
@@ -103,8 +115,7 @@
               </div>
               <div class="uk-offcanvas-footer uk-text-right">
                 <div class="uk-text-small uk-margin-small-bottom">
-                  <a class="uk-link-muted" href="tel:84994606602">8 (499) 460-66-02</a>
-                  <a class="uk-link-muted uk-margin-12-left" href="tel:84951389678">8 (495) 138-96-78</a>
+                  <a class="uk-link-muted" href="tel:+74951097575">+7 (495) 109-75-75</a>
                 </div>
                 <div>
                   <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
@@ -122,80 +133,52 @@
               <li>
                 <a href="#">
                   <span uk-icon="shuffle" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-muted uk-margin-4-left">1 / 3</span>
+                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                    1 / 3
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span uk-icon="alert" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-muted uk-margin-4-left">15 / 5</span>
+                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                    15 / 5
+                  </span>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span uk-icon="file" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-muted uk-margin-4-left">45</span>
+                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">45</span>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span uk-icon="complaint" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-muted uk-margin-4-left">15</span>
+                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">15</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div>
-          <a class="uk-flex uk-flex-middle" href="#"><span uk-icon="down-arrow-circle"></span></a>
-          <ul uk-drop="pos: bottom-right; mode: click" uk-nav>
-            <li class="uk-nav-header">
-              <div class="uk-flex uk-flex-middle uk-text-muted">
-                <span uk-icon="user" class="uk-icon"></span>
-                <div class="uk-margin-12-left uk-width-expand">
-                  <div class="uk-text-xsmall uk-text-muted-bh200">
-                    <div class="uk-text-truncate-clamp-2">
-                      Заказчик:
-                      <a class="uk-text-bold" href="#">
-                        ООО «Тестовая организация очень очень длинное предлинное название»
-                      </a>
-                    </div>
+          <a class="uk-flex uk-flex-middle" href="#mobile-menu-user" uk-toggle>
+            <span uk-icon="down-arrow-circle"></span>
+          </a>
+          <div id="mobile-menu-user" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
+              <div class="uk-offcanvas-header">
+                <div class="uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">Heading</div>
+                  <div class="uk-width-auto">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
                   </div>
-                  <div class="uk-text-small uk-text-truncate">Сазанов Антон Михайлович</div>
                 </div>
               </div>
-            </li>
-            <li class="uk-nav-divider"></li>
-            <li>
-              <a href="#">
-                <span class="uk-margin-small-right uk-text-primary" uk-icon="telegram"></span>
-                Telegram-бот
-              </a>
-            </li>
-            <li class="uk-nav-divider"></li>
-            <li>
-              <a href="#">
-                <span class="uk-margin-small-right uk-text-primary" uk-icon="bell"></span>
-                Уведомления
-              </a>
-            </li>
-            <li class="uk-nav-divider"></li>
-            <li class="uk-parent">
-              <a href="#">
-                Настройка параметров
-                <span uk-nav-parent-icon></span>
-              </a>
-              <ul class="uk-nav-sub">
-                <li><a href="#">Параметр первый</a></li>
-                <li><a href="#">Параметр второй</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Пользователи</a></li>
-            <li><a href="#">Шаблоны протоколов</a></li>
-            <li><a href="#">Реестр комиссий</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Выйти</a></li>
-          </ul>
+              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>body</div>
+              <div class="uk-offcanvas-footer">footer</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -208,19 +191,29 @@
                   <div class="uk-flex">
                     <span uk-icon="server-time" class="uk-icon-size-16 uk-margin-8-right"></span>
                     <div>
-                      <ul class="uk-grid-point uk-child-width-auto" uk-grid>
-                        <li>15.01.2022</li>
-                        <li>12:42:45 (MSK +4)</li>
-                      </ul>
+                      <span class="dateTime-container" id="serverDateTime">
+                        <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
+                        <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
+                        <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
+                        <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
+                        <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
+                        <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
+                        <span id="serverDateTime-second" class="serverDateTime-second">00</span>
+                      </span>
                     </div>
                   </div>
                   <div class="uk-flex">
                     <span uk-icon="clock" class="uk-icon-size-16 uk-margin-8-right"></span>
                     <div>
-                      <ul class="uk-grid-point uk-child-width-auto" uk-grid>
-                        <li>15.01.2022</li>
-                        <li>12:42:45 (MSK +4)</li>
-                      </ul>
+                      <span class="dateTime-container" id="serverDateTime">
+                        <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
+                        <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
+                        <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
+                        <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
+                        <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
+                        <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
+                        <span id="serverDateTime-second" class="serverDateTime-second">00</span>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -232,10 +225,15 @@
                 <div class="uk-margin-12-left">
                   <div class="uk-text-xsmall uk-text-muted-bh200">Время на сервере</div>
                   <div class="uk-text-small">
-                    <ul class="uk-grid-point uk-child-width-auto" uk-grid>
-                      <li>15.01.2022</li>
-                      <li>12:42:45 (MSK +4)</li>
-                    </ul>
+                    <span class="dateTime-container" id="serverDateTime">
+                      <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
+                      <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
+                      <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
+                      <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
+                      <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
+                      <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
+                      <span id="serverDateTime-second" class="serverDateTime-second">00</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -246,10 +244,15 @@
                 <div class="uk-margin-12-left">
                   <div class="uk-text-xsmall uk-text-muted-bh200">Местное время</div>
                   <div class="uk-text-small">
-                    <ul class="uk-grid-point uk-child-width-auto" uk-grid>
-                      <li>15.01.2022</li>
-                      <li>12:42:45 (MSK +4)</li>
-                    </ul>
+                    <span class="dateTime-container" id="serverDateTime">
+                      <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
+                      <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
+                      <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
+                      <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
+                      <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
+                      <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
+                      <span id="serverDateTime-second" class="serverDateTime-second">00</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -278,38 +281,40 @@
             <li class="header-topbar__bell">
               <a class="uk-flex uk-flex-middle" href="#">
                 <span uk-icon="bell"></span>
-                <span class="uk-badge uk-badge-danger uk-margin-2-left">25</span>
+                <span class="uk-badge uk-badge-small uk-text-small uk-badge-danger uk-margin-2-left">25</span>
               </a>
               <div class="uk-card uk-card-body" uk-drop="pos: bottom-right">
-                <button type="button" uk-close></button>
                 <h4 class="uk-h3 uk-margin-small uk-margin-remove-top">Уведомления</h4>
                 <ul class="uk-list uk-list-divider uk-margin-remove">
                   <li>
                     Ссылка для подписи файла протокола по закупке №5999217711300056111 отправлена членам комиссии
-                    <ul class="uk-text-muted uk-text-small uk-margin-8-top uk-grid-point uk-child-width-auto" uk-grid>
-                      <li>27.01.2022 17:12:21 (MSK+00:00)</li>
-                      <li>Протоколы</li>
+                    <ul
+                      class="uk-text-muted uk-text-small uk-flex-nowrap uk-margin-8-top uk-grid-point uk-child-width-auto"
+                      uk-grid>
+                      <li class="uk-text-nowrap">27.01.2022 17:12:21 (MSK+00:00)</li>
+                      <li class="uk-text-truncate">Публикация протокола рассмотрения и оценки первых частей заявок</li>
                     </ul>
                   </li>
                   <li>
                     Ссылка для подписи файла протокола по закупке №5999217711300056111 отправлена членам комиссии
-                    <ul class="uk-text-muted uk-text-small uk-margin-8-top uk-grid-point uk-child-width-auto" uk-grid>
-                      <li>27.01.2022 17:12:21 (MSK+00:00)</li>
-                      <li>Протоколы</li>
+                    <ul
+                      class="uk-text-muted uk-text-small uk-flex-nowrap uk-margin-8-top uk-grid-point uk-child-width-auto"
+                      uk-grid>
+                      <li class="uk-text-nowrap">27.01.2022 17:12:21 (MSK+00:00)</li>
+                      <li class="uk-text-truncate">Протоколы</li>
                     </ul>
                   </li>
-                  <li>
-                    <div class="uk-flex uk-flex-middle uk-flex-between">
-                      <a class="uk-button uk-button-small uk-button-default uk-button-icon" href="#">
-                        <span class="uk-icon-size-16 uk-text-primary" uk-icon="settings"></span>
-                      </a>
-                      <a class="uk-button uk-button-small uk-button-default" href="#">
-                        <span class="uk-icon-size-16 uk-text-primary uk-margin-8-right" uk-icon="bell"></span>
-                        Показать все уведомления
-                      </a>
-                    </div>
-                  </li>
                 </ul>
+                <hr class="uk-hr-16" />
+                <div class="uk-flex uk-flex-middle uk-flex-between">
+                  <a class="uk-button uk-button-small uk-button-default uk-button-icon" href="#">
+                    <span class="uk-icon-size-16 uk-text-primary" uk-icon="settings"></span>
+                  </a>
+                  <a class="uk-button uk-button-small uk-button-default" href="#">
+                    <span class="uk-icon-size-16 uk-text-primary uk-margin-8-right" uk-icon="bell"></span>
+                    Показать все уведомления
+                  </a>
+                </div>
               </div>
             </li>
             <li>
@@ -320,7 +325,7 @@
               <ul class="uk-nav" uk-drop="pos: bottom-right" uk-nav>
                 <li class="uk-nav-header uk-hidden@m">
                   <div class="uk-flex uk-flex-middle uk-text-muted">
-                    <span uk-icon="user" class="uk-icon"></span>
+                    <span uk-icon="user"></span>
                     <div class="uk-margin-12-left uk-width-expand">
                       <div class="uk-text-xsmall uk-text-muted-bh200">
                         <div class="uk-text-truncate-clamp-2">
@@ -375,50 +380,45 @@
                   <a href="#">
                     <span uk-icon="shuffle" class="uk-icon-size-16"></span>
                     <div class="uk-margin-4-left uk-visible@l">Запросы разъяснений</div>
-                    <span class="uk-badge uk-badge-muted uk-margin-4-left">1 / 3</span>
+                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                      1 / 3
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span uk-icon="alert" class="uk-icon-size-16"></span>
                     <div class="uk-margin-4-left uk-visible@l">Не забыть</div>
-                    <span class="uk-badge uk-badge-muted uk-margin-4-left">15 / 5</span>
+                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                      15 / 5
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span uk-icon="file" class="uk-icon-size-16"></span>
                     <div class="uk-margin-4-left uk-visible@l">Мои протоколы</div>
-                    <span class="uk-badge uk-badge-muted uk-margin-4-left">45</span>
+                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                      45
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span uk-icon="complaint" class="uk-icon-size-16"></span>
                     <div class="uk-margin-4-left uk-visible@l">Жалобы</div>
-                    <span class="uk-badge uk-badge-muted uk-margin-4-left">15</span>
+                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
+                      15
+                    </span>
                   </a>
                 </li>
               </ul>
             </div>
             <div class="uk-width-auto uk-margin-auto-left">
-              <div class="header-hero__tel">
-                <span class="uk-hidden@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                <div class="uk-child-width-auto uk-grid-row-collapse" uk-grid>
-                  <div>
-                    <a href="tel:84994606602">
-                      <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                      8 (499) 460-66-02
-                    </a>
-                  </div>
-                  <div>
-                    <a href="tel:84951389678">
-                      <span class="uk-visible@xl uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                      8 (495) 138-96-78
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <a class="uk-flex uk-flex-middle uk-link-muted" href="tel:+74951097575">
+                <span class="uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
+                +7 (495) 109-75-75
+              </a>
             </div>
           </div>
         </div>
@@ -512,17 +512,6 @@
             </li>
           </ul>
 
-          <div>
-            <button
-              class="uk-button uk-button-default"
-              type="button"
-              uk-toggle="target: #toggle-usage"
-              aria-expanded="false">
-              Toggle
-            </button>
-            <p id="toggle-usage" hidden>What's up?</p>
-          </div>
-
           <div class="uk-child-width-expand@s uk-grid-row-small uk-flex-middle uk-margin-medium-bottom" uk-grid>
             <div>
               <div class="uk-child-width-auto uk-grid-xsmall uk-flex-middle" uk-grid>
@@ -533,11 +522,11 @@
                   <span class="uk-text-primary" uk-icon="star"></span>
                 </div>
                 <div>
-                  <span class="uk-label">ОИ</span>
-                  <span class="uk-label">УИС</span>
+                  <span class="uk-badge uk-badge-muted uk-text-small uk-text-bold uk-text-muted-bh700">ОИ</span>
+                  <span class="uk-badge uk-badge-muted uk-text-small uk-text-bold uk-text-muted-bh700">УИС</span>
                 </div>
                 <div>
-                  <span class="uk-label uk-label-muted uk-text-normal">4 просмотра</span>
+                  <span class="uk-badge uk-badge-muted uk-text-small uk-text-muted-bh500">4 просмотра</span>
                 </div>
               </div>
             </div>
@@ -549,14 +538,45 @@
             </div>
           </div>
 
-          <div class="uk-child-width-expand uk-grid-small" uk-grid>
-            <div>
-              <ul class="uk-subnav uk-subnav-tab">
-                <li class="uk-active"><a href="#">Общая информация</a></li>
-                <li><a href="#">Информация о предмете контракта</a></li>
-                <li><a href="#">Документы</a></li>
-                <li><a href="#">События</a></li>
-              </ul>
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-expand">
+              <div class="uk-navtab">
+                <div class="uk-grid-4 uk-child-width-auto uk-flex-bottom uk-flex-nowrap" uk-grid>
+                  <div class="uk-hidden@s">
+                    <ul class="uk-navtab-nav">
+                      <li class="uk-active">
+                        <a href="#">
+                          Все
+                          <span class="uk-margin-8-left uk-text-primary" uk-icon="dropdown-down"></span>
+                        </a>
+                        <ul class="uk-nav" uk-drop="pos: bottom-left" uk-nav>
+                          <li><a href="#">Общая информация</a></li>
+                          <li><a href="#">Информация о предмете контракта</a></li>
+                          <li><a href="#">Документы</a></li>
+                          <li><a href="#">События</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="uk-navtab-left uk-visible@s">
+                    <ul class="uk-navtab-nav">
+                      <li class="uk-active">
+                        <a href="#">Общая информация</a>
+                      </li>
+                      <li>
+                        <a href="#">Информация о предмете контракта</a>
+                      </li>
+                      <li>
+                        <a href="#">Документы</a>
+                      </li>
+                      <li>
+                        <a href="#">События</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
               <section class="uk-box">
                 <div class="uk-box-body">
                   <div class="uk-flex-middle uk-grid-row-small uk-child-width-expand@s uk-margin-bottom" uk-grid>
@@ -566,7 +586,7 @@
                           <h2>Этапы процедуры</h2>
                         </div>
                         <div>
-                          <span class="uk-label">Прием заявок</span>
+                          <span class="uk-badge uk-text-small uk-text-bold">Прием заявок</span>
                         </div>
                       </div>
                     </div>
@@ -577,104 +597,101 @@
                     </div>
                   </div>
 
-                  <div
-                    style="
-                      background-color: aliceblue;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      height: 106px;
-                    ">
-                    🤪
+                  <div class="uk-timeline-container">
+                    <ul class="uk-timeline">
+                      <li class="uk-timeline-active">
+                        <div class="uk-timeline-label">Публикации извещения</div>
+                        <div class="uk-timeline-bar"></div>
+                        <div class="uk-timeline-date">14.06.2022</div>
+                      </li>
+                      <li class="uk-timeline-active uk-timeline-today" data-days="10" data-day="3">
+                        <div class="uk-timeline-label">Прием заявок</div>
+                        <div class="uk-timeline-bar"></div>
+                        <div class="uk-timeline-date">14.06.2022</div>
+                      </li>
+                      <li>
+                        <div class="uk-timeline-label">Рассмотрение и оценка первых частей заявок</div>
+                        <div class="uk-timeline-bar"></div>
+                        <div class="uk-timeline-date">14.07.2022</div>
+                      </li>
+                      <li>
+                        <div class="uk-timeline-label">Заключение контракта</div>
+                        <div class="uk-timeline-bar"></div>
+                        <div class="uk-timeline-date">24.07.2022</div>
+                      </li>
+                    </ul>
                   </div>
 
                   <hr />
+
                   <h2 id="anchor-1">Общие сведения о закупке</h2>
-                  <div class="uk-child-width-1-2@xl" uk-grid>
-                    <div>
-                      <div class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
-                        <div>
-                          <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Номер извещения</h3>
-                          <a href="#">0198400003222000154</a>
-                        </div>
-                        <div>
-                          <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                            Способ определения поставщика
-                          </h3>
-                          Электронный аукцион
-                        </div>
-                        <div>
-                          <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                            Адрес электронной площадки
-                          </h3>
-                          <a href="http://www.etp-ets.ru">http://www.etp-ets.ru</a>
-                        </div>
-                        <div>
-                          <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Печатная форма</h3>
-                          <a class="uk-flex uk-flex-middle" href="#">
-                            Перейти
-                            <span class="uk-icon-size-16 uk-margin-4-left" uk-icon="dropdown-right"></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Наименование закупки</h3>
-                  <p class="uk-margin-remove-top">
-                    Благоустройство детской площадки между многоквартирными домами №4 и №9 по ул. Мира в жилом районе
-                    Приморский Вилючинского городского округа в рамках реализации проекта "1000 дворов". Ретро имитирует
-                    дисторшн. Райдер, как бы это ни казалось парадоксальным, трансформирует модальный голос. Эти слова
-                    совершенно справедливы, однако микрохроматический интервал начинает музыкальный цикл
-                  </p>
-
-                  <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Валюта</h3>
+                  <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Номер извещения</h3>
+                      <a href="#">0198400003222000154</a>
+                    </li>
+                    <li class="uk-width-1-2@s uk-width-3-4@xl">
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Способ определения поставщика</h3>
+                      Электронный аукцион
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Адрес электронной площадки</h3>
+                      <a href="http://www.etp-ets.ru">http://www.etp-ets.ru</a>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Печатная форма</h3>
+                      <a class="uk-flex uk-flex-middle" href="#">
+                        Перейти
+                        <span class="uk-icon-size-16 uk-margin-4-left" uk-icon="dropdown-right"></span>
+                      </a>
+                    </li>
+                    <li class="uk-width-1-1">
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Наименование закупки</h3>
+                      <p class="uk-margin-remove-top">
+                        Благоустройство детской площадки между многоквартирными домами №4 и №9 по ул. Мира в жилом
+                        районе Приморский Вилючинского городского округа в рамках реализации проекта "1000 дворов".
+                        Ретро имитирует дисторшн. Райдер, как бы это ни казалось парадоксальным, трансформирует
+                        модальный голос. Эти слова совершенно справедливы, однако микрохроматический интервал начинает
+                        музыкальный цикл
+                      </p>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Валюта</h3>
                       Российский рубль
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Начальная (максимальная) цена
-                      </h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Начальная (максимальная) цена</h3>
                       81 585.00
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Шаг аукциона в валюте</h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Шаг аукциона в валюте</h3>
                       oт 831.734 до 8 317.345
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Размер обеспечения заявок
-                      </h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Размер обеспечения заявок</h3>
                       4 079.25
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Количество контрактов</h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Количество контрактов</h3>
                       7
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Номер типового контракта
-                      </h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Номер типового контракта</h3>
                       0190600000318001
-                    </div>
-                  </div>
-
-                  <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Особенности закупки</h3>
-                  <div class="uk-child-width-1-2@s" uk-grid>
-                    <div>
-                      <ul class="uk-list uk-list-disc uk-list-collapse">
+                    </li>
+                    <li class="uk-width-1-1">
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Особенности закупки</h3>
+                      <ul class="uk-list uk-list-disc uk-list-collapse uk-margin-remove uk-width-1-2@xl">
                         <li>
                           Предметом контракта является поставка товара, необходимого для нормального жизнеобеспечения в
                           случаях, указанных в части 9 статьи 37 Федерального закона 44-ФЗ
                         </li>
                         <li>Право заключения контракта с несколькими участниками закупки</li>
                       </ul>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
 
-                  <button class="uk-button uk-button-primary uk-margin-medium-top">
+                  <button class="uk-button uk-button-primary uk-button-large uk-margin-medium-top">
                     <span uk-icon="bank" class="uk-margin-8-right"></span>
                     Оформить независимую гарантию
                   </button>
@@ -682,23 +699,19 @@
                   <hr />
 
                   <h2 id="anchor-2">Сведения об организаторе закупки</h2>
-                  <div class="uk-child-width-1-2@s" uk-grid>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Наименование организации
-                      </h3>
+                  <ul class="uk-child-width-1-2@s" uk-grid>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Наименование организации</h3>
                       ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ СТАВРОПОЛЬСКОГО КРАЯ "ИПАТОВСКАЯ РАЙОННАЯ
                       БОЛЬНИЦА"
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
                       ИНН 4444460004
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Роль организации, осуществляющей закупку
-                      </h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Роль организации, осуществляющей закупку</h3>
                       Уполномоченное учреждение
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
 
                   <div class="uk-margin-top" uk-accordion="toggle: > button; content: > div">
                     <div>
@@ -707,33 +720,29 @@
                         <span class="uk-icon-size-16 uk-margin-4-left" uk-icon="dropdown-down"></span>
                       </button>
                       <div class="uk-margin-top">
-                        <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-                          <div>
-                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">ИНН</h3>
+                        <ul class="uk-child-width-1-3@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">ИНН</h3>
                             4444460004
-                          </div>
-                          <div>
-                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">ОГРН</h3>
+                          </li>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">ОГРН</h3>
                             1022602625220
-                          </div>
-                          <div>
-                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">КПП</h3>
+                          </li>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">КПП</h3>
                             260801001
-                          </div>
-                        </div>
-                        <div class="uk-child-width-1-2@s uk-margin-top" uk-grid>
-                          <div>
-                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                              Адрес местонахождения
-                            </h3>
+                          </li>
+                          <li class="uk-width-1-2@s">
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Адрес местонахождения</h3>
                             Российская Федерация, 356630, Ставропольский край, Ипатово г, УЛИЦА ГАГАРИНА, 123, -/-
-                          </div>
-                          <div>
-                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">Почтовый адрес</h3>
+                          </li>
+                          <li class="uk-width-1-2@s">
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Почтовый адрес</h3>
                             Российская Федерация, 356630, Ставропольский край, Ипатовский р-н, Ипатово г, УЛИЦА
                             ГАГАРИНА, 123
-                          </div>
-                        </div>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -742,9 +751,7 @@
 
                   <h2 id="anchor-3">Контактная информация</h2>
                   <div>
-                    <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                      Роль организации, осуществляющей закупку
-                    </h3>
+                    <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Роль организации, осуществляющей закупку</h3>
                     <div>
                       Константинопольский Константин Константинович
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
@@ -758,7 +765,28 @@
                         Подробнее
                         <span class="uk-icon-size-16 uk-margin-4-left" uk-icon="dropdown-down"></span>
                       </button>
-                      <div class="uk-margin-top">🤪</div>
+                      <div class="uk-margin-top">
+                        <ul class="uk-child-width-1-3@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Электронная почта</h3>
+                            kpolsky.k.k@rambler.ru
+                          </li>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Телефон</h3>
+                            +7 (919) 999-99-99
+                          </li>
+                          <li class="uk-width-1-3@s uk-width-2-4@xl">
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Факс</h3>
+                            -
+                          </li>
+                          <li class="uk-width-1-1">
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">
+                              Дополнительная контактная информация
+                            </h3>
+                            -
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
@@ -766,9 +794,7 @@
 
                   <h2>Сведения о специализированной организации</h2>
                   <div>
-                    <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                      Наименование организации
-                    </h3>
+                    <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Наименование организации</h3>
                     <div>
                       Тестовая организация НЭП
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
@@ -782,56 +808,64 @@
                         Подробнее
                         <span class="uk-icon-size-16 uk-margin-4-left" uk-icon="dropdown-down"></span>
                       </button>
-                      <div class="uk-margin-top">🤪</div>
+                      <div class="uk-margin-top">
+                        <ul class="uk-child-width-1-3@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Заголовок</h3>
+                            😎
+                          </li>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Заголовок</h3>
+                            😎
+                          </li>
+                          <li>
+                            <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Заголовок</h3>
+                            😎
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
                   <hr />
 
                   <h2 id="anchor-4">Сроки проведения закупки и подачи заявок</h2>
-                  <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Дата и время публикации извещения
-                      </h3>
+                  <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дата и время публикации извещения</h3>
                       14.06.2022
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
                       22:30:24 (МСК +3)
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">
                         Дата и время окончания срока подачи заявок
                       </h3>
                       14.06.2022
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
                       22:30:24 (МСК +3)
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">
                         Дата и время проведения процедуры подачи предложений
                       </h3>
                       14.06.2022
                       <span class="uk-margin-4-left uk-margin-4-right">•</span>
                       22:30:24 (МСК +3)
-                    </div>
-                    <div>
-                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                        Дата подведения итогов
-                      </h3>
+                    </li>
+                    <li>
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дата подведения итогов</h3>
                       14.06.2022
-                    </div>
-                  </div>
-
-                  <div class="uk-margin-top">
-                    <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                      Дополнительная информация
-                    </h3>
-                    <p class="uk-margin-remove-top">
-                      Правило альтернанса непрерывно. Комбинаторное приращение, без использования формальных признаков
-                      поэзии, приводит культурный парафраз, также необходимо сказать о сочетании метода апроприации
-                      художественных стилей прошлого с авангардистскими стратегиями
-                    </p>
-                  </div>
+                    </li>
+                    <li class="uk-width-1-1">
+                      <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дополнительная информация</h3>
+                      <p class="uk-margin-remove-top">
+                        Правило альтернанса непрерывно. Комбинаторное приращение, без использования формальных признаков
+                        поэзии, приводит культурный парафраз, также необходимо сказать о сочетании метода апроприации
+                        художественных стилей прошлого с авангардистскими стратегиями
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </section>
 
@@ -841,7 +875,9 @@
                   <ul class="uk-list uk-list-large">
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-text-bold uk-badge-width-46">15%</span>
+                        </div>
                         <div>
                           <p>
                             Участникам, заявки или окончательные предложения которых содержат предложения о поставке
@@ -852,7 +888,9 @@
                     </li>
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-text-bold uk-badge-width-46">15%</span>
+                        </div>
                         <div>
                           <p>
                             Учреждениям и предприятиям уголовно-исполнительной системы (в соответствии со статьей 28
@@ -871,7 +909,7 @@
                     </div>
                     <div>
                       <label class="uk-tumbler">
-                        <input uk-toggle="target: .toggle-1; animation: uk-animation-fade" type="checkbox" hidden />
+                        <input uk-toggle="target: .toggle-1" type="checkbox" hidden />
                         <div class="uk-tumbler-button"></div>
                         <span class="uk-tumbler-label uk-text-primary uk-margin-8-left">
                           Отображать дополнительные сведения
@@ -882,7 +920,11 @@
                   <ul class="uk-list uk-list-large">
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-badge-width-46">
+                            <span uk-icon="done-16"></span>
+                          </span>
+                        </div>
                         <div>
                           <p>Единые требования к участникам закупок в соответствии с ч. 1 ст. 31 Закона № 44-ФЗ</p>
                         </div>
@@ -890,7 +932,11 @@
                     </li>
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-badge-width-46">
+                            <span uk-icon="done-16"></span>
+                          </span>
+                        </div>
                         <div>
                           <p>Требования к участникам закупок в соответствии с ч. 1.1 ст. 31 Закона № 44-ФЗ</p>
                         </div>
@@ -898,7 +944,11 @@
                     </li>
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-badge-width-46">
+                            <span uk-icon="done-16"></span>
+                          </span>
+                        </div>
                         <div>
                           <p class="uk-margin-remove-bottom">
                             Требование к участникам закупок в соответствии с п. 1 ч. 1 ст. 31 Закона № 44-ФЗ
@@ -911,7 +961,11 @@
                     </li>
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-badge-width-46">
+                            <span uk-icon="done-16"></span>
+                          </span>
+                        </div>
                         <div>
                           <p class="uk-margin-remove-bottom">
                             Требования в соответствии с позицией 7 раздела II приложения к ПП РФ от 29.12.2021 № 2571
@@ -956,7 +1010,7 @@
                     </div>
                     <div>
                       <label class="uk-tumbler">
-                        <input uk-toggle="target: .toggle-2; animation: uk-animation-fade" type="checkbox" hidden />
+                        <input uk-toggle="target: .toggle-2" type="checkbox" hidden />
                         <div class="uk-tumbler-button"></div>
                         <span class="uk-tumbler-label uk-text-primary uk-margin-8-left">
                           Отображать дополнительные сведения
@@ -967,7 +1021,11 @@
                   <ul class="uk-list uk-list-large">
                     <li>
                       <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                        <div class="uk-width-auto">🤪</div>
+                        <div class="uk-width-auto">
+                          <span class="uk-badge uk-badge-width-46">
+                            <span class="uk-icon-size-16" uk-icon="null"></span>
+                          </span>
+                        </div>
                         <div>
                           <p class="uk-margin-remove-bottom">
                             Запрет на допуск товаров, работ, услуг при осуществлении закупок, а также ограничения и
@@ -984,11 +1042,11 @@
                     </li>
                   </ul>
                   <div class="toggle-2" hidden>
-                    <h3 class="uk-margin-8-bottom uk-h4 uk-heading-text uk-text-weight-600">
+                    <h3 class="uk-margin-8-bottom uk-h4 uk-heading-text">
                       Перечень требований, нормативно-правовых актов, конкретизирующих особенностей применения
                       национального режима
                     </h3>
-                    <div class="uk-table-wrap">
+                    <div class="uk-table-wrap uk-overflow-auto">
                       <table class="uk-table">
                         <thead>
                           <tr>
@@ -1029,107 +1087,702 @@
                 </div>
               </section>
 
-              <section class="uk-box" uk-accordion="toggle: > .uk-box-header; content: > .uk-box-body">
+              <section
+                id="anchor-6"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
                 <div class="uk-open">
-                  <h2 class="uk-box-header">
-                    <span class="uk-h2">Сведения о заказчиках</span>
-                    <span class="uk-label uk-margin-8-left">4</span>
-                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                  </h2>
+                  <div class="uk-box-header">
+                    <h2 class="uk-link-heading">
+                      Сведения о заказчиках
+                      <span class="uk-badge uk-badge-muted uk-badge-large uk-margin-8-left">4</span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
+
                   <div class="uk-box-body">
-                    <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-h2;">
-                      <li>
+                    <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-h2; multiple: true">
+                      <li class="uk-open">
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Мир Музыки»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
                         <div class="uk-accordion-content">
-                          <div class="uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">ИНН</h4>
+                          <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                            <li>
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">ИНН</h4>
                               4444460004
-                            </div>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">ОГРН</h4>
+                            </li>
+                            <li>
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">ОГРН</h4>
                               1022602625220
-                            </div>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">КПП</h4>
+                            </li>
+                            <li>
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">КПП</h4>
                               260801001
-                            </div>
-                          </div>
-                          <div class="uk-child-width-1-2@s uk-grid" uk-grid>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">
-                                Адрес местонахождения
-                              </h4>
+                            </li>
+                            <li class="uk-width-1-2@s">
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">Адрес местонахождения</h4>
                               Москва, Ленинский проспект, дом 4, строение 1А, квартира 10
-                            </div>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">Почтовый адрес</h4>
+                            </li>
+                            <li class="uk-width-1-2@s">
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">Почтовый адрес</h4>
                               Москва, Ленинский проспект, дом 4, строение 1А, квартира 10
-                            </div>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">
-                                Начальная (максимальная) цена
-                              </h4>
+                            </li>
+                            <li class="uk-width-1-2@s">
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">Начальная (максимальная) цена</h4>
                               81 585.00
-                            </div>
-                            <div>
-                              <h4 class="uk-margin-4-bottom uk-heading-text uk-text-weight-600">
+                            </li>
+                            <li class="uk-width-1-2@s">
+                              <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
                                 Информация о возможности одностороннего отказа от исполнения контракта в соответствии со
                                 ст. 95 Закона № 44-ФЗ
                               </h4>
-                              Нет информации
-                            </div>
-                          </div>
+                              😎
+                            </li>
+                          </ul>
                           <hr />
-                          <ul class="uk-margin-remove-bottom" uk-accordion="toggle: > .uk-text-large;">
+                          <ul
+                            class="uk-margin-remove-bottom uk-accordion-divider"
+                            uk-accordion="toggle: > .uk-h3; multiple: true">
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Сведения для формирования ИКЗ закупки
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <p>🤪</p>
+                                <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                                  <li class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Идентификационный код закупки
+                                    </h5>
+                                    223201600024020160100100040673250244
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Планируемый год размещения извещения
+                                    </h5>
+                                    2022
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Идентификационный код заказчика
+                                    </h5>
+                                    14444460004444460004
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Номер закупки, включенной в план-график закупок
+                                    </h5>
+                                    5454
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Порядковый номер закупки</h5>
+                                    999
+                                  </li>
+                                  <li class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Код по ОКПД2</h5>
+                                    18.20 Услуги по копированию звуко- и видеозаписей, а также программных средств
+                                    <div class="uk-flex uk-flex-middle uk-margin-12-top">
+                                      <span
+                                        class="uk-icon-size-16 uk-margin-8-right uk-text-primary"
+                                        uk-icon="checked"></span>
+                                      Закупка за счет нескольких ОКПД2
+                                    </div>
+                                  </li>
+                                  <li class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Код вида расходов</h5>
+                                    244 Прочая закупка товаров, работ и услуг
+                                    <div class="uk-flex uk-flex-middle uk-margin-12-top">
+                                      <span
+                                        class="uk-icon-size-16 uk-margin-8-right uk-text-primary"
+                                        uk-icon="checked"></span>
+                                      Закупка за счет нескольких КВР либо КВР отсутствует
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 План оплаты исполнения контракта
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <p>🤪</p>
+                                <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                                  <li class="uk-width-1-1">
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Даты исполнения контракта</h5>
+                                    25.04.2022 – 28.09.2022
+                                  </li>
+                                  <li class="uk-width-1-1">
+                                    <div class="uk-table-wrap uk-overflow-auto">
+                                      <table class="uk-table">
+                                        <thead>
+                                          <tr>
+                                            <th>Всего</th>
+                                            <th>Сумма на текущий плановый год</th>
+                                            <th>Сумма на первый плановый год</th>
+                                            <th>Сумма на второй плановый год</th>
+                                            <th>Сумма на последующие годы</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>81 585.00</td>
+                                            <td>81 585.00</td>
+                                            <td>81 585.00</td>
+                                            <td>81 585.00</td>
+                                            <td>81 585.00</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Наименование бюджета</h5>
+                                    Бюджет Санкт-Петербурга
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Код территории муниципального образования
+                                    </h5>
+                                    01654400: Сельские поселения Усть-Калманского муниципального района
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Вид бюджета</h5>
+                                    Бюджет субъекта Российской Федерации
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">Текущий плановый год</h5>
+                                    2022
+                                  </li>
+                                  <li class="uk-width-1-1">
+                                    <div class="uk-flex uk-flex-middle uk-margin-12-top">
+                                      <span
+                                        class="uk-icon-size-16 uk-margin-8-right uk-text-primary"
+                                        uk-icon="checked"></span>
+                                      Закупка за счет собственных средств организации
+                                    </div>
+
+                                    <div class="uk-margin">
+                                      <h4 class="uk-h3">
+                                        Этапы
+                                        <span class="uk-badge uk-badge-muted uk-badge-large uk-margin-8-left">2</span>
+                                      </h4>
+                                      <ul
+                                        class="uk-margin-remove-bottom uk-accordion-divider uk-accordion-bullet"
+                                        uk-accordion="toggle: > .uk-h3; multiple: true">
+                                        <li class="uk-open">
+                                          <h5 class="uk-h3 uk-margin-remove uk-link-heading">
+                                            Этап №1
+                                            <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                          </h5>
+                                          <div class="uk-accordion-content">
+                                            <ul
+                                              class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium"
+                                              uk-grid>
+                                              <li>
+                                                <h6 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                                  Даты исполнения этапа
+                                                </h6>
+                                                25.04.2022 – 28.09.2022
+                                              </li>
+                                              <li class="uk-width-1-1">
+                                                <h6 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                                  План исполнения контракта за счёт бюджетных средств
+                                                </h6>
+                                                <div class="uk-table-wrap uk-overflow-auto">
+                                                  <table class="uk-table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Код бюджетной классификации</th>
+                                                        <th>Код ОКС</th>
+                                                        <th>Всего</th>
+                                                        <th>Сумма на текущий плановый год</th>
+                                                        <th>Сумма на первый плановый год</th>
+                                                        <th>Сумма на второй плановый год</th>
+                                                        <th>Сумма на последующие годы</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>583926839285923485928</td>
+                                                        <td>4234223</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </li>
+                                              <li class="uk-width-1-1">
+                                                <h6 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                                  Детализация по КВР
+                                                </h6>
+                                                <div class="uk-table-wrap uk-overflow-auto">
+                                                  <table class="uk-table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Код вида расхода</th>
+                                                        <th>Наименование вида расхода</th>
+                                                        <th>Всего</th>
+                                                        <th>Сумма на текущий плановый год</th>
+                                                        <th>Сумма на первый плановый год</th>
+                                                        <th>Сумма на второй плановый год</th>
+                                                        <th>Сумма на последующие годы</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>333</td>
+                                                        <td>Прочая закупка</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                        <td>81 585.00</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <h6 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                                  Общая сумма бюджетного финансирования
+                                                </h6>
+                                                23 195 124 руб.
+                                              </li>
+                                              <li>
+                                                <h6 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                                  Текущий плановый год
+                                                </h6>
+                                                13 195 124 руб.
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <h5 class="uk-h3 uk-margin-remove uk-link-heading">
+                                            Этап №2
+                                            <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                          </h5>
+                                          <div class="uk-accordion-content">😎</div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Сведения о связи с позицией плана-графика закупок с 01.01.2020
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <p>🤪</p>
+                                <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Реестровый номер план-графика закупок с 01.01.2020
+                                    </h5>
+                                    222923405249124
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Номер позиции в плане-графике закупок с 01.01.2020
+                                    </h5>
+                                    2229234052492321341234124
+                                  </li>
+                                </ul>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Место(-а) поставки товара, выполнения работы или указания услуги
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <p>🤪</p>
+                                <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                  <li class="uk-width-1-1">
+                                    <div class="uk-table-wrap uk-overflow-auto">
+                                      <table class="uk-table">
+                                        <thead>
+                                          <tr>
+                                            <th>Страна</th>
+                                            <th>Субъект</th>
+                                            <th>Район</th>
+                                            <th>Город</th>
+                                            <th>Место поставки</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Россия</td>
+                                            <td>Мурманская область</td>
+                                            <td>Ковдорский муниципальный округ</td>
+                                            <td>Ковдор</td>
+                                            <td>
+                                              <div>Ковдорский муниципальный округ, г Ковдор, ул. Горького 24</div>
+                                              <div class="uk-margin-8-top">
+                                                Ковдорский муниципальный округ, г Ковдор, ул. Большая ямскаяГорького 24
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                      Срок исполнения контракта, отдельных этапов контракта
+                                    </h5>
+                                    14
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                          <hr />
+                          <ul class="uk-list uk-list-divider uk-list-large">
+                            <li>
+                              <div
+                                class="uk-grid-small uk-flex-middle uk-child-width-expand@s uk-margin-8-bottom"
+                                uk-grid>
+                                <div class="uk-width-auto">
+                                  <span class="uk-badge uk-badge-width-46">
+                                    <span uk-icon="done-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3">Требуется обеспечение заявки в размере 1000.00 руб.</div>
+                                </div>
+                              </div>
+                              <div uk-accordion="toggle: > .uk-h3; multiple: true">
+                                <div>
+                                  <h3 class="uk-h3 uk-link-heading uk-margin-remove">
+                                    Порядок обеспечения заявок
+                                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                  </h3>
+                                  <div class="uk-accordion-content">
+                                    <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Доля размера обеспечения заявки, %
+                                        </h4>
+                                        0
+                                      </li>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Порядок внесения денежных средств в качестве обеспечения заявки
+                                        </h4>
+                                        информация о процедуре
+                                      </li>
+                                    </ul>
+                                    <div class="uk-card uk-card-muted uk-card-body uk-margin">
+                                      <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                                        <li class="uk-width-1-1">
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Платежные реквизиты для перечисления денежных средств при уклонении
+                                            участника закупки от заключения контракта
+                                          </h4>
+                                          № счета: 40101810200000010001 в банке: ГРКЦ ГУ БАНКА РОССИИ ПО Г.
+                                          САНКТ-ПЕТЕРБУРГУ БИК: 044030001 КБК: 18210101011013000110
+                                        </li>
+                                        <li>
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Наименование кредитной организации
+                                          </h4>
+                                          БИК 044030001
+                                        </li>
+                                        <li>
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Номер корреспондентского счета
+                                          </h4>
+                                          923412341234123412341234
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div class="uk-grid-8 uk-child-width-auto@m" uk-grid>
+                                      <div>
+                                        <button class="uk-button uk-button-secondary uk-button-large uk-text-bold">
+                                          <span class="uk-margin-small-right" uk-icon="money"></span>
+                                          Открыть специальный счет
+                                        </button>
+                                      </div>
+                                      <div>
+                                        <button class="uk-button uk-button-primary uk-button-large uk-text-bold">
+                                          <span class="uk-margin-small-right" uk-icon="bank"></span>
+                                          Оформить независимую гарантию
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </li>
                             <li>
-                              <p class="uk-text-large uk-text-bold uk-link-heading uk-margin-remove-bottom">
+                              <div
+                                class="uk-grid-small uk-flex-middle uk-child-width-expand@s uk-margin-8-bottom"
+                                uk-grid>
+                                <div class="uk-width-auto">
+                                  <span class="uk-badge uk-badge-muted uk-text-muted uk-badge-width-46">
+                                    <span uk-icon="minus-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3">Обеспечение контракта не требуется</div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div
+                                class="uk-grid-small uk-flex-middle uk-child-width-expand@s uk-margin-8-bottom"
+                                uk-grid>
+                                <div class="uk-width-auto">
+                                  <span class="uk-badge uk-badge-width-46">
+                                    <span uk-icon="done-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3">
+                                    С поставщиком (подрядчиком, исполнителем) будет заключен контракт жизненного цикла
+                                  </div>
+                                </div>
+                              </div>
+                              <div uk-accordion="toggle: > .uk-h3; multiple: true">
+                                <div>
+                                  <h3 class="uk-h3 uk-link-heading uk-margin-remove">
+                                    Информация о контракте жизненного цикла
+                                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                  </h3>
+                                  <div class="uk-accordion-content">
+                                    <h4 class="uk-h4 uk-text-bold uk-margin-4-bottom uk-heading-text">
+                                      Причины заключения контракта жизненного цикла
+                                    </h4>
+                                    <ul class="uk-list uk-list-8">
+                                      <li>
+                                        <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                          <div class="uk-width-auto">
+                                            <span class="uk-icon-size-16 uk-text-primary" uk-icon="checked"></span>
+                                          </div>
+                                          <div>Выполнение работ по проектированию и строительству аэродромов</div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                          <div class="uk-width-auto">
+                                            <span class="uk-icon-size-16 uk-text-primary" uk-icon="checked"></span>
+                                          </div>
+                                          <div>
+                                            Выполнение работ по проектированию и строительству уникальных объектов
+                                            капитального строительства
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                          <div class="uk-width-auto">
+                                            <span class="uk-icon-size-16 uk-text-primary" uk-icon="checked"></span>
+                                          </div>
+                                          <div>Закупка воздушных судов, морских и речных судов</div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <h4 class="uk-h4 uk-text-bold uk-margin uk-heading-text">
+                                      Условия контракта жизненного цикла
+                                    </h4>
+                                    <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                      <li>
+                                        <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Стоимость последующего обслуживания, эксплуатации (при наличии) в течение
+                                          срока службы, ремонта и (или) утилизации поставленного товара или созданного в
+                                          результате выполнения работы объекта капитального строительства или товара,
+                                          руб.
+                                        </h5>
+                                        1000.00
+                                      </li>
+                                      <li>
+                                        <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Размер обеспечения исполнения обязательств по поставке товара или выполнению
+                                          работы, руб.
+                                        </h5>
+                                        1000.00
+                                      </li>
+                                      <li>
+                                        <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Доля от начальной (максимальной) цены контракта по поставке товара или
+                                          выполнению работы, %
+                                        </h5>
+                                        1000.00
+                                      </li>
+                                      <li>
+                                        <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Размер обеспечения исполнения обязательств по последующему обслуживанию,
+                                          эксплуатации (при наличии) в течение срока службы, ремонту и (или) утилизации
+                                          поставленного товара или созданного в результате выполнения работы объекта
+                                          капитального строительства или товара, руб.
+                                        </h5>
+                                        1000.00
+                                      </li>
+                                      <li>
+                                        <h5 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Доля от начальной (максимальной) цены контракта по последующему обслуживанию,
+                                          эксплуатации (при наличии) в течение срока службы, ремонту и (или) утилизации
+                                          поставленного товара или созданного в результате выполнения работы объекта
+                                          капитального строительства или товара, %.
+                                        </h5>
+                                        1000
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div
+                                class="uk-grid-small uk-flex-middle uk-child-width-expand@s uk-margin-8-bottom"
+                                uk-grid>
+                                <div class="uk-width-auto">
+                                  <span class="uk-badge uk-badge-width-46">
+                                    <span uk-icon="done-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3">Требуется гарантия качества товара, работы, услуги</div>
+                                </div>
+                              </div>
+                              <div uk-accordion="toggle: > .uk-h3; multiple: true">
+                                <div>
+                                  <h3 class="uk-h3 uk-link-heading uk-margin-remove">
+                                    Требования к гарантии качества товара, работы, услуги
+                                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                  </h3>
+                                  <div class="uk-accordion-content">
+                                    <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Информация о требованиях к гарантийному обслуживанию товаров
+                                        </h4>
+                                        После оказания услуг Исполнитель выдает соответствующие документы (клеймо,
+                                        паспорта, сертификаты, извещений о непригодности и пр.) Результаты поверки
+                                        оформляются в соответствии с Приказом Минпромторга России от 31.07.2020 № 2510
+                                        «Об утверждении Порядка проведения поверки средств измерений, требования к знаку
+                                        поверки и содержанию свидетельства о поверке».
+                                      </li>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Требования к гарантии производителя товара;
+                                        </h4>
+                                        Исполнитель несет ответственность за недостатки (дефекты), обнаруженные в
+                                        пределах 12 (Двенадцати) месяцев, с даты подписания Акта выполненных работ, если
+                                        не докажет, что они произошли вследствие нормального износа объекта или его
+                                        частей и неправильной эксплуатации.
+                                      </li>
+                                      <li class="uk-width-1-2@s uk-width-1-4@xl">
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Срок, на который предоставляется гарантия
+                                        </h4>
+                                        12 (Двенадцати) месяцев
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div
+                                class="uk-grid-small uk-flex-middle uk-child-width-expand@s uk-margin-8-bottom"
+                                uk-grid>
+                                <div class="uk-width-auto">
+                                  <span class="uk-badge uk-badge-width-46">
+                                    <span uk-icon="done-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3">
+                                    Требуется обеспечение гарантийных обязательств в размере 300.00 руб.
+                                  </div>
+                                </div>
+                              </div>
+                              <div uk-accordion="toggle: > .uk-h3; multiple: true">
+                                <div>
+                                  <h3 class="uk-h3 uk-link-heading uk-margin-remove">
+                                    Порядок обеспечения гарантийных обязательств
+                                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                                  </h3>
+                                  <div class="uk-accordion-content">
+                                    <ul class="uk-child-width-1-2@s uk-grid-medium" uk-grid>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Доля от начальной (максимальной) цены контракта
+                                        </h4>
+                                        2.73
+                                      </li>
+                                      <li>
+                                        <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                          Порядок внесения денежных средств
+                                        </h4>
+                                        Порядок внесения денежных средств
+                                      </li>
+                                    </ul>
+                                    <div class="uk-card uk-card-muted uk-card-body uk-margin">
+                                      <ul class="uk-child-width-1-2@s uk-child-width-1-4@xl uk-grid-medium" uk-grid>
+                                        <li class="uk-width-1-1">
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Платежные реквизиты для перечисления денежных средств при уклонении
+                                            участника закупки от заключения контракта
+                                          </h4>
+                                          № счета: 40101810200000010001 в банке: ГРКЦ ГУ БАНКА РОССИИ ПО Г.
+                                          САНКТ-ПЕТЕРБУРГУ БИК: 044030001 КБК: 18210101011013000110
+                                        </li>
+                                        <li>
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Наименование кредитной организации
+                                          </h4>
+                                          БИК 044030001
+                                        </li>
+                                        <li>
+                                          <h4 class="uk-h4 uk-margin-4-bottom uk-heading-text">
+                                            Номер корреспондентского счета
+                                          </h4>
+                                          923412341234123412341234
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="uk-grid-small uk-child-width-expand@s uk-margin-8-bottom" uk-grid>
+                                <div class="uk-width-auto uk-first-column">
+                                  <span class="uk-badge uk-badge-width-46">
+                                    <span uk-icon="done-16"></span>
+                                  </span>
+                                </div>
+                                <div>
+                                  <div class="uk-h3 uk-margin-remove">
+                                    Требуется банковское и казначейское сопровождение контракта
+                                  </div>
+                                  <div>Все расчеты по контракту подлежат казначейскому сопровождению</div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <hr />
+                          <ul
+                            class="uk-margin-remove-bottom uk-accordion-divider"
+                            uk-accordion="toggle: > .uk-h3; multiple: true">
+                            <li>
+                              <h4 class="uk-h3 uk-link-heading uk-margin-remove-bottom">
                                 Дополнительная информация
                                 <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
-                              </p>
+                              </h4>
                               <div class="uk-accordion-content">
-                                <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text uk-text-weight-600">
-                                  Дополнительная информация
-                                </h3>
+                                <h3 class="uk-margin-4-bottom uk-h4 uk-heading-text">Дополнительная информация</h3>
                                 <p class="uk-margin-remove-top">
                                   Правило альтернанса непрерывно. Комбинаторное приращение, без использования формальных
                                   признаков поэзии, приводит культурный парафраз, также необходимо сказать о сочетании
@@ -1138,6 +1791,7 @@
                               </div>
                             </li>
                           </ul>
+                          <hr />
                         </div>
                       </li>
                       <li>
@@ -1145,66 +1799,580 @@
                           Сведения о заказчике ООО «Коммунальные системы»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">🤪</div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                       <li>
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Лесные жители»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">🤪</div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                       <li>
                         <h3 class="uk-h2 uk-link-heading uk-margin-remove-bottom">
                           Сведения о заказчике ООО «Крутые горки»
                           <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
                         </h3>
-                        <div class="uk-accordion-content">🤪</div>
+                        <div class="uk-accordion-content">😎</div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </section>
+
+              <section
+                id="anchor-7"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <div class="uk-flex-middle" uk-grid>
+                      <div class="uk-width-expand">
+                        <h2 class="uk-link-heading">
+                          Документы по закупке
+                          <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                        </h2>
+                      </div>
+                      <div class="uk-width-auto uk-visible@s">
+                        <a href="#">
+                          <span class="uk-icon-size-16 uk-margin-6-right" uk-icon="download"></span>
+                          Скачать все файлы
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="uk-box-body">
+                    <ul class="uk-list uk-list-8">
+                      <li>
+                        <a class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body" href="#">
+                          <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                              <div class="uk-flex uk-flex-middle">
+                                <span class="uk-margin-small-right uk-text-muted-m500" uk-icon="file"></span>
+                                <span class="uk-text-primary">Протокол_подведения_торгов.docx</span>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto">
+                              <span class="uk-text-primary" uk-icon="download"></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body" href="#">
+                          <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                              <div class="uk-flex uk-flex-middle">
+                                <span class="uk-margin-small-right uk-text-muted-m500" uk-icon="file"></span>
+                                <span class="uk-text-primary">Протокол_подведения_торгов.docx</span>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto">
+                              <span class="uk-text-primary" uk-icon="download"></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body" href="#">
+                          <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                              <div class="uk-flex uk-flex-middle">
+                                <span class="uk-margin-small-right uk-text-muted-m500" uk-icon="file"></span>
+                                <span class="uk-text-primary">Протокол_подведения_торгов.docx</span>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto">
+                              <span class="uk-text-primary" uk-icon="download"></span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                id="anchor-8"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <h2 class="uk-link-heading">
+                      Запросы разъяснений
+                      <span class="uk-badge uk-badge-muted uk-badge-large uk-margin-8-left">3</span>
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
+
+                  <div class="uk-box-body">
+                    <ul class="uk-list uk-list-divider uk-list-large">
+                      <li>
+                        <span class="uk-text-muted-ms800a60">12 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                      <li>
+                        <span class="uk-text-muted-ms800a60">6 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                      <li>
+                        <span class="uk-text-muted-ms800a60">1 июля 2022 года</span>
+                        <p class="uk-margin-8">
+                          В пункте 5 закупочной документации запроса предложений на поставку ГСМ для нужд (наименование
+                          организации-заказчика) указан срок подачи заявок, место подачи, однако заказчик указал
+                          бумажную форму подачи заявок. Возможна ли подача заявок в электронной форме (на электронный
+                          адрес вашей организации)?
+                        </p>
+                        <a class="uk-text-weight-500" href="#">Открыть</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                id="anchor-9"
+                class="uk-box"
+                uk-accordion="toggle: > .uk-box-header .uk-link-heading; content: > .uk-box-body">
+                <div class="uk-open">
+                  <div class="uk-box-header">
+                    <h2 class="uk-link-heading">
+                      Информация о контрактах по закупке
+                      <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                    </h2>
+                  </div>
+
+                  <div class="uk-box-body">
+                    <div class="uk-table-wrap uk-overflow-auto">
+                      <table class="uk-table">
+                        <thead>
+                          <tr>
+                            <th class="uk-width-small">Заказчик</th>
+                            <th>Поставщик/подрядчик/исполнитель</th>
+                            <th>Статус</th>
+                            <th class="uk-text-nowrap">Цена контракта (₽)</th>
+                            <th>Комментарий</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-1"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                                <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">
+                                Общество с ограниченной ответственностью «Династия предпринимателей»
+                              </span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td class="uk-text-nowrap"><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">29 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
+                          </tr>
+                          <tr id="toggle-1" hidden>
+                            <td class="uk-table-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-2"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                                <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">
+                                Централизованная бухгалтерия Министерства Здравоохранения Удмуртской Республики»
+                              </span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td class="uk-text-nowrap"><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">19 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
+                          </tr>
+                          <tr id="toggle-2" hidden>
+                            <td class="uk-table-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="uk-text-primary">ООО «Мир Музыки»</div>
+                              <div class="uk-text-muted-ms800a60">ИНН 6449013711</div>
+                              <button
+                                class="uk-button uk-button-link uk-margin-8-top uk-text-small uk-text-bold"
+                                uk-toggle="target: #toggle-3"
+                                type="button"
+                                aria-expanded="false">
+                                Подробнее
+                                <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                              </button>
+                            </td>
+                            <td>
+                              <span class="uk-text-primary">ГУССТ № 8 при Спецстрое России</span>
+                              <span class="uk-text-muted-ms800a60">ИНН 6449013711</span>
+                            </td>
+                            <td class="uk-text-nowrap"><span class="uk-text-primary">Контракт заключен</span></td>
+                            <td class="uk-text-nowrap">55 000 000,00 ₽</td>
+                            <td>
+                              <div>Размещен подписанный контракт</div>
+                              <div>№ 0173200001422000493/1000</div>
+                            </td>
+                          </tr>
+                          <tr id="toggle-3" hidden>
+                            <td class="uk-table-bullet" colspan="999">
+                              <div class="uk-table-wrap uk-overflow-auto">
+                                <table class="uk-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Прикреплённый файл и наименование документа</th>
+                                      <th>Дата размещения</th>
+                                      <th>Цена контракта (₽)</th>
+                                      <th>Комментарий</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">Проект контракта 02.06.2022 (МСК)</p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <a class="uk-flex uk-flex-middle" href="#">
+                                          <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="file"></span>
+                                          Контракт охрана.docx
+                                        </a>
+                                        <p class="uk-margin-8">
+                                          Контракт № 0173200001422000493/1000 от 15.06.2022 (МСК)
+                                        </p>
+                                      </td>
+                                      <td>02.06.2022 13:56 (МСК)</td>
+                                      <td>34 088 770,39</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
 
-            <aside class="uk-width-auto uk-visible@l">
-              <div class="uk-width-medium uk-margin-40-top">
-                <div uk-sticky="offset: 32; end: !aside;">
-                  <ul class="uk-nav uk-nav-aside" uk-scrollspy-nav="closest: li; scroll: true; offset: 24">
-                    <li>
-                      <a href="#anchor-1">Основные сведения о закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-2">Сведения об организаторе</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-3">Контактная информация</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-4">Регламентированные сроки по закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-5">Преимущества, требования, ограничения</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-6">Сведения о заказчиках</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-7">Информация о предмете контракта</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-8">Документы по закупке</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-9">Запросы разъяснений</a>
-                    </li>
-                    <li>
-                      <a href="#anchor-10">Информация о контрактах по закупке</a>
-                    </li>
-                  </ul>
+            <aside class="uk-width-auto uk-visible@l" style="padding-top: 47px">
+              <div class="uk-width-medium">
+                <div uk-sticky="end: !aside; offset: 32">
+                  <div class="uk-nav-compact">
+                    <ul class="uk-nav uk-nav-aside" uk-scrollspy-nav="closest: li; scroll: true; offset: 24">
+                      <li>
+                        <a href="#anchor-1">Основные сведения о закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-2">Сведения об организаторе</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-3">Контактная информация</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-4">Регламентированные сроки по закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-5">Преимущества, требования, ограничения</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-6">Сведения о заказчиках</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-7">Документы по закупке</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-8">Запросы разъяснений</a>
+                      </li>
+                      <li>
+                        <a href="#anchor-9">Информация о контрактах по закупке</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top">
+                    <div class="uk-box-body">
+                      <h4 class="uk-h3 uk-margin-small">Условия участия</h4>
+                      <ul class="uk-list uk-margin-remove">
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto">
+                              <span class="uk-icon-size-16 uk-text-success" uk-icon="checked"></span>
+                            </div>
+                            <div class="uk-width-expand">Электронная подпись</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-auto">
+                              <span class="uk-icon-size-16 uk-text-danger" uk-icon="close-circle"></span>
+                            </div>
+                            <div class="uk-width-expand">
+                              <div>Тариф не подключен</div>
+                              <p class="uk-text-muted-bh500 uk-margin-8">
+                                Выберите и подключите тариф, чтобы принять участие в процедуре.
+                              </p>
+                              <h5 class="uk-heading-text uk-margin-remove">Рекомендуемый тариф:</h5>
+                              <p class="uk-text-primary uk-margin-remove uk-margin-8-bottom">
+                                Партнерский стартовый с партнером ООО “ТД Полиметалл”
+                              </p>
+                              <a class="uk-button uk-button-small uk-button-primary" href="#">Выбрать тариф</a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="uk-box uk-box-vertical-16 uk-margin-8-top">
+                    <div class="uk-box-body">
+                      <h4 class="uk-h3 uk-margin-small">Вам также понадобится</h4>
+                      <ul class="uk-list uk-margin-remove">
+                        <li>
+                          <a href="#">
+                            <div class="uk-grid-small" uk-grid>
+                              <div class="uk-width-auto">
+                                <span class="uk-icon-size-16" uk-icon="history-2"></span>
+                              </div>
+                              <div class="uk-width-expand">Электронная подпись</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="uk-grid-small" uk-grid>
+                              <div class="uk-width-auto">
+                                <span class="uk-icon-size-16" uk-icon="medal"></span>
+                              </div>
+                              <div class="uk-width-expand">Предквалификация</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="uk-grid-small" uk-grid>
+                              <div class="uk-width-auto">
+                                <span class="uk-icon-size-16" uk-icon="bank"></span>
+                              </div>
+                              <div class="uk-width-expand">Обеспечение заявки</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="uk-grid-small" uk-grid>
+                              <div class="uk-width-auto">
+                                <span class="uk-icon-size-16" uk-icon="comprare"></span>
+                              </div>
+                              <div class="uk-width-expand">Тендерное сопровождение</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </aside>
+          </div>
+        </div>
+
+        <!-- This is the Toolbar -->
+        <div class="uk-toolbar-container uk-margin-small">
+          <div class="uk-toolbar">
+            <div class="uk-container uk-container-expand">
+              <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                    <div class="uk-flex-none">
+                      <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                        <span uk-icon="arrow-left"></span>
+                      </button>
+                    </div>
+                    <div class="uk-width-expand uk-hidden@s">
+                      <button class="uk-button uk-button-medium uk-button-primary uk-width-1-1" type="button">
+                        Действия
+                        <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                      </button>
+                      <ul class="uk-nav" uk-drop="pos: top-right; mode: click" uk-nav>
+                        <li><a href="#">Реестр запросов разъяснений</a></li>
+                        <li><a href="#">Реестр контрактов</a></li>
+                        <li><a href="#">Посмотреть заявку</a></li>
+                        <li><a class="uk-text-bold" href="#">Запрос разъяснений положения извещения</a></li>
+                        <li><a class="uk-text-bold" href="#">Отозвать заявку</a></li>
+                      </ul>
+                    </div>
+                    <div class="uk-width-expand uk-visible@s">
+                      <ul class="uk-toolbar-nav uk-grid-small uk-flex-nowrap" uk-grid>
+                        <li>
+                          <a class="uk-button uk-button-medium uk-button-default" href="#">
+                            Реестр запросов разъяснений
+                          </a>
+                        </li>
+                        <li>
+                          <a class="uk-button uk-button-medium uk-button-default" href="#">Реестр контрактов</a>
+                        </li>
+                        <li>
+                          <a class="uk-button uk-button-medium uk-button-default" href="#">Посмотреть заявку</a>
+                        </li>
+                        <li>
+                          <a class="uk-button uk-button-medium uk-button-primary" href="#">
+                            Запрос разъяснений положения извещения
+                          </a>
+                        </li>
+                        <li>
+                          <a class="uk-button uk-button-medium uk-button-primary" href="#">Отозвать заявку</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-auto uk-visible@xl">
+                  <div class="uk-grid-small uk-child-width-auto uk-flex-nowrap" uk-grid>
+                    <div class="uk-flex-none">
+                      <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                        <span uk-icon="arrow-up"></span>
+                      </button>
+                    </div>
+                    <div class="uk-flex-none">
+                      <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                        <span uk-icon="arrow-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1266,27 +2434,29 @@
               </a>
             </div>
             <div>
-              <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <span uk-icon="phone" class="uk-text-primary"></span>
-                <span class="uk-text-small uk-text-muted-ms500 uk-margin-small-left">44-ФЗ, 615-ПП, 1133-ПП</span>
-              </div>
-              <div class="uk-margin-medium-bottom">
-                <a class="uk-h3" href="tel:+74951389678">+7 (495) 138-96-78</a>
-              </div>
-              <a class="uk-button uk-button-default" href="#">Обратиться в техподдержку</a>
+              <ul class="uk-list uk-list-large">
+                <li>
+                  <a class="uk-flex uk-flex-middle" href="tel:+74951097575">
+                    <span uk-icon="phone" class="uk-text-primary uk-margin-small-right"></span>
+                    <span class="uk-h2 uk-margin-remove">+7 (495) 109-75-75</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-button uk-button-default" href="#">Обратиться в техподдержку</a>
+                </li>
+              </ul>
             </div>
             <div>
-              <ul class="uk-child-width-1-1 uk-grid-small" uk-grid>
+              <ul class="uk-list">
                 <li>
-                  <a
-                    class="uk-flex uk-flex-middle uk-link-muted-ms500"
-                    href="https://yandex.ru/maps/-/CCU0zPSh3C"
-                    target="_blank">
+                  <a class="uk-flex uk-link-muted-ms500" href="https://yandex.ru/maps/-/CCUwM2gNWD" target="_blank">
                     <span uk-icon="pin" class="uk-text-primary"></span>
                     <span class="uk-text-small uk-margin-small-left">
-                      123290, Москва, Причальный проезд,
+                      Центральный офис, АО «ЭТС» 123112,
                       <br />
-                      дом 2А, БЦ «Якорь», 5 этаж
+                      г. Москва, ул. Тестовская, д. 10, этаж 18,
+                      <br />
+                      помещение 1, комната 13
                     </span>
                   </a>
                 </li>
@@ -1322,7 +2492,9 @@
             <div>
               <h4 class="uk-heading-text uk-text-normal uk-margin-small uk-text-muted-bh200">Безопасность платежей</h4>
               <ul class="uk-grid-medium uk-flex-middle" uk-grid>
-                <li><img src="../../img/mastercard.svg" width="37" height="23" alt="Mastercard" /></li>
+                <li>
+                  <img src="../../img/mastercard.svg" width="37" height="23" alt="Mastercard" />
+                </li>
                 <li><img src="../../img/visa.svg" width="60" height="20" alt="Visa" /></li>
                 <li><img src="../../img/mir.svg" width="61" height="18" alt="МИР" /></li>
               </ul>
@@ -1350,5 +2522,42 @@
     </footer>
 
     <script src="../../components/header/navbar.js"></script>
+    <script src="../../components/navtab/navtab.js"></script>
+    <script src="../../components/timeline/timeline.js"></script>
+    <script src="../../components/toolbar/toolbar.js"></script>
+
+    <script>
+      const container = document.querySelector('.uk-nav-compact');
+      const nav = container.querySelector('.uk-nav');
+      const firstItem = nav.querySelector('li:first-child');
+      const lastItem = nav.querySelector('li:last-child');
+
+      UIkit.util.on(nav, 'active', (event) => {
+        const activeItem = nav.querySelector('li.uk-active');
+
+        nav.scrollTo({
+          top: activeItem.offsetTop - container.clientHeight / 2 + activeItem.clientHeight / 2,
+          behavior: 'smooth'
+        });
+      });
+
+      const onScroll = () => {
+        if (UIkit.util.isInView(firstItem, -14)) {
+          container.classList.remove('uk-top-overlap');
+        } else {
+          container.classList.add('uk-top-overlap');
+        }
+
+        if (UIkit.util.isInView(lastItem, -14)) {
+          container.classList.remove('uk-bottom-overlap');
+        } else {
+          container.classList.add('uk-bottom-overlap');
+        }
+      };
+
+      onScroll();
+
+      nav.addEventListener('scroll', onScroll);
+    </script>
   </body>
 </html>

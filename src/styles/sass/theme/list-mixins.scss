@@ -3,4 +3,9 @@
   .uk-list-small > * > ul {
     margin-top: 12px;
   }
+
+  .uk-list-8 > :nth-child(n + 2),
+  .uk-list-8 > * > ul {
+    margin-top: 8px;
+  }
 }

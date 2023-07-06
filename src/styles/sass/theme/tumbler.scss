@@ -3,7 +3,7 @@
   cursor: pointer;
   user-select: none;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -24,7 +24,6 @@
 }
 
 .uk-tumbler-label {
-  margin-left: 12px;
   line-height: 16px;
 }
 
