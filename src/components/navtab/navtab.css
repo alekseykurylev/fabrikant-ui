@@ -2,7 +2,8 @@
   margin-bottom: -1px;
 }
 
-.uk-navtab + * {
+.uk-navtab + *,
+.uk-navtab + form > * {
   border-top-left-radius: 0;
 }
 

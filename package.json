@@ -19,7 +19,8 @@
     "stylelint-config-clean-order": "^5.0.1",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
-    "uikit": "^3.16.19"
+    "uikit": "^3.16.22",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
