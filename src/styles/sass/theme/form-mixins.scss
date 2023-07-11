@@ -46,6 +46,12 @@
 }
 
 @mixin hook-form-misc() {
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
   .uk-input-small {
     height: 30px;
     padding-right: 8px;
