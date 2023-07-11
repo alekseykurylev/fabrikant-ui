@@ -11,7 +11,7 @@ import browser from 'browser-sync';
 
 // UIkit Style
 
-const uikitStyle = () => {
+export const uikitStyle = () => {
   return gulp
     .src('src/styles/sass/style.scss')
     .pipe(plumber())
@@ -25,7 +25,7 @@ const uikitStyle = () => {
 
 // UIkit Script
 
-const uikitScript = (done) => {
+export const uikitScript = (done) => {
   gulp.src('node_modules/uikit/dist/js/uikit.min.js').pipe(gulp.dest('src/js')).pipe(gulp.dest('dist/uikit'));
   gulp.src('src/js/uikit-icons.min.js').pipe(gulp.dest('dist/uikit'));
   done();
@@ -33,7 +33,7 @@ const uikitScript = (done) => {
 
 // Copy Style
 
-const copyStyle = () => {
+export const copyStyle = () => {
   return gulp
     .src(['src/components/**/*.css', 'src/ui/**/*.css'])
     .pipe(postcss([minmax, csso]))
@@ -43,7 +43,7 @@ const copyStyle = () => {
 
 // Copy Script
 
-const copyScript = () => {
+export const copyScript = () => {
   return gulp
     .src(['src/components/**/*.js', 'src/ui/**/*.js'])
     .pipe(
@@ -56,9 +56,21 @@ const copyScript = () => {
     .pipe(browser.stream());
 };
 
+// Watcher
+
+export const watcher = () => {
+  gulp.watch('src/styles/**/*.scss', gulp.series(uikitStyle));
+  gulp.watch('src/js/*.js', gulp.series(uikitScript));
+  gulp.watch('src/**/*.css', gulp.series(copyStyle));
+  gulp.watch('src/**/*.js', gulp.series(copyScript));
+  gulp.watch('src/**/*.css').on('change', browser.reload);
+  gulp.watch('src/**/*.js').on('change', browser.reload);
+  gulp.watch('src/**/*.html').on('change', browser.reload);
+};
+
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: './src'
@@ -70,16 +82,4 @@ const server = (done) => {
   done();
 };
 
-// Watcher
-
-const watcher = () => {
-  gulp.watch('src/styles/**/*.scss', gulp.series(uikitStyle));
-  gulp.watch('src/js/*.js', gulp.series(uikitScript));
-  gulp.watch('src/**/*.css', gulp.series(copyStyle));
-  gulp.watch('src/**/*.js', gulp.series(copyScript));
-  gulp.watch('src/**/*.css').on('change', browser.reload);
-  gulp.watch('src/**/*.js').on('change', browser.reload);
-  gulp.watch('src/**/*.html').on('change', browser.reload);
-};
-
-export default gulp.series(uikitStyle, uikitScript, copyStyle, copyScript, server, watcher);
+export default gulp.series(uikitStyle, copyStyle, copyScript, watcher);
