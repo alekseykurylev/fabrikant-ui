@@ -57,7 +57,7 @@
   line-height: 40px;
 }
 
-@media (width <= 995px) {
+@media (max-width: 995px) {
   .header-topbar__left .header-topbar__list > li > *:first-child {
     border: none;
   }
@@ -96,6 +96,11 @@
 
   background-color: red;
   border-radius: 500px;
+}
+
+.header-topbar__profile + .uk-drop.uk-open {
+  overflow-y: auto;
+  max-height: 510px;
 }
 
 .header-mobile .uk-offcanvas .uk-nav > li > a {
