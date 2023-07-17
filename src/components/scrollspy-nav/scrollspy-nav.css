@@ -28,7 +28,18 @@
 }
 
 .uk-scrollspy-nav > ul {
+  scrollbar-width: none;
+
   overflow: auto;
+
   max-height: 228px;
+
   border: none;
+
+  -ms-overflow-style: none;
+}
+
+.uk-scrollspy-nav > ul::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
