@@ -1,4 +1,4 @@
-const container = document.querySelector('.uk-nav-compact');
+const container = document.querySelector('.uk-scrollspy-nav');
 const nav = container.querySelector('.uk-nav');
 const firstItem = nav.querySelector('li:first-child');
 const lastItem = nav.querySelector('li:last-child');

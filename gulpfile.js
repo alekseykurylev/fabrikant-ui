@@ -82,4 +82,4 @@ export const server = (done) => {
   done();
 };
 
-export default gulp.series(uikitStyle, copyStyle, copyScript, watcher);
+export default gulp.series(server, uikitStyle, copyStyle, copyScript, watcher);
