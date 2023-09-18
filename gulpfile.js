@@ -27,7 +27,7 @@ export const uikitStyle = () => {
 
 export const uikitScript = (done) => {
   gulp.src('node_modules/uikit/dist/js/uikit.min.js').pipe(gulp.dest('src/js')).pipe(gulp.dest('dist/uikit'));
-  gulp.src('src/js/uikit-icons.min.js').pipe(gulp.dest('dist/uikit'));
+  gulp.src('src/js/uikit-icons.js').pipe(terser()).pipe(rename('uikit-icons.min.js')).pipe(gulp.dest('dist/uikit'));
   done();
 };
 
@@ -82,4 +82,4 @@ export const server = (done) => {
   done();
 };
 
-export default gulp.series(server, uikitStyle, copyStyle, copyScript, watcher);
+export default gulp.series(server, uikitScript, uikitStyle, copyStyle, copyScript, watcher);

@@ -10,17 +10,13 @@
 
 ## Pages:
 
-Полноценная верстка страниц.
-
 - [Главная][home]
 - [Новость][news]
 - [Извещение (электронный аукцион)][notice-auction] [in progress]
 - [404][404]
 - [500][500]
 
-## Components:
-
-Компоненты, которые могут включать в себя бизнес логику.
+## Widgets:
 
 - [Extended Search][extended-search] [in progress]
 - [Footer][footer]
@@ -31,9 +27,7 @@
 - [Timeline][timeline]
 - [Toolbar][toolbar]
 
-## UI:
-
-Базовые интерфейсные компоненты, из которых создаются более сложные компоненты и страницы.
+## Shared:
 
 - [Alert][alert]
 - [Badge][badge]

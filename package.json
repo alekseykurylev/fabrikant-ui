@@ -5,6 +5,7 @@
     "@babel/preset-env": "^7.21.5",
     "autoprefixer": "10.4.0",
     "browser-sync": "^2.29.1",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-dart-sass": "^1.0.2",
@@ -19,8 +20,7 @@
     "stylelint-config-clean-order": "^5.0.1",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
-    "uikit": "^3.16.22",
-    "gh-pages": "^5.0.0"
+    "uikit": "^3.16.26"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -28,7 +28,6 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "server": "gulp server",
     "dev": "gulp"
-    
   },
   "browserslist": [
     "last 2 versions",
