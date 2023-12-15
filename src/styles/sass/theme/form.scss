@@ -9,6 +9,10 @@ $form-radio-background: #fff;
 $form-radio-focus-background: #fff;
 $internal-form-radio-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='6' fill='%23009DDB'/%3E%3C/svg%3E";
 $internal-form-checkbox-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' fill='none' viewBox='0 0 15 11'%3E%3Cpath stroke='%23fff' stroke-linejoin='round' stroke-width='2' d='m1 6 4 4 9-9'/%3E%3C/svg%3E";
+$internal-form-select-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24' fill='#000' viewBox='0 0 40 24'%3E%3Cpath fill-rule='evenodd' d='m5.293 9.707 1.414-1.414L12 13.586l5.293-5.293 1.414 1.414L12 16.414 5.293 9.707Z' clip-rule='evenodd'/%3E%3C/svg%3E";
+$form-select-padding-right: 50px;
+$form-select-icon-color: '#009DDB';
+$form-select-disabled-icon-color: '#718C9E';
 
 .uk-checkbox-wrap,
 .uk-radio-wrap {
