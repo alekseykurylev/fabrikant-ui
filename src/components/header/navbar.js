@@ -13,7 +13,7 @@
       list.insertAdjacentHTML(
         'beforeend',
         `<li class="more">
-          <a href="docs/#">Ещё...</a>
+          <a href="#">Ещё...</a>
           <ul class="uk-nav" uk-drop></ul>
         </li>`
       );
