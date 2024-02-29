@@ -2,6 +2,8 @@
 image: node:lts
 
 pages:
+  tags:
+    - docker
   stage: deploy
   script:
     - echo 'Nothing to do...'
