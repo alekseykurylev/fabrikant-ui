@@ -2,9 +2,12 @@
 image: node:lts
 
 pages:
-  tags:
-    - docker
+  stage: deploy
   script:
-    - npm install
-
+    - echo 'Nothing to do...'
+  artifacts:
+    paths:
+      - public
+  only:
+    - test
 
