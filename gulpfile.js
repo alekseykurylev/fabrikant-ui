@@ -70,7 +70,7 @@ export const watcher = () => {
 
   gulp.watch('src/**/*.css').on('change', browser.reload);
   gulp.watch('src/**/*.js').on('change', browser.reload);
-  gulp.watch('docs/**/*.html').on('change', browser.reload);
+  gulp.watch('dist/**/*.html').on('change', browser.reload);
 };
 
 // Server
