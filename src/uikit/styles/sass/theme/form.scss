@@ -1,0 +1,75 @@
+$form-background: var(--color-white);
+$form-focus-background: var(--color-white);
+$form-padding-horizontal: 16px;
+$form-placeholder-color: var(--color-mine-shaft-500);
+$form-danger-color: var(--color-mine-shaft-900);
+$form-success-color: var(--color-mine-shaft-900);
+$form-radio-size: 16px;
+$form-radio-background: #fff;
+$form-radio-focus-background: #fff;
+$internal-form-radio-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='6' fill='%23009DDB'/%3E%3C/svg%3E";
+$internal-form-checkbox-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' fill='none' viewBox='0 0 15 11'%3E%3Cpath stroke='%23fff' stroke-linejoin='round' stroke-width='2' d='m1 6 4 4 9-9'/%3E%3C/svg%3E";
+$internal-form-select-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24' fill='#000' viewBox='0 0 40 24'%3E%3Cpath fill-rule='evenodd' d='m5.293 9.707 1.414-1.414L12 13.586l5.293-5.293 1.414 1.414L12 16.414 5.293 9.707Z' clip-rule='evenodd'/%3E%3C/svg%3E";
+$form-select-padding-right: 50px;
+$form-select-icon-color: '#009DDB';
+$form-select-disabled-icon-color: '#718C9E';
+
+.uk-checkbox-wrap,
+.uk-radio-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.uk-checkbox-wrap > input,
+.uk-radio-wrap > input {
+  flex-shrink: 0;
+}
+
+.uk-checkbox:not(.uk-checkbox-large) + .uk-checkbox-label,
+.uk-radio:not(.uk-radio-large) + .uk-radio-label {
+  line-height: 16px;
+}
+
+// input-box - DEPRECATED
+
+.uk-input-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 100%;
+  padding: 11px 0;
+
+  background-color: #fff;
+  border: 1px solid var(--color-mystic-500);
+  border-radius: 4px;
+
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+}
+
+.uk-input-box:focus-within {
+  border-color: var(--color-cerulean-500);
+}
+
+.uk-input-box > .uk-input-box-label {
+  display: inline-block;
+
+  padding: 0 16px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.uk-input-box .uk-input {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.uk-input-box.uk-form-disabled,
+.uk-input-group.uk-form-disabled {
+  pointer-events: none;
+  background-color: var(--color-mystic-300-a-30);
+}
