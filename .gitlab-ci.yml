@@ -1,15 +1,10 @@
-# The Docker image that will be used to build your app
 image: node:lts
 
 pages:
   tags:
     - docker
-  stage: deploy
   script:
     - echo 'Nothing to do...'
   artifacts:
     paths:
       - public
-  only:
-    - test
-
