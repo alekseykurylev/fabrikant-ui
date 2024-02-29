@@ -78,7 +78,7 @@ export const watcher = () => {
 export const server = (done) => {
   browser.init({
     server: {
-      baseDir: './'
+      baseDir: './dist'
     },
     cors: true,
     notify: false,

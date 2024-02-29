@@ -5,7 +5,7 @@ pages:
     - docker
   script:
     - rm -rf public && mkdir -p public
-    - mv docs/* public
+    - mv dist public
   artifacts:
     paths:
       - public
