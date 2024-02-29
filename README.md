@@ -56,7 +56,7 @@
 [timeline]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/timeline.html
 [toolbar]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/toolbar.html
 [button]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/button.html
-[form]: https://alekseykurylev.github.io/fabrikant-ui/docsform.html
+[form]: https://alekseykurylev.github.io/fabrikant-ui/form.html
 [alert]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/alert.html
 [typography]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/typography.html
 [breadcrumb]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/breadcrumb.html
