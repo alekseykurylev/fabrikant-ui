@@ -12,7 +12,7 @@
 
 - [Главная][home]
 - [Новость][news]
-- [Извещение (электронный аукцион)][notice-auction] [in progress]
+- [Форма просмотра процедуры][procedure] [in progress]
 - [404][404]
 - [500][500]
 
@@ -44,7 +44,7 @@
 [getuikit]: https://github.com/uikit/uikit
 [home]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/home.html
 [news]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/news.html
-[notice-auction]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/procedure.html
+[procedure]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/procedure.html
 [404]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/404.html
 [500]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/500.html
 [header]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/header.html
