@@ -1,0 +1,15 @@
+.tariff-card {
+  color: var(--color-mine-shaft-900);
+
+  .uk-card-footer {
+    background-color: #f7fcf4;
+    border-top: 1px solid var(--color-mystic-300);
+  }
+}
+
+@media (min-width: $breakpoint-small) {
+  .tariff-card .uk-card-body,
+  .tariff-card .uk-card-footer {
+    padding: 32px;
+  }
+}
