@@ -1,4 +1,4 @@
-![fabrikant banner](https://github.com/alekseykurylev/fabrikant-ui/assets/8526127/22273cb8-0cb1-4ef4-a945-d4023be6763b)
+![fabrikant banner](https://i.postimg.cc/cHFJCbVT/fabr.jpg)
 
 # Дизайн система fabrikant-ui
 
