@@ -11,7 +11,8 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="../uikit/uikit.min.css" />
-    <link rel="stylesheet" href="../components/tariff-card/tariff-card.css" />
+    <link rel="stylesheet" href="../components/tariff/tariff-card.css" />
+    <link rel="stylesheet" href="../components/tariff/tariff-nav.css" />
 
     <script src="../uikit/uikit.min.js"></script>
     <script src="../uikit/uikit-icons.min.js"></script>
@@ -23,15 +24,15 @@
       <section class="uk-section uk-section-large">
         <h1>Тарифы</h1>
 
-        <ul class="uk-width-auto" uk-grid>
+        <ul class="tariff-menubar uk-width-auto" uk-grid>
           <li><a href="">Участие в закупках</a></li>
           <li><a href="">Участие в торгах на продажу</a></li>
           <li><a href="">Организация торгов</a></li>
         </ul>
 
         <div class="uk-grid-96" uk-grid>
-          <div class="uk-width-auto@m">
-            <ul class="uk-list" uk-switcher="connect: .uk-switcher" style="width: 325px">
+          <aside class="uk-width-auto@m uk-flex uk-flex-column">
+            <ul class="tariff-nav uk-list" uk-switcher="connect: .uk-switcher" style="min-width: 325px">
               <li><a href="#">223-ФЗ</a></li>
               <li><a href="#">Коммерческие закупки</a></li>
               <li><a href="#">44-Ф3</a></li>
@@ -39,7 +40,8 @@
               <li><a href="#">Электронный магазин</a></li>
               <li><a href="#">Дополнительные тарифы</a></li>
             </ul>
-          </div>
+            <div class="uk-card uk-card-default uk-card-body uk-margin-auto-top">213</div>
+          </aside>
           <div class="uk-width-expand@m">
             <div class="uk-switcher">
               <div>
@@ -84,7 +86,7 @@
                           </div>
                         </div>
                       </div>
-                      <div id="toggle-1" hidden>12321321</div>
+                      <div class="tariff-card-more" id="toggle-1" hidden>12321321</div>
                       <div class="uk-card-footer">
                         <div>
                           В закупках с НМЦ менее 250 000 руб.

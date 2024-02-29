@@ -53,24 +53,6 @@
     margin-top: 32px;
   }
 
-  .uk-grid-96,
-  .uk-grid-column-96 {
-    margin-left: -96px;
-  }
-
-  .uk-grid-96 > *,
-  .uk-grid-column-96 > * {
-    padding-left: 96px;
-  }
-
-  .uk-grid + .uk-grid-96,
-  .uk-grid + .uk-grid-row-96,
-  .uk-grid-96 > .uk-grid-margin,
-  .uk-grid-row-96 > .uk-grid-margin,
-  * + .uk-grid-margin-96 {
-    margin-top: 96px;
-  }
-
   .uk-grid-4,
   .uk-grid-column-4 {
     margin-left: -4px;
@@ -114,5 +96,25 @@
 
   .uk-grid-point {
     margin-left: -20px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    .uk-grid-96,
+    .uk-grid-column-96 {
+      margin-left: -96px;
+    }
+
+    .uk-grid-96 > *,
+    .uk-grid-column-96 > * {
+      padding-left: 96px;
+    }
+
+    .uk-grid + .uk-grid-96,
+    .uk-grid + .uk-grid-row-96,
+    .uk-grid-96 > .uk-grid-margin,
+    .uk-grid-row-96 > .uk-grid-margin,
+    * + .uk-grid-margin-96 {
+      margin-top: 96px;
+    }
   }
 }
