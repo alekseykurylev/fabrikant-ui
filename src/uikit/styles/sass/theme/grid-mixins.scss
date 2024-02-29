@@ -35,6 +35,42 @@
     margin-top: 8px;
   }
 
+  .uk-grid-32,
+  .uk-grid-column-32 {
+    margin-left: -32px;
+  }
+
+  .uk-grid-32 > *,
+  .uk-grid-column-32 > * {
+    padding-left: 32px;
+  }
+
+  .uk-grid + .uk-grid-32,
+  .uk-grid + .uk-grid-row-32,
+  .uk-grid-32 > .uk-grid-margin,
+  .uk-grid-row-32 > .uk-grid-margin,
+  * + .uk-grid-margin-32 {
+    margin-top: 32px;
+  }
+
+  .uk-grid-96,
+  .uk-grid-column-96 {
+    margin-left: -96px;
+  }
+
+  .uk-grid-96 > *,
+  .uk-grid-column-96 > * {
+    padding-left: 96px;
+  }
+
+  .uk-grid + .uk-grid-96,
+  .uk-grid + .uk-grid-row-96,
+  .uk-grid-96 > .uk-grid-margin,
+  .uk-grid-row-96 > .uk-grid-margin,
+  * + .uk-grid-margin-96 {
+    margin-top: 96px;
+  }
+
   .uk-grid-4,
   .uk-grid-column-4 {
     margin-left: -4px;

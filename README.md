@@ -12,6 +12,7 @@
 
 - [Главная][home]
 - [Новость][news]
+- [Тарифы][tariffs]
 - [Форма просмотра процедуры][procedure] [in progress]
 - [404][404]
 - [500][500]
@@ -66,3 +67,4 @@
 [subnav]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/subnav.html
 [icon]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/icon.html
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/box.html
+[tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/tariffs.html

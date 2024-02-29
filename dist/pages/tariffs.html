@@ -12,880 +12,126 @@
 
     <link rel="stylesheet" href="../uikit/uikit.min.css" />
 
-    <link rel="stylesheet" href="../components/header/header.css" />
-    <link rel="stylesheet" href="../components/footer/footer.css" />
-    <link rel="stylesheet" href="../components/search-bar/search-bar.css" />
-
     <script src="../uikit/uikit.min.js"></script>
     <script src="../uikit/uikit-icons.min.js"></script>
 
-    <title>Главная</title>
+    <title>Тарифы: Участие в закупках</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-mobile uk-grid-collapse uk-child-width-auto uk-hidden@s" uk-grid>
-        <div>
-          <a class="uk-flex uk-flex-middle" href="docs/#mobile-menu-1" uk-toggle>
-            <span uk-icon="menu"></span>
-          </a>
-          <div id="mobile-menu-1" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
-              <div class="uk-offcanvas-header">
-                <div class="uk-flex-middle" uk-grid>
-                  <div class="uk-width-expand">
-                    <a href="#"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
-                  </div>
-                  <div class="uk-width-auto">
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
-                <ul uk-nav>
-                  <li><a href="#">Закупки</a></li>
-                  <li><a href="#">Запросы</a></li>
-                  <li><a href="#">Контракты</a></li>
-                  <li><a href="#">Не забыть</a></li>
-                  <li><a href="#">ЗМО</a></li>
-                  <li class="uk-parent">
-                    <a href="#">
-                      Дополнительные сервисы
-                      <span uk-nav-parent-icon></span>
-                    </a>
-                    <ul class="uk-nav-sub" uk-nav>
-                      <li class="uk-parent">
-                        <a href="#">
-                          123213
-                          <span uk-nav-parent-icon></span>
-                        </a>
-                        <ul class="uk-nav-sub">
-                          <li><a href="#">12321312</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Калькулятор пени и штрафов ПП 1042</a></li>
-                      <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
-                      <li><a href="#">Поиск по решениям ФАС</a></li>
-                      <li><a href="#">Проверка ГОСТ/СНиП</a></li>
-                      <li><a href="#">ОКПД 2/КТРУ</a></li>
-                      <li><a href="#">НМЦК (анализ рынка)</a></li>
-                      <li><a href="#">НМЦК (лекарства)</a></li>
-                      <li><a href="#">НМЦК (мед. изделия)</a></li>
-                      <li><a href="#">Расчет сроков</a></li>
-                      <li><a href="#">Поиск документации</a></li>
-                      <li><a href="#">Текущие закупки</a></li>
-                      <li><a href="#">Реестр договоров-контрактов</a></li>
-                    </ul>
-                  </li>
-                  <li class="uk-parent">
-                    <a href="#">
-                      Секции
-                      <span uk-nav-parent-icon></span>
-                    </a>
-                    <ul class="uk-nav-sub">
-                      <li><a href="#">Закупки по 44-ФЗ</a></li>
-                      <li><a href="#">Закупки по 615-ПП</a></li>
-                      <li><a href="#">Закупки малого объема</a></li>
-                      <li><a href="#">223-ФЗ на etp-ets.ru</a></li>
-                      <li><a href="#">223-ФЗ на fabrikant.ru</a></li>
-                      <li><a href="#">Архив 223-ФЗ (до 21.05.2018)</a></li>
-                    </ul>
-                  </li>
-                  <li class="uk-parent">
-                    <a href="#">
-                      Реестры
-                      <span uk-nav-parent-icon></span>
-                    </a>
-                    <ul class="uk-nav-sub">
-                      <li><a href="#">Заказчики по 44-ФЗ</a></li>
-                      <li><a href="#">Заказчики по 223-ФЗ</a></li>
-                      <li><a href="#">Специализированные организации</a></li>
-                      <li><a href="#">Участники</a></li>
-                      <li><a href="#">Участники (ЕРУЗ)</a></li>
-                      <li><a href="#">Кредитные организации</a></li>
-                      <li><a href="#">Реестр квалифицированных подрядных организаций</a></li>
-                    </ul>
-                  </li>
-                  <li class="uk-active"><a href="#">Документация</a></li>
-                  <li><a href="#">Обучение</a></li>
-                </ul>
-              </div>
-              <div class="uk-offcanvas-footer uk-text-right">
-                <div class="uk-text-small uk-margin-small-bottom">
-                  <a class="uk-link-muted" href="docs/tel:+74951097575">+7 (495) 109-75-75</a>
-                </div>
-                <div>
-                  <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
-                    <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
-                    Обращение в техподдержку
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="uk-width-expand">
-          <div class="uk-flex uk-flex-center">
-            <ul class="header-subnav uk-flex-middle uk-flex-center uk-grid-column-small uk-grid-row-xsmall" uk-grid>
-              <li>
-                <a href="#">
-                  <span uk-icon="shuffle" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                    1 / 3
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span uk-icon="alert" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                    15 / 5
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span uk-icon="file" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">45</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span uk-icon="complaint" class="uk-icon-size-16"></span>
-                  <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">15</span>
-                </a>
-              </li>
+    <div class="uk-container uk-container-default">
+      <section class="uk-section uk-section-large">
+        <h1>Тарифы</h1>
+
+        <ul class="uk-width-auto" uk-grid>
+          <li><a href="">Участие в закупках</a></li>
+          <li><a href="">Участие в торгах на продажу</a></li>
+          <li><a href="">Организация торгов</a></li>
+        </ul>
+
+        <div class="uk-grid-96" uk-grid>
+          <div class="uk-width-auto@m">
+            <ul class="uk-list" uk-switcher="connect: .uk-switcher" style="width: 325px">
+              <li><a href="#">223-ФЗ</a></li>
+              <li><a href="#">Коммерческие закупки</a></li>
+              <li><a href="#">44-Ф3</a></li>
+              <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
+              <li><a href="#">Электронный магазин</a></li>
+              <li><a href="#">Дополнительные тарифы</a></li>
             </ul>
           </div>
-        </div>
-        <div>
-          <a class="uk-flex uk-flex-middle" href="docs/#mobile-menu-user" uk-toggle>
-            <span uk-icon="down-arrow-circle"></span>
-          </a>
-          <div id="mobile-menu-user" uk-offcanvas="overlay: true; flip: true">
-            <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
-              <div class="uk-offcanvas-header">
-                <div class="uk-flex-middle" uk-grid>
-                  <div class="uk-width-expand">Heading</div>
-                  <div class="uk-width-auto">
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>body</div>
-              <div class="uk-offcanvas-footer">footer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-topbar uk-grid-collapse uk-visible@s" uk-grid>
-        <div class="header-topbar__left uk-width-expand">
-          <ul class="header-topbar__list uk-grid-collapse uk-child-width-auto uk-flex-nowrap" uk-grid>
-            <li class="uk-flex-none uk-hidden@l">
-              <div class="uk-flex uk-flex-middle uk-text-muted">
-                <div class="uk-text-small">
-                  <div class="uk-flex">
-                    <span uk-icon="server-time" class="uk-icon-size-16 uk-margin-8-right"></span>
-                    <div>
-                      <span class="dateTime-container" id="serverDateTime">
-                        <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
-                        <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
-                        <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
-                        <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
-                        <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
-                        <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
-                        <span id="serverDateTime-second" class="serverDateTime-second">00</span>
-                      </span>
+          <div class="uk-width-expand@m">
+            <div class="uk-switcher">
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-alert">
+                      <b>Участвуйте бесплатно везде!</b>
+                      Тарифная плата только с победителя.
                     </div>
                   </div>
-                  <div class="uk-flex">
-                    <span uk-icon="clock" class="uk-icon-size-16 uk-margin-8-right"></span>
-                    <div>
-                      <span class="dateTime-container" id="serverDateTime">
-                        <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
-                        <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
-                        <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
-                        <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
-                        <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
-                        <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
-                        <span id="serverDateTime-second" class="serverDateTime-second">00</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="uk-flex-none uk-visible@l">
-              <div class="uk-flex uk-flex-middle uk-text-muted">
-                <span uk-icon="server-time"></span>
-                <div class="uk-margin-12-left">
-                  <div class="uk-text-xsmall uk-text-muted-bh200">Время на сервере</div>
-                  <div class="uk-text-small">
-                    <span class="dateTime-container" id="serverDateTime">
-                      <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
-                      <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
-                      <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
-                      <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
-                      <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
-                      <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
-                      <span id="serverDateTime-second" class="serverDateTime-second">00</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="uk-flex-none uk-visible@l">
-              <div class="uk-flex uk-flex-middle uk-text-muted">
-                <span uk-icon="clock"></span>
-                <div class="uk-margin-12-left">
-                  <div class="uk-text-xsmall uk-text-muted-bh200">Местное время</div>
-                  <div class="uk-text-small">
-                    <span class="dateTime-container" id="serverDateTime">
-                      <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
-                      <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
-                      <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
-                      <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
-                      <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
-                      <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
-                      <span id="serverDateTime-second" class="serverDateTime-second">00</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="uk-width-expand uk-visible@m">
-              <div class="uk-flex uk-flex-middle uk-text-muted">
-                <span uk-icon="user"></span>
-                <div class="uk-margin-12-left uk-width-expand">
-                  <div class="uk-text-xsmall uk-text-muted-bh200">
-                    <div class="uk-text-truncate">
-                      Заказчик:
-                      <a class="uk-text-bold" href="#">ООО «Тестовая организация очень очень длинное название»</a>
-                    </div>
-                  </div>
-                  <div class="uk-text-small uk-text-truncate">Сазанов Антон Михайлович</div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="header-topbar__right uk-width-auto">
-          <ul class="header-topbar__list uk-grid-collapse uk-child-width-auto uk-flex-nowrap" uk-grid>
-            <li>
-              <a class="uk-flex uk-flex-middle" href="#"><span uk-icon="telegram"></span></a>
-            </li>
-            <li class="header-topbar__bell">
-              <a class="uk-flex uk-flex-middle" href="#">
-                <span uk-icon="bell"></span>
-                <span uk-icon="bell-solid"></span>
-                <span class="uk-badge uk-badge-small uk-text-small uk-badge-danger uk-margin-2-left">25</span>
-              </a>
-              <div class="uk-card uk-card-body" uk-drop="pos: bottom-right">
-                <h4 class="uk-h3 uk-margin-small uk-margin-remove-top">Уведомления</h4>
-                <ul class="uk-list uk-list-divider uk-margin-remove">
-                  <li>
-                    Ссылка для подписи файла протокола по закупке №5999217711300056111 отправлена членам комиссии
-                    <ul
-                      class="uk-text-muted uk-text-small uk-flex-nowrap uk-margin-8-top uk-grid-point uk-child-width-auto"
-                      uk-grid>
-                      <li class="uk-text-nowrap">27.01.2022 17:12:21 (MSK+00:00)</li>
-                      <li class="uk-text-truncate">Публикация протокола рассмотрения и оценки первых частей заявок</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Ссылка для подписи файла протокола по закупке №5999217711300056111 отправлена членам комиссии
-                    <ul
-                      class="uk-text-muted uk-text-small uk-flex-nowrap uk-margin-8-top uk-grid-point uk-child-width-auto"
-                      uk-grid>
-                      <li class="uk-text-nowrap">27.01.2022 17:12:21 (MSK+00:00)</li>
-                      <li class="uk-text-truncate">Протоколы</li>
-                    </ul>
-                  </li>
-                </ul>
-                <hr class="uk-hr-16" />
-                <div class="uk-flex uk-flex-middle uk-flex-between">
-                  <a class="uk-button uk-button-small uk-button-default uk-button-icon" href="#">
-                    <span class="uk-icon-size-16 uk-text-primary" uk-icon="settings"></span>
-                  </a>
-                  <a class="uk-button uk-button-small uk-button-default" href="#">
-                    <span class="uk-icon-size-16 uk-text-primary uk-margin-8-right" uk-icon="bell"></span>
-                    Показать все уведомления
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a class="header-topbar__profile uk-flex uk-flex-middle" href="#">
-                <div class="uk-h3 uk-margin-remove-bottom uk-margin-8-right uk-visible@l">Мой кабинет</div>
-                <span uk-icon="down-arrow-circle"></span>
-              </a>
-              <ul class="uk-nav" uk-drop="pos: bottom-right" uk-nav>
-                <li class="uk-nav-header uk-hidden@m">
-                  <div class="uk-flex uk-flex-middle uk-text-muted">
-                    <span uk-icon="user" class="uk-icon"></span>
-                    <div class="uk-margin-12-left uk-width-expand">
-                      <div class="uk-text-xsmall uk-text-muted-bh200">
-                        <div class="uk-text-truncate-clamp-2">
-                          Заказчик:
-                          <a class="uk-text-bold" href="#">
-                            ООО «Тестовая организация очень очень длинное предлинное название»
-                          </a>
+                  <div>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-body">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-margin-8-bottom">Победитель закупки по 223-ФЗ</h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700">с НМЦ более 250 000 руб.</div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s">
+                              <b>1% от НМЦ,</b>
+                              но не более
+                              <b>119 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-margin-auto-top"
+                              uk-toggle="target: #toggle-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
                         </div>
                       </div>
-                      <div class="uk-text-small uk-text-truncate">Сазанов Антон Михайлович</div>
-                    </div>
-                  </div>
-                </li>
-                <li class="uk-nav-divider uk-hidden@m"></li>
-                <li class="uk-parent">
-                  <a href="#">
-                    Настройка параметров
-                    <span uk-nav-parent-icon></span>
-                  </a>
-                  <ul class="uk-nav-sub">
-                    <li><a href="#">Параметр первый</a></li>
-                    <li><a href="#">Параметр второй</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Пользователи</a></li>
-                <li><a href="#">Шаблоны протоколов</a></li>
-                <li><a href="#">Реестр комиссий</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">Выйти</a></li>
-              </ul>
-            </li>
-            <li class="uk-visible@l">
-              <a class="uk-flex uk-flex-middle uk-text-muted" href="#">
-                <span uk-icon="logout"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="header-hero uk-visible@s">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-flex-middle" uk-grid>
-            <div class="uk-width-auto">
-              <a href="#"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
-            </div>
-            <div class="uk-width-expand">
-              <ul class="header-subnav uk-flex-middle uk-grid-row-xsmall" uk-grid>
-                <li>
-                  <a href="#">
-                    <span uk-icon="shuffle" class="uk-icon-size-16"></span>
-                    <div class="uk-visible@l">Запросы разъяснений</div>
-                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                      1 / 3
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span uk-icon="alert" class="uk-icon-size-16"></span>
-                    <div class="uk-visible@l">Не забыть</div>
-                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                      15 / 5
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span uk-icon="file" class="uk-icon-size-16"></span>
-                    <div class="uk-visible@l">Мои протоколы</div>
-                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                      45
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span uk-icon="complaint" class="uk-icon-size-16"></span>
-                    <div class="uk-visible@l">Жалобы</div>
-                    <span class="uk-badge uk-badge-small uk-badge-muted-m300a30 uk-text-small uk-margin-4-left">
-                      15
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="uk-width-auto uk-margin-auto-left">
-              <a class="uk-flex uk-flex-middle uk-link-muted" href="docs/tel:+74951097575">
-                <span class="uk-preserve uk-margin-12-right" uk-icon="phone-circle"></span>
-                +7 (495) 109-75-75
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-nav uk-visible@s">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-child-width-expand uk-flex-middle uk-grid-large" uk-grid>
-            <div>
-              <nav class="uk-navbar-container" uk-navbar>
-                <div class="uk-navbar-left">
-                  <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Закупки</a></li>
-                    <li><a href="#">Запросы</a></li>
-                    <li><a href="#">Контракты</a></li>
-                    <li><a href="#">Не забыть</a></li>
-                    <li><a href="#">ЗМО</a></li>
-                    <li>
-                      <a href="#">Дополнительные сервисы</a>
-                      <ul class="uk-nav" uk-drop>
-                        <li><a href="#">Калькулятор пени и штрафов ПП 1042</a></li>
-                        <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
-                        <li><a href="#">Поиск по решениям ФАС</a></li>
-                        <li><a href="#">Проверка ГОСТ/СНиП</a></li>
-                        <li><a href="#">ОКПД 2/КТРУ</a></li>
-                        <li><a href="#">НМЦК (анализ рынка)</a></li>
-                        <li><a href="#">НМЦК (лекарства)</a></li>
-                        <li><a href="#">НМЦК (мед. изделия)</a></li>
-                        <li><a href="#">Расчет сроков</a></li>
-                        <li><a href="#">Поиск документации</a></li>
-                        <li><a href="#">Текущие закупки</a></li>
-                        <li><a href="#">Реестр договоров-контрактов</a></li>
-                      </ul>
-                    </li>
-                    <li class="more">
-                      <a href="#">Ещё...</a>
-                      <ul class="uk-nav" uk-drop>
-                        <li class="uk-active">
-                          <a href="#">Секции</a>
-                          <ul class="uk-nav" uk-drop="pos: right-top">
-                            <li><a href="#">Закупки по 44-ФЗ</a></li>
-                            <li><a href="#">Закупки по 615-ПП</a></li>
-                            <li><a href="#">Закупки малого объема</a></li>
-                            <li><a href="#">223-ФЗ на etp-ets.ru</a></li>
-                            <li><a href="#">223-ФЗ на fabrikant.ru</a></li>
-                            <li><a href="#">Архив 223-ФЗ (до 21.05.2018)</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="#">Реестры</a>
-                          <ul class="uk-nav" uk-drop="pos: right-top">
-                            <li><a href="#">Заказчики по 44-ФЗ</a></li>
-                            <li><a href="#">Заказчики по 223-ФЗ</a></li>
-                            <li><a href="#">Специализированные организации</a></li>
-                            <li><a href="#">Участники</a></li>
-                            <li><a href="#">Участники (ЕРУЗ)</a></li>
-                            <li><a href="#">Кредитные организации</a></li>
-                            <li>
-                              <a href="#">Реестр квалифицированных подрядных организаций</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Документация</a></li>
-                        <li><a href="#">Обучение</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <div class="uk-width-auto">
-              <a class="uk-text-small uk-flex uk-flex-middle" href="#">
-                <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
-                Обращение в техподдержку
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="uk-section uk-padding-remove-bottom">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-flex-bottom uk-margin-8-bottom" uk-grid>
-            <div class="uk-width-expand@s">
-              <h1 class="uk-margin-remove">Поиск по закупкам</h1>
-            </div>
-            <div class="uk-width-auto@s">
-              <div class="uk-flex-middle uk-flex-between uk-grid-8" uk-grid>
-                <a class="uk-flex uk-flex-middle uk-text-small" href="#">
-                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="filters"></span>
-                  Расширенный поиск
-                </a>
-                <a class="uk-flex uk-flex-middle uk-text-small uk-link-muted-bh500" href="#">
-                  <span class="uk-icon-size-16 uk-margin-4-right" uk-icon="close-circle"></span>
-                  Очистить
-                </a>
-              </div>
-            </div>
-          </div>
-          <form>
-            <div class="search-bar uk-box uk-box-16">
-              <div class="uk-box-body">
-                <div class="uk-child-width-auto uk-flex-middle uk-grid-small" uk-grid>
-                  <div class="uk-width-expand">
-                    <input
-                      class="uk-input"
-                      type="text"
-                      placeholder="Параметры поиска: Наименование комиссии полностью или частично (не менее трёх символов)" />
-                  </div>
-                  <div class="uk-visible@m">
-                    <div class="uk-input-group">
-                      <input class="uk-input" type="text" placeholder="Дата от" />
-                      <input class="uk-input" type="text" placeholder="до" />
-                    </div>
-                  </div>
-                  <div class="uk-visible@s">
-                    <div class="uk-input-group">
-                      <input class="uk-input" type="text" placeholder="НМЦ от" />
-                      <input class="uk-input" type="text" placeholder="до" />
+                      <div id="toggle-1" hidden>12321321</div>
+                      <div class="uk-card-footer">
+                        <div>
+                          В закупках с НМЦ менее 250 000 руб.
+                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
+                        </div>
+                        <a href="#">Посмотреть бесплатные закупки</a>
+                      </div>
                     </div>
                   </div>
                   <div>
-                    <button type="button" class="uk-button uk-button-primary uk-flex uk-flex-middle">
-                      <span uk-icon="search"></span>
-                    </button>
+                    <div class="uk-card uk-card-default">
+                      <div class="uk-card-body">123213</div>
+                      <div class="uk-card-footer">212132321321</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-margin-xlarge-top">
+                  <div class="uk-grid-32" uk-grid>
+                    <div class="uk-width-1-2@s">
+                      <div class="uk-card uk-card-default uk-card-body">
+                        <h3>123</h3>
+                        <div>123</div>
+                      </div>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                      <div class="uk-card uk-card-default uk-card-body">
+                        <h3>123</h3>
+                        <div>123</div>
+                      </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                      <div class="uk-card uk-card-default uk-card-body">
+                        <h3>123</h3>
+                        <div>123</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="uk-section">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-box uk-box-32">
-            <div class="uk-box-body">
-              <div class="uk-container uk-container-small">
-                <h2 class="uk-h2">Новости</h2>
-                <ul class="uk-margin-bottom uk-child-width-1-2@m uk-grid-row-medium" uk-grid>
-                  <li>
-                    <a class="uk-link-reset" href="#">
-                      <span class="uk-text-muted-bh200">14 Октября 2022 10:42</span>
-                      <h3
-                        class="uk-h4 uk-margin-remove uk-margin-8-top uk-heading-text uk-link-heading uk-text-weight-500">
-                        Поставщик ГК Росатом: особенности и практика работы в электронных закупках
-                      </h3>
-                      <p class="uk-margin-remove">25 октября 2022 в 11:00 мск пройдет бесплатный вебинар.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="uk-link-reset" href="#">
-                      <span class="uk-text-muted-bh200">14 Октября 2022 10:42</span>
-                      <h3
-                        class="uk-h4 uk-margin-remove uk-margin-8-top uk-heading-text uk-link-heading uk-text-weight-500">
-                        Поставщик ГК Росатом: особенности и практика работы в электронных закупках
-                      </h3>
-                      <p class="uk-margin-remove">25 октября 2022 в 11:00 мск пройдет бесплатный вебинар.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="uk-link-reset" href="#">
-                      <span class="uk-text-muted-bh200">11 Октября 2022 11:48</span>
-                      <h3
-                        class="uk-h4 uk-margin-remove uk-margin-8-top uk-heading-text uk-link-heading uk-text-weight-500">
-                        Планирование закупок по Закону № 223-ФЗ
-                      </h3>
-                      <p class="uk-margin-remove">20 октября 2022 г. пройдет бесплатный вебинар.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="uk-link-reset" href="#">
-                      <span class="uk-text-muted-bh200">7 Октября 2022 11:34</span>
-                      <h3
-                        class="uk-h4 uk-margin-remove uk-margin-8-top uk-heading-text uk-link-heading uk-text-weight-500">
-                        Региональная конференция по госзакупкам состоится в Чите
-                      </h3>
-                      <p class="uk-margin-remove">
-                        Итоги 2022 года и перспективы государственных и муниципальных закупок Забайкальского края
-                        обсудят на региональной конференции, которая состоится 10 и 11 октября
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-                <a class="uk-button uk-button-default uk-button-small" href="#">Архив новостей</a>
-                <div
-                  class="uk-child-width-1-2@m uk-grid-column-small uk-margin-medium-top"
-                  uk-grid
-                  uk-height-match="target: > div > ul > li > .uk-card">
-                  <div>
-                    <h2 class="uk-h2">Участникам</h2>
-                    <ul class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/services/new/special-account"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img src="../img/special-account.svg" width="64" height="64" alt="Открыть спецсчет" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">Открыть спецсчет</h3>
-                              <p class="uk-margin-remove">
-                                Откройте спецсчет через ЭТП Фабрикант - онлайн заявка, минимум документов, максимум
-                                свободы в торгах
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/applications-expertise"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img
-                                src="../img/applications-expertise.svg"
-                                width="64"
-                                height="64"
-                                alt="Экспертиза заявки" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">Экспертиза заявки</h3>
-                              <p class="uk-margin-remove">
-                                Чтобы исключить риск отклонения по формальным основаниям, воспользуйтесь экспертизой
-                                заявки
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/digital-signature"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img
-                                src="../img/digital-signature.svg"
-                                width="64"
-                                height="64"
-                                alt="Электронная подпись 3.0" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">Электронная подпись 3.0</h3>
-                              <p class="uk-margin-remove">
-                                Универсальный тариф для участия в государственных и коммерческих закупках
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h2 class="uk-h2">Заказчикам</h2>
-                    <ul class="uk-child-width-1-1 uk-grid-row-medium" uk-grid>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/services/new/eis-module"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img
-                                src="../img/eis-module.svg"
-                                width="64"
-                                height="64"
-                                alt="Модуль 1С для электронного
-                              актирования в ЕИС" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">
-                                Модуль 1С для электронного актирования в ЕИС
-                              </h3>
-                              <p class="uk-margin-remove">
-                                Экономьте время при формировании первичных документов,сверяйте НДС и номенклатуру
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/education/webinars"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img src="../img/webinars.svg" width="64" height="64" alt="Онлайн-обучение" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">Онлайн-обучение</h3>
-                              <p class="uk-margin-remove">
-                                Проходите обучение у специалистов, актуализируйте знания и пополняйте профессиональное
-                                портфолио
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="uk-card uk-card-default uk-card-hover uk-card-body"
-                          href="https://www.fabrikant.ru/services/edm/edo"
-                          target="_blank">
-                          <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto@m">
-                              <img src="../img/edo.svg" width="64" height="64" alt="Электронный документооборот" />
-                            </div>
-                            <div class="uk-width-expand@m">
-                              <h3 class="uk-h2 uk-margin-8-bottom uk-card-title">Электронный документооборот</h3>
-                              <p class="uk-margin-remove">Не тратьте бумагу, отправляйте документы электронно</p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <div>Коммерческие закупки</div>
+              <div>44-Ф3</div>
+              <div>615-ПП РФ (капитальный ремонт)</div>
+              <div>Электронный магазин</div>
+              <div>Дополнительные тарифы</div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-
-    <footer class="footer">
-      <section class="footer-nav uk-section uk-section-large">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large" uk-grid>
-            <div>
-              <h4>Секции</h4>
-              <ul class="uk-nav">
-                <li><a href="#">44-ФЗ</a></li>
-                <li><a href="#">223-ФЗ</a></li>
-                <li><a href="#">Коммерческие закупки</a></li>
-                <li><a href="#">Торги на продажу</a></li>
-                <li><a href="#">Фабрикант.Маркет</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Дополнительные услуги</h4>
-              <ul class="uk-nav">
-                <li><a href="#">Электронная подпись</a></li>
-                <li><a href="#">Банковские гарантии</a></li>
-                <li><a href="#">Экспертиза заявки</a></li>
-                <li><a href="#">Электронное актирование</a></li>
-                <li><a href="#">Все услуги</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Клиентам</h4>
-              <ul class="uk-nav">
-                <li><a href="#">Тарифы</a></li>
-                <li><a href="#">Заказчикам</a></li>
-                <li><a href="#">Поставщикам</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Поддержка</h4>
-              <ul class="uk-nav">
-                <li><a href="#">Обучение</a></li>
-                <li><a href="#">База знаний</a></li>
-                <li><a href="#">Вопросы-ответы</a></li>
-                <li><a href="#">Документация</a></li>
-                <li><a href="#">Обращение в техподдержку</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="uk-section uk-section-large">
-        <div class="uk-container uk-container-expand">
-          <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large" uk-grid>
-            <div class="uk-width-1-1 uk-width-1-4@l">
-              <a href="#"><img src="../img/logo-gray.svg" width="167" height="19" alt="Фабрикант" /></a>
-            </div>
-            <div>
-              <ul class="uk-list uk-list-large">
-                <li>
-                  <a class="uk-flex uk-flex-middle" href="docs/tel:+74951097575">
-                    <span uk-icon="phone" class="uk-text-primary uk-margin-small-right"></span>
-                    <span class="uk-h2 uk-margin-remove">+7 (495) 109-75-75</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="uk-button uk-button-default" href="#">Обратиться в техподдержку</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="uk-list">
-                <li>
-                  <a class="uk-flex uk-link-muted-ms500" href="https://yandex.ru/maps/-/CCUwM2gNWD" target="_blank">
-                    <span uk-icon="pin" class="uk-text-primary"></span>
-                    <span class="uk-text-small uk-margin-small-left">
-                      Центральный офис, АО «ЭТС» 123112,
-                      <br />
-                      г. Москва, ул. Тестовская, д. 10,
-                      <br />
-                      помещение 2/6, этаж 18
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a class="uk-flex uk-flex-middle" href="docs/mailto:info@fabrikant.ru" target="_blank">
-                    <span uk-icon="mail" class="uk-text-primary"></span>
-                    <span class="uk-h3 uk-margin-small-left uk-margin-remove-vertical">info@fabrikant.ru</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="uk-nav uk-nav-muted">
-                <li>
-                  <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                  <a href="#">Согласие на обработку персональных данных</a>
-                </li>
-                <li>
-                  <a href="#">Регламенты работы на ЭТП</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="uk-section uk-section-large">
-        <div class="uk-container uk-container-expand">
-          <div
-            class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large uk-flex-right@l"
-            uk-grid>
-            <div>
-              <h4 class="uk-heading-text uk-text-normal uk-margin-small uk-text-muted-bh200">Безопасность платежей</h4>
-              <ul class="uk-grid-medium uk-flex-middle" uk-grid>
-                <li><img src="../img/mastercard.svg" width="37" height="23" alt="Mastercard" /></li>
-                <li><img src="../img/visa.svg" width="60" height="20" alt="Visa" /></li>
-                <li><img src="../img/mir.svg" width="61" height="18" alt="МИР" /></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="uk-heading-text uk-text-normal uk-margin-small uk-text-muted-bh200">Перевести страницу</h4>
-              <div>тут яндекс кнопка</div>
-            </div>
-            <div>
-              <ul class="footer-social uk-grid-small" uk-grid>
-                <li>
-                  <a href="#" target="_blank"><span uk-icon="telegram-circle"></span></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"><span uk-icon="vkontakte-circle"></span></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"><span uk-icon="youtube-circle"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
-
-    <script src="../components/header/navbar.js"></script>
+    </div>
   </body>
 </html>
