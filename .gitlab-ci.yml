@@ -4,7 +4,7 @@ image: node:lts
 pages:
   tags:
     - docker
-  artifacts:
-    paths:
-      - public
+  script:
+    - npm install
+
 
