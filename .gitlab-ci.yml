@@ -4,7 +4,8 @@ pages:
   tags:
     - docker
   script:
-    - echo 'Nothing to do...'
+    - rm -rf public && mkdir -p public
+    - mv docs/* public
   artifacts:
     paths:
       - public
