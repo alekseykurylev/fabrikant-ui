@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../dist/uikit/uikit.min.css" />
+
+    <script src="../dist/uikit/uikit.min.js"></script>
+    <script src="../dist/uikit/uikit-icons.min.js"></script>
+
+    <title>Alert</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Alert</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://github.com/alekseykurylev/fabrikant-ui/tree/release/src/ui/alert"
+            target="_blank">
+            <span class="uk-text-secondary" uk-icon="github"></span>
+          </a>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=11114-81568&t=2GbvWwgZGWBVwWoi-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+        <p>
+          Атрибут
+          <code>uk-alert</code>
+          обязателен для всех
+        </p>
+        <p>
+          Для закрытия используем тег
+          <code>&#60;a&#62;</code>
+          с атрибутом
+          <code>uk-close</code>
+          и классом
+          <code>.uk-alert-close</code>
+        </p>
+        <p>
+          <code>.uk-alert-*</code>
+          - используем только на сером фоне
+        </p>
+        <p uk-margin>
+          <code>.uk-alert-primary</code>
+          <code>.uk-alert-success</code>
+          <code>.uk-alert-warning</code>
+          <code>.uk-alert-danger</code>
+          <code>.uk-alert-nightmare</code>
+        </p>
+        <div class="uk-alert-primary" uk-alert>
+          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+            <div class="uk-width-auto">
+              <span uk-icon="alert"></span>
+            </div>
+            <div>
+              <p class="uk-margin-8">
+                В связи с проведением регламентных работ на ЭТП Фабрикант возможны перерывы в работе в период с 01:00
+                (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022. В связи с проведением регламентных работ на ЭТП Фабрикант
+                возможны перерывы в работе в период с 01:00 (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022.
+                <a href="docs/#">primary</a>
+              </p>
+              <p class="uk-margin-8">
+                В связи с проведением регламентных работ на ЭТП Фабрикант возможны перерывы в работе в период с 01:00
+                (МСК) 22.10.2022 до 13:00 (МСК) 22.10.2022.
+                <a href="docs/#">Ссылка для перехода</a>
+              </p>
+            </div>
+            <div class="uk-width-auto">
+              <a class="uk-alert-close" uk-close></a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-alert-success" uk-alert>
+          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+            <div class="uk-width-auto">
+              <span uk-icon="info"></span>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <a href="docs/#">success</a>
+              </p>
+            </div>
+            <div class="uk-width-auto">
+              <a class="uk-alert-close" uk-close></a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-alert-warning" uk-alert>
+          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+            <div class="uk-width-auto">
+              <span uk-icon="alert"></span>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <a href="docs/#">warning</a>
+              </p>
+            </div>
+            <div class="uk-width-auto">
+              <a class="uk-alert-close" uk-close></a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-alert-danger" uk-alert>
+          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+            <div class="uk-width-auto">
+              <span uk-icon="alert"></span>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <a href="docs/#">danger</a>
+              </p>
+            </div>
+            <div class="uk-width-auto">
+              <a class="uk-alert-close" uk-close></a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-alert-nightmare" uk-alert>
+          <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+            <div class="uk-width-auto">
+              <span uk-icon="alert"></span>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <a href="docs/#">nightmare</a>
+              </p>
+            </div>
+            <div class="uk-width-auto">
+              <a class="uk-alert-close" uk-close></a>
+            </div>
+          </div>
+        </div>
+        <hr class="uk-margin-large" />
+        <div class="uk-box uk-box-32">
+          <div class="uk-box-body">
+            <p>
+              <code>.uk-informer-*</code>
+              - используем только на белом фоне
+            </p>
+            <p uk-margin>
+              <code>.uk-informer-primary</code>
+              <code>.uk-informer-success</code>
+              <code>.uk-informer-danger</code>
+              <code>.uk-informer-nightmare</code>
+            </p>
+            <div class="uk-informer-danger" uk-alert>
+              <p>
+                Цена исполненного контракта (стоимость исполненных обязательств) составляет менее 20% от НМЦК данной
+                закупки.
+                <br />
+                <span class="uk-text-weight-700">
+                  Недостающая сумма: 500 р. Заявка может быть отклонена заказчиком!
+                </span>
+                <a href="docs/#">danger</a>
+              </p>
+            </div>
+            <div class="uk-informer-success" uk-alert>
+              <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+                <div class="uk-width-auto">
+                  <span uk-icon="alert"></span>
+                </div>
+                <div>
+                  <p class="uk-text-weight-600 uk-margin-4">Наличие средств на специально счете</p>
+                  <p class="uk-margin-4">
+                    Средства для обеспечения на 10.03.2023 15:30 на счете имеются
+                    <a href="docs/#">success</a>
+                  </p>
+                </div>
+                <div class="uk-width-auto">
+                  <button class="uk-button uk-button-secondary uk-button-small">
+                    <span class="uk-icon-size-16 uk-text-primary" uk-icon="refresh"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="uk-informer-nightmare" uk-alert>
+              <div class="uk-grid-small uk-flex-middle uk-child-width-expand" uk-grid>
+                <div class="uk-width-auto">
+                  <span uk-icon="alert"></span>
+                </div>
+                <div>
+                  <p class="uk-text-weight-600 uk-margin-4">Недостаточно средств</p>
+                  <p class="uk-margin-4">
+                    Средств для обеспечения на 10.03.2023 15:30 на счете недостаточно
+                    <a href="docs/#">nightmare</a>
+                  </p>
+                </div>
+                <div class="uk-width-auto">
+                  <button class="uk-button uk-button-secondary uk-button-small">
+                    <span class="uk-icon-size-16 uk-text-primary" uk-icon="refresh"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="uk-informer-primary" uk-alert>
+              <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                <div class="uk-width-auto">
+                  <span uk-icon="ruble"></span>
+                </div>
+                <div>
+                  <p class="uk-margin-8">
+                    <span class="uk-text-weight-700">Комиссия 979,00 ₽</span>
+                    <span class="uk-text-muted">с учетом НДС</span>
+                    <br />
+                    Комиссия будет удержана только в случае выбора Вашего предложения Организатором закупки для
+                    заключения контракта
+                  </p>
+                  <p class="uk-margin-8">
+                    В закупках, опубликованных
+                    <span class="uk-text-weight-700">до 1 июля 2023</span>
+                    , участие
+                    <span class="uk-text-weight-700">БЕСПЛАТНОЕ</span>
+                    <a href="docs/#">primary</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

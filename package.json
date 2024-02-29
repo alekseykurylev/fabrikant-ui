@@ -1,5 +1,14 @@
 {
+  "name": "ui-fabrikant",
+  "version": "0.1.0",
+  "type": "module",
   "private": true,
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/styles/sass/**/*.scss\" --syntax scss",
+    "lint": "npm run editorconfig && npm run stylelint",
+    "dev": "gulp"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
@@ -21,31 +30,5 @@
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "uikit": "^3.16.26"
-  },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"src/styles/sass/**/*.scss\" --syntax scss",
-    "lint": "npm run editorconfig && npm run stylelint",
-    "server": "gulp server",
-    "dev": "gulp"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all",
-    "not < 0.25%"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "src/*.html",
-    "src/js/**/*.js",
-    "src/img/**/*.svg",
-    "src/styles/sass/**/*.scss"
-  ],
-  "engines": {
-    "node": "^16"
-  },
-  "type": "module"
+  }
 }

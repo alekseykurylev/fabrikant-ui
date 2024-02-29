@@ -13,12 +13,11 @@ import browser from 'browser-sync';
 
 export const uikitStyle = () => {
   return gulp
-    .src('src/styles/sass/style.scss')
+    .src('src/uikit/styles/sass/style.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([csso]))
     .pipe(rename('uikit.min.css'))
-    .pipe(gulp.dest('src/styles'))
     .pipe(gulp.dest('dist/uikit'))
     .pipe(browser.stream());
 };
@@ -26,26 +25,30 @@ export const uikitStyle = () => {
 // UIkit Script
 
 export const uikitScript = (done) => {
-  gulp.src('node_modules/uikit/dist/js/uikit.min.js').pipe(gulp.dest('src/js')).pipe(gulp.dest('dist/uikit'));
-  gulp.src('src/js/uikit-icons.js').pipe(terser()).pipe(rename('uikit-icons.min.js')).pipe(gulp.dest('dist/uikit'));
+  gulp.src('node_modules/uikit/dist/js/uikit.min.js').pipe(gulp.dest('dist/uikit'));
+  gulp
+    .src('src/uikit/js/uikit-icons.js')
+    .pipe(terser())
+    .pipe(rename('uikit-icons.min.js'))
+    .pipe(gulp.dest('dist/uikit'));
   done();
 };
 
-// Copy Style
+// Components Style
 
-export const copyStyle = () => {
+export const componentsStyle = () => {
   return gulp
-    .src(['src/components/**/*.css', 'src/ui/**/*.css'])
+    .src(['src/components/**/*.css'])
     .pipe(postcss([minmax, csso]))
     .pipe(gulp.dest('dist/components'))
     .pipe(browser.stream());
 };
 
-// Copy Script
+// Components Script
 
-export const copyScript = () => {
+export const componentsScript = () => {
   return gulp
-    .src(['src/components/**/*.js', 'src/ui/**/*.js'])
+    .src(['src/components/**/*.js'])
     .pipe(
       babel({
         presets: ['@babel/preset-env']
@@ -59,13 +62,15 @@ export const copyScript = () => {
 // Watcher
 
 export const watcher = () => {
-  gulp.watch('src/styles/**/*.scss', gulp.series(uikitStyle));
-  gulp.watch('src/js/*.js', gulp.series(uikitScript));
-  gulp.watch('src/**/*.css', gulp.series(copyStyle));
-  gulp.watch('src/**/*.js', gulp.series(copyScript));
+  gulp.watch('src/uikit/styles/**/*.scss', gulp.series(uikitStyle));
+  gulp.watch('src/uikit/js/*.js', gulp.series(uikitScript));
+
+  gulp.watch('src/**/*.css', gulp.series(componentsStyle));
+  gulp.watch('src/**/*.js', gulp.series(componentsScript));
+
   gulp.watch('src/**/*.css').on('change', browser.reload);
   gulp.watch('src/**/*.js').on('change', browser.reload);
-  gulp.watch('src/**/*.html').on('change', browser.reload);
+  gulp.watch('docs/**/*.html').on('change', browser.reload);
 };
 
 // Server
@@ -73,7 +78,7 @@ export const watcher = () => {
 export const server = (done) => {
   browser.init({
     server: {
-      baseDir: './src'
+      baseDir: './'
     },
     cors: true,
     notify: false,
@@ -82,4 +87,4 @@ export const server = (done) => {
   done();
 };
 
-export default gulp.series(server, uikitScript, uikitStyle, copyStyle, copyScript, watcher);
+export default gulp.series(server, uikitScript, uikitStyle, componentsStyle, componentsScript, watcher);

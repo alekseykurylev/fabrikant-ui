@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../dist/uikit/uikit.min.css" />
+
+    <script src="../dist/uikit/uikit.min.js"></script>
+    <script src="../dist/uikit/uikit-icons.min.js"></script>
+
+    <title>Breadcrumb</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Breadcrumb</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://github.com/alekseykurylev/fabrikant-ui/tree/release/src/ui/breadcrumb"
+            target="_blank">
+            <span class="uk-text-secondary" uk-icon="github"></span>
+          </a>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=10553-89878&t=2GbvWwgZGWBVwWoi-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+        <p>
+          Для breadcrumb используем тег
+          <code>&#60;ul&#62;</code>
+          с классом
+          <code>.uk-breadcrumb</code>
+        </p>
+
+        <div class="uk-margin">
+          <nav aria-label="Breadcrumb">
+            <ul class="uk-breadcrumb">
+              <li><a href="docs/#">Главная</a></li>
+              <li><a href="docs/#">Закупки</a></li>
+              <li><a href="docs/#">Закупка №0198400003222000154</a></li>
+              <li>
+                <span>Сведения о закупке №0198400003222000154</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <p>
+          Для поддержки спецификации WAI-ARIA оборачиваем в тег
+          <code>&#60;nav&#62;</code>
+          с атрибутом
+          <code>aria-label="Breadcrumb"</code>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
