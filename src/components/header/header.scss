@@ -1,3 +1,5 @@
+@import '../../uikit/styles/sass/theme/variables';
+
 .header {
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-mystic-300);
@@ -64,7 +66,7 @@
   line-height: 40px;
 }
 
-@media (max-width: 995px) {
+@media (max-width: $breakpoint-small-max) {
   .header-topbar__left .header-topbar__list > li > *:first-child {
     border: none;
   }

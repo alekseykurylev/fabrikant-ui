@@ -38,8 +38,10 @@ export const uikitScript = (done) => {
 
 export const componentsStyle = () => {
   return gulp
-    .src(['src/components/**/*.css'])
-    .pipe(postcss([minmax, csso]))
+    .src(['src/components/**/*.scss'])
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([csso]))
     .pipe(gulp.dest('dist/components'))
     .pipe(browser.stream());
 };
@@ -65,10 +67,10 @@ export const watcher = () => {
   gulp.watch('src/uikit/styles/**/*.scss', gulp.series(uikitStyle));
   gulp.watch('src/uikit/js/*.js', gulp.series(uikitScript));
 
-  gulp.watch('src/**/*.css', gulp.series(componentsStyle));
+  gulp.watch('src/**/*.scss', gulp.series(componentsStyle));
   gulp.watch('src/**/*.js', gulp.series(componentsScript));
 
-  gulp.watch('src/**/*.css').on('change', browser.reload);
+  gulp.watch('src/**/*.scss').on('change', browser.reload);
   gulp.watch('src/**/*.js').on('change', browser.reload);
   gulp.watch('dist/**/*.html').on('change', browser.reload);
 };

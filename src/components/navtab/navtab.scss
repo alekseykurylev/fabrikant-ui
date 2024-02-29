@@ -1,3 +1,5 @@
+@import '../../uikit/styles/sass/theme/variables';
+
 .uk-navtab {
   margin-bottom: -1px;
 }
@@ -78,7 +80,7 @@
   color: var(--color-mine-shaft-900);
 }
 
-@media (width >= 768px) {
+@media (min-width: $breakpoint-small) {
   .uk-navtab:not(.uk-navtab-16) .uk-navtab-nav > * > a {
     padding: 0 24px;
   }
