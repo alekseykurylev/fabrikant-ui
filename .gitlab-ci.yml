@@ -4,7 +4,7 @@ pages:
   tags:
     - docker
   script:
-    - rm -rf public && mkdir -p public
+    - rm -rf public
     - mv dist public
   artifacts:
     paths:
