@@ -4,3 +4,7 @@ image: node:lts
 pages:
   tags:
     - docker
+  artifacts:
+    paths:
+      - public
+
