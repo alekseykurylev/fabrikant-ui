@@ -53,27 +53,31 @@
     -webkit-line-clamp: 3;
   }
 
-  .uk-text-muted-m500 {
+  .uk-text-color-m500 {
     color: var(--color-mystic-500) !important;
   }
 
-  .uk-text-muted-bh500 {
+  .uk-text-color-bh500 {
     color: var(--color-bali-hai-500) !important;
   }
 
-  .uk-text-muted-bh700 {
+  .uk-text-color-bh700 {
     color: var(--color-bali-hai-700) !important;
   }
 
-  .uk-text-muted-ms500 {
+  .uk-text-color-ms500 {
     color: var(--color-mine-shaft-500) !important;
   }
 
-  .uk-text-muted-bh200 {
+  .uk-text-color-bh200 {
     color: var(--color-bali-hai-200) !important;
   }
 
-  .uk-text-muted-ms800a60 {
+  .uk-text-color-ms800a60 {
     color: var(--color-mine-shaft-800-a-60) !important;
+  }
+
+  .uk-text-color-s700 {
+    color: var(--color-success-700) !important;
   }
 }

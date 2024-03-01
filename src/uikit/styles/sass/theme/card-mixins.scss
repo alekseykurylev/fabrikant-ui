@@ -1,4 +1,5 @@
 @mixin hook-card() {
+  overflow: hidden;
   border-radius: var(--border-radius);
 }
 
