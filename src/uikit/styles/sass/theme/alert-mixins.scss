@@ -5,8 +5,8 @@
   line-height: 16px;
 
   border: 1px solid;
-  border-color: var(--color-mystic-300);
-  border-radius: var(--border-radius);
+  border-color: $card-border-color;
+  border-radius: $alert-radius;
 
   a {
     font-weight: 500;

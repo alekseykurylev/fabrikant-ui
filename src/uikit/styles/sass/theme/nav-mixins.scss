@@ -3,10 +3,10 @@
     width: 280px;
     padding: 8px 0;
 
-    background-color: var(--color-white);
+    background-color: #fff;
     border: 1px solid #dce3eb;
-    border-radius: var(--border-radius);
-    box-shadow: var(--card-shadow);
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
   }
 
   .uk-nav.uk-drop li > a {
