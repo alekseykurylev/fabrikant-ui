@@ -6,7 +6,7 @@
 
 Данная библиотека построена на базе модульного front-end фреймворка [UIkit][getuikit].
 
-Дизайн система в [Figma][figmacom].
+Дизайн система в Figma: [44-ФЗ][44FZ], [Открытая часть][open-part]
 
 ## Pages:
 
@@ -39,7 +39,8 @@
 - [Icon][icon]
 - [Typography][typography]
 
-[figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
+[44FZ]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
+[open-part]: https://www.figma.com/file/gBnMOqPnd9NPcp1Shib2QG/Открытая-часть?type=design&node-id=0-1&mode=design
 [getuikit]: https://github.com/uikit/uikit
 [home]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/home.html
 [news]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/news.html
