@@ -12,7 +12,7 @@
 
 - [Главная][home]
 - [Новость][news]
-- [Тарифы][tariffs]
+- [Тарифы][tariffs] [in progress]
 - [Форма просмотра процедуры][procedure] [in progress]
 - [404][404]
 - [500][500]
@@ -22,7 +22,6 @@
 - [Extended Search][extended-search] [in progress]
 - [Footer][footer]
 - [Header][header]
-- [List News][list-news]
 - [Navtab][navtab]
 - [Search Bar][search-bar] [in progress]
 - [Timeline][timeline]
@@ -38,7 +37,6 @@
 - [Card][card]
 - [Form][form]
 - [Icon][icon]
-- [Subnav][subnav]
 - [Typography][typography]
 
 [figmacom]: https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&t=ZVM90wjMtkYtAwF1-6
@@ -51,7 +49,6 @@
 [header]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/header.html
 [extended-search]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/extended-search.html
 [footer]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/footer.html
-[list-news]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/list-news.html
 [search-bar]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/search-bar.html
 [navtab]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/navtab.html
 [timeline]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/timeline.html
@@ -64,7 +61,6 @@
 [label]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/label.html
 [card]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/card.html
 [badge]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/badge.html
-[subnav]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/subnav.html
 [icon]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/icon.html
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/box.html
 [tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/tariffs.html
