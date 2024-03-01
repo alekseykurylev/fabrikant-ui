@@ -13,7 +13,7 @@ import browser from 'browser-sync';
 
 export const uikitStyle = () => {
   return gulp
-    .src('src/uikit/styles/sass/style.scss')
+    .src('src/uikit/styles/sass/uikit.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([csso]))
