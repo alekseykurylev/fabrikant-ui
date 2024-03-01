@@ -79,7 +79,7 @@ $alert-background: var(--color-mystic-300-a-30);
 $alert-color: var(--color-mine-shaft-900);
 $alert-primary-background: var(--color-cerulean-50);
 $alert-primary-color: var(--color-mine-shaft-900);
-$alert-success-background: var(--color-success-150);
+$alert-success-background: var(--color-success-100);
 $alert-success-color: var(--color-mine-shaft-900);
 $alert-warning-background: var(--color-warning-150);
 $alert-warning-color: var(--color-mine-shaft-900);
@@ -259,8 +259,13 @@ $grid-gutter-horizontal: $global-medium-gutter;
 
 // Width
 // ========================================================================
+$width-small-width: 325px;
 $width-medium-width: 382px;
 
 // Icon
 // ========================================================================
 $icon-link-active-color: var(--color-black);
+
+// List
+// ========================================================================
+$list-primary-color: var(--color-cerulean-500);
