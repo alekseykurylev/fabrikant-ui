@@ -1,10 +1,10 @@
 @mixin hook-card() {
   overflow: hidden;
-  border-radius: var(--border-radius);
+  border-radius: $card-radius;
 }
 
 @mixin hook-card-default() {
-  border: 1px solid var(--color-mystic-300);
+  border: 1px solid $card-border-color;
 }
 
 @mixin hook-card-default-hover() {
@@ -17,7 +17,7 @@
   }
 
   .uk-card-default.uk-card-hover-box-shadow:hover {
-    box-shadow: var(--card-shadow);
+    box-shadow: $card-shadow;
   }
 
   .uk-card-default.uk-card-hover-box-shadow:active {
@@ -26,10 +26,10 @@
   }
 
   .uk-card.uk-drop {
-    background-color: var(--color-white);
-    border: 1px solid var(--color-mystic-300);
-    border-radius: var(--border-radius);
-    box-shadow: var(--card-shadow);
+    background-color: #fff;
+    border: 1px solid $card-border-color;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
   }
 
   .uk-card-muted {

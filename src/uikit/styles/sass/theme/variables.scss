@@ -1,3 +1,5 @@
+// Breakpoints
+// ========================================================================
 $breakpoint-small: 768px;
 $breakpoint-medium: 1024px;
 $breakpoint-large: 1280px;
@@ -6,6 +8,9 @@ $breakpoint-xsmall-max: ($breakpoint-small - 1);
 $breakpoint-small-max: ($breakpoint-medium - 1);
 $breakpoint-medium-max: ($breakpoint-large - 1);
 $breakpoint-large-max: ($breakpoint-xlarge - 1);
+
+// Global variables
+// ========================================================================
 $global-font-family: 'Inter', sans-serif;
 $global-font-size: 14px;
 $global-line-height: 1.5;
@@ -30,3 +35,237 @@ $global-large-gutter: 48px;
 $global-control-small-height: 32px;
 $global-control-height: 48px;
 $global-control-large-height: 64px;
+
+// Typography
+// ========================================================================
+$base-body-font-weight: 400;
+$base-link-hover-text-decoration: none;
+$base-heading-font-family: 'Exo 2', sans-serif;
+$base-heading-font-weight: 700;
+$base-heading-color: var(--color-mine-shaft-900);
+$base-h1-font-size-m: 24px;
+$base-h1-font-size: 24px;
+$base-h1-line-height: 32px;
+$base-h2-font-size: 20px;
+$base-h2-font-size-m: 20px;
+$base-h2-line-height: 24px;
+$base-h3-font-size: 16px;
+$base-h3-font-size: 16px;
+$base-h3-line-height: 24px;
+$base-h4-font-size: 14px;
+$base-h4-line-height: 22px;
+$base-h5-font-size: 14px;
+$base-h5-line-height: 22px;
+$base-h6-font-size: 14px;
+$base-h6-line-height: 22px;
+$text-primary-color: var(--color-cerulean-500);
+$text-secondary-color: #000;
+$text-success-color: var(--color-success-link);
+$text-warning-color: var(--color-warning-link);
+$text-danger-color: var(--color-alarm-500);
+$inverse-link-muted-color: var(--color-bali-hai-300);
+$inverse-link-muted-hover-color: var(--color-cerulean-link-hover);
+$link-muted-hover-color: var(--color-cerulean-link-hover);
+$link-text-hover-color: var(--color-cerulean-link-hover);
+$link-heading-hover-color: var(--color-cerulean-link-hover);
+
+// Alert
+// ========================================================================
+$alert-padding: 16px;
+$alert-radius: 8px;
+$alert-padding-right: $alert-padding + 22px;
+$alert-close-top: $alert-padding;
+$alert-background: var(--color-mystic-300-a-30);
+$alert-color: var(--color-mine-shaft-900);
+$alert-primary-background: var(--color-cerulean-50);
+$alert-primary-color: var(--color-mine-shaft-900);
+$alert-success-background: var(--color-success-100);
+$alert-success-color: var(--color-mine-shaft-900);
+$alert-warning-background: var(--color-warning-150);
+$alert-warning-color: var(--color-mine-shaft-900);
+$alert-danger-background: var(--color-alarm-150);
+$alert-danger-color: var(--color-mine-shaft-900);
+
+// Card
+// ========================================================================
+$card-default-background: var(--color-white);
+$card-default-hover-background: var(--color-white);
+$card-default-color: var(--color-mine-shaft-500);
+$card-default-title-color: var(--color-mine-shaft-900);
+$card-primary-background: var(--color-cerulean-500);
+$card-primary-hover-background: var(--color-cerulean-500);
+$card-primary-color: var(--color-white);
+$card-primary-color-mode: var(--color-white);
+$card-secondary-color: var(--color-white);
+$card-secondary-color-mode: var(--color-white);
+$card-title-font-size: 20px;
+$card-title-line-height: 24px;
+$card-body-padding-horizontal-l: $global-margin;
+$card-body-padding-vertical-l: $global-margin;
+$card-header-padding-horizontal-l: $global-margin;
+$card-header-padding-vertical-l: $global-margin;
+$card-footer-padding-horizontal-l: $global-margin;
+$card-footer-padding-vertical-l: $global-margin;
+$card-small-body-padding-horizontal: $global-small-gutter;
+$card-small-body-padding-vertical: $global-small-gutter;
+$card-small-header-padding-horizontal: $global-small-gutter;
+$card-small-header-padding-vertical: $global-small-gutter;
+$card-small-footer-padding-horizontal: $global-small-gutter;
+$card-small-footer-padding-vertical: $global-small-gutter;
+$card-radius: 8px;
+$card-border-color: var(--color-mystic-300);
+$card-shadow: 0 3px 2px rgb(0 0 0 / 2%), 0 7px 5px rgb(0 0 0 / 3%), 0 13px 10px rgb(0 0 0 / 4%),
+  0 22px 18px rgb(0 0 0 / 4%);
+
+// Badge
+// ========================================================================
+$badge-size: 20px;
+$badge-padding-horizontal: 4px;
+$badge-border-radius: 2px;
+$badge-font-size: 14px;
+$badge-background: var(--color-cerulean-500);
+
+// Breadcrumb
+// ========================================================================
+$breadcrumb-item-color: var(--color-cerulean-500);
+$breadcrumb-item-hover-color: var(--color-cerulean-link-hover);
+$breadcrumb-item-active-color: var(--color-mine-shaft-800-a-60);
+$breadcrumb-divider-margin-horizontal: 12px;
+
+// Button
+// ========================================================================
+$button-line-height: 46px;
+$button-small-line-height: 30px;
+$button-large-line-height: 54px;
+$button-font-size: 16px;
+$button-small-font-size: 14px;
+$button-large-font-size: 14px;
+$button-padding-horizontal: 16px;
+$button-small-padding-horizontal: 8px;
+$button-default-background: #fff;
+$button-default-color: var(--color-cerulean-500);
+$button-default-hover-background: #fff;
+$button-default-hover-color: var(--color-cerulean-500);
+$button-default-active-background: #fff;
+$button-default-active-color: var(--color-cerulean-500);
+$button-primary-background: var(--color-cerulean-500);
+$button-primary-color: #fff;
+$button-primary-hover-background: var(--color-cerulean-400);
+$button-primary-hover-color: #fff;
+$button-primary-active-background: var(--color-cerulean-300);
+$button-primary-active-color: #fff;
+$button-secondary-background: #fff;
+$button-secondary-color: var(--color-mine-shaft-900);
+$button-secondary-hover-background: #fff;
+$button-secondary-hover-color: var(--color-mine-shaft-900);
+$button-secondary-active-background: var(--color-mystic-200);
+$button-secondary-active-color: var(--color-mine-shaft-900);
+$button-danger-background: var(--color-alarm-500);
+$button-danger-color: #fff;
+$button-danger-hover-background: var(--color-alarm-500);
+$button-danger-hover-color: #fff;
+$button-danger-active-background: var(--color-alarm-500);
+$button-danger-active-color: #fff;
+$button-link-color: var(--color-cerulean-link);
+$button-link-hover-color: var(--color-cerulean-link-hover);
+
+// Label
+// ========================================================================
+$label-padding-vertical: 2px;
+$label-padding-horizontal: 4px;
+$label-background: var(--color-cerulean-500);
+$label-success-background: var(--color-success-500);
+$label-warning-background: var(--color-warning-500);
+$label-danger-background: var(--color-alarm-500);
+
+// Navbar
+// ========================================================================
+$navbar-background: var(--color-white);
+$navbar-nav-item-height: 52px;
+$navbar-nav-item-padding-horizontal: 0;
+$navbar-nav-item-color: var(--color-cerulean-500);
+$navbar-nav-item-font-size: 16px;
+$navbar-nav-item-font-family: 'Exo 2', sans-serif;
+$navbar-nav-item-hover-color: var(--color-mine-shaft-900);
+$navbar-nav-item-onclick-color: var(--color-mine-shaft-900);
+$navbar-nav-item-active-color: var(--color-mine-shaft-900);
+
+// Offcanvas
+// ========================================================================
+$offcanvas-bar-width: 100%;
+$offcanvas-bar-width-s: 450px;
+$offcanvas-bar-padding-vertical: 0;
+$offcanvas-bar-padding-horizontal: 0;
+$offcanvas-bar-padding-vertical-s: 0;
+$offcanvas-bar-padding-horizontal-s: 0;
+$offcanvas-bar-background: var(--color-white);
+$offcanvas-bar-color-mode: dark;
+$offcanvas-close-position: 32px;
+$offcanvas-close-position-s: 32px;
+$offcanvas-close-padding: 0;
+$offcanvas-overlay-background: var(--color-mine-shaft-800-a-60);
+
+// Form
+// ========================================================================
+$form-background: var(--color-white);
+$form-focus-background: var(--color-white);
+$form-padding-horizontal: 16px;
+$form-placeholder-color: var(--color-mine-shaft-500);
+$form-danger-color: var(--color-mine-shaft-900);
+$form-success-color: var(--color-mine-shaft-900);
+$form-radio-size: 16px;
+$form-radio-background: #fff;
+$form-radio-focus-background: #fff;
+$form-select-padding-right: 50px;
+$form-select-icon-color: '#009DDB';
+$form-select-disabled-icon-color: '#718C9E';
+$internal-form-radio-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='6' fill='%23009DDB'/%3E%3C/svg%3E";
+$internal-form-checkbox-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' fill='none' viewBox='0 0 15 11'%3E%3Cpath stroke='%23fff' stroke-linejoin='round' stroke-width='2' d='m1 6 4 4 9-9'/%3E%3C/svg%3E";
+$internal-form-select-image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24' fill='#000' viewBox='0 0 40 24'%3E%3Cpath fill-rule='evenodd' d='m5.293 9.707 1.414-1.414L12 13.586l5.293-5.293 1.414 1.414L12 16.414 5.293 9.707Z' clip-rule='evenodd'/%3E%3C/svg%3E";
+
+// Table
+// ========================================================================
+$table-header-cell-font-size: 12px;
+$table-header-cell-font-weight: 600;
+$table-cell-padding-vertical: 8px;
+$table-cell-padding-horizontal: 8px;
+
+// Close
+// ========================================================================
+$close-color: var(--color-cerulean-500);
+$close-hover-color: var(--color-cerulean-link-hover);
+
+// Container
+// ========================================================================
+$container-padding-horizontal: 16px;
+$container-padding-horizontal-s: 32px;
+$container-padding-horizontal-m: 32px;
+$container-max-width: 1300px;
+$container-small-max-width: 1046px;
+$container-xsmall-max-width: 781px;
+
+// Section
+// ========================================================================
+$section-padding-vertical: $global-small-margin;
+$section-large-padding-vertical: $global-medium-margin;
+
+// Drop
+// ========================================================================
+$drop-margin: 6px;
+
+// Grid
+// ========================================================================
+$grid-gutter-horizontal: $global-medium-gutter;
+
+// Width
+// ========================================================================
+$width-small-width: 325px;
+$width-medium-width: 382px;
+
+// Icon
+// ========================================================================
+$icon-link-active-color: var(--color-black);
+
+// List
+// ========================================================================
+$list-primary-color: var(--color-cerulean-500);

@@ -159,4 +159,20 @@
   .uk-checkbox:focus-visible {
     outline: 2px dotted var(--color-black);
   }
+
+  .uk-checkbox-wrap,
+  .uk-radio-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .uk-checkbox-wrap > input,
+  .uk-radio-wrap > input {
+    flex-shrink: 0;
+  }
+
+  .uk-checkbox:not(.uk-checkbox-large) + .uk-checkbox-label,
+  .uk-radio:not(.uk-radio-large) + .uk-radio-label {
+    line-height: 16px;
+  }
 }

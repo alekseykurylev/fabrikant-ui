@@ -1,37 +1,19 @@
+// For older applications
 @import 'theme/root';
 
 // 1. Your custom variables and variable overwrites.
 @import 'theme/variables';
 @import 'theme/base';
-@import 'theme/alert';
-@import 'theme/icon';
-@import 'theme/section';
-@import 'theme/button';
-@import 'theme/text';
-@import 'theme/breadcrumb';
-@import 'theme/card';
-@import 'theme/close';
-@import 'theme/badge';
-@import 'theme/container';
-@import 'theme/navbar';
-@import 'theme/nav';
-@import 'theme/drop';
-@import 'theme/offcanvas';
-@import 'theme/link';
 @import 'theme/box';
-@import 'theme/form';
-@import 'theme/grid';
-@import 'theme/table';
-@import 'theme/width';
 @import 'theme/tumbler';
 @import 'theme/toggle';
-@import 'theme/subnav';
+@import 'theme/menubar';
 
 // 2. Import default variables and available mixins.
 @import '../../../../node_modules/uikit/src/scss/variables';
 @import '../../../../node_modules/uikit/src/scss/mixins';
 
-// // 3. Your custom mixin overwrites.
+// 3. Your custom mixin overwrites.
 @import 'theme/alert-mixins';
 @import 'theme/icon-mixins';
 @import 'theme/button-mixins';
