@@ -242,42 +242,17 @@
         </ul>
 
         <div class="uk-grid-96" uk-grid>
-          <aside class="uk-width-auto@m uk-visible@m">
-            <div class="uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
-              <ul
-                class="uk-menubar uk-grid-8 uk-child-width-1-1 uk-margin-medium-bottom"
-                uk-switcher="connect: .uk-switcher"
-                uk-grid>
-                <li class="uk-active"><a href="#">223-ФЗ</a></li>
+          <div class="uk-width-expand@m">
+            <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
+              <button class="uk-button uk-button-text uk-width-1-1" type="button">button</button>
+              <ul class="uk-nav" uk-switcher="connect: .uk-switcher" uk-drop="mode: click; stretch: x">
+                <li><a href="#">223-ФЗ</a></li>
                 <li><a href="#">Коммерческие закупки</a></li>
                 <li><a href="#">44-Ф3</a></li>
                 <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
                 <li><a href="#">Электронный магазин</a></li>
                 <li><a href="#">Дополнительные тарифы</a></li>
               </ul>
-              <div class="uk-box uk-box-body uk-margin-auto-top">
-                <h4 class="uk-h5-op uk-margin-small-bottom">Не знаете с чего начать?</h4>
-                <p class="uk-margin-small">Мы бесплатно поможем настроить кабинет и найти выгодные заказы</p>
-                <button class="uk-button uk-button-default uk-button-small uk-flex uk-flex-middle" type="button">
-                  <span uk-icon="icon: question" class="uk-icon-size-16 uk-margin-8-right"></span>
-                  Проконсультируем и поможем
-                </button>
-              </div>
-            </div>
-          </aside>
-          <div class="uk-width-expand@m">
-            <div class="uk-hidden@m uk-margin-xlarge">
-              <button id="tab-button" class="uk-button uk-button-default uk-width-1-1" type="button">Hover</button>
-              <div id="tab-dropdown" uk-dropdown="mode: click; stretch: x">
-                <ul id="tab-nav" class="uk-nav uk-dropdown-nav" uk-switcher="connect: .uk-switcher">
-                  <li><a href="#">223-ФЗ</a></li>
-                  <li><a href="#">Коммерческие закупки</a></li>
-                  <li><a href="#">44-Ф3</a></li>
-                  <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
-                  <li><a href="#">Электронный магазин</a></li>
-                  <li><a href="#">Дополнительные тарифы</a></li>
-                </ul>
-              </div>
             </div>
 
             <div class="uk-switcher">
@@ -320,7 +295,7 @@
                           <div class="uk-flex uk-flex-column uk-flex-first@s">
                             <button
                               class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-1"
+                              uk-toggle="target: #toggle-1-1"
                               type="button"
                               aria-expanded="false">
                               Подробнее
@@ -329,7 +304,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-1" hidden>
+                      <div class="uk-box-footer uk-box-32" id="toggle-1-1" hidden>
                         <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
                           <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
                           <li>Тарифная плата взимается только с победителя закупки.</li>
@@ -388,7 +363,7 @@
                           <div class="uk-flex uk-flex-column uk-flex-first@s">
                             <button
                               class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-2"
+                              uk-toggle="target: #toggle-1-2"
                               type="button"
                               aria-expanded="false">
                               Подробнее
@@ -397,7 +372,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-2" hidden>
+                      <div class="uk-box-footer uk-box-32" id="toggle-1-2" hidden>
                         <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
                           <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
                           <li>Тарифная плата взимается только с победителя закупки.</li>
@@ -477,13 +452,702 @@
                   </div>
                 </div>
               </div>
-              <div><div style="height: 100vh">Коммерческие закупки</div></div>
-              <div><div style="height: 100vh">44-Ф3</div></div>
-              <div><div style="height: 100vh">615-ПП РФ (капитальный ремонт)</div></div>
-              <div><div style="height: 100vh">Электронный магазин</div></div>
-              <div><div style="height: 100vh">Дополнительные тарифы</div></div>
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                      <b>Участвуйте бесплатно везде!</b>
+                      Тарифная плата только с победителя.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель коммерческой
+                              <br />
+                              закупки
+                            </h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
+                              с НМЦ более 250 000 руб.
+                            </div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от ценового предложения,</b>
+                              <br />
+                              но не более
+                              <b>119 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-2-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-2-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
+                        <div>
+                          В закупках с НМЦ менее 250 000 руб.
+                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
+                        </div>
+                        <a href="#">Посмотреть бесплатные закупки</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-margin-xlarge-top">
+                  <div class="uk-grid-32" uk-grid>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Бесплатная проверка электронной подписи</h3>
+                          <div>
+                            Проверьте самостоятельно
+                            <br />
+                            за 1 минуту
+                          </div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../img/tariff-banner.svg"
+                          alt="Бесплатная проверка электронной подписи" />
+                      </a>
+                    </div>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Активация электронной подписи – 2 895 руб!</h3>
+                          <div>Для получения расширенного доступа к работе с сервисами в течение 6 мес.</div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../img/tariff-banner.svg"
+                          alt="Бесплатная проверка электронной подписи" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                      <b>Участвуйте бесплатно везде!</b>
+                      Тарифная плата только с победителя.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель закупки
+                              <br />
+                              по 44-Ф3
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ</b>
+                              , но не более
+                              <b>5 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-3-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель закупки
+                              <br />
+                              по 44-Ф3 у субъектов МСП
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ</b>
+                              , но не более
+                              <b>1 666,67 руб</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-3-2"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-2" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                      <b>Участвуйте бесплатно везде!</b>
+                      Тарифная плата только с победителя.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель закупки
+                              <br />
+                              по 615-ПП РФ
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>5 900 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-4-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-4-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                      <b>Участвуйте бесплатно везде!</b>
+                      Тарифная плата только с победителя.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель электронного
+                              <br />
+                              магазина
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от ценового предложения,</b>
+                              <br />
+                              но не менее
+                              <b>100 руб.</b>
+                              и не более
+                              <b>49 000 руб</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-5-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-5-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Победитель закупки малого
+                              <br />
+                              объёма по 44-Ф3
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ</b>
+                              , но не менее
+                              <b>60 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-5-2"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-5-2" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Партнёрский безлимит</h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">на 12 месяцев</div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>319 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-6-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-6-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Участник закупки отдельных организаторов</h3>
+                          </div>
+                          <div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">до 1 000 000 руб.</div>
+                              <div>
+                                <b>4 900 руб.</b>
+                                без учёта НДС
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">до 5 000 000 руб.</div>
+                              <div>
+                                <b>11 900 руб.</b>
+                                без учёта НДС
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">свыше 5 000 000 руб.</div>
+                              <div>
+                                <b>19 900 руб.</b>
+                                без учёта НДС
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500"
+                              uk-toggle="target: #toggle-6-2"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-6-2" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
+                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Полотовое списание тарифной платы.</li>
+                          <li>
+                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
+                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
+                          </li>
+                          <li>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
+                        <div>
+                          В закупках с НМЦ менее 250 000 руб.
+                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
+                        </div>
+                        <a href="#">Посмотреть бесплатные закупки</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Корпоративные секции</h3>
+                          </div>
+                          <div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">ГК «Росатом»</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">ГК «Новапорт»</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">АО «Силовые машины»</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">ПАО «Форвард Энерго»</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">Корпорация «Технониколь»</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">ФГП ВО ЖДТ России</div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-margin-xlarge-top">
+                  <div class="uk-grid-32" uk-grid>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Бесплатная проверка электронной подписи</h3>
+                          <div>
+                            Проверьте самостоятельно
+                            <br />
+                            за 1 минуту
+                          </div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../img/tariff-banner.svg"
+                          alt="Бесплатная проверка электронной подписи" />
+                      </a>
+                    </div>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Активация электронной подписи – 2 895 руб!</h3>
+                          <div>Для получения расширенного доступа к работе с сервисами в течение 6 мес.</div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../img/tariff-banner.svg"
+                          alt="Бесплатная проверка электронной подписи" />
+                      </a>
+                    </div>
+                    <div class="uk-width-1-1">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Ускоренная аккредитация в секции 223-ФЗ за 2 часа!</h3>
+                          <div>Оформите срочное участие в закупках – за 9 900 руб.</div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../img/tariff-banner.svg"
+                          alt="Бесплатная проверка электронной подписи" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <aside class="uk-width-auto@m uk-flex-first@m">
+            <div class="uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
+              <ul
+                class="uk-menubar uk-grid-8 uk-child-width-1-1 uk-margin-medium-bottom uk-visible@m"
+                uk-switcher="connect: .uk-switcher"
+                uk-grid>
+                <li class="uk-active"><a href="#">223-ФЗ</a></li>
+                <li><a href="#">Коммерческие закупки</a></li>
+                <li><a href="#">44-Ф3</a></li>
+                <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
+                <li><a href="#">Электронный магазин</a></li>
+                <li><a href="#">Дополнительные тарифы</a></li>
+              </ul>
+              <div class="uk-box uk-box-body uk-margin-auto-top">
+                <h4 class="uk-h5-op uk-margin-small-bottom">Не знаете с чего начать?</h4>
+                <p class="uk-margin-small">Мы бесплатно поможем настроить кабинет и найти выгодные заказы</p>
+                <button class="uk-button uk-button-default uk-button-small uk-flex uk-flex-middle" type="button">
+                  <span uk-icon="icon: question" class="uk-icon-size-16 uk-margin-8-right"></span>
+                  Проконсультируем и поможем
+                </button>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
     </div>
