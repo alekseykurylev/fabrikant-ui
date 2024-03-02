@@ -55,6 +55,10 @@
   &.uk-box-success {
     background-color: var(--color-success-50);
   }
+
+  &.uk-box-m40 {
+    background-color: var(--color-mystic-40);
+  }
 }
 
 @media (min-width: $breakpoint-small) {

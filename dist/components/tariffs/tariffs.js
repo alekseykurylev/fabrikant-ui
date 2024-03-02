@@ -1,0 +1,1 @@
+"use strict";var itemsTab=document.querySelectorAll("#tab-nav > li"),buttonTab=document.querySelector("#tab-button");UIkit.util.on(".uk-switcher","show",(function(){itemsTab.forEach((function(t){t.classList.contains("uk-active")&&(buttonTab.innerText=t.innerText,UIkit.dropdown("#tab-dropdown").hide(!1))}))}));
