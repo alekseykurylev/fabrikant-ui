@@ -34,23 +34,19 @@
     height: 4px;
 
     opacity: 0;
+    background-color: var(--color-cerulean-500);
 
     transition: 0.2s ease-in-out;
     transition-property: opacity;
-  }
-
-  & > li > a:hover::before,
-  & > li > a[aria-expanded='true']::before {
-    opacity: 1;
-    background-color: var(--color-cerulean-500);
   }
 
   & > li.uk-active > a {
     color: var(--color-mine-shaft-900);
   }
 
+  & > li > a:hover::before,
+  & > li > a[aria-expanded='true']::before,
   & > li.uk-active > a::before {
     opacity: 1;
-    background-color: var(--color-cerulean-500);
   }
 }
