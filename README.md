@@ -64,4 +64,4 @@
 [badge]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/badge.html
 [icon]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/icon.html
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/box.html
-[tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/tariffs.html
+[tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/pages/tariffs/tariffs-1.html
