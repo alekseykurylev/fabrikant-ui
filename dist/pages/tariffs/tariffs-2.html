@@ -236,8 +236,8 @@
         <h1 class="uk-h1-op">Тарифы</h1>
 
         <ul class="uk-menubar uk-grid-row-8 uk-margin-medium-bottom" uk-grid>
-          <li class="uk-active"><a href="./tariffs-1.html">Участие в закупках</a></li>
-          <li><a href="./tariffs-2.html">Участие в торгах на продажу</a></li>
+          <li><a href="./tariffs-1.html">Участие в закупках</a></li>
+          <li class="uk-active"><a href="./tariffs-2.html">Участие в торгах на продажу</a></li>
           <li><a href="#">Организация торгов</a></li>
         </ul>
 
@@ -246,16 +246,14 @@
             <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
               <button class="uk-button uk-button-text uk-width-1-1" type="button">button</button>
               <ul class="uk-nav" uk-switcher="connect: .uk-switcher" uk-drop="mode: click; stretch: x">
-                <li class="uk-active"><a href="#">223-ФЗ</a></li>
-                <li><a href="#">Коммерческие закупки</a></li>
-                <li><a href="#">44-Ф3</a></li>
-                <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
-                <li><a href="#">Электронный магазин</a></li>
-                <li><a href="#">Дополнительные тарифы</a></li>
+                <li class="uk-active"><a href="#">Коммерческие продажи</a></li>
+                <li><a href="#">Банкротство</a></li>
+                <li><a href="#">ГИС Торги</a></li>
               </ul>
             </div>
 
             <div class="uk-switcher">
+              <!-- Коммерческие продажи -->
               <div>
                 <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
                   <b>Участвуйте бесплатно везде!</b>
@@ -268,17 +266,14 @@
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
                             <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки
+                              Победитель коммерческой
                               <br />
-                              по 223-ФЗ
+                              продажи
                             </h3>
-                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
-                              с НМЦ более 250 000 руб.
-                            </div>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от НМЦ,</b>
+                              <b>1% от ценового предложения,</b>
                               но не более
                               <b>119 000 руб.</b>
                               <br />
@@ -304,97 +299,21 @@
                       </div>
                       <div class="uk-box-footer uk-box-32" id="toggle-1-1" hidden>
                         <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                          <li>Полотовое списание тарифной платы.</li>
-                          <li>
-                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
-                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
-                          </li>
+                          <li>Для участия в процедуре необходимо внести обеспечительный платёж.</li>
                           <li>
                             После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
                             закупке.
+                          </li>
+                          <li>Тарифная плата взимается только с победителя продажи.</li>
+                          <li>
+                            Обеспечительный платёж рассчитывается от ценового предложения, если ценовое предложение не
+                            указывается в составе заявки — от начальной цены.
                           </li>
                         </ul>
                         <a class="uk-flex uk-flex-middle" href="#">
                           <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
                           Условия использования
                         </a>
-                      </div>
-                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
-                        <div>
-                          В закупках с НМЦ менее 250 000 руб.
-                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
-                        </div>
-                        <a href="#">Посмотреть бесплатные закупки</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="uk-box uk-text-large">
-                      <div class="uk-box-body uk-box-32">
-                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
-                          <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки по
-                              <br />
-                              223-ФЗ у субъектов МСП
-                            </h3>
-                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
-                              с НМЦ более 100 000 руб.
-                            </div>
-                          </div>
-                          <div>
-                            <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от НМЦ,</b>
-                              но не более
-                              <b>5 000 руб.</b>
-                              <br />
-                              без учёта НДС
-                            </div>
-                          </div>
-                        </div>
-                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
-                          <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
-                          </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-1-2"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-1-2" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                          <li>Полотовое списание тарифной платы.</li>
-                          <li>
-                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
-                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
-                          </li>
-                          <li>
-                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
-                            закупке.
-                          </li>
-                        </ul>
-                        <a class="uk-flex uk-flex-middle" href="#">
-                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
-                          Условия использования
-                        </a>
-                      </div>
-                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
-                        <div>
-                          В закупках с НМЦ менее 100 000 руб.
-                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
-                        </div>
-                        <a href="#">Посмотреть бесплатные закупки</a>
                       </div>
                     </div>
                   </div>
@@ -435,57 +354,30 @@
                           alt="Бесплатная проверка электронной подписи" />
                       </a>
                     </div>
-                    <div class="uk-width-1-1">
-                      <a
-                        href="#"
-                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
-                        <div class="uk-width-2-3">
-                          <h3 class="uk-h4-op uk-margin-small">Ускоренная аккредитация в секции 223-ФЗ за 2 часа!</h3>
-                          <div class="uk-text-color-bh500">Оформите срочное участие в закупках – за 9 900 руб.</div>
-                        </div>
-                        <img
-                          class="uk-position-absolute uk-position-bottom-right"
-                          src="../../img/tariff-banner.svg"
-                          alt="Бесплатная проверка электронной подписи" />
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
+              <!-- / Коммерческие продажи -->
+
+              <!-- Банкротство -->
               <div>
-                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
-                  <b>Участвуйте бесплатно везде!</b>
-                  Тарифная плата только с победителя.
-                </div>
                 <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
                   <div>
                     <div class="uk-box uk-text-large">
                       <div class="uk-box-body uk-box-32">
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель коммерческой
-                              <br />
-                              закупки
-                            </h3>
-                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
-                              с НМЦ более 250 000 руб.
-                            </div>
+                            <h3 class="uk-h3-op uk-margin-remove">Участие в торгах</h3>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от ценового предложения,</b>
-                              <br />
-                              но не более
-                              <b>119 000 руб.</b>
-                              <br />
-                              без учёта НДС
+                              <b>Бесплатно</b>
                             </div>
                           </div>
                         </div>
                         <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
                           <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                            <button class="uk-button uk-button-primary" type="button">Заказать звонок</button>
                           </div>
                           <div class="uk-flex uk-flex-column uk-flex-first@s">
                             <button
@@ -500,30 +392,8 @@
                         </div>
                       </div>
                       <div class="uk-box-footer uk-box-32" id="toggle-2-1" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                          <li>Полотовое списание тарифной платы.</li>
-                          <li>
-                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
-                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
-                          </li>
-                          <li>
-                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
-                            закупке.
-                          </li>
-                        </ul>
-                        <a class="uk-flex uk-flex-middle" href="#">
-                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
-                          Условия использования
-                        </a>
-                      </div>
-                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
-                        <div>
-                          В закупках с НМЦ менее 250 000 руб.
-                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
-                        </div>
-                        <a href="#">Посмотреть бесплатные закупки</a>
+                        Важно! Для участия в торгах по банкротству необходима
+                        <a href="#">аккредитация!</a>
                       </div>
                     </div>
                   </div>
@@ -564,31 +434,143 @@
                           alt="Бесплатная проверка электронной подписи" />
                       </a>
                     </div>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">
+                            Ускоренная аккредитация в секции банкротство за 2 часа!
+                          </h3>
+                          <div class="uk-text-color-bh500">Оформите срочное участие в закупках – за 9 900 руб.</div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../../img/tariff-banner.svg"
+                          alt="Ускоренная аккредитация в секции банкротство за 2 часа!" />
+                      </a>
+                    </div>
+                    <div class="uk-width-1-2@s uk-grid-item-match">
+                      <a
+                        href="#"
+                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
+                        <div class="uk-width-2-3">
+                          <h3 class="uk-h4-op uk-margin-small">Участие в торгах под ключ</h3>
+                          <div class="uk-text-color-bh500">Персональный менеджер сделает все за вас!</div>
+                        </div>
+                        <img
+                          class="uk-position-absolute uk-position-bottom-right"
+                          src="../../img/tariff-banner.svg"
+                          alt="Участие в торгах под ключ" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- / Банкротство -->
+
+              <!-- ГИС Торги -->
               <div>
-                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
-                  <b>Участвуйте бесплатно везде!</b>
-                  Тарифная плата только с победителя.
-                </div>
                 <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
                   <div>
                     <div class="uk-box uk-text-large">
                       <div class="uk-box-body uk-box-32">
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки
-                              <br />
-                              по 44-Ф3
-                            </h3>
+                            <h3 class="uk-h3-op uk-margin-remove">Аренда и продажа земельных участков</h3>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от НМЦ</b>
+                              <b>1% от НМЦ лота</b>
                               , но не более
                               <b>5 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Аренда и продажа земельных участков из специального перечня
+                            </h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
+                              с НМЦ более 100 000 руб.
+                            </div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 666,67 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Аренда и продажа земельных участков для ИЖС, ЛПХ</h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">
+                              по п.7 ст.39.18 ЗК РФ
+                            </div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 666,67 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Победитель торгов арестованным имуществом</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>10% от цены продажи,</b>
+                              <br />
+                              но не менее
+                              <b>1 600 руб.</b>
                               <br />
                               без учёта НДС
                             </div>
@@ -612,12 +594,22 @@
                       </div>
                       <div class="uk-box-footer uk-box-32" id="toggle-3-1" hidden>
                         <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
+                          <li>Для участия в процедуре необходимо внести обеспечительный платёж.</li>
                           <li>
-                            Тарифная плата списывается со
-                            <a href="#">специального счёта.</a>
+                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
+                            закупке.
                           </li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
+                          <li>Тарифная плата взимается только с победителя продажи.</li>
+                          <li>
+                            Обеспечительный платёж рассчитывается от начальной цены, тарифная плата с победителя — от
+                            цены продажи.
+                          </li>
+                          <li>Невозможно участие с тарифом «Партнёрский безлимит»</li>
                         </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -626,17 +618,13 @@
                       <div class="uk-box-body uk-box-32">
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки
-                              <br />
-                              по 44-Ф3 у субъектов МСП
-                            </h3>
+                            <h3 class="uk-h3-op uk-margin-remove">Реализация древесины</h3>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от НМЦ</b>
+                              <b>1% от НМЦ лота</b>
                               , но не более
-                              <b>1 666,67 руб</b>
+                              <b>1 600 руб.</b>
                               <br />
                               без учёта НДС
                             </div>
@@ -646,150 +634,8 @@
                           <div class="uk-flex uk-flex-right@s">
                             <button class="uk-button uk-button-primary" type="button">Участвовать</button>
                           </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-3-2"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-3-2" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>
-                            Тарифная плата списывается со
-                            <a href="#">специального счёта.</a>
-                          </li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
-                  <b>Участвуйте бесплатно везде!</b>
-                  Тарифная плата только с победителя.
-                </div>
-                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
-                  <div>
-                    <div class="uk-box uk-text-large">
-                      <div class="uk-box-body uk-box-32">
-                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
-                          <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки
-                              <br />
-                              по 615-ПП РФ
-                            </h3>
-                          </div>
-                          <div>
-                            <div class="uk-text-right@s uk-text-xlarge">
-                              <b>5 900 руб.</b>
-                              <br />
-                              без учёта НДС
-                            </div>
-                          </div>
-                        </div>
-                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
-                          <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
-                          </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-4-1"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-4-1" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                          <li>Тарифная плата в размере обеспечения заявки, но не более 5 900 рублей.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
-                  <b>Участвуйте бесплатно везде!</b>
-                  Тарифная плата только с победителя.
-                </div>
-                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
-                  <div>
-                    <div class="uk-box uk-text-large">
-                      <div class="uk-box-body uk-box-32">
-                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
-                          <div>
-                            <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель электронного
-                              <br />
-                              магазина
-                            </h3>
-                          </div>
-                          <div>
-                            <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от ценового предложения,</b>
-                              <br />
-                              но не менее
-                              <b>100 руб.</b>
-                              и не более
-                              <b>49 000 руб</b>
-                              <br />
-                              без учёта НДС
-                            </div>
-                          </div>
-                        </div>
-                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
-                          <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
-                          </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-5-1"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-5-1" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Для участия в закупке вам необходимо внести обеспечительный платёж.</li>
-                          <li>
-                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
-                            закупке.
-                          </li>
-                          <li>
-                            Обеспечительный платёж и тарифная плата рассчитываются от вашего ценового предложения. В
-                            случае увеличения вашего ценового предложения на 10% обеспечительный платёж пересчитывается.
-                          </li>
-                          <li>
-                            Тарифная плата для победителя рассчитывается с учётом распределения объемов поставки по
-                            позициям.
-                          </li>
-                          <li>Полотовое списание тарифной платы.</li>
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                        </ul>
-                        <a class="uk-flex uk-flex-middle" href="#">
-                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
-                          Условия использования
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -799,18 +645,12 @@
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
                             <h3 class="uk-h3-op uk-margin-remove">
-                              Победитель закупки малого
-                              <br />
-                              объёма по 44-Ф3
+                              Приватизация государственного и муниципального имущества
                             </h3>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>1% от НМЦ</b>
-                              , но не менее
-                              <b>60 руб.</b>
-                              <br />
-                              без учёта НДС
+                              <b>Бесплатно</b>
                             </div>
                           </div>
                         </div>
@@ -818,46 +658,95 @@
                           <div class="uk-flex uk-flex-right@s">
                             <button class="uk-button uk-button-primary" type="button">Участвовать</button>
                           </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-5-2"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-5-2" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>Тарифная плата взимается только с победителя закупки.</li>
-                          <li>Для участия в закупке необходимо внести обеспечительный платёж.</li>
-                          <li>
-                            После завершения процедуры обеспечительный платёж возвращается участникам, не победившим в
-                            закупке.
-                          </li>
-                          <li>Участие в закупках с НМЦ до 600 000 руб.</li>
-                        </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div>
-                <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
                   <div>
                     <div class="uk-box uk-text-large">
                       <div class="uk-box-body uk-box-32">
                         <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">Партнёрский безлимит</h3>
-                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">на 12 месяцев</div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Аренда государственного и муниципального имущества
+                            </h3>
                           </div>
                           <div>
                             <div class="uk-text-right@s uk-text-xlarge">
-                              <b>319 000 руб.</b>
+                              <b>Бесплатно</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Купля-продажа природных алмазов специальных размеров
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Бесплатно</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Право пользования рыбоводным участком</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Бесплатно</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Продажа имущества, обращённого в собственность государства
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>5 000 руб.</b>
                               <br />
                               без учёта НДС
                             </div>
@@ -867,221 +756,176 @@
                           <div class="uk-flex uk-flex-right@s">
                             <button class="uk-button uk-button-primary" type="button">Участвовать</button>
                           </div>
-                          <div class="uk-flex uk-flex-column uk-flex-first@s">
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
-                              uk-toggle="target: #toggle-6-1"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
-                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-6-1" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>
-                            Участие в неограниченном количестве закупок в любой секции без ограничения по сумме торгов.
-                          </li>
-                          <li>Бесплатная активация электронной подписи.</li>
-                          <li>Бесплатная ускоренная аккредитация.</li>
-                          <li>
-                            Индивидуальный подбор торгов для участия по запросу. Приоритет оказания консультационной
-                            поддержки.
-                          </li>
-                          <li>Приоритет оказания консультационной поддержки.</li>
-                          <li>Ускоренное зачисление обеспечения заявки (при наличии).</li>
-                          <li>Организация неограниченного количества закупок и торговых процедур на продажу.</li>
-                          <li>Бесплатный доступ к сервису проверки ГОСТов (СНиП, СанПиН, РД).</li>
-                          <li>
-                            Тариф применяется в закупках: 223-ФЗ, 223-ФЗ ГК «Росатом», коммерческих, отдельных
-                            организаторов, электронного магазина.
-                          </li>
-                        </ul>
-                        <a class="uk-flex uk-flex-middle" href="#">
-                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
-                          Условия использования
-                        </a>
                       </div>
                     </div>
                   </div>
                   <div>
                     <div class="uk-box uk-text-large">
                       <div class="uk-box-body uk-box-32">
-                        <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">Участник закупки отдельных организаторов</h3>
+                            <h3 class="uk-h3-op uk-margin-remove">Размещение рекламных конструкций</h3>
                           </div>
                           <div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">до 1 000 000 руб.</div>
-                              <div>
-                                <b>4 900 руб.</b>
-                                без учёта НДС
-                              </div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
-                              </div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 600 руб.</b>
+                              <br />
+                              без учёта НДС
                             </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">до 5 000 000 руб.</div>
-                              <div>
-                                <b>11 900 руб.</b>
-                                без учёта НДС
-                              </div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">свыше 5 000 000 руб.</div>
-                              <div>
-                                <b>19 900 руб.</b>
-                                без учёта НДС
-                              </div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <button
-                              class="uk-button uk-button-link uk-text-large uk-text-weight-500"
-                              uk-toggle="target: #toggle-6-2"
-                              type="button"
-                              aria-expanded="false">
-                              Подробнее
-                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
-                            </button>
                           </div>
                         </div>
-                      </div>
-                      <div class="uk-box-footer uk-box-32" id="toggle-6-2" hidden>
-                        <ul class="uk-list uk-list-8 uk-list-primary uk-list-square">
-                          <li>
-                            Для участия в закупках отдельных организаторов, имеющих в извещении пометку: «Возможно
-                            участие с тарифом «Участник закупки отдельных организаторов».
-                          </li>
-                          <li>Тарифная плата взимается за участие в закупке.</li>
-                        </ul>
-                        <a class="uk-flex uk-flex-middle" href="#">
-                          <span uk-icon="server-time" class="uk-text-color-m500 uk-margin-8-right"></span>
-                          Условия использования
-                        </a>
-                      </div>
-                      <div class="uk-box-footer uk-box-32 uk-box-vertical-16 uk-box-success uk-box-vertical-16">
-                        <div>
-                          В закупках с НМЦ менее 250 000 руб.
-                          <span class="uk-text-color-s700">тарифная плата не взимается.</span>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
-                        <a href="#">Посмотреть бесплатные закупки</a>
                       </div>
                     </div>
                   </div>
                   <div>
                     <div class="uk-box uk-text-large">
                       <div class="uk-box-body uk-box-32">
-                        <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
                           <div>
-                            <h3 class="uk-h3-op uk-margin-remove">Корпоративные секции</h3>
+                            <h3 class="uk-h3-op uk-margin-remove">Комплексное развитие территорий</h3>
                           </div>
                           <div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">ГК «Росатом»</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">ГК «Новапорт»</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">АО «Силовые машины»</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">ПАО «Форвард Энерго»</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">Корпорация «Технониколь»</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
-                            </div>
-                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
-                              <div class="uk-width-expand@s">ФГП ВО ЖДТ России</div>
-                              <div>
-                                <button class="uk-button uk-button-primary" type="button">Перейти в секцию</button>
-                              </div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 600 руб.</b>
+                              <br />
+                              без учёта НДС
                             </div>
                           </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="uk-margin-xlarge-top">
-                  <div class="uk-grid-32" uk-grid>
-                    <div class="uk-width-1-2@s uk-grid-item-match">
-                      <a
-                        href="#"
-                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
-                        <div class="uk-width-2-3">
-                          <h3 class="uk-h4-op uk-margin-small">Бесплатная проверка электронной подписи</h3>
-                          <div class="uk-text-color-bh500">
-                            Проверьте самостоятельно
-                            <br />
-                            за 1 минуту
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Продажа непрофильных активов компаний с государственным участием
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 600 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
                           </div>
                         </div>
-                        <img
-                          class="uk-position-absolute uk-position-bottom-right"
-                          src="../../img/tariff-banner.svg"
-                          alt="Бесплатная проверка электронной подписи" />
-                      </a>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="uk-width-1-2@s uk-grid-item-match">
-                      <a
-                        href="#"
-                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
-                        <div class="uk-width-2-3">
-                          <h3 class="uk-h4-op uk-margin-small">Активация электронной подписи – 2 895 руб!</h3>
-                          <div class="uk-text-color-bh500">
-                            Для получения расширенного доступа к работе с сервисами в течение 6 мес.
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Продажа права пользования участком недр</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>5 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
                           </div>
                         </div>
-                        <img
-                          class="uk-position-absolute uk-position-bottom-right"
-                          src="../../img/tariff-banner.svg"
-                          alt="Бесплатная проверка электронной подписи" />
-                      </a>
-                    </div>
-                    <div class="uk-width-1-1">
-                      <a
-                        href="#"
-                        class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
-                        <div class="uk-width-2-3">
-                          <h3 class="uk-h4-op uk-margin-small">Ускоренная аккредитация в секции 223-ФЗ за 2 часа!</h3>
-                          <div class="uk-text-color-bh500">Оформите срочное участие в закупках – за 9 900 руб.</div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
                         </div>
-                        <img
-                          class="uk-position-absolute uk-position-bottom-right"
-                          src="../../img/tariff-banner.svg"
-                          alt="Бесплатная проверка электронной подписи" />
-                      </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Аренда лесных участков и продажа лесных насаждений
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>1 600 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">
+                              Закрепление и предоставление доли квоты добычи крабов в инвестиционных целях
+                            </h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>1% от НМЦ лота</b>
+                              , но не более
+                              <b>5 000 руб.</b>
+                              <br />
+                              без учёта НДС
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- / ГИС Торги -->
             </div>
           </div>
           <aside class="uk-width-auto@m uk-flex-first@m">
@@ -1090,12 +934,9 @@
                 class="uk-menubar uk-grid-8 uk-child-width-1-1 uk-margin-medium-bottom uk-visible@m"
                 uk-switcher="connect: .uk-switcher"
                 uk-grid>
-                <li class="uk-active"><a href="#">223-ФЗ</a></li>
-                <li><a href="#">Коммерческие закупки</a></li>
-                <li><a href="#">44-Ф3</a></li>
-                <li><a href="#">615-ПП РФ (капитальный ремонт)</a></li>
-                <li><a href="#">Электронный магазин</a></li>
-                <li><a href="#">Дополнительные тарифы</a></li>
+                <li class="uk-active"><a href="#">Коммерческие продажи</a></li>
+                <li><a href="#">Банкротство</a></li>
+                <li><a href="#">ГИС Торги</a></li>
               </ul>
               <div class="uk-box uk-box-body uk-margin-auto-top">
                 <h4 class="uk-h5-op uk-margin-small-bottom">Не знаете с чего начать?</h4>
