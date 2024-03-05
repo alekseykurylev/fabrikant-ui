@@ -377,7 +377,9 @@
                         </div>
                         <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
                           <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Заказать звонок</button>
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #callback" type="button">
+                              Заказать звонок
+                            </button>
                           </div>
                           <div class="uk-flex uk-flex-column uk-flex-first@s">
                             <button
@@ -956,6 +958,112 @@
       </section>
     </div>
     <!-- /Тарифы -->
+
+    <!-- Заказать обратный звонок -->
+    <div id="callback" class="uk-modal-container" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-h1">Заказать обратный звонок</h2>
+        <p>
+          Заполните форму заказа звонка, и наши менеджеры сами перезвонят вам в течение 10 минут. Можно указать фамилию
+          и имя специалиста, с которым вы хотите связаться.
+        </p>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-subject-appeal">
+              Тема обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <select id="form-subject-appeal" class="uk-select" aria-label="Тема обращения">
+                <option>Выберите тему обращения</option>
+                <option>Option 01</option>
+                <option>Option 02</option>
+              </select>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-text-appeal">
+              Текст обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-text-appeal" class="uk-textarea" rows="4" aria-label="Текст обращения"></textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-contact-person">
+              Контактное лицо
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-contact-person" class="uk-input" type="text" aria-label="Контактное лицо" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-child-width-1-2@m uk-grid-medium" uk-grid>
+              <div>
+                <label class="uk-form-label" for="form-email">
+                  Email
+                  <span class="uk-text-danger">*</span>
+                </label>
+                <div class="uk-form-controls">
+                  <input id="form-email" class="uk-input" type="text" aria-label="Email" />
+                </div>
+              </div>
+              <div>
+                <div class="uk-flex-bottom uk-grid-small" uk-grid>
+                  <div class="uk-width-auto@s">
+                    <label class="uk-form-label" for="form-phone-code">
+                      Телефон
+                      <span class="uk-text-danger">*</span>
+                    </label>
+                    <div class="uk-form-controls">
+                      <select class="uk-select" aria-label="Код телефон" style="width: 110px">
+                        <option>+7</option>
+                        <option>+123</option>
+                        <option>+12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="uk-width-expand@s">
+                    <div class="uk-form-controls">
+                      <input
+                        id="form-phone-code"
+                        class="uk-input"
+                        placeholder="(___)-___-__-__"
+                        type="text"
+                        aria-label="Телефон" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-checkbox-wrap">
+              <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+              <span class="uk-checkbox-label uk-margin-12-left">
+                Я обязуюсь соблюдать
+                <a href="#">Регламент ЭТП «Фабрикант»,</a>
+                даю
+                <a href="#">согласие на обработку моих персональных данных</a>
+              </span>
+            </label>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">???Captcha???</div>
+          </div>
+          <div class="uk-flex uk-flex-right">
+            <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">
+              Отмена
+            </button>
+            <button class="uk-button uk-button-primary" type="button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Заказать обратный звонок -->
 
     <footer class="footer">
       <div class="uk-container uk-container-default">
