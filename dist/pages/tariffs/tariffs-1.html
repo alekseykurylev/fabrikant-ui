@@ -422,7 +422,8 @@
                     </div>
                     <div class="uk-width-1-2@s uk-grid-item-match">
                       <a
-                        href="#"
+                        href="#activation-ep"
+                        uk-toggle
                         class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
                         <div class="uk-width-2-3">
                           <h3 class="uk-h4-op uk-margin-small">Активация электронной подписи – 2 895 руб!</h3>
@@ -555,7 +556,8 @@
                     </div>
                     <div class="uk-width-1-2@s uk-grid-item-match">
                       <a
-                        href="#"
+                        href="#activation-ep"
+                        uk-toggle
                         class="uk-box uk-box-body uk-box-m40 uk-position-relative uk-link-heading uk-overflow-hidden">
                         <div class="uk-width-2-3">
                           <h3 class="uk-h4-op uk-margin-small">Активация электронной подписи – 2 895 руб!</h3>
@@ -1323,6 +1325,123 @@
       </div>
     </div>
     <!-- /Покупка услуги «Ускорение аккредитации по 223-Ф3» -->
+
+    <!-- Активация ЭП -->
+    <div id="activation-ep" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Активация ЭП</h2>
+        <p class="uk-margin-8">
+          Активация ЭП требуется для работы в секциях: "Закупки по 223-Ф3" "Коммерческие процедуры".
+        </p>
+        <p class="uk-margin-8">"Закупки предприятий судостроительной отрасли", "Торги по банкротству".</p>
+        <p class="uk-margin-8">
+          Оплата услуги возможна
+          <b>только с помощью "электронного кошелька".</b>
+        </p>
+        <p class="uk-margin-remove-top">
+          Бесплатно проверить электронную подпись можно в разделе
+          <a href="#">"Как работать с ЭП".</a>
+        </p>
+
+        <div class="uk-box uk-box-body uk-box-16 uk-text-xlarge uk-margin">
+          <div class="uk-margin-4-bottom uk-text-weight-700 uk-text-color-bh500">6 месяцев</div>
+          <div>
+            <b>2 895 руб.</b>
+            НДС не облагается
+          </div>
+        </div>
+
+        <button class="uk-button uk-button-primary uk-width-1-1" uk-toggle="target: #activation-ep-form" type="button">
+          Подключить
+        </button>
+
+        <div class="uk-box uk-box-body uk-box-16 uk-box-m40 uk-margin">
+          <div class="uk-child-width-1-2@s uk-flex-middle uk-grid-small" uk-grid>
+            <div>
+              <div class="uk-h5 uk-margin-remove">Есть вопросы? Звоните:</div>
+              <div class="uk-h1 uk-margin-remove">+7 495 109-75-75</div>
+            </div>
+            <div class="uk-text-right@s">
+              <button class="uk-button uk-button-default" type="button" uk-toggle="target: #callback">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Активация ЭП -->
+
+    <!-- Покупка услуги «Активация ЭП» -->
+    <div id="activation-ep-form" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Покупка услуги «Активация ЭП»</h2>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-name">
+              Название
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-name" class="uk-input" type="text" aria-label="Название" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-inn">
+              ИНН
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-inn" class="uk-input" type="text" aria-label="ИНН" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-kpp">
+              КПП
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-kpp" class="uk-input" type="text" aria-label="КПП" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-legal-address">
+              Юридический адрес
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-legal-address" class="uk-textarea" rows="4" aria-label="Юридический адрес"></textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-postal-address">
+              Почтовый адрес
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-postal-address" class="uk-textarea" rows="4" aria-label="Почтовый адрес"></textarea>
+            </div>
+          </div>
+
+          <div class="uk-margin">
+            <p>
+              Оферта будет доступна в
+              <a href="#">Личном кабинете</a>
+              сразу после нажатия кнопки "Сформировать документ", УПД - после поступления оплаты.
+            </p>
+          </div>
+          <div class="uk-flex uk-flex-right">
+            <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">
+              Отменить
+            </button>
+            <button class="uk-button uk-button-primary" type="button">Сформировать документ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /Покупка услуги «Активация ЭП» -->
 
     <!-- Заказать обратный звонок -->
     <div id="callback" class="uk-modal-container" uk-modal>
