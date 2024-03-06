@@ -881,7 +881,12 @@
                         </div>
                         <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
                           <div class="uk-flex uk-flex-right@s">
-                            <button class="uk-button uk-button-primary" type="button">Участвовать</button>
+                            <button
+                              class="uk-button uk-button-primary"
+                              uk-toggle="target: #partner-unlimited"
+                              type="button">
+                              Подключить
+                            </button>
                           </div>
                           <div class="uk-flex uk-flex-column uk-flex-first@s">
                             <button
@@ -1114,7 +1119,7 @@
                 <li><a href="#">Электронный магазин</a></li>
                 <li><a href="#">Дополнительные тарифы</a></li>
               </ul>
-              <div class="uk-box uk-box-body uk-margin-auto-top">
+              <div class="uk-box uk-box-body uk-margin-auto-top" uk-sticky="position: bottom">
                 <h4 class="uk-h5-op uk-margin-small-bottom">Не знаете с чего начать?</h4>
                 <p class="uk-margin-small">Мы бесплатно поможем настроить кабинет и найти выгодные заказы</p>
                 <button class="uk-button uk-button-default uk-button-small uk-flex uk-flex-middle" type="button">
@@ -1128,6 +1133,80 @@
       </section>
     </div>
     <!-- /Тарифы -->
+
+    <!-- Партнерский безлимит -->
+    <div id="partner-unlimited" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">
+          Покупка тарифа
+          <br />
+          «Партнерский безлимит»
+        </h2>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-name">
+              Название
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-name" class="uk-input" type="text" aria-label="Название" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-inn">
+              ИНН
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-inn" class="uk-input" type="text" aria-label="ИНН" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-kpp">
+              КПП
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-kpp" class="uk-input" type="text" aria-label="КПП" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-legal-address">
+              Юридический адрес
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-legal-address" class="uk-textarea" rows="4" aria-label="Юридический адрес"></textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-postal-address">
+              Почтовый адрес
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-postal-address" class="uk-textarea" rows="4" aria-label="Почтовый адрес"></textarea>
+            </div>
+          </div>
+
+          <div class="uk-margin">
+            <p>
+              Договор-оферта будет доступен в
+              <a href="#">Личном кабинете</a>
+              сразу после нажатия кнопки "Сформировать документ", УПД - после поступления оплаты.
+            </p>
+          </div>
+          <div class="uk-flex uk-flex-right">
+            <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">
+              Отменить
+            </button>
+            <button class="uk-button uk-button-primary" type="button">Сформировать документ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Партнерский безлимит -->
 
     <footer class="footer">
       <div class="uk-container uk-container-default">
