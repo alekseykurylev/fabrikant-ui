@@ -44,7 +44,9 @@
   }
 
   &.uk-box-32 {
-    padding: 32px;
+    @media (min-width: $breakpoint-small) {
+      padding: 32px;
+    }
   }
 
   &.uk-box-vertical-16 {
