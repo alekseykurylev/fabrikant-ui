@@ -12,12 +12,12 @@
 
 - [Главная][home]
 - [Новость][news]
-- [Тарифы][tariffs] [in progress]
+- [Тарифы][tariffs]
 - [Форма просмотра процедуры][procedure] [in progress]
 - [404][404]
 - [500][500]
 
-## Widgets:
+## Components:
 
 - [Extended Search][extended-search] [in progress]
 - [Footer][footer]
@@ -26,9 +26,6 @@
 - [Search Bar][search-bar] [in progress]
 - [Timeline][timeline]
 - [Toolbar][toolbar]
-
-## Shared:
-
 - [Alert][alert]
 - [Badge][badge]
 - [Box][box]
