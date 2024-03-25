@@ -2,50 +2,17 @@
   border-top: 1px solid #d0d6de;
 }
 
-.footer .uk-nav > li > a {
-  padding: 0;
-}
+.footer-nav {
+  .uk-nav > li > a {
+    padding: 0;
+    color: var(--color-mine-shaft-700);
+  }
 
-.footer .uk-nav > li:not(:last-child) {
-  margin-bottom: 16px;
-}
+  .uk-nav > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-.footer-nav h4 {
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-cerulean-500);
-}
-
-.footer-nav .uk-nav > li > a {
-  color: var(--color-mine-shaft-700);
-}
-
-.footer-nav .uk-nav > li > a:hover {
-  color: var(--color-cerulean-link-hover);
-}
-
-.footer a[href^='tel:'] .uk-h2 {
-  font-size: 22px;
-  line-height: 24px;
-}
-
-.footer a[href^='tel:']:hover .uk-h2 {
-  color: var(--color-cerulean-link-hover);
-}
-
-.footer a[href^='mailto:'] .uk-h3 {
-  color: var(--color-cerulean-500);
-}
-
-.footer a[href^='mailto:']:hover .uk-h3 {
-  color: var(--color-cerulean-link-hover);
-}
-
-.footer-social .uk-icon {
-  color: var(--color-mystic-500);
-}
-
-.footer-social a:hover > .uk-icon {
-  color: var(--color-bali-hai-200);
+  .uk-nav > li > a:hover {
+    color: var(--color-cerulean-link-hover);
+  }
 }
