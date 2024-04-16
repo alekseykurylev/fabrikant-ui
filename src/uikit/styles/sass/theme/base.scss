@@ -1,0 +1,11 @@
+.uk-hr-16 {
+  margin: 0 0 16px;
+}
+
+* + .uk-hr-16 {
+  margin-top: 16px;
+}
+
+main {
+  background-color: var(--color-mystic-40);
+}

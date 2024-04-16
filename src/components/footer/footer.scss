@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid #d0d6de;
+}
+
+.footer-nav {
+  .uk-nav > li > a {
+    padding: 0;
+    color: var(--color-mine-shaft-700);
+  }
+
+  .uk-nav > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .uk-nav > li > a:hover {
+    color: var(--color-cerulean-link-hover);
+  }
+}

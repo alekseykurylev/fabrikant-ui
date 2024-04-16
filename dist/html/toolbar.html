@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../fonts/index.css" />
+    <link rel="stylesheet" href="../uikit/uikit.min.css" />
+    <link rel="stylesheet" href="../components/toolbar/toolbar.css" />
+
+    <script src="../uikit/uikit.min.js"></script>
+    <script src="../uikit/uikit-icons.min.js"></script>
+
+    <title>Toolbar</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <h1>Toolbar</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=16748-141895&t=ue2eUBpnbUVa25YI-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="uk-margin">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-flex uk-flex-center uk-flex-middle" style="background-color: antiquewhite; height: 120vh">
+          😎
+        </div>
+      </div>
+    </div>
+
+    <!-- This is the Toolbar -->
+    <div class="uk-toolbar-container uk-margin-small">
+      <div class="uk-toolbar">
+        <div class="uk-container uk-container-expand">
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-expand">
+              <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                <div class="uk-flex-none">
+                  <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                    <span uk-icon="arrow-left"></span>
+                  </button>
+                </div>
+                <div class="uk-width-expand uk-hidden@s">
+                  <button class="uk-button uk-button-medium uk-button-primary uk-width-1-1" type="button">
+                    Действия
+                    <span class="uk-margin-8-left" uk-icon="dropdown-down"></span>
+                  </button>
+                  <ul class="uk-nav" uk-drop="pos: top-right; mode: click" uk-nav>
+                    <li><a href="#">Реестр запросов разъяснений</a></li>
+                    <li><a href="#">Реестр контрактов</a></li>
+                    <li><a href="#">Посмотреть заявку</a></li>
+                    <li><a class="uk-text-bold" href="#">Запрос разъяснений положения извещения</a></li>
+                    <li><a class="uk-text-bold" href="#">Отозвать заявку</a></li>
+                  </ul>
+                </div>
+                <div class="uk-width-expand uk-visible@s">
+                  <ul class="uk-toolbar-nav uk-grid-small uk-flex-nowrap" uk-grid>
+                    <li>
+                      <a class="uk-button uk-button-medium uk-button-default" href="#">Реестр запросов разъяснений</a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-medium uk-button-default" href="#">Реестр контрактов</a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-medium uk-button-default" href="#">Посмотреть заявку</a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-medium uk-button-primary" href="#">
+                        Запрос разъяснений положения извещения
+                      </a>
+                    </li>
+                    <li>
+                      <a class="uk-button uk-button-medium uk-button-primary" href="#">Отозвать заявку</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-auto uk-visible@xl">
+              <div class="uk-grid-small uk-child-width-auto uk-flex-nowrap" uk-grid>
+                <div class="uk-flex-none">
+                  <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                    <span uk-icon="arrow-up"></span>
+                  </button>
+                </div>
+                <div class="uk-flex-none">
+                  <button class="uk-button uk-button-medium uk-button-icon uk-button-default">
+                    <span uk-icon="arrow-down"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="uk-container uk-container-expand">
+        <div class="uk-flex uk-flex-center uk-flex-middle" style="background-color: antiquewhite; height: 30vh">😎</div>
+      </div>
+    </footer>
+
+    <script src="../components/toolbar/toolbar.js"></script>
+  </body>
+</html>

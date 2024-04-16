@@ -1,0 +1,13 @@
+image: node:lts
+
+pages:
+  tags:
+    - docker
+  script:
+    - rm -rf public
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - test

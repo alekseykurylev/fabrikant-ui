@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../fonts/index.css" />
+    <link rel="stylesheet" href="../../uikit/uikit.min.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/tariffs/tariffs.css" />
+
+    <script src="../../uikit/uikit.min.js"></script>
+    <script src="../../uikit/uikit-icons.min.js"></script>
+
+    <title>Тарифы: Организация торгов</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-mobile uk-grid-collapse uk-child-width-auto uk-hidden@s" uk-grid>
+        <div>
+          <a class="uk-flex uk-flex-middle" href="docs/#mobile-menu-3" uk-toggle>
+            <span uk-icon="menu"></span>
+          </a>
+          <div id="mobile-menu-3" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
+              <div class="uk-offcanvas-header">
+                <div class="uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">
+                    <a href="#"><img src="../../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
+                  </div>
+                  <div class="uk-width-auto">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
+                <div class="uk-margin-small-bottom">
+                  <button class="uk-button uk-button-default" type="button">Вход</button>
+                  <button class="uk-button uk-button-default uk-margin-8-left" type="button">Регистрация</button>
+                </div>
+                <ul uk-nav>
+                  <li class="uk-parent">
+                    <a href="#">
+                      Торги
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">44-ФЗ</a></li>
+                      <li><a href="#">223-ФЗ</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Витрина</a></li>
+                  <li class="uk-parent">
+                    <a href="#">
+                      Услуги
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Все услуги</a></li>
+                      <li><a href="#">Электронная подпись</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Тарифы</a></li>
+                  <li class="uk-parent">
+                    <a href="#">
+                      Клиентам
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Купить в Фабрикант.Маркете</a></li>
+                      <li><a href="#">Стать поставщиком</a></li>
+                    </ul>
+                  </li>
+                  <li class="uk-parent">
+                    <a href="#">
+                      База знаний
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Вопросы и ответы</a></li>
+                      <li><a href="#">Общие правила</a></li>
+                    </ul>
+                  </li>
+                  <li class="uk-parent">
+                    <a href="#">
+                      Новости
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Новости Фабрикант</a></li>
+                      <li><a href="#">Контакты пресс-службы</a></li>
+                    </ul>
+                  </li>
+                  <li class="uk-parent uk-active">
+                    <a href="#">
+                      О нас
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Свидетельства и лицензии</a></li>
+                    </ul>
+                  </li>
+                  <li class="uk-parent">
+                    <a href="#">
+                      Обучение
+                      <span uk-nav-parent-icon></span>
+                    </a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Вебинары Фабрикант</a></li>
+                      <li><a href="#">Курсы Фабрикант</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="uk-offcanvas-footer uk-text-right">
+                <div class="uk-text-small uk-margin-small-bottom">
+                  <a class="uk-link-muted" href="docs/tel:+74951097575">+7 (495) 109-75-75</a>
+                </div>
+                <div>
+                  <a class="uk-text-small uk-flex-inline uk-flex-middle" href="#">
+                    <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
+                    Обращение в техподдержку
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-expand">
+          <div class="uk-flex uk-flex-center uk-flex-middle">
+            <a href="#"><img src="../../img/logo.svg" width="160" height="20" alt="Фабрикант" /></a>
+          </div>
+        </div>
+        <div>
+          <a class="uk-flex uk-flex-middle" href="#"><span uk-icon="logIn"></span></a>
+        </div>
+      </div>
+
+      <div class="uk-container uk-container-default">
+        <div class="header-hero uk-visible@s">
+          <div class="uk-container uk-container-expand">
+            <div class="uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <div class="uk-grid-divider uk-flex-middle" uk-grid>
+                  <div>
+                    <a href="#"><img src="../../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
+                  </div>
+                  <div class="uk-visible@m">
+                    <div class="uk-flex uk-flex-middle uk-text-muted">
+                      <span uk-icon="server-time"></span>
+                      <div class="uk-margin-12-left">
+                        <div class="uk-text-xsmall uk-text-color-bh200">Время на сервере</div>
+                        <div class="uk-text-small">
+                          <span class="dateTime-container" id="serverDateTime">
+                            <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
+                            <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
+                            <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
+                            <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
+                            <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
+                            <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
+                            <span id="serverDateTime-second" class="serverDateTime-second">00</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-auto uk-margin-auto-left">
+                <button class="uk-button uk-button-default" type="button">Вход</button>
+                <button class="uk-button uk-button-default uk-margin-8-left" type="button">Регистрация</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-nav uk-visible@s">
+          <div class="uk-container uk-container-expand">
+            <div class="uk-child-width-expand uk-flex-middle uk-grid-large" uk-grid>
+              <div>
+                <nav class="uk-navbar-container" uk-navbar>
+                  <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                      <li class="uk-active">
+                        <a href="#">Торги</a>
+                        <ul class="uk-nav" uk-drop>
+                          <li><a href="#">44-ФЗ</a></li>
+                          <li><a href="#">223-ФЗ</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Витрина</a></li>
+                      <li>
+                        <a href="#">Услуги</a>
+                        <ul class="uk-nav" uk-drop>
+                          <li><a href="#">Все услуги</a></li>
+                          <li><a href="#">Электронная подпись</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Тарифы</a></li>
+                      <li>
+                        <a href="#">Клиентам</a>
+                        <ul class="uk-nav" uk-drop>
+                          <li><a href="#">Купить в Фабрикант.Маркете</a></li>
+                          <li><a href="#">Стать поставщиком</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">База знаний</a>
+                        <ul class="uk-nav" uk-drop>
+                          <li><a href="#">Вопросы и ответы</a></li>
+                          <li><a href="#">Общие правила</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="uk-width-auto">
+                <a class="uk-text-small uk-flex uk-flex-middle" href="#">
+                  <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
+                  Обратная связь
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Тарифы -->
+    <div class="uk-container uk-container-default">
+      <section class="uk-section uk-section-large">
+        <h1 class="uk-h1-op">Тарифы</h1>
+
+        <ul class="uk-menubar uk-grid-row-8 uk-margin-medium-bottom" uk-grid>
+          <li><a href="./tariffs-1.html">Участие в закупках</a></li>
+          <li><a href="./tariffs-2.html">Участие в торгах на продажу</a></li>
+          <li class="uk-active"><a href="./tariffs-3.html">Организация торгов</a></li>
+        </ul>
+
+        <div class="uk-grid-96" uk-grid>
+          <div class="uk-width-expand@m">
+            <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
+              <button class="uk-button uk-button-text uk-width-1-1" type="button">button</button>
+              <ul class="uk-nav" uk-switcher="connect: .uk-switcher" uk-drop="mode: click; stretch: x">
+                <li class="uk-active"><a href="#">223-ФЗ</a></li>
+                <li><a href="#">Коммерческие закупки и продажи</a></li>
+                <li><a href="#">Закупки электронного магазина</a></li>
+                <li><a href="#">Торги по банкротству</a></li>
+              </ul>
+            </div>
+
+            <div class="uk-switcher">
+              <!-- 223-ФЗ -->
+              <div>
+                <ul class="tariffs-list uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <li>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Организация закупок</h3>
+                            <div class="uk-text-color-bh500 uk-text-weight-700 uk-margin-8-top">на 12 месяцев</div>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Бесплатно</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #callback" type="button">
+                              Заказать звонок
+                            </button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-3-1"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-1" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-bullet uk-margin-remove">
+                          <li>Проведение закупок любых объёмов, включая закупки у субъектов МСП.</li>
+                          <li>Неограниченное количество закупок.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- / 223-ФЗ -->
+
+              <!-- Коммерческие закупки и продажи -->
+              <div>
+                <ul class="tariffs-list uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <li>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Организация процедур</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Индивидуально</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #callback" type="button">
+                              Заказать звонок
+                            </button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-3-2"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-2" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-bullet uk-margin-remove">
+                          <li>Неограниченное количество процедур на закупку и продажу любых объёмов.</li>
+                          <li>Сервис привлечения участников процедур.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- / Коммерческие закупки и продажи -->
+
+              <!-- Закупки электронного магазина -->
+              <div>
+                <ul class="tariffs-list uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <li>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Организация процедур</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Индивидуально</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #callback" type="button">
+                              Заказать звонок
+                            </button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s">
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500 uk-margin-auto-top"
+                              uk-toggle="target: #toggle-3-3"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-3" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-bullet uk-margin-remove">
+                          <li>Неограниченное количество закупок малого объёма.</li>
+                          <li>Сервис привлечения участников процедур.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Купить в Фабрикант.Маркете</h3>
+                          </div>
+                          <div>
+                            <div class="uk-text-right@s uk-text-xlarge">
+                              <b>Бесплатно</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-child-width-1-2@s uk-grid-column-small uk-margin-small-top" uk-grid>
+                          <div class="uk-flex uk-flex-right@s">
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #callback" type="button">
+                              Заказать звонок
+                            </button>
+                          </div>
+                          <div class="uk-flex uk-flex-column uk-flex-first@s"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- / Закупки электронного магазина -->
+
+              <!-- Торги по банкротству -->
+              <div>
+                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                  <div>В рамках любого тарифа предоставляется бесплатный счёт для приёма задатков</div>
+                  <a class="uk-flex uk-flex-middle uk-margin-8-top" href="#">
+                    <span uk-icon="file" class="uk-text-color-m500 uk-margin-8-right"></span>
+                    Договор о задатке (проект)
+                  </a>
+                </div>
+                <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">
+                  Важно! Для арбитражных управляющих ААУ «ЦФОП АПК» и действующих по договорам с ними организаторов
+                  торгов установлены индивидуальные тарифы, ознакомиться с которыми можно в
+                  <a href="#">Условиях использования тарифа.</a>
+                </div>
+                <ul class="tariffs-list uk-child-width-1-1 uk-grid-medium" uk-grid>
+                  <li>
+                    <div class="uk-box uk-text-large">
+                      <div class="uk-box-body uk-box-32">
+                        <div class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                          <div>
+                            <h3 class="uk-h3-op uk-margin-remove">Арбитражный управляющий</h3>
+                          </div>
+                          <div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">на 1 месяц</div>
+                              <div>
+                                <b>10 000 руб.</b>
+                                НДС не облагается
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">на 6 месяцев</div>
+                              <div>
+                                <b>20 000 руб.</b>
+                                НДС не облагается
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                            <div class="uk-child-width-auto@s uk-grid-row-small uk-flex-middle" uk-grid>
+                              <div class="uk-width-expand@s">на 12 месяцев</div>
+                              <div>
+                                <b>30 000 руб.</b>
+                                НДС не облагается
+                              </div>
+                              <div>
+                                <button class="uk-button uk-button-primary" type="button">Подключить</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="uk-button uk-button-link uk-text-large uk-text-weight-500"
+                              uk-toggle="target: #toggle-3-4"
+                              type="button"
+                              aria-expanded="false">
+                              Подробнее
+                              <span class="uk-icon-size-16" uk-icon="dropdown-down"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-box-footer uk-box-32" id="toggle-3-4" hidden>
+                        <ul class="uk-list uk-list-8 uk-list-bullet">
+                          <li>Организация процедур на продажу любых объёмов в секции «Торги по банкротству».</li>
+                          <li>Неограниченное количество процедур.</li>
+                          <li>
+                            <b>Важно!</b>
+                            Для арбитражных управляющих ААУ «ЦФОП АПК» и действующих по договорам с ними организаторов
+                            торгов установлены индивидуальные тарифы, ознакомиться с которыми можно в Условиях
+                            использования тарифа.
+                          </li>
+                        </ul>
+                        <a class="uk-flex uk-flex-middle" href="#">
+                          <span uk-icon="file" class="uk-text-color-m500 uk-margin-8-right"></span>
+                          Условия использования
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- / Торги по банкротству -->
+            </div>
+          </div>
+          <aside class="uk-width-auto@m uk-flex-first@m">
+            <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
+              <ul
+                class="uk-menubar uk-grid-8 uk-child-width-1-1 uk-margin-medium-bottom uk-visible@m"
+                uk-switcher="connect: .uk-switcher"
+                uk-grid>
+                <li class="uk-active"><a href="#">223-ФЗ</a></li>
+                <li><a href="#">Коммерческие закупки и продажи</a></li>
+                <li><a href="#">Закупки электронного магазина</a></li>
+                <li><a href="#">Торги по банкротству</a></li>
+              </ul>
+              <div class="uk-box uk-box-body uk-margin-auto-top">
+                <h4 class="uk-h5-op uk-margin-small-bottom">Не знаете с чего начать?</h4>
+                <p class="uk-margin-small">Мы бесплатно поможем настроить кабинет и найти выгодные заказы</p>
+                <button class="uk-button uk-button-default uk-button-small uk-flex uk-flex-middle" type="button">
+                  <span uk-icon="icon: question" class="uk-icon-size-16 uk-margin-8-right"></span>
+                  Проконсультируем и поможем
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+    <!-- /Тарифы -->
+
+    <!-- Заказать обратный звонок -->
+    <div id="callback" class="uk-modal-container" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Заказать обратный звонок</h2>
+        <p>
+          Заполните форму заказа звонка, и наши менеджеры сами перезвонят вам в течение 10 минут. Можно указать фамилию
+          и имя специалиста, с которым вы хотите связаться.
+        </p>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-subject-appeal">
+              Тема обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <select id="form-subject-appeal" class="uk-select" aria-label="Тема обращения">
+                <option>Выберите тему обращения</option>
+                <option>Option 01</option>
+                <option>Option 02</option>
+              </select>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-text-appeal">
+              Текст обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-text-appeal" class="uk-textarea" rows="4" aria-label="Текст обращения"></textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-contact-person">
+              Контактное лицо
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-contact-person" class="uk-input" type="text" aria-label="Контактное лицо" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-child-width-1-2@m uk-grid-medium" uk-grid>
+              <div>
+                <label class="uk-form-label" for="form-email">
+                  Email
+                  <span class="uk-text-danger">*</span>
+                </label>
+                <div class="uk-form-controls">
+                  <input id="form-email" class="uk-input" type="text" aria-label="Email" />
+                </div>
+              </div>
+              <div>
+                <div class="uk-flex-bottom uk-grid-small" uk-grid>
+                  <div class="uk-width-auto@s">
+                    <label class="uk-form-label" for="form-phone-code">
+                      Телефон
+                      <span class="uk-text-danger">*</span>
+                    </label>
+                    <div class="uk-form-controls">
+                      <select class="uk-select" aria-label="Код телефон" style="width: 110px">
+                        <option>+7</option>
+                        <option>+123</option>
+                        <option>+12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="uk-width-expand@s">
+                    <div class="uk-form-controls">
+                      <input
+                        id="form-phone-code"
+                        class="uk-input"
+                        placeholder="(___)-___-__-__"
+                        type="text"
+                        aria-label="Телефон" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-checkbox-wrap">
+              <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+              <span class="uk-checkbox-label uk-margin-12-left">
+                Я обязуюсь соблюдать
+                <a href="#">Регламент ЭТП «Фабрикант»,</a>
+                даю
+                <a href="#">согласие на обработку моих персональных данных</a>
+              </span>
+            </label>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">captcha</div>
+          </div>
+          <div class="uk-flex uk-flex-right">
+            <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">
+              Отмена
+            </button>
+            <button class="uk-button uk-button-primary" type="button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /Заказать обратный звонок -->
+
+    <footer class="footer">
+      <div class="uk-container uk-container-default">
+        <section class="footer-nav uk-section uk-section-large">
+          <div class="uk-container uk-container-expand">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large" uk-grid>
+              <div>
+                <h4>Секции</h4>
+                <ul class="uk-nav">
+                  <li><a href="#">44-ФЗ</a></li>
+                  <li><a href="#">223-ФЗ</a></li>
+                  <li><a href="#">Коммерческие закупки</a></li>
+                  <li><a href="#">Торги на продажу</a></li>
+                  <li><a href="#">Фабрикант.Маркет</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Дополнительные услуги</h4>
+                <ul class="uk-nav">
+                  <li><a href="#">Электронная подпись</a></li>
+                  <li><a href="#">Банковские гарантии</a></li>
+                  <li><a href="#">Экспертиза заявки</a></li>
+                  <li><a href="#">Электронное актирование</a></li>
+                  <li><a href="#">Все услуги</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Клиентам</h4>
+                <ul class="uk-nav">
+                  <li><a href="#">Тарифы</a></li>
+                  <li><a href="#">Заказчикам</a></li>
+                  <li><a href="#">Поставщикам</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Поддержка</h4>
+                <ul class="uk-nav">
+                  <li><a href="#">Обучение</a></li>
+                  <li><a href="#">База знаний</a></li>
+                  <li><a href="#">Вопросы-ответы</a></li>
+                  <li><a href="#">Документация</a></li>
+                  <li><a href="#">Обращение в техподдержку</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-large">
+          <div class="uk-container uk-container-expand">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large" uk-grid>
+              <div class="uk-width-1-1 uk-width-1-4@l">
+                <a href="#"><img src="../../img/logo-gray.svg" width="167" height="19" alt="Фабрикант" /></a>
+              </div>
+              <div>
+                <ul class="uk-list uk-list-large">
+                  <li>
+                    <a class="uk-flex uk-flex-middle" href="docs/tel:+74951097575">
+                      <span uk-icon="phone" class="uk-text-primary uk-margin-small-right"></span>
+                      <span class="uk-h2 uk-margin-remove">+7 (495) 109-75-75</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="uk-button uk-button-default" href="#">Обратиться в техподдержку</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="uk-list">
+                  <li>
+                    <a class="uk-flex uk-link-muted-ms500" href="https://yandex.ru/maps/-/CCUwM2gNWD" target="_blank">
+                      <span uk-icon="pin" class="uk-text-primary"></span>
+                      <span class="uk-text-small uk-margin-small-left">
+                        Центральный офис, АО «ЭТС» 123112,
+                        <br />
+                        г. Москва, ул. Тестовская, д. 10,
+                        <br />
+                        помещение 1, комната 13
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="uk-flex uk-flex-middle" href="docs/mailto:info@fabrikant.ru" target="_blank">
+                      <span uk-icon="mail" class="uk-text-primary"></span>
+                      <span class="uk-h3 uk-margin-small-left uk-margin-remove-vertical">info@fabrikant.ru</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="uk-nav uk-nav-muted">
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                  <li>
+                    <a href="#">Согласие на обработку персональных данных</a>
+                  </li>
+                  <li>
+                    <a href="#">Регламенты работы на ЭТП</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="uk-section uk-section-large">
+          <div class="uk-container uk-container-expand">
+            <div
+              class="uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-small uk-grid-row-large uk-flex-right@l"
+              uk-grid>
+              <div>
+                <h4 class="uk-heading-text uk-text-normal uk-margin-small uk-text-color-bh200">
+                  Безопасность платежей
+                </h4>
+                <ul class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <li><img src="../../img/mastercard.svg" width="37" height="23" alt="Mastercard" /></li>
+                  <li><img src="../../img/visa.svg" width="60" height="20" alt="Visa" /></li>
+                  <li><img src="../../img/mir.svg" width="61" height="18" alt="МИР" /></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="uk-heading-text uk-text-normal uk-margin-small uk-text-color-bh200">Перевести страницу</h4>
+                <div>тут яндекс кнопка</div>
+              </div>
+              <div>
+                <ul class="footer-social uk-grid-small" uk-grid>
+                  <li>
+                    <a href="#" target="_blank"><span uk-icon="telegram-circle"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"><span uk-icon="vkontakte-circle"></span></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"><span uk-icon="youtube-circle"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="../../components/tariffs/tariffs.js"></script>
+  </body>
+</html>

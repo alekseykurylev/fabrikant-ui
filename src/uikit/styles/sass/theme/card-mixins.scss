@@ -1,0 +1,38 @@
+@mixin hook-card() {
+  overflow: hidden;
+  border-radius: $card-radius;
+}
+
+@mixin hook-card-default() {
+  border: 1px solid $card-border-color;
+}
+
+@mixin hook-card-default-hover() {
+  border-color: var(--color-bali-hai-200);
+}
+
+@mixin hook-card-misc() {
+  .uk-card-default.uk-card-hover:active {
+    border-color: var(--color-cerulean-500);
+  }
+
+  .uk-card-default.uk-card-hover-box-shadow:hover {
+    box-shadow: $card-shadow;
+  }
+
+  .uk-card-default.uk-card-hover-box-shadow:active {
+    border-color: var(--color-cerulean-500);
+    box-shadow: none;
+  }
+
+  .uk-card.uk-drop {
+    background-color: #fff;
+    border: 1px solid $card-border-color;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+  }
+
+  .uk-card-muted {
+    background: var(--color-mystic-300-a-30);
+  }
+}

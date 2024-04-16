@@ -1,0 +1,125 @@
+@mixin hook-alert() {
+  padding-right: 16px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  border: 1px solid;
+  border-color: $card-border-color;
+  border-radius: $alert-radius;
+
+  a {
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-cerulean-link-hover);
+    }
+  }
+}
+
+@mixin hook-alert-primary() {
+  border-color: var(--color-cerulean-500);
+
+  a,
+  span.uk-icon {
+    color: var(--color-cerulean-link);
+  }
+}
+
+@mixin hook-alert-success() {
+  border-color: var(--color-success-500);
+
+  a,
+  span.uk-icon {
+    color: var(--color-success-link);
+  }
+}
+
+@mixin hook-alert-warning() {
+  border-color: var(--color-warning-500);
+
+  a,
+  span.uk-icon {
+    color: var(--color-warning-link);
+  }
+}
+
+@mixin hook-alert-danger() {
+  border-color: var(--color-alarm-500);
+
+  a,
+  span.uk-icon {
+    color: var(--color-alarm-500);
+  }
+}
+
+@mixin hook-alert-misc() {
+  .uk-alert-nightmare {
+    font-weight: 700;
+    color: #fff;
+    background: var(--color-alarm-500);
+    border-color: var(--color-alarm-500);
+
+    a {
+      font-weight: 700;
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .uk-alert-close:hover {
+      color: var(--color-cerulean-link-hover);
+    }
+  }
+
+  .uk-alert-m40 {
+    background: var(--color-mystic-40);
+  }
+
+  .uk-alert-solid {
+    border: none;
+    border-radius: 4px;
+  }
+
+  .uk-alert-solid .uk-alert-danger {
+    color: var(--color-alarm-500);
+    background-color: var(--color-alarm-100);
+
+    a,
+    span.uk-icon {
+      color: var(--color-alarm-500);
+    }
+  }
+
+  .uk-alert-solid .uk-alert-success {
+    background-color: var(--color-success-100);
+
+    span.uk-icon {
+      color: var(--color-success-500);
+    }
+  }
+
+  .uk-alert-solid .uk-alert-nightmare {
+    background-color: var(--color-alarm-150);
+
+    span.uk-icon {
+      color: var(--color-alarm-500);
+    }
+  }
+
+  .uk-alert-solid .uk-alert-primary {
+    background-color: var(--color-cerulean-50);
+
+    span.uk-icon {
+      color: var(--color-cerulean-500);
+    }
+  }
+
+  .uk-alert-close {
+    position: static;
+  }
+}

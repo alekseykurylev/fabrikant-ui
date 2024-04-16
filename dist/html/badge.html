@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../fonts/index.css" />
+    <link rel="stylesheet" href="../uikit/uikit.min.css" />
+
+    <script src="../uikit/uikit.min.js"></script>
+    <script src="../uikit/uikit-icons.min.js"></script>
+
+    <title>Badge</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Badge</h1>
+        <a class="uk-button uk-button-secondary uk-button-small" href="#">
+          <span class="uk-preserve" uk-icon="figma"></span>
+        </a>
+        <p>
+          Класс
+          <code>.uk-badge</code>
+          основной. Для изменения текста используем классы из
+          <a href="https://alekseykurylev.github.io/fabrikant-ui/src/ui/typography/typography.html">Typography.</a>
+          Иконки
+          <a href="https://alekseykurylev.github.io/fabrikant-ui/src/ui/icon/icon.html">тут.</a>
+        </p>
+        <hr />
+        <h2>Colors</h2>
+        <p>
+          <code>.uk-badge-success</code>
+          <code>.uk-badge-warning</code>
+          <code>.uk-badge-danger</code>
+          <code>.uk-badge-muted</code>
+        </p>
+        <div class="uk-grid-small" uk-grid>
+          <div><span class="uk-badge uk-text-bold uk-text-small">ЭЗК</span></div>
+          <div><span class="uk-badge uk-badge-success uk-text-small">25</span></div>
+          <div>
+            <span class="uk-badge uk-badge-warning uk-text-bold uk-text-small">
+              <span class="uk-icon-size-12 uk-margin-4-right" uk-icon="alert"></span>
+              Остался 1 день
+            </span>
+          </div>
+          <div><span class="uk-badge uk-badge-danger uk-text-bold uk-text-small">Срок истёк</span></div>
+          <div>
+            <span class="uk-badge uk-badge-muted uk-text-uppercase uk-text-color-bh500 uk-text-small">Закупки</span>
+          </div>
+          <div><span class="uk-badge uk-text-bold uk-badge-width-46">15%</span></div>
+          <div>
+            <span class="uk-badge uk-badge-width-46">
+              <span uk-icon="done-16"></span>
+            </span>
+          </div>
+        </div>
+        <hr />
+        <h2>Sizes</h2>
+        <p>
+          <code>.uk-badge-small</code>
+          <code>.uk-badge-large</code>
+        </p>
+        <div class="uk-grid-small" uk-grid>
+          <div><span class="uk-badge uk-badge-small uk-text-small">25</span></div>
+          <div><span class="uk-badge uk-badge-small uk-badge-success uk-text-small">25</span></div>
+          <div><span class="uk-badge uk-badge-small uk-badge-warning uk-text-small">25</span></div>
+          <div><span class="uk-badge uk-badge-small uk-badge-danger uk-text-small">25</span></div>
+          <div><span class="uk-badge uk-badge-small uk-badge-muted uk-text-small">25</span></div>
+        </div>
+
+        <div class="uk-grid-small" uk-grid>
+          <div><span class="uk-badge uk-badge-large uk-text-bold">4</span></div>
+          <div><span class="uk-badge uk-badge-success uk-badge-large uk-text-bold">4</span></div>
+          <div><span class="uk-badge uk-badge-warning uk-badge-large uk-text-bold">4</span></div>
+          <div><span class="uk-badge uk-badge-danger uk-badge-large uk-text-bold">4</span></div>
+          <div><span class="uk-badge uk-badge-muted uk-badge-large uk-text-bold">4</span></div>
+        </div>
+
+        <div class="uk-grid-small" uk-grid>
+          <div><span class="uk-badge uk-text-bold uk-badge-width-46">15%</span></div>
+          <div>
+            <span class="uk-badge uk-text-bold uk-badge-width-46">
+              <span uk-icon="done-16"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

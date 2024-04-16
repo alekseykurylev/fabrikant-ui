@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../fonts/index.css" />
+    <link rel="stylesheet" href="../uikit/uikit.min.css" />
+
+    <script src="../uikit/uikit.min.js"></script>
+    <script src="../uikit/uikit-icons.min.js"></script>
+
+    <title>Button</title>
+  </head>
+  <body>
+    <section class="uk-section">
+      <div class="uk-container uk-container-xsmall">
+        <h1>Button</h1>
+        <p uk-margin>
+          <a
+            class="uk-button uk-button-secondary uk-button-small"
+            href="https://www.figma.com/file/U7UjOE6T9IhuVVjgKIemh1/Fabrikant.NewLK?type=design&node-id=6527-66740&t=2GbvWwgZGWBVwWoi-4"
+            target="_blank">
+            <span class="uk-preserve" uk-icon="figma"></span>
+          </a>
+        </p>
+        <p>
+          Основной класс
+          <code>.uk-button</code>
+          к нему добавляем один из модификаторов
+          <code>.uk-button-default</code>
+          <code>.uk-button-primary</code>
+          <code>.uk-button-secondary</code>
+          <code>.uk-button-danger</code>
+          <code>.uk-button-text</code>
+          <code>.uk-button-link</code>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default" type="button">Default</button>
+          <button class="uk-button uk-button-default uk-button-default-gray" type="button">Default gray</button>
+          <button class="uk-button uk-button-primary" type="button">Primary</button>
+          <button class="uk-button uk-button-secondary" type="button">Secondary</button>
+          <button class="uk-button uk-button-secondary uk-button-secondary-gray" type="button">Secondary gray</button>
+          <button class="uk-button uk-button-danger" type="button">Danger</button>
+          <button class="uk-button uk-button-text" type="button">Text</button>
+          <button class="uk-button uk-button-link" type="button">Link</button>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default" type="button" disabled>Default disabled</button>
+          <button class="uk-button uk-button-default uk-button-default-gray" type="button" disabled>
+            Default gray disabled
+          </button>
+          <button class="uk-button uk-button-primary" type="button" disabled>Primary disabled</button>
+          <button class="uk-button uk-button-secondary uk-button-secondary-gray" type="button" disabled>
+            Secondary gray disabled
+          </button>
+        </p>
+        <hr class="uk-margin-large" />
+        <h2>Sizes</h2>
+        <p>
+          Добавляем класс
+          <code>.uk-button-small</code>
+          или
+          <code>.uk-button-large</code>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default uk-button-small" type="button">Small default</button>
+          <button class="uk-button uk-button-default uk-button-small uk-button-default-gray" type="button">
+            Small default gray
+          </button>
+          <button class="uk-button uk-button-primary uk-button-small" type="button">Small primary</button>
+          <button class="uk-button uk-button-secondary uk-button-small" type="button">Small secondary</button>
+          <button class="uk-button uk-button-secondary uk-button-small uk-button-secondary-gray" type="button">
+            Small secondary gray
+          </button>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default uk-button-large" type="button">Large default</button>
+          <button class="uk-button uk-button-primary uk-button-large" type="button">Large primary</button>
+          <button class="uk-button uk-button-secondary uk-button-large" type="button">Large secondary</button>
+        </p>
+        <hr class="uk-margin-large" />
+        <h2>Group</h2>
+        <p>
+          Добавляем обертку с классом
+          <code>.uk-button-group</code>
+        </p>
+        <div class="uk-margin">
+          <div class="uk-button-group">
+            <button class="uk-button uk-button-default" type="button">button</button>
+            <button class="uk-button uk-button-default" type="button">button</button>
+            <button class="uk-button uk-button-default uk-active" type="button">button</button>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="uk-button-group">
+            <button class="uk-button uk-button-secondary uk-button-small" type="button">button</button>
+            <button class="uk-button uk-button-secondary uk-button-small" type="button">button</button>
+            <button class="uk-button uk-button-secondary uk-button-small uk-active" type="button">button</button>
+          </div>
+          <div class="uk-button-group">
+            <button class="uk-button uk-button-secondary uk-button-secondary-gray uk-button-small" type="button">
+              button
+            </button>
+            <button class="uk-button uk-button-secondary uk-button-secondary-gray uk-button-small" type="button">
+              button
+            </button>
+            <button
+              class="uk-button uk-button-secondary uk-button-secondary-gray uk-button-small uk-active"
+              type="button">
+              button
+            </button>
+          </div>
+        </div>
+        <hr class="uk-margin-large" />
+        <h2>Button with icon</h2>
+        <p>
+          Для иконок используем компонент
+          <a href="docs//fabrikant-ui/src/components/ui/icon/icon.html">Icon</a>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default" type="button">
+            <span uk-icon="print" class="uk-margin-8-right"></span>
+            Default
+          </button>
+          <button class="uk-button uk-button-primary" type="button">
+            <span uk-icon="print" class="uk-margin-8-right"></span>
+            Primary
+          </button>
+          <button class="uk-button uk-button-secondary" type="button">
+            <span uk-icon="print" class="uk-margin-8-right"></span>
+            Secondary
+          </button>
+        </p>
+        <p uk-margin>
+          <button class="uk-button uk-button-default uk-button-small" type="button">
+            <span uk-icon="print" class="uk-icon-size-16 uk-margin-8-right"></span>
+            Small default
+          </button>
+          <button class="uk-button uk-button-primary uk-button-small" type="button">
+            <span uk-icon="print" class="uk-icon-size-16 uk-margin-8-right"></span>
+            Small primary
+          </button>
+          <button class="uk-button uk-button-secondary uk-button-small" type="button">
+            <span uk-icon="print" class="uk-icon-size-16 uk-margin-8-right"></span>
+            Small secondary
+          </button>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

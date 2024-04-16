@@ -1,0 +1,83 @@
+@mixin hook-text-misc() {
+  .uk-text-weight-200 {
+    font-weight: 200;
+  }
+
+  .uk-text-weight-300 {
+    font-weight: 300;
+  }
+
+  .uk-text-weight-400 {
+    font-weight: 400;
+  }
+
+  .uk-text-weight-500 {
+    font-weight: 500;
+  }
+
+  .uk-text-weight-600 {
+    font-weight: 600;
+  }
+
+  .uk-text-weight-700 {
+    font-weight: 700;
+  }
+
+  .uk-text-weight-800 {
+    font-weight: 800;
+  }
+
+  .uk-text-xsmall {
+    font-size: 10px;
+    line-height: 1.428;
+  }
+
+  .uk-text-xlarge {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .uk-text-truncate-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .uk-text-truncate-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .uk-text-color-m500 {
+    color: var(--color-mystic-500) !important;
+  }
+
+  .uk-text-color-bh500 {
+    color: var(--color-bali-hai-500) !important;
+  }
+
+  .uk-text-color-bh700 {
+    color: var(--color-bali-hai-700) !important;
+  }
+
+  .uk-text-color-ms500 {
+    color: var(--color-mine-shaft-500) !important;
+  }
+
+  .uk-text-color-bh200 {
+    color: var(--color-bali-hai-200) !important;
+  }
+
+  .uk-text-color-ms800a60 {
+    color: var(--color-mine-shaft-800-a-60) !important;
+  }
+
+  .uk-text-color-s700 {
+    color: var(--color-success-700) !important;
+  }
+}

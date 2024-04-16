@@ -1,0 +1,16 @@
+@mixin hook-list-misc() {
+  .uk-list-small > :nth-child(n + 2),
+  .uk-list-small > * > ul {
+    margin-top: 12px;
+  }
+
+  .uk-list-8 > :nth-child(n + 2),
+  .uk-list-8 > * > ul {
+    margin-top: 8px;
+  }
+
+  .uk-list-bullet > ::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6' height='6' fill='%23009DDB'/%3E%3C/svg%3E%0A");
+    background-position: calc(50% - 4px) 50%;
+  }
+}
