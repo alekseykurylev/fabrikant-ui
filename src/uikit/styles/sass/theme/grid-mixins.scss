@@ -99,6 +99,25 @@
   }
 
   @media (min-width: $breakpoint-large) {
+    .uk-grid-64,
+    .uk-grid-column-64 {
+      margin-left: -64px;
+    }
+
+    .uk-grid-64 > *,
+    .uk-grid-column-64 > * {
+      padding-left: 64px;
+    }
+
+    .uk-grid + .uk-grid-64,
+    .uk-grid + .uk-grid-row-64,
+    .uk-grid-64 > .uk-grid-margin,
+    .uk-grid-row-64 > .uk-grid-margin,
+    * + .uk-grid-margin-64 {
+      margin-top: 64px;
+    }
+
+
     .uk-grid-96,
     .uk-grid-column-96 {
       margin-left: -96px;
