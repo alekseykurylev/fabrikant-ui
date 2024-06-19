@@ -1,0 +1,33 @@
+@import '../../uikit/styles/sass/theme/variables';
+
+.uk-service-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  margin-top: 24px;
+
+  @media (min-width: $breakpoint-small) {
+    gap: 16px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 48px;
+  }
+
+  & > li:not(:last-child) > .uk-box {
+    @media (max-width: $breakpoint-small-max) {
+      border-bottom-width: 0;
+    }
+  }
+
+  .uk-box {
+    @media (max-width: $breakpoint-small-max) {
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0;
+      border-left-width: 0;
+      border-right-width: 0;
+    }
+  }
+}
