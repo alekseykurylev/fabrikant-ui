@@ -142,4 +142,35 @@
   .uk-margin-40-right {
     margin-right: 40px !important;
   }
+
+
+  /* XXLarge
+ ========================================================================== */
+
+  .uk-margin-xxlarge { margin-bottom: 32px; }
+  * + .uk-margin-xxlarge { margin-top: 32px !important; }
+
+  .uk-margin-xxlarge-top { margin-top: 32px !important; }
+  .uk-margin-xxlarge-bottom { margin-bottom: 32px !important; }
+  .uk-margin-xxlarge-left { margin-left: 32px !important; }
+  .uk-margin-xxlarge-right { margin-right: 32px !important; }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-margin-xxlarge { margin-bottom: 64px; }
+    * + .uk-margin-xxlarge { margin-top: 64px !important; }
+    .uk-margin-xxlarge-top { margin-top: 64px !important; }
+    .uk-margin-xxlarge-bottom { margin-bottom: 64px !important; }
+    .uk-margin-xxlarge-left { margin-left: 64px !important; }
+    .uk-margin-xxlarge-right { margin-right: 64px !important; }
+  }
+
+
+  @media (min-width: $breakpoint-large) {
+    .uk-margin-xxlarge { margin-bottom: 96px; }
+    * + .uk-margin-xxlarge { margin-top: 96px !important; }
+    .uk-margin-xxlarge-top { margin-top: 96px !important; }
+    .uk-margin-xxlarge-bottom { margin-bottom: 96px !important; }
+    .uk-margin-xxlarge-left { margin-left: 96px !important; }
+    .uk-margin-xxlarge-right { margin-right: 96px !important; }
+  }
 }

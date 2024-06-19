@@ -13,7 +13,7 @@
 - [Главная][home]
 - [Новость][news]
 - [Тарифы][tariffs]
-- [Форма просмотра процедуры][procedure] [in progress]
+- [Услуги][services]
 - [404][404]
 - [500][500]
 
@@ -41,7 +41,6 @@
 [getuikit]: https://github.com/uikit/uikit
 [home]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/home.html
 [news]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/news.html
-[procedure]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/procedure.html
 [404]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/404.html
 [500]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/500.html
 [header]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/header.html
@@ -62,3 +61,4 @@
 [icon]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/icon.html
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/box.html
 [tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/tariffs/tariffs-1.html
+[services]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/index.html
