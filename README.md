@@ -12,7 +12,7 @@
 
 - [Главная][home]
 - [Новость][news]
-- [Тарифы][tariffs] [in progress]
+- [Тарифы][tariffs]
 - [Форма просмотра процедуры][procedure] [in progress]
 - [404][404]
 - [500][500]
