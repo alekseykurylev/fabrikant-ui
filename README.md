@@ -14,6 +14,7 @@
 - [Новость][news]
 - [Тарифы][tariffs]
 - [Услуги][services]
+  - [Страхование][insurance]
 - [404][404]
 - [500][500]
 
@@ -62,3 +63,4 @@
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/box.html
 [tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/tariffs/tariffs-1.html
 [services]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/index.html
+[insurance]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/insurance.html
