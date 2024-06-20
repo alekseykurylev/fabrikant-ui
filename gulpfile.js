@@ -5,9 +5,9 @@ import sass from 'gulp-dart-sass';
 import rename from 'gulp-rename';
 import postcss from 'gulp-postcss';
 import terser from 'gulp-terser';
-import minmax from 'postcss-media-minmax';
 import csso from 'postcss-csso';
 import browser from 'browser-sync';
+
 
 // UIkit Style
 
@@ -61,6 +61,19 @@ export const componentsScript = () => {
     .pipe(browser.stream());
 };
 
+// All Style
+
+export const allStyle = () => {
+  return gulp
+    .src('src/index.scss')
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([csso]))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browser.stream());
+};
+
 // Watcher
 
 export const watcher = () => {
@@ -69,6 +82,8 @@ export const watcher = () => {
 
   gulp.watch('src/**/*.scss', gulp.series(componentsStyle));
   gulp.watch('src/**/*.js', gulp.series(componentsScript));
+
+  gulp.watch('src/**/*.scss', gulp.series(allStyle));
 
   gulp.watch('src/**/*.scss').on('change', browser.reload);
   gulp.watch('src/**/*.js').on('change', browser.reload);
@@ -89,4 +104,4 @@ export const server = (done) => {
   done();
 };
 
-export default gulp.series(server, uikitScript, uikitStyle, componentsStyle, componentsScript, watcher);
+export default gulp.series(server, uikitScript, uikitStyle, componentsStyle, componentsScript, allStyle, watcher);
