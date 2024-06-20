@@ -9,8 +9,9 @@
 }
 
 @mixin hook-button-large() {
-  //font-family: Inter, sans-serif;
-
+  @media (min-width: $breakpoint-medium) {
+    font-size: 28px;
+  }
 }
 
 @mixin hook-button-default() {
