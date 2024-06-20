@@ -61,6 +61,12 @@
   &.uk-box-m40 {
     background-color: var(--color-mystic-40);
   }
+
+  &.uk-box-ab500 {
+    background-color: var(--color-astronaut-blue-500);
+    border-color: var(--color-astronaut-blue-500);
+
+  }
 }
 
 @media (min-width: $breakpoint-small) {
