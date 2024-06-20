@@ -1,4 +1,3 @@
-// Inter
 @font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-Thin.woff2') format('woff2');
@@ -69,8 +68,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-// Exo 2
 
 @font-face {
   font-family: 'Exo 2';
