@@ -22,6 +22,12 @@
   }
 }
 
+.uk-step-map .uk-step-map-item {
+  @media (min-width: $breakpoint-medium) {
+    padding: 0 24px;
+  }
+}
+
 .uk-step-map .uk-step-map-number {
   color: #fff;
   background-color: var(--color-astronaut-blue-500);
