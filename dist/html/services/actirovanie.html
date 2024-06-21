@@ -315,8 +315,8 @@
           <h2 class="uk-h2-opt">Оставить заявку</h2>
           <div class="uk-box uk-box-body uk-box-m40 uk-box-form uk-margin-large-top">
             <form>
-              <div class="uk-grid-row-medium uk-child-width-1-2@m" uk-grid>
-                <div>
+              <div class="uk-grid-row-medium" uk-grid>
+                <div class="uk-width-1-1">
                   <label class="uk-form-label" for="form-insurance-person">
                     Контактное лицо
                     <span class="uk-text-danger">*</span>
@@ -325,7 +325,7 @@
                     <input id="form-insurance-person" class="uk-input" type="text" aria-label="Контактное лицо" />
                   </div>
                 </div>
-                <div>
+                <div class="uk-width-1-2@m">
                   <label class="uk-form-label" for="form-insurance-phone">
                     Телефон
                     <span class="uk-text-danger">*</span>
@@ -335,8 +335,60 @@
                       id="form-insurance-phone"
                       class="uk-input"
                       placeholder="+7 (___) ___-__-__"
-                      type="text"
+                      type="tel"
                       aria-label="Телефон" />
+                  </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                  <label class="uk-form-label" for="form-insurance-email">
+                    Электронная почта
+                    <span class="uk-text-danger">*</span>
+                  </label>
+                  <div class="uk-form-controls uk-margin-8-top">
+                    <input
+                      id="form-insurance-email"
+                      class="uk-input"
+                      type="email"
+                      aria-label="Электронная почта" />
+                  </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                  <label class="uk-form-label" for="form-insurance-org">
+                    Наименование организации
+                    <span class="uk-text-danger">*</span>
+                  </label>
+                  <div class="uk-form-controls uk-margin-8-top">
+                    <input
+                      id="form-insurance-org"
+                      class="uk-input"
+                      type="text"
+                      aria-label="Наименование организации" />
+                  </div>
+                </div>
+                <div class="uk-width-1-4@m uk-width-1-2@s">
+                  <label class="uk-form-label" for="form-insurance-inn">
+                    ИНН
+                    <span class="uk-text-danger">*</span>
+                  </label>
+                  <div class="uk-form-controls uk-margin-8-top">
+                    <input
+                      id="form-insurance-inn"
+                      class="uk-input"
+                      type="text"
+                      aria-label="ИНН" />
+                  </div>
+                </div>
+                <div class="uk-width-1-4@m uk-width-1-2@s">
+                  <label class="uk-form-label" for="form-insurance-kpp">
+                    КПП
+                    <span class="uk-text-danger">*</span>
+                  </label>
+                  <div class="uk-form-controls uk-margin-8-top">
+                    <input
+                      id="form-insurance-kpp"
+                      class="uk-input"
+                      type="text"
+                      aria-label="КПП" />
                   </div>
                 </div>
               </div>
