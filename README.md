@@ -13,10 +13,11 @@
 
 - [Тарифы][tariffs]
 - [Услуги][services]
-  - [Страхование][insurance]
-  - [Банковская гарантия][bank-guarantee]
-  - [Электронное актирование в ЕИС][actirovanie]
+  - [Страхование][strahovanie]
+  - [Банковская гарантия][bankovskaya-garantiya]
+  - [Электронное актирование в ЕИС][aktirovanie]
   - [Выпуск МЧД][mchd]
+  - [Участие в торгах по поручению клиента][uchastie-torgah]
 
 ## Закрытая часть:
 
@@ -69,7 +70,8 @@
 [box]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/box.html
 [tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/tariffs/tariffs-1.html
 [services]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/index.html
-[insurance]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/insurance.html
-[bank-guarantee]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/bank-guarantee.html
-[actirovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/actirovanie.html
+[strahovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/strahovanie.html
+[bankovskaya-garantiya]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/bankovskaya-garantiya.html
+[aktirovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/aktirovanie.html
 [mchd]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/mchd.html
+[uchastie-torgah]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/uchastie-torgah.html

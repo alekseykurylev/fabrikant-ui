@@ -136,3 +136,9 @@
     }
   }
 }
+
+.uk-box-banner-370 {
+  @media (min-width: $breakpoint-medium) {
+    height: 370px;
+  }
+}

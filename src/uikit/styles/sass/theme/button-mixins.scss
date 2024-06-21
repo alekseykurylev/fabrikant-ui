@@ -9,8 +9,10 @@
 }
 
 @mixin hook-button-large() {
+
   @media (min-width: $breakpoint-medium) {
     font-size: 28px;
+    padding: 0 32px;
   }
 }
 
