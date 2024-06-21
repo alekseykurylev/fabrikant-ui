@@ -8,13 +8,17 @@
 
 Дизайн система в Figma: [44-ФЗ][44FZ], [Открытая часть][open-part]
 
-## Pages:
+## Открытая часть:
 
-- [Главная][home]
-- [Новость][news]
 - [Тарифы][tariffs]
 - [Услуги][services]
   - [Страхование][insurance]
+  - [Банковская гарантия][bank-guarantee]
+
+## Закрытая часть:
+
+- [Главная][home]
+- [Новость][news]
 - [404][404]
 - [500][500]
 
@@ -64,3 +68,4 @@
 [tariffs]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/tariffs/tariffs-1.html
 [services]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/index.html
 [insurance]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/insurance.html
+[bank-guarantee]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/bank-guarantee.html
