@@ -14,6 +14,7 @@
 - [Услуги][services]
   - [Страхование][insurance]
   - [Банковская гарантия][bank-guarantee]
+  - [Электронное актирование в ЕИС][actirovanie]
 
 ## Закрытая часть:
 
@@ -24,7 +25,6 @@
 
 ## Components:
 
-- [Extended Search][extended-search] [in progress]
 - [Footer][footer]
 - [Header][header]
 - [Navtab][navtab]
@@ -69,3 +69,4 @@
 [services]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/index.html
 [insurance]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/insurance.html
 [bank-guarantee]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/bank-guarantee.html
+[actirovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/actirovanie.html
