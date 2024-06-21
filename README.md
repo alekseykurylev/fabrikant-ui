@@ -10,11 +10,13 @@
 
 ## Открытая часть:
 
+
 - [Тарифы][tariffs]
 - [Услуги][services]
   - [Страхование][insurance]
   - [Банковская гарантия][bank-guarantee]
   - [Электронное актирование в ЕИС][actirovanie]
+  - [Выпуск МЧД][mchd]
 
 ## Закрытая часть:
 
@@ -70,3 +72,4 @@
 [insurance]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/insurance.html
 [bank-guarantee]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/bank-guarantee.html
 [actirovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/actirovanie.html
+[mchd]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/mchd.html
