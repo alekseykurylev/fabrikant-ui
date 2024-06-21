@@ -124,10 +124,15 @@
     border-radius: 0;
     margin-left: -24px;
     margin-right: -24px;
-    margin-top: -32px;
   }
 
   &.uk-box-m40 {
     border-color: var(--color-mystic-40);
+  }
+
+  &.uk-box-info-collapse {
+    @media (max-width: $breakpoint-small-max) {
+      margin-top: -32px;
+    }
   }
 }
