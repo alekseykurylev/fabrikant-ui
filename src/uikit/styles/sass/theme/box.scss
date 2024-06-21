@@ -104,3 +104,32 @@
     padding: 48px;
   }
 }
+
+.uk-box-bold-border {
+  border-width: 32px;
+  border-color: var(--color-mystic-40);
+
+  @media (max-width: $breakpoint-small-max) {
+    border-radius: 0;
+    border-width: 16px;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.uk-box-info {
+  @media (max-width: $breakpoint-small-max) {
+    border-radius: 0;
+    margin-left: -24px;
+    margin-right: -24px;
+
+    // FIXME
+    margin-top: -32px;
+  }
+
+  &.uk-box-m40 {
+    border-color: var(--color-mystic-40);
+  }
+}
