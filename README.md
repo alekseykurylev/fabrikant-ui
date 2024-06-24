@@ -19,6 +19,7 @@
   - [Выпуск МЧД][mchd]
   - [Участие в торгах по поручению клиента][uchastie-torgah]
   - [Электронный документооборот][edo]
+  - [Регистрация в ЕИС ][registraciya-eis]
 
 ## Закрытая часть:
 
@@ -77,3 +78,4 @@
 [mchd]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/mchd.html
 [uchastie-torgah]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/uchastie-torgah.html
 [edo]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/edo.html
+[registraciya-eis]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/registraciya-eis.html 

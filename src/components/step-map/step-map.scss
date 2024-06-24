@@ -27,21 +27,3 @@
     padding: 0 24px;
   }
 }
-
-.uk-step-map .uk-step-map-number {
-  color: #fff;
-  background-color: var(--color-astronaut-blue-500);
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-
-  @media (min-width: $breakpoint-medium) {
-    width: 64px;
-    height: 64px;
-    font-size: 26px;
-  }
-}

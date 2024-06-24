@@ -67,25 +67,20 @@
     font-size: 18px;
     line-height: 30px;
   }
+}
 
-  & > div {
-    margin: 0;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 500;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9999px;
-    background-color: var(--color-astronaut-blue-500);
-    color: #fff;
-    flex-shrink: 0;
+.uk-registration-eis-map {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    @media (min-width: $breakpoint-medium) {
-      width: 32px;
-      height: 32px;
+  & > li {
+    @media (max-width: $breakpoint-small-max) {
+      padding: 0;
+      border: 0;
     }
   }
 }
