@@ -18,6 +18,7 @@
   - [Электронное актирование в ЕИС][aktirovanie]
   - [Выпуск МЧД][mchd]
   - [Участие в торгах по поручению клиента][uchastie-torgah]
+  - [Электронный документооборот][edo]
 
 ## Закрытая часть:
 
@@ -75,3 +76,4 @@
 [aktirovanie]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/aktirovanie.html
 [mchd]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/mchd.html
 [uchastie-torgah]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/uchastie-torgah.html
+[edo]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/edo.html
