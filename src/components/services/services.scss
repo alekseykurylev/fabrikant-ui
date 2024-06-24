@@ -31,3 +31,61 @@
     }
   }
 }
+
+.uk-support-tender-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  column-gap: 64px;
+  row-gap: 8px;
+  grid-auto-flow: column;
+
+  @media (min-width: $breakpoint-medium) {
+    row-gap: 24px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.uk-support-tender-list > li {
+  display: flex;
+  gap: 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    gap: 32px;
+
+    &:nth-child(2) {
+      grid-row: span 2;
+    }
+  }
+
+  & > p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  & > div {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: var(--color-astronaut-blue-500);
+    color: #fff;
+    flex-shrink: 0;
+
+    @media (min-width: $breakpoint-medium) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
