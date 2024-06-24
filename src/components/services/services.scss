@@ -77,10 +77,18 @@
   flex-direction: column;
   gap: 16px;
 
-  & > li {
+  & .uk-box {
+    display: flex;
+    gap: 32px;
+
     @media (max-width: $breakpoint-small-max) {
       padding: 0;
       border: 0;
+      gap: 16px;
+    }
+
+    & .uk-icon {
+      align-self: center;
     }
   }
 }

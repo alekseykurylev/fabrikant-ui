@@ -14,7 +14,7 @@
   color: #fff;
   flex-shrink: 0;
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-small) {
     width: 32px;
     height: 32px;
   }
