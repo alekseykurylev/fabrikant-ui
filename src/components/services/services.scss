@@ -92,3 +92,25 @@
     }
   }
 }
+
+.uk-ecp-work-map {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & .uk-box {
+    display: flex;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-small-max) {
+      gap: 16px;
+    }
+
+    @media (min-width: $breakpoint-small) {
+      padding-right: 96px;
+    }
+  }
+}
