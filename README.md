@@ -20,7 +20,8 @@
   - [Участие в торгах по поручению клиента][uchastie-torgah]
   - [Электронный документооборот (ЭДО)][edo]
   - [Регистрация в ЕИС][registraciya-eis]
-  - [Ускоренная аккредитация][akkreditaciya] 
+  - [Ускоренная аккредитация][akkreditaciya]
+  - [Электронная подпись / Как работать][ecp-2]
 
 ## Закрытая часть:
 
@@ -80,4 +81,5 @@
 [uchastie-torgah]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/uchastie-torgah.html
 [edo]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/edo.html
 [registraciya-eis]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/registraciya-eis.html
-[akkreditaciya]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/akkreditaciya.html 
+[akkreditaciya]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/akkreditaciya.html
+[ecp-2]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/ecp-2.html 
