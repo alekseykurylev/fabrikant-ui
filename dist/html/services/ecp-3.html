@@ -261,187 +261,169 @@
         </div>
 
         <div class="uk-margin-xxlarge-top">
-          <h2 class="uk-h2-opt uk-margin-large-bottom">Как работать с ЭП</h2>
+          <h2 class="uk-h2-opt uk-margin-large-bottom">Ошибки при работе с ЭП</h2>
           <div class="uk-grid-96" uk-grid>
-            <div class="uk-width-2-3@l">
-              <ul class="uk-list">
-                <li>
-                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
-                    <div class="uk-grid-row-8" uk-grid>
-                      <div class="uk-width-auto@s uk-width-1-1">
-                        <div class="uk-number-step">1</div>
-                      </div>
-                      <div class="uk-width-expand@s uk-width-1-1">
-                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Получите электронную подпись (ЭП)</h3>
-                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">1.1</div>
-                              <div class="uk-width-expand">
-                                <button class="uk-button uk-button-default uk-button-small"><span class="uk-text-weight-500">Получить ЭП</span></button>
-                                <div class="uk-margin-4-top">в рекомендованном удостоверяющем центре или других удостоверяющих центрах.</div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">1.2</div>
-                              <div class="uk-width-expand"> Установите программное обеспечение для работы с ЭП в соответствии с инструкциями УЦ.</div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="uk-width-expand@m">
+              <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
+                <button class="uk-button uk-button-text uk-width-1-1" type="button">Ошибка №1 Не удается построить цепочку сертификатов</button>
+                <ul class="uk-nav" uk-drop="mode: click; stretch: x">
+                  <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
+                  <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
+                  <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
+                  <li><a href="#04">Ошибка №4 Не валиден. Сообщение об ошибке...</a></li>
+                  <li><a href="#05">Ошибка №5 Ваш сертификат прошёл проверку...</a></li>
+                  <li><a href="#06">Ошибка №6. Вставьте ключевой носитель</a></li>
+                  <li><a href="#07">Ошибка №7. Ошибка исполнения функции</a></li>
+                  <li><a href="#08">Ошибка №8. Надпись 'undefined'</a></li>
+                  <li><a href="#09">Ошибка №9. Ошибка алгоритма</a></li>
+                  <li><a href="#10">Ошибка №10. Не удается найти указанный файл</a></li>
+                  <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
+                </ul>
+              </div>
+              <ul class="uk-grid-96 uk-flex-column" uk-grid>
+                <li id="01">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №1. "Не удается построить цепочку сертификатов", "Произошла внутренняя ошибка в цепочке сертификатов" или "Ошибка при проверке сертификата, возможно один из цепочки сертификатов недействителен"</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">Не установлен корневой сертификат вашего Удостоверяющего Центра (УЦ).</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">Установить корневой сертификат Удостоверяющего центра.<br class="uk-visible@s" /> Подробную инструкцию можете скачать
+                      <a href="#">здесь</a> </p>
                   </div>
                 </li>
-                <li>
-                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
-                    <div class="uk-grid-row-8" uk-grid>
-                      <div class="uk-width-auto@s uk-width-1-1">
-                        <div class="uk-number-step">2</div>
-                      </div>
-                      <div class="uk-width-expand@s uk-width-1-1">
-                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Установите специализированное ПО для работы на ЭТП Фабрикант</h3>
-                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">2.1</div>
-                              <div class="uk-width-expand">
-                                <div class="uk-margin-4-bottom">Скачайте специализированное ПО для работы на ЭТП Фабрикант</div>
-                                <button class="uk-button uk-button-default uk-button-small">
-                                  <span uk-icon="icon: download; ratio: .67"></span>
-                                  <span class="uk-text-weight-500 uk-margin-8-left">Скачать специализированное ПО</span>
-                                </button>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">2.2</div>
-                              <div class="uk-width-expand">Запустите скачанный файл. После его установки браузер автоматически будет настроен для работы на ЭТП Фабрикант. </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">2.3</div>
-                              <div class="uk-width-expand">После завершения установки перезагрузите компьютер.</div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                <li id="02">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №2.Failed to create CPSigner</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
                   </div>
                 </li>
-                <li>
-                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
-                    <div class="uk-grid-row-8" uk-grid>
-                      <div class="uk-width-auto@s uk-width-1-1">
-                        <div class="uk-number-step">3</div>
-                      </div>
-                      <div class="uk-width-expand@s uk-width-1-1">
-                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Установите специализированное ПО для работы на ЭТП Фабрикант</h3>
-                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">3.1</div>
-                              <div class="uk-width-expand">Вставьте ключ в USB-порт компьютера</div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">3.2</div>
-                              <div class="uk-width-expand">Выберите нужный сертификат из списка ниже</div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">3.3</div>
-                              <div class="uk-width-expand">
-                                <div class="uk-margin-12-bottom">Нажмите «Проверить ЭП».</div>
-                                <select class="uk-select uk-margin-8-bottom" aria-label="Select">
-                                  <option>Выберите сертификат из списка</option>
-                                  <option>Option 02</option>
-                                </select>
-                                <button class="uk-button uk-button-default uk-button-small">
-                                  <span class="uk-text-weight-500">Проверить ЭП</span>
-                                </button>
-                                <div class="uk-margin-12-top">Для корректной проверки работоспособности ЭП требуется установленный плагин КриптоПро ЭЦП Browser. </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                <li id="03">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №3. Ошибка при открытии хранилища. Объект не поддерживает средство или метод "Open"</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
                   </div>
                 </li>
-                <li>
-                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
-                    <div class="uk-grid-row-8" uk-grid>
-                      <div class="uk-width-auto@s uk-width-1-1">
-                        <div class="uk-number-step">4</div>
-                      </div>
-                      <div class="uk-width-expand@s uk-width-1-1">
-                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Загрузите сертификат в Личном кабинете в раздел<br class="uk-visible@s"/> «Сертификаты ЭП»</h3>
-                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">4.1</div>
-                              <div class="uk-width-expand">
-                                <a href="#">Войдите</a> на ЭТП по логину и паролю
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">4.2</div>
-                              <div class="uk-width-expand">
-                                Загрузите сертификат в раздел «<a href="#">Сертификаты ЭП</a>» Личного кабинета (<a href="#">Инструкция</a>).
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">4.3</div>
-                              <div class="uk-width-expand">
-                                Если статус сертификата «Требуется активация», активируйте сертификат, оформив услугу «<a href="#">Активация ЭП</a>» , либо обратитесь к оператору площадки
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                              <div class="uk-width-auto">4.4</div>
-                              <div class="uk-width-expand">
-                                <div class="uk-margin-4-bottom">Дождитесь положительного результата проверки сертификата ЭП оператором ЭТП (максимальный срок проверки - 3 рабочих дня).</div>
-                                <div>После загрузки сертификата ЭП в Личном кабинете и допуска его оператором вы сможете:</div>
-                                <ul class="uk-margin-remove uk-text-xlarge">
-                                  <li>входить на ЭТП по ЭП без ввода логина и пароля;</li>
-                                  <li>использовать ЭП для получения и продления аккредитации для работы в секциях «Торги по банкротству», «Закупки Росатом» и «Закупки по 223-ФЗ».</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                <li id="04">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №4. "Не удалось проверить статус сертификата." или "Не валиден. Состояние отозванности сертификата или одного из сертификатов в цепочке сертификатов неизвестно"</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="05">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №5. Ваш сертификат прошёл проверку и может использоваться в любой секции на Торговом портале «Фабрикант», кроме секции Росатом</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="06">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №6. "Вставьте ключевой носитель (несоответствие ключевого носителя и выбранного сертификата)".</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="07">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №7. Ошибка исполнения функции.</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="08">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №8. Надпись "undefined"</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="09">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №9. Ошибка алгоритма.</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="10">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №10. Не удается найти указанный файл.</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                </li>
+                <li id="11">
+                  <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</h2>
+                  <div>
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
+                    <p class="uk-margin-remove">2222</p>
+                  </div>
+                  <div class="uk-margin-small-top">
+                    <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
+                    <p class="uk-margin-remove">2222</p>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="uk-width-1-3@l">
-              <div class="uk-box uk-box-body uk-box-32 uk-box-info uk-border-without uk-box-m40">
-                <span uk-icon="icon: circle-question-96" class="uk-text-primary"></span>
-                <h3 class="uk-h3-opt uk-margin-medium">Дополнительная информация</h3>
-                <p class="uk-text-xlarge uk-margin-medium"><strong>По истечении срока действия вашего сертификата</strong> повторите пункты 1, 3 и 4 данного раздела. Если у вас возникли затруднения при работе с ЭП, вы можете обратиться в службу технической поддержки ЭТП. Установите программу <a href="#">Aspia Host</a>, чтобы сотрудник техподдержки помог вам настроить ваш компьютер удаленно. Инструкцию по установке можно скачать <a href="#">по ссылке</a>.</p>
-                <p class="uk-text-xlarge uk-margin-medium"><strong>Установка данного ПО требует прав Администратора.</strong> Если в вашей организации установлены правила, ограничивающие самостоятельную установку Программного обеспечения, обратитесь к своему Системному Администратору.</p>
-                <p class="uk-text-xlarge uk-margin-remove">Минимальные системные требования:</p>
-                <ul class="uk-margin-remove uk-text-xlarge">
-                  <li>OC: Windows 7 и выше;</li>
-                  <li>ОЗУ: 2 Гб;</li>
-                  <li>Процессор: 1,8 ГГц Intel Core 2 Duo, AMD Athlon 64 Dual-Core 4000+ или аналогичный</li>
-                  <li>Сетевое подключение: Стабильный доступ к сети Интернет с минимальной полосой пропускания 20 мб\с. Доступность портов TCP 8050, 8060, 8070.</li>
+            <aside class="uk-width-auto@m uk-flex-first@m uk-visible@m">
+              <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
+                <ul
+                  class="uk-menubar uk-list uk-list-8 uk-margin-medium-bottom"
+                  uk-sticky="end: !aside; offset: 10">
+                  <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
+                  <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
+                  <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
+                  <li><a href="#04">Ошибка №4 Не валиден. Сообщение об ошибке...</a></li>
+                  <li><a href="#05">Ошибка №5 Ваш сертификат прошёл проверку...</a></li>
+                  <li><a href="#06">Ошибка №6. Вставьте ключевой носитель</a></li>
+                  <li><a href="#07">Ошибка №7. Ошибка исполнения функции</a></li>
+                  <li><a href="#08">Ошибка №8. Надпись 'undefined'</a></li>
+                  <li><a href="#09">Ошибка №9. Ошибка алгоритма</a></li>
+                  <li><a href="#10">Ошибка №10. Не удается найти указанный файл</a></li>
+                  <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
                 </ul>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
 
@@ -816,5 +798,27 @@
         </div>
       </section>
     </footer>
+
+    <script>
+      const itemsTab = document.querySelectorAll('.uk-droptab > ul > li');
+      const buttonTab = document.querySelector('.uk-droptab > button');
+
+      function setActiveDroptab() {
+        itemsTab.forEach((item) => {
+          console.log(item)
+          if (item.classList.contains('uk-active')) {
+            buttonTab.innerText = item.innerText;
+            UIkit.drop('.uk-droptab > ul').hide(false);
+          }
+        });
+      }
+
+      UIkit.util.on('.uk-switcher', 'show', () => {
+        console.log(123)
+        setActiveDroptab();
+      });
+
+      setActiveDroptab();
+    </script>
   </body>
 </html>
