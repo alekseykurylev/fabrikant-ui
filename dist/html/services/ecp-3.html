@@ -232,7 +232,7 @@
       <div class="uk-container uk-container-default">
         <h1 class="uk-h1-opt">Электронная подпись</h1>
 
-        <ul class="uk-menubar uk-grid-row-8 uk-margin-large-top" uk-grid>
+        <ul class="uk-menubar uk-grid-row-8 uk-margin-large-top uk-child-width-auto@s uk-child-width-1-1" uk-grid>
           <li><a href="./ecp-1.html">Как получить</a></li>
           <li><a href="./ecp-2.html">Как работать</a></li>
           <li class="uk-active"><a href="./ecp-3.html">Ошибки при работе</a></li>
@@ -263,10 +263,12 @@
         <div class="uk-margin-xxlarge-top">
           <h2 class="uk-h2-opt uk-margin-large-bottom">Ошибки при работе с ЭП</h2>
           <div class="uk-grid-96" uk-grid>
-            <div class="uk-width-expand@m">
-              <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
-                <button class="uk-button uk-button-text uk-width-1-1" type="button">Ошибка №1 Не удается построить цепочку сертификатов</button>
-                <ul class="uk-nav" uk-drop="mode: click; stretch: x">
+            <aside class="uk-width-auto@m uk-visible@m">
+              <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
+                <ul
+                  class="uk-menubar uk-list uk-list-8 uk-margin-medium-bottom"
+                  uk-sticky="end: !aside; offset: 10"
+                  uk-scrollspy-nav="closest: li; scroll: true; offset: 20">
                   <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
                   <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
                   <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
@@ -280,7 +282,25 @@
                   <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
                 </ul>
               </div>
-              <ul class="uk-grid-96 uk-flex-column" uk-grid>
+            </aside>
+            <div class="uk-width-expand@m">
+              <div class="uk-hidden@m uk-margin-xlarge">
+                <button class="uk-button uk-button-drop uk-width-1-1" uk-sticky="end: !.uk-grid-96" type="button"><span class="uk-width-expand">Ошибка №1 Не удается построить цепочку сертификатов</span> <span uk-drop-parent-icon></span></button>
+                <ul class="uk-nav" uk-drop="mode: click; stretch: x" uk-scrollspy-nav="closest: li; scroll: true; offset: 20">
+                  <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
+                  <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
+                  <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
+                  <li><a href="#04">Ошибка №4 Не валиден. Сообщение об ошибке...</a></li>
+                  <li><a href="#05">Ошибка №5 Ваш сертификат прошёл проверку...</a></li>
+                  <li><a href="#06">Ошибка №6. Вставьте ключевой носитель</a></li>
+                  <li><a href="#07">Ошибка №7. Ошибка исполнения функции</a></li>
+                  <li><a href="#08">Ошибка №8. Надпись 'undefined'</a></li>
+                  <li><a href="#09">Ошибка №9. Ошибка алгоритма</a></li>
+                  <li><a href="#10">Ошибка №10. Не удается найти указанный файл</a></li>
+                  <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
+                </ul>
+              </div>
+              <ul class="uk-grid-96 uk-flex-column" uk-grid >
                 <li id="01">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №1. "Не удается построить цепочку сертификатов", "Произошла внутренняя ошибка в цепочке сертификатов" или "Ошибка при проверке сертификата, возможно один из цепочки сертификатов недействителен"</h2>
                   <div>
@@ -405,25 +425,6 @@
                 </li>
               </ul>
             </div>
-            <aside class="uk-width-auto@m uk-flex-first@m uk-visible@m">
-              <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
-                <ul
-                  class="uk-menubar uk-list uk-list-8 uk-margin-medium-bottom"
-                  uk-sticky="end: !aside; offset: 10">
-                  <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
-                  <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
-                  <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
-                  <li><a href="#04">Ошибка №4 Не валиден. Сообщение об ошибке...</a></li>
-                  <li><a href="#05">Ошибка №5 Ваш сертификат прошёл проверку...</a></li>
-                  <li><a href="#06">Ошибка №6. Вставьте ключевой носитель</a></li>
-                  <li><a href="#07">Ошибка №7. Ошибка исполнения функции</a></li>
-                  <li><a href="#08">Ошибка №8. Надпись 'undefined'</a></li>
-                  <li><a href="#09">Ошибка №9. Ошибка алгоритма</a></li>
-                  <li><a href="#10">Ошибка №10. Не удается найти указанный файл</a></li>
-                  <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
-                </ul>
-              </div>
-            </aside>
           </div>
         </div>
 
@@ -800,25 +801,14 @@
     </footer>
 
     <script>
-      const itemsTab = document.querySelectorAll('.uk-droptab > ul > li');
-      const buttonTab = document.querySelector('.uk-droptab > button');
+      const itemsDrop = document.querySelectorAll('.uk-nav.uk-drop > li > a');
+      const buttonDrop = document.querySelector('.uk-button-drop > .uk-width-expand');
 
-      function setActiveDroptab() {
-        itemsTab.forEach((item) => {
-          console.log(item)
-          if (item.classList.contains('uk-active')) {
-            buttonTab.innerText = item.innerText;
-            UIkit.drop('.uk-droptab > ul').hide(false);
-          }
+      itemsDrop.forEach((elem) => {
+        elem.addEventListener("click", () => {
+          buttonDrop.innerText = elem.innerText
         });
-      }
-
-      UIkit.util.on('.uk-switcher', 'show', () => {
-        console.log(123)
-        setActiveDroptab();
       });
-
-      setActiveDroptab();
     </script>
   </body>
 </html>

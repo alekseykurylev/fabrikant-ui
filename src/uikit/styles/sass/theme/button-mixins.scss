@@ -217,4 +217,21 @@
     padding: 0 22px;
     line-height: 38px;
   }
+
+  .uk-button-drop {
+    padding: 15px 0 15px 0;
+    text-align: left;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--color-cerulean-500);
+
+    & > .uk-icon {
+      flex-shrink: 0;
+      color: var(--color-cerulean-500);
+    }
+  }
 }
