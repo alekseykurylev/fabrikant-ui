@@ -232,7 +232,7 @@
       <div class="uk-container uk-container-default">
         <h1 class="uk-h1-opt">Электронная подпись</h1>
 
-        <ul class="uk-menubar uk-grid-row-8 uk-margin-large-top" uk-grid>
+        <ul class="uk-menubar uk-grid-row-8 uk-margin-large-top uk-child-width-auto@s uk-child-width-1-1" uk-grid>
           <li><a href="./ecp-1.html">Как получить</a></li>
           <li><a href="./ecp-2.html">Как работать</a></li>
           <li class="uk-active"><a href="./ecp-3.html">Ошибки при работе</a></li>
@@ -263,10 +263,30 @@
         <div class="uk-margin-xxlarge-top">
           <h2 class="uk-h2-opt uk-margin-large-bottom">Ошибки при работе с ЭП</h2>
           <div class="uk-grid-96" uk-grid>
+            <aside class="uk-width-auto@m uk-visible@m">
+              <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
+                <ul
+                  class="uk-menubar uk-list uk-list-8 uk-margin-medium-bottom"
+                  uk-sticky="end: !aside; offset: 10"
+                  uk-scrollspy-nav="closest: li; scroll: true; offset: 20">
+                  <li><a href="#01">Ошибка №1<br/> Не удается построить цепочку сертификатов</a></li>
+                  <li><a href="#02">Ошибка №2<br/> Failed to create CPSigner</a></li>
+                  <li><a href="#03">Ошибка №3<br/> Ошибка при открытии хранилища...</a></li>
+                  <li><a href="#04">Ошибка №4<br/> Не валиден. Сообщение об ошибке...</a></li>
+                  <li><a href="#05">Ошибка №5<br/> Ваш сертификат прошёл проверку...</a></li>
+                  <li><a href="#06">Ошибка №6<br/> Вставьте ключевой носитель</a></li>
+                  <li><a href="#07">Ошибка №7<br/> Ошибка исполнения функции</a></li>
+                  <li><a href="#08">Ошибка №8<br/> Надпись 'undefined'</a></li>
+                  <li><a href="#09">Ошибка №9<br/> Ошибка алгоритма</a></li>
+                  <li><a href="#10">Ошибка №10<br/> Не удается найти указанный файл</a></li>
+                  <li><a href="#11">Ошибка №11<br/> Объект не поддерживает свойство или метод "SetHashValue".</a></li>
+                </ul>
+              </div>
+            </aside>
             <div class="uk-width-expand@m">
-              <div class="uk-droptab uk-hidden@m uk-margin-xlarge">
-                <button class="uk-button uk-button-text uk-width-1-1" type="button">Ошибка №1 Не удается построить цепочку сертификатов</button>
-                <ul class="uk-nav" uk-drop="mode: click; stretch: x">
+              <div class="uk-hidden@m uk-margin-xlarge">
+                <button class="uk-button uk-button-drop uk-width-1-1" uk-sticky="end: !.uk-grid-96" type="button"><span class="uk-width-expand">Ошибка №1 Не удается построить цепочку сертификатов</span> <span uk-drop-parent-icon></span></button>
+                <ul class="uk-nav" uk-drop="mode: click; stretch: x" uk-scrollspy-nav="closest: li; scroll: true; offset: 20">
                   <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
                   <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
                   <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
@@ -280,7 +300,7 @@
                   <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
                 </ul>
               </div>
-              <ul class="uk-grid-96 uk-flex-column" uk-grid>
+              <ul class="uk-grid-96 uk-flex-column" uk-grid >
                 <li id="01">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №1. "Не удается построить цепочку сертификатов", "Произошла внутренняя ошибка в цепочке сертификатов" или "Ошибка при проверке сертификата, возможно один из цепочки сертификатов недействителен"</h2>
                   <div>
@@ -289,141 +309,145 @@
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">Установить корневой сертификат Удостоверяющего центра.<br class="uk-visible@s" /> Подробную инструкцию можете скачать
-                      <a href="#">здесь</a> </p>
+                    <p class="uk-margin-remove">Установить корневой сертификат Удостоверяющего центра.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_1.docx" target="_blank">здесь</a></p>
                   </div>
                 </li>
                 <li id="02">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №2.Failed to create CPSigner</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Не установлено дополнительное ПО с сайта Фабрикант;</p>
+                    <p class="uk-margin-remove">2) Некорректно работает библиотека КриптоПРО Cadescom.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Установить Специализированное ПО с Портала Фабрикант;</p>
+                    <p class="uk-margin-remove">2) Переустановить КриптоПРО Cadescom.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_2.docx" target="_blank">здесь</a></p>
                   </div>
                 </li>
                 <li id="03">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №3. Ошибка при открытии хранилища. Объект не поддерживает средство или метод "Open"</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Не установлено дополнительное ПО;</p>
+                    <p class="uk-margin-remove">2) Не запущены дополнительные надстройки в браузере. </p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Установить Специализированное ПО с Портала Фабрикант;</p>
+                    <p class="uk-margin-remove">2) Запустить всплывающие надстройки браузера.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_3.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="04">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №4. "Не удалось проверить статус сертификата." или "Не валиден. Состояние отозванности сертификата или одного из сертификатов в цепочке сертификатов неизвестно"</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Не установлены или не обновляются автоматически списки отозванных сертификатов УЦ.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Обратитесь в УЦ или самостоятельно установите на своём ПК списки отозванных сертификатов.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_4.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="05">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №5. Ваш сертификат прошёл проверку и может использоваться в любой секции на Торговом портале «Фабрикант», кроме секции Росатом</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Рассинхронизация OCSP-сервер вашего УЦ;</p>
+                    <p class="uk-margin-remove">2) Отсутствует ссылка на OCSP-сервер УЦ в сертификате.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Обратитесь в Удостоверяющий центр для проверки сертификата или проверьте самостоятельно.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_5.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="06">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №6. "Вставьте ключевой носитель (несоответствие ключевого носителя и выбранного сертификата)".</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Вставлен ключевой носитель, не соответствующий выбранному сертификату;</p>
+                    <p class="uk-margin-remove">2) Выбран сертификат, не соответствующий вставленному ключевому носителю.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Проверить, какой ключевой носитель вставлен;</p>
+                    <p class="uk-margin-remove">2) Проверить выбранный сертификат.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_6.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="07">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №7. Ошибка исполнения функции.</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Истек срок действия лицензии на КриптоПРО CSP.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Обратитесь в Удостоверяющий центр для получения лицензии на КриптоПРО CSP;</p>
+                    <p class="uk-margin-remove">2) Введите лицензию на КриптоПРО CSP.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_7.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="08">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №8. Надпись "undefined"</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Некорректно отрабатывают настройки браузера Internet Explorer.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) В браузере зайдите в меню "Сервис" и выберите пункт "Свойства обозревателя";</p>
+                    <p class="uk-margin-remove">2) В открывшемся окне перейдите на вкладку "Дополнительно" и нажмите кнопку "Сброс";</p>
+                    <p class="uk-margin-remove">3) Перезапустите браузер Internet Explorer.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_8.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
                 <li id="09">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №9. Ошибка алгоритма.</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Не соответствуют версии криптопровайдера и Операционной системы.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Если у вас криптопровайдер VipNet CSP, то необходимо проверить версии на соответствие на <a href="https://1c-report.ru/clients/faq/35" target="_blank">сайте</a>;</p>
+                    <p class="uk-margin-remove">2) Если у вас криптопровайдер КриптоПРО CSP, то необходимо проверить версии на соответствие на <a href="https://www.cryptopro.ru/products/csp/compare" target="_blank">сайте</a>;</p>
+                    <p class="uk-margin-remove">3) Если версии не соответствуют, то необходимо обратиться в свой Удостоверяющий центр для обновления.</p>
                   </div>
                 </li>
                 <li id="10">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №10. Не удается найти указанный файл.</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">После установки дополнительного программного обеспечения с Портала не перезагрузили ПК.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">Перезагрузите ПК.</p>
+                    <p class="uk-margin-remove">С дополнительной информацией можно ознакомиться в инструкции "Установка ПО для ЭП". Также можно обратиться в отдел технической поддержки по тел. <a href="tel:+74951097575">+7 (495) 109-75-75</a>.</p>
                   </div>
                 </li>
                 <li id="11">
                   <h2 class="uk-h3-opt uk-margin-large-bottom">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</h2>
                   <div>
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Возможная причина:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Не установлено дополнительное ПО;</p>
+                    <p class="uk-margin-remove">2) Не запущены дополнительные надстройки в браузере.</p>
                   </div>
                   <div class="uk-margin-small-top">
                     <h3 class="uk-heading-text uk-text-xlarge uk-margin-4">Ваши действия:</h3>
-                    <p class="uk-margin-remove">2222</p>
+                    <p class="uk-margin-remove">1) Установить Специализированное ПО с Портала Фабрикант;</p>
+                    <p class="uk-margin-remove">2) Запустить всплывающие надстройки браузера.</p>
+                    <p class="uk-margin-remove">Подробную инструкцию можете скачать <a href="https://static.fabrikant.ru/files/public/signature/instructions/error_11.docx" target="_blank">здесь</a> </p>
                   </div>
                 </li>
               </ul>
             </div>
-            <aside class="uk-width-auto@m uk-flex-first@m uk-visible@m">
-              <div class="sidebar uk-flex uk-flex-column uk-height-1-1 uk-width-small@m">
-                <ul
-                  class="uk-menubar uk-list uk-list-8 uk-margin-medium-bottom"
-                  uk-sticky="end: !aside; offset: 10">
-                  <li><a href="#01">Ошибка №1 Не удается построить цепочку сертификатов</a></li>
-                  <li><a href="#02">Ошибка №2 Failed to create CPSigner</a></li>
-                  <li><a href="#03">Ошибка №3 Ошибка при открытии хранилища...</a></li>
-                  <li><a href="#04">Ошибка №4 Не валиден. Сообщение об ошибке...</a></li>
-                  <li><a href="#05">Ошибка №5 Ваш сертификат прошёл проверку...</a></li>
-                  <li><a href="#06">Ошибка №6. Вставьте ключевой носитель</a></li>
-                  <li><a href="#07">Ошибка №7. Ошибка исполнения функции</a></li>
-                  <li><a href="#08">Ошибка №8. Надпись 'undefined'</a></li>
-                  <li><a href="#09">Ошибка №9. Ошибка алгоритма</a></li>
-                  <li><a href="#10">Ошибка №10. Не удается найти указанный файл</a></li>
-                  <li><a href="#11">Ошибка №11. Объект не поддерживает свойство или метод "SetHashValue".</a></li>
-                </ul>
-              </div>
-            </aside>
           </div>
         </div>
 
@@ -800,25 +824,14 @@
     </footer>
 
     <script>
-      const itemsTab = document.querySelectorAll('.uk-droptab > ul > li');
-      const buttonTab = document.querySelector('.uk-droptab > button');
+      const itemsDrop = document.querySelectorAll('.uk-nav.uk-drop > li > a');
+      const buttonDrop = document.querySelector('.uk-button-drop > .uk-width-expand');
 
-      function setActiveDroptab() {
-        itemsTab.forEach((item) => {
-          console.log(item)
-          if (item.classList.contains('uk-active')) {
-            buttonTab.innerText = item.innerText;
-            UIkit.drop('.uk-droptab > ul').hide(false);
-          }
+      itemsDrop.forEach((elem) => {
+        elem.addEventListener("click", () => {
+          buttonDrop.innerText = elem.innerText
         });
-      }
-
-      UIkit.util.on('.uk-switcher', 'show', () => {
-        console.log(123)
-        setActiveDroptab();
       });
-
-      setActiveDroptab();
     </script>
   </body>
 </html>
