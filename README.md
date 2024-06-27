@@ -21,7 +21,9 @@
   - [Электронный документооборот (ЭДО)][edo]
   - [Регистрация в ЕИС][registraciya-eis]
   - [Ускоренная аккредитация][akkreditaciya]
+  - [Электронная подпись / Как получить][ecp-1]
   - [Электронная подпись / Как работать][ecp-2]
+  - [Электронная подпись / Ошибки при работе][ecp-3]
 
 ## Закрытая часть:
 
@@ -82,4 +84,6 @@
 [edo]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/edo.html
 [registraciya-eis]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/registraciya-eis.html
 [akkreditaciya]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/akkreditaciya.html
-[ecp-2]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/ecp-2.html 
+[ecp-1]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/ecp-1.html
+[ecp-2]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/ecp-2.html
+[ecp-3]: https://etp.gitpages.fabrikant.ru/ui-fabrikant/html/services/ecp-3.html 
