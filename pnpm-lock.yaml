@@ -67,10 +67,10 @@ importers:
         specifier: ^1.77.6
         version: 1.77.6
       stylelint:
-        specifier: ^15.6.2
+        specifier: ^15.11.0
         version: 15.11.0
       stylelint-config-clean-order:
-        specifier: ^5.0.1
+        specifier: ^5.4.2
         version: 5.4.2(stylelint@15.11.0)
       stylelint-config-standard:
         specifier: ^33.0.0
