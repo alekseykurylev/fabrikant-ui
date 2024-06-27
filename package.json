@@ -5,30 +5,35 @@
   "private": true,
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"src/uikit/styles/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"src/uikit/styles/sass/**/*.scss\"",
     "lint": "npm run editorconfig && npm run stylelint",
     "dev": "gulp"
   },
+  "dependencies": {
+    "uikit": "^3.21.5"
+  },
   "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "autoprefixer": "10.4.0",
-    "browser-sync": "^2.29.1",
-    "gh-pages": "^5.0.0",
-    "gulp": "4.0.2",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "autoprefixer": "10.4.19",
+    "browser-sync": "^3.0.2",
+    "gh-pages": "^6.1.1",
+    "gulp": "5.0.0",
     "gulp-babel": "^8.0.0",
-    "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
-    "gulp-postcss": "^9.0.1",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svg-sprite": "^2.0.3",
     "gulp-terser": "^2.1.0",
     "postcss-csso": "^6.0.1",
     "postcss-media-minmax": "^5.0.0",
-    "prettier": "2.8.8",
-    "stylelint": "^15.6.2",
-    "stylelint-config-clean-order": "^5.0.1",
+    "prettier": "3.3.2",
+    "sass": "^1.77.6",
+    "stylelint": "^15.11.0",
+    "stylelint-config-clean-order": "^5.4.2",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-config-standard-scss": "^9.0.0",
-    "uikit": "^3.21.5"
+    "stylelint-config-standard-scss": "^9.0.0"
   }
 }
