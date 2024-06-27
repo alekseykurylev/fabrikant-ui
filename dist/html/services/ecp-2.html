@@ -232,7 +232,11 @@
       <div class="uk-container uk-container-default">
         <h1 class="uk-h1-opt">Электронная подпись</h1>
 
-        <div class="uk-margin-large-top">menu</div>
+        <ul class="uk-menubar uk-grid-row-8 uk-margin-large-top" uk-grid>
+          <li><a href="./ecp-1.html">Как получить</a></li>
+          <li class="uk-active"><a href="./ecp-2.html">Как работать</a></li>
+          <li><a href="./ecp-3.html">Ошибки при работе</a></li>
+        </ul>
 
         <div class="uk-box uk-box-body uk-box-48 uk-box-ab500 uk-light uk-overflow-hidden uk-margin-xxlarge-top">
           <div class="uk-width-1-2@m uk-flex uk-flex-column uk-flex-top uk-height-1-1">
@@ -260,29 +264,164 @@
           <h2 class="uk-h2-opt uk-margin-large-bottom">Как работать с ЭП</h2>
           <div class="uk-grid-96" uk-grid>
             <div class="uk-width-2-3@l">
-              <ul class="uk-registration-eis-map">
+              <ul class="uk-list">
                 <li>
-                  <div class="uk-box uk-box-body uk-box-32">
-                    <div class="uk-number-step">1</div>
-                    <div class="uk-width-expand">
-                      <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Получите электронную подпись (ЭП)</h3>
-                      <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
-                        <li>
-                          <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                            <div class="uk-width-auto">1.1</div>
-                            <div class="uk-width-expand">
-                              <button class="uk-button uk-button-default uk-button-small"><span class="uk-text-weight-500">Получить ЭП</span></button>
-                              <div class="uk-margin-4-top">в рекомендованном удостоверяющем центре или других удостоверяющих центрах.</div>
+                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
+                    <div class="uk-grid-row-8" uk-grid>
+                      <div class="uk-width-auto@s uk-width-1-1">
+                        <div class="uk-number-step">1</div>
+                      </div>
+                      <div class="uk-width-expand@s uk-width-1-1">
+                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Получите электронную подпись (ЭП)</h3>
+                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">1.1</div>
+                              <div class="uk-width-expand">
+                                <button class="uk-button uk-button-default uk-button-small"><span class="uk-text-weight-500">Получить ЭП</span></button>
+                                <div class="uk-margin-4-top">в рекомендованном удостоверяющем центре или других удостоверяющих центрах.</div>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="uk-grid-medium uk-text-xlarge" uk-grid>
-                            <div class="uk-width-auto">1.2</div>
-                            <div class="uk-width-expand"> Установите программное обеспечение для работы с ЭП в соответствии с инструкциями УЦ.</div>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">1.2</div>
+                              <div class="uk-width-expand"> Установите программное обеспечение для работы с ЭП в соответствии с инструкциями УЦ.</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
+                    <div class="uk-grid-row-8" uk-grid>
+                      <div class="uk-width-auto@s uk-width-1-1">
+                        <div class="uk-number-step">2</div>
+                      </div>
+                      <div class="uk-width-expand@s uk-width-1-1">
+                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Установите специализированное ПО для работы на ЭТП Фабрикант</h3>
+                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">2.1</div>
+                              <div class="uk-width-expand">
+                                <div class="uk-margin-4-bottom">Скачайте специализированное ПО для работы на ЭТП Фабрикант</div>
+                                <button class="uk-button uk-button-default uk-button-small">
+                                  <span uk-icon="icon: download; ratio: .67"></span>
+                                  <span class="uk-text-weight-500 uk-margin-8-left">Скачать специализированное ПО</span>
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">2.2</div>
+                              <div class="uk-width-expand">Запустите скачанный файл. После его установки браузер автоматически будет настроен для работы на ЭТП Фабрикант. </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">2.3</div>
+                              <div class="uk-width-expand">После завершения установки перезагрузите компьютер.</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
+                    <div class="uk-grid-row-8" uk-grid>
+                      <div class="uk-width-auto@s uk-width-1-1">
+                        <div class="uk-number-step">3</div>
+                      </div>
+                      <div class="uk-width-expand@s uk-width-1-1">
+                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Установите специализированное ПО для работы на ЭТП Фабрикант</h3>
+                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">3.1</div>
+                              <div class="uk-width-expand">Вставьте ключ в USB-порт компьютера</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">3.2</div>
+                              <div class="uk-width-expand">Выберите нужный сертификат из списка ниже</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">3.3</div>
+                              <div class="uk-width-expand">
+                                <div class="uk-margin-12-bottom">Нажмите «Проверить ЭП».</div>
+                                <select class="uk-select uk-margin-8-bottom" aria-label="Select">
+                                  <option>Выберите сертификат из списка</option>
+                                  <option>Option 02</option>
+                                </select>
+                                <button class="uk-button uk-button-default uk-button-small">
+                                  <span class="uk-text-weight-500">Проверить ЭП</span>
+                                </button>
+                                <div class="uk-margin-12-top">Для корректной проверки работоспособности ЭП требуется установленный плагин КриптоПро ЭЦП Browser. </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-box uk-box-body uk-box-32 uk-ecp-work-item">
+                    <div class="uk-grid-row-8" uk-grid>
+                      <div class="uk-width-auto@s uk-width-1-1">
+                        <div class="uk-number-step">4</div>
+                      </div>
+                      <div class="uk-width-expand@s uk-width-1-1">
+                        <h3 class="uk-heading-text uk-text-xlarge uk-text-color-ab500 uk-text-weight-700 uk-margin-remove">Загрузите сертификат в Личном кабинете в раздел<br class="uk-visible@s"/> «Сертификаты ЭП»</h3>
+                        <ul class="uk-list uk-list-8 uk-margin-8-top uk-margin-remove-bottom">
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">4.1</div>
+                              <div class="uk-width-expand">
+                                <a href="#">Войдите</a> на ЭТП по логину и паролю
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">4.2</div>
+                              <div class="uk-width-expand">
+                                Загрузите сертификат в раздел «<a href="#">Сертификаты ЭП</a>» Личного кабинета (<a href="#">Инструкция</a>).
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">4.3</div>
+                              <div class="uk-width-expand">
+                                Если статус сертификата «Требуется активация», активируйте сертификат, оформив услугу «<a href="#">Активация ЭП</a>» , либо обратитесь к оператору площадки
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="uk-grid-medium uk-text-xlarge" uk-grid>
+                              <div class="uk-width-auto">4.4</div>
+                              <div class="uk-width-expand">
+                                <div class="uk-margin-4-bottom">Дождитесь положительного результата проверки сертификата ЭП оператором ЭТП (максимальный срок проверки - 3 рабочих дня).</div>
+                                <div>После загрузки сертификата ЭП в Личном кабинете и допуска его оператором вы сможете:</div>
+                                <ul class="uk-margin-remove uk-text-xlarge">
+                                  <li>входить на ЭТП по ЭП без ввода логина и пароля;</li>
+                                  <li>использовать ЭП для получения и продления аккредитации для работы в секциях «Торги по банкротству», «Закупки Росатом» и «Закупки по 223-ФЗ».</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </li>

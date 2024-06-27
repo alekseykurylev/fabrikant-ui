@@ -69,26 +69,34 @@
   }
 }
 
-.uk-registration-eis-map {
-  padding: 0;
-  list-style: none;
-  margin: 0;
+.uk-eis-reg-item.uk-box-32 {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 
-  & .uk-box {
-    display: flex;
-    gap: 32px;
+  @media (max-width: $breakpoint-small-max) {
+    padding: 0;
+    border: 0;
+    gap: 16px;
+  }
 
-    @media (max-width: $breakpoint-small-max) {
-      padding: 0;
-      border: 0;
-      gap: 16px;
-    }
+  & .uk-icon {
+    align-self: center;
+  }
+}
 
-    & .uk-icon {
-      align-self: center;
-    }
+.uk-ecp-work-item.uk-box-32 {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: $breakpoint-small-max) {
+    gap: 16px;
+  }
+
+  @media (min-width: $breakpoint-small) {
+    padding-right: 96px;
+  }
+
+  .uk-list .uk-width-auto {
+    width: 51px;
   }
 }
