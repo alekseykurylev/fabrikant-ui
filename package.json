@@ -10,7 +10,7 @@
     "dev": "gulp"
   },
   "dependencies": {
-    "uikit": "^3.21.5"
+    "uikit": "^3.21.6"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
@@ -31,9 +31,9 @@
     "postcss-media-minmax": "^5.0.0",
     "prettier": "3.3.2",
     "sass": "^1.77.6",
-    "stylelint": "^15.11.0",
-    "stylelint-config-clean-order": "^5.4.2",
-    "stylelint-config-standard": "^33.0.0",
-    "stylelint-config-standard-scss": "^9.0.0"
+    "stylelint": "^16.6.1",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0"
   }
 }
