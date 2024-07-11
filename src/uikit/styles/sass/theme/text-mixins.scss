@@ -1,3 +1,7 @@
+@mixin hook-text-small() {
+  line-height: 16px;
+}
+
 @mixin hook-text-misc() {
   .uk-text-weight-200 {
     font-weight: 200;
