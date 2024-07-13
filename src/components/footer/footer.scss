@@ -1,8 +1,12 @@
+@import '../../uikit/styles/sass/theme/variables';
+
 .footer {
   border-top: 1px solid #d0d6de;
 }
 
 .footer-nav {
+  padding-right: 24px;
+
   .uk-nav > li > a {
     padding: 0;
     color: var(--color-mine-shaft-700);
@@ -14,5 +18,12 @@
 
   .uk-nav > li > a:hover {
     color: var(--color-cerulean-link-hover);
+  }
+}
+
+.footer-column {
+  @media (min-width: $breakpoint-medium) {
+    width: 390px;
+    box-sizing: inherit;
   }
 }

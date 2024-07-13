@@ -930,137 +930,236 @@
             <a class="uk-flex uk-flex-middle" href="#"><span uk-icon="logIn"></span></a>
           </div>
         </div>
-
-        <div class="header-hero uk-visible@s">
-          <div class="uk-container uk-container-expand">
-            <div class="uk-flex-middle" uk-grid>
-              <div class="uk-width-auto">
-                <div class="uk-grid-divider uk-flex-middle" uk-grid>
-                  <div>
-                    <a href="#"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
-                  </div>
-                  <div class="uk-visible@m">
-                    <div class="uk-flex uk-flex-middle uk-text-muted">
-                      <span uk-icon="server-time"></span>
-                      <div class="uk-margin-12-left">
-                        <div class="uk-text-xsmall uk-text-color-bh200">Время на сервере</div>
-                        <div class="uk-text-small">
-                          <span class="dateTime-container" id="serverDateTime">
-                            <span id="serverDateTime-day" class="serverDateTime-day">31.</span>
-                            <span id="serverDateTime-month" class="serverDateTime-month">05.</span>
-                            <span id="serverDateTime-year" class="serverDateTime-year">2023</span>
-                            <span id="serverDateTime-delimiter" class="serverDateTime-delimiter"></span>
-                            <span id="serverDateTime-hour" class="serverDateTime-hour">15:</span>
-                            <span id="serverDateTime-minute" class="serverDateTime-minute">48:</span>
-                            <span id="serverDateTime-second" class="serverDateTime-second">00</span>
-                          </span>
-                        </div>
-                      </div>
+        <div class="uk-container uk-container-default">
+          <div class="header-top uk-visible@s">
+            <div class="uk-container uk-container-expand">
+              <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="uk-grid-divider uk-flex-middle" uk-grid>
+                    <div>
+                      <a href="#"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант" /></a>
+                    </div>
+                    <div class="uk-text-muted uk-visible@m">
+                      <div class="uk-text-small uk-text-color-bh500 uk-text-weight-500">12:42 (МСК +4)</div>
+                      <div class="uk-text-small uk-text-color-bh200">Среда 15.01.2022</div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="uk-width-auto uk-margin-auto-left">
-                <button class="uk-button uk-button-default" type="button">Вход</button>
-                <button class="uk-button uk-button-default uk-margin-8-left" type="button">Регистрация</button>
+                <div class="uk-margin-auto-left">
+                  <div class="uk-flex uk-flex-column uk-flex-bottom">
+                    <a href="tel:+74951097575" class="uk-h5-opt uk-link-reset">+7 (495) 109-75-75</a>
+                    <a href="#callback" uk-toggle class="uk-text-small uk-text-weight-500 uk-margin-2-top">Заказать звонок</a>
+                  </div>
+                </div>
+                <div class="uk-width-auto">
+                  <div class="uk-flex">
+                    <button class="uk-button uk-button-default" type="button">Вход</button>
+                    <button class="uk-button uk-button-default uk-margin-8-left" type="button">Регистрация</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="header-nav uk-visible@s">
-          <div class="uk-container uk-container-expand">
-            <div class="uk-child-width-expand uk-flex-middle uk-grid-large" uk-grid>
-              <div>
-                <nav class="uk-navbar-container" uk-navbar>
-                  <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                      <li class="uk-active">
-                        <a href="#">Торги</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">44-ФЗ</a></li>
-                          <li><a href="#">223-ФЗ</a></li>
-                          <li><a href="#">Коммерческие закупки</a></li>
-                          <li><a href="#">Электронный магазин</a></li>
-                          <li><a href="#">615-ПП (капитальный ремонт)</a></li>
-                          <li><a href="#">Банкротство</a></li>
-                          <li><a href="#">Имущество</a></li>
-                          <li><a href="#">ГИС Торги</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Витрина</a></li>
-                      <li>
-                        <a href="#">Услуги</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">Все услуги</a></li>
-                          <li><a href="#">Электронная подпись</a></li>
-                          <li><a href="#">Открыть спецсчет</a></li>
-                          <li><a href="#">Банковские гарантии</a></li>
-                          <li><a href="#">Экспертиза тендерной заявки</a></li>
-                          <li><a href="#">Услуги для имущественных торгов</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Тарифы</a></li>
-                      <li>
-                        <a href="#">Клиентам</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">Купить в Фабрикант.Маркете</a></li>
-                          <li><a href="#">Стать поставщиком</a></li>
-                          <li><a href="#">Стать поставщиком ГК Росатом</a></li>
-                          <li><a href="#">Стать заказчиком</a></li>
-                          <li><a href="#">Преимущества Фабрикант</a></li>
-                          <li><a href="#">Надёжный поставщик и Заказчик года</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">База знаний</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">Вопросы и ответы</a></li>
-                          <li><a href="#">Общие правила</a></li>
-                          <li><a href="#">Закупки по 44-ФЗ</a></li>
-                          <li><a href="#">Закупки по 223-Фз</a></li>
-                          <li><a href="#">Коммерческие закупки</a></li>
-                          <li><a href="#">Процедуры и продажи</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Новости</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">Новости Фабрикант</a></li>
-                          <li><a href="#">Контакты пресс-службы</a></li>
-                          <li><a href="#">Журнал "Контрактные отношения"</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">О нас</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">О компании</a></li>
-                          <li><a href="#">Свидетельства и лицензии</a></li>
-                          <li><a href="#">Контакты</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Обучение</a>
-                        <ul class="uk-nav" uk-drop>
-                          <li><a href="#">Вебинары Фабрикант</a></li>
-                          <li><a href="#">Курсы Фабрикант</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <div class="uk-width-auto">
-                <a class="uk-text-small uk-flex uk-flex-middle" href="#">
-                  <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
-                  Обратная связь
-                </a>
+          <div class="header-nav uk-visible@s">
+            <div class="uk-container uk-container-expand">
+              <div class="uk-child-width-expand uk-flex-middle uk-grid-large" uk-grid>
+                <div>
+                  <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                      <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                          <a href="#">Торги</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">44-ФЗ</a></li>
+                            <li><a href="#">223-ФЗ</a></li>
+                            <li><a href="#">Коммерческие закупки</a></li>
+                            <li><a href="#">Электронный магазин</a></li>
+                            <li><a href="#">615-ПП (капитальный ремонт)</a></li>
+                            <li><a href="#">Банкротство</a></li>
+                            <li><a href="#">Имущество</a></li>
+                            <li><a href="#">ГИС Торги</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Витрина</a></li>
+                        <li>
+                          <a href="#">Услуги</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">Все услуги</a></li>
+                            <li><a href="#">Электронная подпись</a></li>
+                            <li><a href="#">Открыть спецсчет</a></li>
+                            <li><a href="#">Банковские гарантии</a></li>
+                            <li><a href="#">Экспертиза тендерной заявки</a></li>
+                            <li><a href="#">Услуги для имущественных торгов</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li>
+                          <a href="#">Клиентам</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">Купить в Фабрикант.Маркете</a></li>
+                            <li><a href="#">Стать поставщиком</a></li>
+                            <li><a href="#">Стать поставщиком ГК Росатом</a></li>
+                            <li><a href="#">Стать заказчиком</a></li>
+                            <li><a href="#">Преимущества Фабрикант</a></li>
+                            <li><a href="#">Надёжный поставщик и Заказчик года</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">База знаний</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">Вопросы и ответы</a></li>
+                            <li><a href="#">Общие правила</a></li>
+                            <li><a href="#">Закупки по 44-ФЗ</a></li>
+                            <li><a href="#">Закупки по 223-Фз</a></li>
+                            <li><a href="#">Коммерческие закупки</a></li>
+                            <li><a href="#">Процедуры и продажи</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Новости</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">Новости Фабрикант</a></li>
+                            <li><a href="#">Контакты пресс-службы</a></li>
+                            <li><a href="#">Журнал "Контрактные отношения"</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">О нас</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Свидетельства и лицензии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Обучение</a>
+                          <ul class="uk-nav" uk-drop>
+                            <li><a href="#">Вебинары Фабрикант</a></li>
+                            <li><a href="#">Курсы Фабрикант</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                <div class="uk-width-auto">
+                  <a class="uk-text-small uk-flex uk-flex-middle" href="#">
+                    <span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span>
+                    Обратная связь
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
     </div>
+
+    <!-- Заказать обратный звонок -->
+    <div id="callback" class="uk-modal-container" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Заказать обратный звонок</h2>
+        <p>
+          Заполните форму заказа звонка, и наши менеджеры сами перезвонят вам в течение 10 минут. Можно указать фамилию
+          и имя специалиста, с которым вы хотите связаться.
+        </p>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-subject-appeal">
+              Тема обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <select id="form-subject-appeal" class="uk-select" aria-label="Тема обращения">
+                <option>Выберите тему обращения</option>
+                <option>Option 01</option>
+                <option>Option 02</option>
+              </select>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-text-appeal">
+              Текст обращения
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <textarea id="form-text-appeal" class="uk-textarea" rows="4" aria-label="Текст обращения"></textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-contact-person">
+              Контактное лицо
+              <span class="uk-text-danger">*</span>
+            </label>
+            <div class="uk-form-controls">
+              <input id="form-contact-person" class="uk-input" type="text" aria-label="Контактное лицо" />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-child-width-1-2@m uk-grid-medium" uk-grid>
+              <div>
+                <label class="uk-form-label" for="form-email">
+                  Email
+                  <span class="uk-text-danger">*</span>
+                </label>
+                <div class="uk-form-controls">
+                  <input id="form-email" class="uk-input" type="text" aria-label="Email" />
+                </div>
+              </div>
+              <div>
+                <div class="uk-flex-bottom uk-grid-small" uk-grid>
+                  <div class="uk-width-auto@s">
+                    <label class="uk-form-label" for="form-phone-code">
+                      Телефон
+                      <span class="uk-text-danger">*</span>
+                    </label>
+                    <div class="uk-form-controls">
+                      <select class="uk-select" aria-label="Код телефон" style="width: 110px">
+                        <option>+7</option>
+                        <option>+123</option>
+                        <option>+12</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="uk-width-expand@s">
+                    <div class="uk-form-controls">
+                      <input
+                        id="form-phone-code"
+                        class="uk-input"
+                        placeholder="(___)-___-__-__"
+                        type="text"
+                        aria-label="Телефон" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-checkbox-wrap">
+              <input class="uk-checkbox uk-checkbox-large" type="checkbox" />
+              <span class="uk-checkbox-label uk-margin-12-left">
+                Я обязуюсь соблюдать
+                <a href="#">Регламент ЭТП «Фабрикант»,</a>
+                даю
+                <a href="#">согласие на обработку моих персональных данных</a>
+              </span>
+            </label>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-alert uk-alert-solid uk-alert-m40 uk-text-large">captcha</div>
+          </div>
+          <div class="uk-flex uk-flex-right">
+            <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">
+              Отмена
+            </button>
+            <button class="uk-button uk-button-primary" type="button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /Заказать обратный звонок -->
 
     <script src="../components/header/navbar.js"></script>
   </body>

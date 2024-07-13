@@ -1,1 +1,1 @@
-.footer{border-top:1px solid #d0d6de}.footer-nav .uk-nav>li>a{padding:0;color:var(--color-mine-shaft-700)}.footer-nav .uk-nav>li:not(:last-child){margin-bottom:16px}.footer-nav .uk-nav>li>a:hover{color:var(--color-cerulean-link-hover)}
+.footer{border-top:1px solid #d0d6de}.footer-nav{padding-right:24px}.footer-nav .uk-nav>li>a{padding:0;color:var(--color-mine-shaft-700)}.footer-nav .uk-nav>li:not(:last-child){margin-bottom:16px}.footer-nav .uk-nav>li>a:hover{color:var(--color-cerulean-link-hover)}@media (min-width:1024px){.footer-column{width:390px;box-sizing:inherit}}
