@@ -10,11 +10,11 @@
     "dev": "gulp"
   },
   "dependencies": {
-    "uikit": "^3.21.6"
+    "uikit": "^3.21.8"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
     "autoprefixer": "10.4.19",
     "browser-sync": "^3.0.2",
     "gh-pages": "^6.1.1",
@@ -29,9 +29,9 @@
     "gulp-terser": "^2.1.0",
     "postcss-csso": "^6.0.1",
     "postcss-media-minmax": "^5.0.0",
-    "prettier": "3.3.2",
-    "sass": "^1.77.6",
-    "stylelint": "^16.6.1",
+    "prettier": "3.3.3",
+    "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
     "stylelint-config-clean-order": "^6.1.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0"
